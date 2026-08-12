@@ -59,7 +59,9 @@
     justify-content:center;
     background-image: var(--hero-img);
     background-size: cover;
-    background-position: 50% 50%;
+    /* these portraits sit high in frame, so the crop is pulled up off centre;
+       each page tunes --hero-pos to its own photo */
+    background-position: 50% var(--hero-pos, 15%);
     background-repeat: no-repeat;
     /* the parallax: the sleeve grid scrolls up over a pinned image */
     background-attachment: fixed;
@@ -489,6 +491,10 @@
   .hero.is-compact{
     min-height: 46vh;
     min-height: 46svh;
+    /* a fixed background is sized to the viewport, which leaves this short
+       header no vertical overflow to pan through — so --hero-pos would do
+       nothing. Scrolling it sizes the image to the element instead. */
+    background-attachment: scroll;
   }
   .hero.is-compact .hero-title{
     font-size: clamp(40px, 7vw, 88px);
