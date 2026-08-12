@@ -265,7 +265,8 @@
     font: 600 10px/1 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: var(--accent-soft);
+    /* --ink-soft, not --accent-soft: this sits on the dark label face */
+    color: var(--ink-soft);
     margin: 6px 0 0;
   }
 
