@@ -1534,6 +1534,25 @@
   "1990s": [
     {
       "year": "1990",
+      "artist": "Basic Black",
+      "title": "Basic Black",
+      "label": "Sound Of New York",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "01. She's Mine",
+        "02. Give Your Love to Me",
+        "03. What Ever It Takes",
+        "04. Nothing but a Party",
+        "05. Special Kind of Fool",
+        "06. It's a Man Thang",
+        "07. Don't Make Me Fall in Love",
+        "08. Baby Can We Talk",
+        "09. Now or Never",
+        "10. Stupid"
+      ]
+    },
+    {
+      "year": "1990",
       "artist": "Billy Davis",
       "title": "I Want You",
       "label": "Got Records",
@@ -1545,7 +1564,8 @@
         "I Want You (Acappella)",
         "I Want You (Club Mix)",
         "I Want You (Dub I)",
-        "I Want You (Dub II)"
+        "I Want You (Dub II)",
+        "I Want You (Short Edit)"
       ]
     },
     {

@@ -45,6 +45,8 @@ a `<div class="card">` — the next build overwrites it.
   red `<mark>` spans on the source site.
 - `image` is a filename inside `imgs/`. Download the cover, name it
   `<year>-<artist>-<title>` kebab-cased, and drop it there.
+- No cover available? Use `"image": "placeholder-sleeve.svg"` — a neutral
+  sleeve reading NO COVER YET. Swap it for the real file when one turns up.
 - Order matters: releases appear in JSON order, grouped by year, and years
   appear in first-seen order. Keep each year's block together.
 - Write plain text — `&` and `″` are escaped by the build script. Don't put
