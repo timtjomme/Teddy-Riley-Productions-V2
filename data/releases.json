@@ -1668,6 +1668,147 @@
         "Don't Wanna Fall in Love (T.R. Club-A-Dub)",
         "Don't Wanna Fall in Love (Bonus Beats)"
       ]
+    },
+    {
+      "year": "1990",
+      "artist": "Keith Sweat",
+      "title": "I'll Give All My Love To You",
+      "label": "Elektra",
+      "image": "1990-keith-sweat-i-ll-give-all-my-love-to-you.jpg",
+      "tracks": [
+        "02. Make You Sweat",
+        "06. Your Love, Pt. 2"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "Nayobe",
+      "title": "I'll Be Around",
+      "label": "WTG / Epic",
+      "image": "1990-nayobe-i-ll-be-around.jpg",
+      "tracks": [
+        "I'll Be Around (Extended Mix)",
+        "I'll Be Around (Single Edit Version)"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "Nayobe",
+      "title": "Promise Me",
+      "label": "WTG / Epic",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "01. I Love The Way You Love Me",
+        "02. I'll Be Around",
+        "03. Can't Let Go"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "Quincy Jones feat. Siedah Garrett",
+      "title": "I Don't Go For That",
+      "label": "Qwest",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "I Don't Go For That (Album Version)",
+        "I Don't Go For That (M.T. Shaniqua Mix)",
+        "I Don't Go For That (Mercenary Radio Mix)",
+        "I Don't Go For That (MT Dude Mix)",
+        "I Don't Go For That (MT M-Rap Version)",
+        "I Don't Go For That (Teddy's Extended Mix)",
+        "I Don't Go For That (Teddy's Freaky Jazz Groove)",
+        "I Don't Go For That (Teddy's Mix)",
+        "I Don't Go For That (Teddy's Sax Mix)"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "Redhead Kingpin And The F.B.I.",
+      "title": "We Rock The Mic Right",
+      "label": "10 Records",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "We Rock The Mic Right (12″ Mix)",
+        "We Rock The Mic Right (Red's Groove)",
+        "Superbad Superslick (12″ One World Mix)",
+        "Superbad Superslick (Dub)",
+        "Superbad Superslick (Rough & Heavy Mix)"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "Samuelle",
+      "title": "So You Like What You See",
+      "label": "Atlantic",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "So You Like What You See (Club Remix)",
+        "So You Like What You See (12″ Remix)",
+        "So You Like What You See (Acappella)",
+        "So You Like What You See (Bonus Beats)",
+        "So You Like What You See (Club Dub)",
+        "So You Like What You See (Clubapella)",
+        "So You Like What You See (Extended Remix)",
+        "So You Like What You See (Rapapella)"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "Starpoint",
+      "title": "Have You Got What It Takes",
+      "label": "Elektra",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "01. I Want You - You Want Me",
+        "02. Your Lover",
+        "04. Have You Got What It Takes",
+        "05. When They Love You Back",
+        "07. Step By Step",
+        "08. True Love",
+        "09. I Want You - You Want Me (Teddy's House Mix)"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "Starpoint",
+      "title": "I Want You - You Want Me",
+      "label": "Elektra",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "I Want You - You Want Me (Edit Version)",
+        "I Want You - You Want Me (Bonus Beats)",
+        "I Want You - You Want Me (Extended Version)",
+        "I Want You - You Want Me (Hip Hop Mix)"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "The Winans",
+      "title": "It's Time",
+      "label": "Qwest",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "It's Time (Percapella)",
+        "It's Time (7″ Remix)",
+        "It's Time (12″ Remix)",
+        "It's Time (Bonus Beats)",
+        "It's Time (Club-A-Dub)",
+        "It's Time (Edit)",
+        "It's Time (LP Version)",
+        "It's Time (New Jack Swing Mix)"
+      ]
+    },
+    {
+      "year": "1990",
+      "artist": "The Winans",
+      "title": "Return",
+      "label": "Qwest",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "01. It's Time",
+        "03. Don't Leave Me",
+        "04. A Friend"
+      ]
     }
   ]
 }
