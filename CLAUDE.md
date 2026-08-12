@@ -1,0 +1,108 @@
+# Teddy Riley Productions — archive site
+
+A static discography site. No framework, no build step for the CSS/JS — plain
+HTML, one shared stylesheet, one shared script. The only generated thing is the
+release grids, which come from `data/releases.json`.
+
+Content is sourced from teddyrileyproductions.com (a WordPress site). This repo
+is a redesign of it, not a copy of its code.
+
+## Layout
+
+```
+index.html            front page: video hero, intro, decade panels
+1980s.html            108 releases, 1982–1989
+1990s.html            7 releases, 1990
+contact.html          Formspree contact form
+style.css             every page
+script.js             card flip, contact form, footer prompt
+data/releases.json    THE SOURCE OF TRUTH for releases
+tools/build.py        releases.json -> the grids in the decade pages
+tools/extract.py      one-off, already run: pages -> releases.json
+imgs/                 covers (one per release), heroes, decade panels
+fonts/                Open Sans variable, self-hosted
+```
+
+## Adding or changing a release
+
+**Edit `data/releases.json`, then run `python3 tools/build.py`.** Never hand-edit
+a `<div class="card">` — the next build overwrites it.
+
+```json
+{
+  "year": "1988",
+  "artist": "Guy",
+  "title": "Groove Me",
+  "label": "MCA Records",
+  "image": "1988-guy-groove-me.jpg",
+  "tracks": ["Groove Me (Radio Edit)", "Groove Me (Bonus Beats)"],
+  "missing": ["Groove Me (Bonus Beats)"]
+}
+```
+
+- `missing` is optional; list the exact track strings that are missing from the
+  collection. They render red and give that card a legend. It comes from the
+  red `<mark>` spans on the source site.
+- `image` is a filename inside `imgs/`. Download the cover, name it
+  `<year>-<artist>-<title>` kebab-cased, and drop it there.
+- Order matters: releases appear in JSON order, grouped by year, and years
+  appear in first-seen order. Keep each year's block together.
+- Write plain text — `&` and `″` are escaped by the build script. Don't put
+  `&amp;` or `&Prime;` in the JSON.
+
+`build.py` rewrites only the region between the `RELEASES:START` / `RELEASES:END`
+markers. Hero, intro copy, nav and footer are hand-written; edit those directly.
+
+### A new year
+
+Just add releases with that year. The build creates the heading and anchor
+(`id="y1991"`). The **year-jump nav is hand-written** in the page — add the link
+yourself; `build.py` prints a warning when it looks out of date.
+
+### A new decade page
+
+Copy `1990s.html`, swap the hero image and `--hero-pos`, add a `"2000s"` key to
+`releases.json`, add the page to `PAGES` in `extract.py` and to the nav on every
+page, and un-grey its panel in `index.html`.
+
+## Things that are easy to get wrong
+
+- **Anchors are `y`-prefixed** (`id="y1982"`). Ids starting with a digit can't be
+  targeted by a plain CSS selector.
+- **`--accent-soft` is for the light page only.** On the dark card back use
+  `--ink-soft`; `--accent-soft` fails contrast there.
+- **`body` needs `background-color`, not just the gradient.** Without it the
+  canvas is unpainted below the fold and renders black.
+- **`background-attachment: fixed` sizes to the viewport, not the element.** On a
+  short header that leaves no overflow, so `--hero-pos` does nothing — the
+  compact contact hero uses `scroll` for that reason.
+- **Hero images are framed with `--hero-pos`** (set inline per page). These
+  portraits sit high, so a centred crop cuts the face off.
+- The source page occasionally **merges two tracks onto one line** where a `<br>`
+  is missing. Check tracklists against the source when they look short.
+
+## Contact form
+
+Both forms (contact page, and the footer prompt built by `script.js`) POST to
+Formspree `moeawjre`. The endpoint lives in `FORM_ENDPOINT` in `script.js` and in
+the `action` on `contact.html`. No email address appears in the markup. Forms work
+without JS as a plain POST; JS only upgrades them to submit in place.
+
+## Deploying
+
+Push to `main`. The repo is **private** on GitHub. Nothing auto-deploys yet — see
+the notes in the conversation about Cloudflare Pages / Netlify, both of which can
+build from a private repo for free. GitHub Pages would require making it public.
+
+If the site ever replaces the WordPress install, the pages need to move to
+`1980s/index.html` form so the live URLs (`/1980s/`) keep working, and asset
+paths become root-relative.
+
+## Checking your work
+
+```bash
+python3 tools/build.py                  # regenerate the grids
+python3 -m http.server 8934             # then open http://localhost:8934/
+```
+
+Serve over HTTP, not `file://` — the fonts and the hero video break otherwise.
