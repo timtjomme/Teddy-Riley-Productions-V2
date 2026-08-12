@@ -632,3 +632,49 @@
     background: var(--missing);
     flex-shrink:0;
   }
+
+  /* ---- FOOTER PROMPT ---- */
+  .ask{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .ask-line{
+    display:inline-block;
+    font: 300 clamp(24px, 3.4vw, 38px)/1.2 'Open Sans', sans-serif;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+  }
+  .ask:hover .ask-line,
+  .ask.is-open .ask-line,
+  .ask-line:focus-visible{ border-bottom-color: var(--accent); }
+
+  /* 0fr -> 1fr animates the reveal without pinning a max-height */
+  .ask-panel{
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.45s ease, opacity 0.3s ease;
+  }
+  .ask-panel-inner{ overflow: hidden; }
+  .ask:hover .ask-panel,
+  .ask:focus-within .ask-panel,
+  .ask.is-open .ask-panel{
+    grid-template-rows: 1fr;
+    opacity: 1;
+  }
+  .ask .contact-form{ margin: 26px 0 0; }
+  .ask .field{ margin-bottom: 16px; }
+
+  /* hover-to-reveal is meaningless on touch: leave it open there */
+  @media (hover: none){
+    .ask-panel{ grid-template-rows: 1fr; opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .ask-panel{ transition: none; }
+  }
