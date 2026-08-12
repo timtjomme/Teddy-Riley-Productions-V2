@@ -29,7 +29,6 @@
     --accent-soft:#55555d;
     --muted:#63636b;
     --rule: rgba(0,0,0,0.16);
-    --label-ring: rgba(255,255,255,0.16);
     --shadow: 0 30px 60px -20px rgba(0,0,0,0.30);
   }
 
@@ -240,22 +239,11 @@
   /* ---- BACK (label) ---- */
   .back{
     transform: rotateY(180deg);
-    background:
-      radial-gradient(circle at 50% 50%, transparent 0 27px, var(--label-ring) 27px 28px, transparent 28px 29px),
-      var(--label);
+    background: var(--label);
     color: var(--ink);
     padding: 16px 16px 14px;
     display:flex;
     flex-direction:column;
-  }
-  .back::before{
-    content:"";
-    position:absolute;
-    top:50%; left:50%;
-    width:6px; height:6px;
-    border-radius:50%;
-    background: var(--ink-soft);
-    transform: translate(-50%,-50%);
   }
 
   .back-head{
