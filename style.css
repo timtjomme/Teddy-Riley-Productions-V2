@@ -452,10 +452,11 @@
   @media (prefers-reduced-motion: reduce){
     .hero-video video{ display:none; }
     .hero-video{
-      background-image: url('imgs/story-loop-poster.jpg');
+      background-image: url('imgs/archives-title-poster.jpg');
       background-size: cover;
       background-position: center;
-      aspect-ratio: 16 / 9;
+      /* matches the title card's own 1512x800 */
+      aspect-ratio: 1512 / 800;
     }
     .panel::after{ transition: none; }
   }
