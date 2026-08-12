@@ -166,14 +166,7 @@
     border-radius: 3px;
     box-shadow: var(--shadow);
   }
-  .card:nth-child(3n+1) .card-inner{ transform: rotateZ(-0.6deg); }
-  .card:nth-child(3n+2) .card-inner{ transform: rotateZ(0.4deg); }
-  .card:nth-child(3n+3) .card-inner{ transform: rotateZ(-0.2deg); }
-
   .card-inner.flipped{ transform: rotateY(180deg); }
-  .card:nth-child(3n+1) .card-inner.flipped{ transform: rotateY(180deg) rotateZ(0.6deg); }
-  .card:nth-child(3n+2) .card-inner.flipped{ transform: rotateY(180deg) rotateZ(-0.4deg); }
-  .card:nth-child(3n+3) .card-inner.flipped{ transform: rotateY(180deg) rotateZ(0.2deg); }
 
   .card-inner:focus-visible{
     outline: 2px solid var(--accent);
