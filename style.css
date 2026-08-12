@@ -502,3 +502,106 @@
     border-bottom-color: transparent;
   }
   .decade-nav .home-link:hover{ color: var(--accent); }
+
+  /* ---- CONTACT ---- */
+  .hero.is-compact{
+    min-height: 46vh;
+    min-height: 46svh;
+  }
+  .hero.is-compact .hero-title{
+    font-size: clamp(40px, 7vw, 88px);
+  }
+
+  .contact-form{
+    max-width: 620px;
+    margin: 0 0 20px;
+  }
+  .field{ margin-bottom: 22px; }
+  .field label{
+    display:block;
+    font: 600 12px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .field label .opt{
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--muted);
+    margin-left: 4px;
+  }
+  .field input,
+  .field textarea{
+    width: 100%;
+    font: 400 15px/1.5 'Open Sans', sans-serif;
+    color: var(--label);
+    background: rgba(255,255,255,0.7);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 11px 13px;
+  }
+  .field textarea{ resize: vertical; }
+  .field input:focus,
+  .field textarea:focus{
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(18,18,20,0.10);
+  }
+  .field .hint{
+    font: 400 12px/1.5 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 7px 0 0;
+  }
+  /* spam trap stays out of sight and out of the tab order */
+  input[name="_gotcha"]{
+    position:absolute;
+    left:-9999px;
+    width:1px; height:1px;
+    opacity:0;
+  }
+
+  .form-foot{
+    display:flex;
+    align-items:center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .contact-form button{
+    font: 600 12px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--label);
+    border: none;
+    border-radius: 3px;
+    padding: 14px 26px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  .contact-form button:hover{ opacity: 0.82; }
+  .contact-form button:disabled{ opacity: 0.45; cursor: default; }
+  .contact-form button:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+  .form-status{
+    font: 400 13px/1.5 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 0;
+  }
+  .form-status.is-error{ color: #b3261e; }
+  .form-status.is-ok{ color: var(--label); font-weight: 600; }
+
+  .home-foot .contact-cta{
+    font: 400 15px/1.6 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 0 0 26px;
+  }
+  .home-foot .contact-cta a{
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+  }
+  .home-foot .contact-cta a:hover{ opacity: 0.6; }
