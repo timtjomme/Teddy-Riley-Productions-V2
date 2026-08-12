@@ -364,3 +364,141 @@
     opacity: 0.45;
     padding-bottom: 3px;
   }
+
+  /* ---- FRONT PAGE ---- */
+  .hero-video{
+    position:relative;
+    background:#0a0a0c;
+    overflow:hidden;
+    line-height:0;
+  }
+  .hero-video video,
+  .hero-video img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+
+  .intro{
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 76px 20px 0;
+  }
+  .intro h2{
+    font: 300 clamp(28px, 4vw, 40px)/1.15 'Open Sans', sans-serif;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+  .intro p{
+    font: 400 15px/1.7 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 0 0 34px;
+    text-wrap: pretty;
+  }
+  .intro .fun-fact{
+    border-left: 2px solid var(--rule);
+    padding-left: 16px;
+  }
+
+  .panels{ margin-top: 40px; }
+
+  .panel{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 58vh;
+    background-size: cover;
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    text-decoration:none;
+    overflow:hidden;
+  }
+  .panel::after{
+    content:"";
+    position:absolute; inset:0;
+    background: rgba(10,10,12,0.30);
+    transition: background 0.45s ease;
+  }
+  a.panel:hover::after{ background: rgba(10,10,12,0.10); }
+  a.panel:focus-visible{ outline: 3px solid var(--accent); outline-offset: -6px; }
+
+  .panel-label{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    color:#fff;
+    padding: 20px;
+  }
+  .panel-label .decade{
+    display:inline-block;
+    font: 300 clamp(44px, 8vw, 88px)/1 'Open Sans', sans-serif;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 26px rgba(0,0,0,0.45);
+  }
+  a.panel .panel-label .decade{
+    border-bottom: 2px solid rgba(255,255,255,0.9);
+    padding-bottom: 6px;
+  }
+  .panel-label .soon{
+    display:block;
+    margin-top: 16px;
+    font: 600 11px/1 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    opacity: 0.75;
+  }
+  /* unpublished decades sit back visually */
+  .panel.is-soon .panel-label{ opacity: 0.82; }
+  .panel.is-soon::after{ background: rgba(10,10,12,0.52); }
+
+  .home-foot{
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 28px 20px 70px;
+  }
+  .home-foot img{ width: 84px; height:auto; display:block; margin-bottom: 18px; opacity:0.75; }
+  .home-foot p{
+    font: 400 12px/1.6 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin:0;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .hero-video video{ display:none; }
+    .hero-video{
+      background-image: url('imgs/riley-archives-poster.jpg');
+      background-size: cover;
+      background-position: center;
+      aspect-ratio: 1696 / 916;
+    }
+    .panel::after{ transition: none; }
+  }
+
+  /* New Jack Swing sits on a solid ground: the logo is white line art
+     with a transparent background, so it needs dark behind it */
+  .panel.is-njs{
+    background-color: #121214;
+    background-image: none;
+  }
+  .panel.is-njs::after{ background: transparent; }
+  .njs-logo{
+    display:block;
+    width: 92px;
+    height:auto;
+    margin: 0 auto 24px;
+    opacity: 0.9;
+  }
+  .panel-label .decade.is-long{
+    font-size: clamp(26px, 4.4vw, 50px);
+    letter-spacing: -0.01em;
+  }
+  /* same white logo on the light footer needs inverting to stay visible */
+  .home-foot img{ filter: invert(1); }
+
+  .decade-nav .home-link{
+    color: var(--muted);
+    border-bottom-color: transparent;
+  }
+  .decade-nav .home-link:hover{ color: var(--accent); }
