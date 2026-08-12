@@ -1557,6 +1557,9 @@
         "I Want You (Dub I)",
         "I Want You (Dub II)",
         "I Want You (Short Edit)"
+      ],
+      "missing": [
+        "I Want You (Short Edit)"
       ]
     },
     {
@@ -1696,7 +1699,7 @@
       "artist": "Nayobe",
       "title": "Promise Me",
       "label": "WTG / Epic",
-      "image": "placeholder-sleeve.svg",
+      "image": "1990-nayobe-promise-me.jpg",
       "tracks": [
         "01. I Love The Way You Love Me",
         "02. I'll Be Around",
@@ -1708,7 +1711,7 @@
       "artist": "Quincy Jones feat. Siedah Garrett",
       "title": "I Don't Go For That",
       "label": "Qwest",
-      "image": "placeholder-sleeve.svg",
+      "image": "1990-quincy-jones-feat-siedah-garrett-i-don-t-go-for-that.jpg",
       "tracks": [
         "I Don't Go For That (Album Version)",
         "I Don't Go For That (M.T. Shaniqua Mix)",
@@ -1725,8 +1728,8 @@
       "year": "1990",
       "artist": "Redhead Kingpin And The F.B.I.",
       "title": "We Rock The Mic Right",
-      "label": "10 Records",
-      "image": "placeholder-sleeve.svg",
+      "label": "Virgin",
+      "image": "1990-redhead-kingpin-and-the-f-b-i-we-rock-the-mic-right.jpg",
       "tracks": [
         "We Rock The Mic Right (12″ Mix)",
         "We Rock The Mic Right (Red's Groove)",
@@ -1740,7 +1743,7 @@
       "artist": "Samuelle",
       "title": "So You Like What You See",
       "label": "Atlantic",
-      "image": "placeholder-sleeve.svg",
+      "image": "1990-samuelle-so-you-like-what-you-see.jpg",
       "tracks": [
         "So You Like What You See (Club Remix)",
         "So You Like What You See (12″ Remix)",
@@ -1757,7 +1760,7 @@
       "artist": "Starpoint",
       "title": "Have You Got What It Takes",
       "label": "Elektra",
-      "image": "placeholder-sleeve.svg",
+      "image": "1990-starpoint-have-you-got-what-it-takes.jpg",
       "tracks": [
         "01. I Want You - You Want Me",
         "02. Your Lover",
@@ -1773,7 +1776,7 @@
       "artist": "Starpoint",
       "title": "I Want You - You Want Me",
       "label": "Elektra",
-      "image": "placeholder-sleeve.svg",
+      "image": "1990-starpoint-i-want-you-you-want-me.jpg",
       "tracks": [
         "I Want You - You Want Me (Edit Version)",
         "I Want You - You Want Me (Bonus Beats)",
@@ -1786,7 +1789,7 @@
       "artist": "The Winans",
       "title": "It's Time",
       "label": "Qwest",
-      "image": "placeholder-sleeve.svg",
+      "image": "1990-the-winans-it-s-time.jpg",
       "tracks": [
         "It's Time (Percapella)",
         "It's Time (7″ Remix)",
@@ -1803,7 +1806,7 @@
       "artist": "The Winans",
       "title": "Return",
       "label": "Qwest",
-      "image": "placeholder-sleeve.svg",
+      "image": "1990-the-winans-return.jpg",
       "tracks": [
         "01. It's Time",
         "03. Don't Leave Me",
