@@ -32,16 +32,54 @@
     color: var(--label);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     min-height:100%;
-    padding: 48px 20px 80px;
+    /* no padding here — the hero is full-bleed, so spacing lives on .wrap */
+    padding: 0;
+  }
+
+  /* ---- HERO ---- */
+  .hero{
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image: url("imgs/hero-1980s.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    /* the parallax: the sleeve grid scrolls up over a pinned image */
+    background-attachment: fixed;
+  }
+  .hero::after{
+    content:"";
+    position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(10,10,12,0.10) 0%, rgba(10,10,12,0.22) 55%, rgba(10,10,12,0.38) 100%);
+  }
+  .hero-title{
+    position:relative;
+    z-index:1;
+    margin:0;
+    font: 700 clamp(72px, 13vw, 160px)/0.95 -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.035em;
+    color:#fff;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.45);
+  }
+
+  /* background-attachment:fixed is unreliable on touch browsers (iOS Safari
+     scales it to document height); fall back to a static cover there */
+  @media (hover: none){
+    .hero{ background-attachment: scroll; }
   }
 
   .wrap{
     max-width: 1040px;
     margin: 0 auto;
+    padding: 0 20px 80px;
   }
 
   .page-head{
-    margin-bottom: 44px;
+    margin: 64px 0 44px;
     max-width: 620px;
   }
 
@@ -61,13 +99,13 @@
     background: var(--accent-soft);
   }
 
-  h1{
+  .page-head h2{
     font: 700 34px/1.15 -apple-system, sans-serif;
     letter-spacing: -0.01em;
     margin: 0 0 12px;
     text-wrap: balance;
   }
-  h1 em{
+  .page-head h2 em{
     font-style: normal;
     color: var(--muted);
   }
@@ -282,13 +320,18 @@
 
   @media (prefers-reduced-motion: reduce){
     .card-inner{ transition: none; }
+    .hero{ background-attachment: scroll; }
   }
 </style>
+
+<header class="hero">
+  <h1 class="hero-title">1980's</h1>
+</header>
 
 <div class="wrap">
   <div class="page-head">
     <p class="eyebrow">Teddy Riley Archive</p>
-    <h1>1980's, <em>reimagined as sleeves you flip.</em></h1>
+    <h2>Reimagined as <em>sleeves you flip.</em></h2>
     <p>Every 1980s production and remix credit, cover art first. Click a sleeve to flip it and read every pressing on the back, like flipping a record over to check the label.</p>
   </div>
 
