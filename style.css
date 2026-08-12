@@ -678,3 +678,81 @@
   @media (prefers-reduced-motion: reduce){
     .ask-panel{ transition: none; }
   }
+
+  /* ---- DECADE INTRO ---- */
+  html{ scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+  }
+
+  .decade-intro{
+    max-width: 660px;
+    margin: 0 0 52px;
+  }
+  .decade-intro h2{
+    font: 300 clamp(30px, 4vw, 44px)/1.15 'Open Sans', sans-serif;
+    letter-spacing: -0.02em;
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .decade-intro p{
+    font: 400 15px/1.75 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 0 0 17px;
+    text-wrap: pretty;
+  }
+  .decade-intro .lede{
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--label);
+  }
+  .decade-intro em{ font-style: italic; }
+
+  .list-head{
+    max-width: 660px;
+    margin: 0 0 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--rule);
+  }
+  .list-head p{
+    font: 400 15px/1.6 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 0;
+    text-wrap: pretty;
+  }
+
+  /* ---- YEAR JUMP ---- */
+  .year-jump{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap: 6px 14px;
+    margin-top: 26px;
+  }
+  .year-jump-label{
+    font: 600 11px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-right: 4px;
+  }
+  .year-jump a{
+    font: 400 17px/1 'Open Sans', sans-serif;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 7px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .year-jump a:hover{
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .year-jump a:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  /* so a jumped-to year isn't jammed against the top of the viewport */
+  .year-rule{ scroll-margin-top: 28px; }
