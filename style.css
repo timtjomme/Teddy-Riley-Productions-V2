@@ -452,10 +452,10 @@
   @media (prefers-reduced-motion: reduce){
     .hero-video video{ display:none; }
     .hero-video{
-      background-image: url('imgs/riley-archives-poster.jpg');
+      background-image: url('imgs/story-loop-poster.jpg');
       background-size: cover;
       background-position: center;
-      aspect-ratio: 1696 / 916;
+      aspect-ratio: 16 / 9;
     }
     .panel::after{ transition: none; }
   }
