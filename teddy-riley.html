@@ -1,0 +1,3779 @@
+<meta charset="UTF-8">
+<title>Teddy Riley Productions</title>
+<style>
+  :root{
+    --bg:#0c0c0e;
+    --bg-2:#151517;
+    --vignette: radial-gradient(ellipse at 50% -10%, #232327 0%, #0c0c0e 60%);
+    --label:#ffffff;
+    --label-2:#e4e4e8;
+    --ink:#121214;
+    --ink-soft:#55555d;
+    --accent:#f4f4f6;
+    --accent-soft:#a8a9b0;
+    --muted:#8e8e96;
+    --rule: rgba(255,255,255,0.14);
+    --shadow: 0 30px 60px -20px rgba(0,0,0,0.75);
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+
+  body{
+    background: var(--vignette);
+    color: var(--label);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    min-height:100%;
+    padding: 48px 20px 80px;
+  }
+
+  .wrap{
+    max-width: 1040px;
+    margin: 0 auto;
+  }
+
+  .page-head{
+    margin-bottom: 44px;
+    max-width: 620px;
+  }
+
+  .eyebrow{
+    font: 700 11px/1 -apple-system, sans-serif;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px;
+    background: var(--accent-soft);
+  }
+
+  h1{
+    font: 700 34px/1.15 -apple-system, sans-serif;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  h1 em{
+    font-style: normal;
+    color: var(--muted);
+  }
+
+  .page-head p{
+    font: 400 15px/1.6 -apple-system, sans-serif;
+    color: var(--muted);
+    margin: 0;
+    text-wrap: pretty;
+  }
+
+  .year-rule{
+    display:flex;
+    align-items:center;
+    gap: 14px;
+    margin: 40px 0 20px;
+    font: 700 13px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+  }
+  .year-rule::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background: var(--rule);
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 26px;
+  }
+
+  .card{
+    position:relative;
+    aspect-ratio: 1 / 1;
+    perspective: 1600px;
+  }
+
+  .card-inner{
+    position:absolute; inset:0;
+    cursor:pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.7s cubic-bezier(.2,.85,.35,1);
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+  }
+  .card:nth-child(3n+1) .card-inner{ transform: rotateZ(-0.6deg); }
+  .card:nth-child(3n+2) .card-inner{ transform: rotateZ(0.4deg); }
+  .card:nth-child(3n+3) .card-inner{ transform: rotateZ(-0.2deg); }
+
+  .card-inner.flipped{ transform: rotateY(180deg); }
+  .card:nth-child(3n+1) .card-inner.flipped{ transform: rotateY(180deg) rotateZ(0.6deg); }
+  .card:nth-child(3n+2) .card-inner.flipped{ transform: rotateY(180deg) rotateZ(-0.4deg); }
+  .card:nth-child(3n+3) .card-inner.flipped{ transform: rotateY(180deg) rotateZ(0.2deg); }
+
+  .card-inner:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+  }
+
+  .face{
+    position:absolute; inset:0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow:hidden;
+  }
+
+  /* ---- FRONT ---- */
+  .front{
+    background: #08080a;
+  }
+  .front img{
+    width:100%; height:100%;
+    object-fit: cover;
+    display:block;
+    filter: saturate(1.03) contrast(1.02);
+  }
+  .front .scrim{
+    position:absolute; left:0; right:0; bottom:0;
+    padding: 14px 14px 12px;
+    background: linear-gradient(180deg, rgba(8,8,10,0) 0%, rgba(8,8,10,0.55) 45%, rgba(8,8,10,0.92) 100%);
+  }
+  .front .artist{
+    font: 700 15px/1.25 -apple-system, sans-serif;
+    color: var(--label);
+    margin: 0;
+  }
+  .front .title{
+    font: 400 13px/1.3 -apple-system, sans-serif;
+    color: var(--muted);
+    margin: 2px 0 0;
+    font-style: italic;
+  }
+  .tag{
+    position:absolute; top:10px; left:10px;
+    background: rgba(12,12,14,0.78);
+    border: 1px solid rgba(255,255,255,0.35);
+    color: var(--accent);
+    font: 700 11px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    letter-spacing: 0.04em;
+    padding: 5px 8px;
+    border-radius: 2px;
+    backdrop-filter: blur(2px);
+  }
+  .flip-hint{
+    position:absolute; top:10px; right:10px;
+    width:26px; height:26px;
+    border-radius:50%;
+    background: rgba(12,12,14,0.78);
+    border: 1px solid rgba(255,255,255,0.25);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--label);
+    opacity:0.85;
+  }
+  .flip-hint svg{ width:13px; height:13px; }
+
+  /* ---- BACK (label) ---- */
+  .back{
+    transform: rotateY(180deg);
+    background:
+      radial-gradient(circle at 50% 50%, transparent 0 27px, var(--rule) 27px 28px, transparent 28px 29px),
+      var(--label);
+    color: var(--ink);
+    padding: 16px 16px 14px;
+    display:flex;
+    flex-direction:column;
+  }
+  .back::before{
+    content:"";
+    position:absolute;
+    top:50%; left:50%;
+    width:6px; height:6px;
+    border-radius:50%;
+    background: var(--ink-soft);
+    transform: translate(-50%,-50%);
+  }
+
+  .back-head{
+    border-bottom: 1px solid rgba(18,18,20,0.14);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  .back .artist{
+    font: 700 14px/1.2 -apple-system, sans-serif;
+    margin:0;
+  }
+  .back .title{
+    font: 400 12px/1.2 -apple-system, sans-serif;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin: 1px 0 0;
+  }
+  .back .label-name{
+    font: 700 10px/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-soft);
+    margin: 6px 0 0;
+  }
+
+  .tracks{
+    list-style:none;
+    margin:0; padding:0;
+    overflow-y:auto;
+    font: 400 12.5px/1.55 -apple-system, sans-serif;
+    flex:1;
+  }
+  .tracks li{
+    display:flex;
+    gap:7px;
+    padding: 2.5px 0;
+  }
+  .tracks li::before{
+    content:"";
+    width:5px; height:5px;
+    border-radius:50%;
+    background: var(--ink-soft);
+    margin-top:6px;
+    flex-shrink:0;
+    opacity:0.35;
+  }
+  .back-foot{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    padding-top:8px;
+    margin-top:6px;
+    border-top: 1px solid rgba(18,18,20,0.14);
+  }
+  .back-foot button{
+    all:unset;
+    cursor:pointer;
+    font: 700 10px/1 -apple-system, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color: var(--ink);
+    padding: 6px 10px;
+    border: 1px solid rgba(18,18,20,0.3);
+    border-radius: 2px;
+  }
+  .back-foot button:hover{ background: rgba(18,18,20,0.06); }
+
+  footer{
+    max-width: 1040px;
+    margin: 56px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    font: 400 12px/1.6 -apple-system, sans-serif;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .card-inner{ transition: none; }
+  }
+</style>
+
+<div class="wrap">
+  <div class="page-head">
+    <p class="eyebrow">Teddy Riley Archive</p>
+    <h1>1980's, <em>reimagined as sleeves you flip.</em></h1>
+    <p>Every 1980s production and remix credit, cover art first. Click a sleeve to flip it and read every pressing on the back, like flipping a record over to check the label.</p>
+  </div>
+
+  <div class="year-rule">1982</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1982-atlantis-keep-on-movin-and-groovin.jpg" alt="Atlantis – Keep On Movin' And Groovin' sleeve" loading="lazy">
+          <span class="tag">1982</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Atlantis</p>
+            <p class="title">Keep On Movin' And Groovin'</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Atlantis — Keep On Movin' And Groovin'</p>
+            <p class="label-name">Barclay</p>
+          </div>
+          <ul class="tracks">
+            <li>Keep On Movin' And Groovin'</li>
+            <li>Keep On Movin' And Groovin' (Vocal)</li>
+            <li>Keep On Movin' And Groovin' (Instrumental)</li>
+            <li>Keep On Movin' And Groovin' ("Hard" Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="year-rule">1984</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1984-kids-at-work-sugar-baby.jpg" alt="Kids At Work – Sugar Baby sleeve" loading="lazy">
+          <span class="tag">1984</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kids At Work</p>
+            <p class="title">Sugar Baby</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kids At Work — Sugar Baby</p>
+            <p class="label-name">Sound Of New York</p>
+          </div>
+          <ul class="tracks">
+            <li>Sugar Baby (Vocal Version) (7&Prime; Edit)</li>
+            <li>Sugar Baby (Vocal Version)</li>
+            <li>Sugar Baby (Disco Version) (7&Prime; Edit)</li>
+            <li>Sugar Baby (Disco Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1984-kids-at-work-kids-at-work.jpg" alt="Kids At Work – Kids At Work sleeve" loading="lazy">
+          <span class="tag">1984</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kids At Work</p>
+            <p class="title">Kids At Work</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kids At Work — Kids At Work</p>
+            <p class="label-name">Sound Of New York</p>
+          </div>
+          <ul class="tracks">
+            <li>01 – She's My Baby</li>
+            <li>02 – Never Hurt Me</li>
+            <li>03 – Singing Hey Yea</li>
+            <li>04 – Reggae Kids</li>
+            <li>05 – All-N-All</li>
+            <li>06 – Sugar Baby</li>
+            <li>07 – She's My Baby (Dub Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1984-kids-at-work-singing-hey-yea.jpg" alt="Kids At Work – Singing Hey Yea sleeve" loading="lazy">
+          <span class="tag">1984</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kids At Work</p>
+            <p class="title">Singing Hey Yea</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kids At Work — Singing Hey Yea</p>
+            <p class="label-name">Sound Of New York</p>
+          </div>
+          <ul class="tracks">
+            <li>Singing Hey Yea (7&Prime; Edit)</li>
+            <li>Singing Hey Yea</li>
+            <li>Reggae Kids (7&Prime; Edit)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="year-rule">1985</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1985-doug-e-fresh-and-the-get-fresh-crew-the-show-la-di-da-di.jpg" alt="Doug E. Fresh And The Get Fresh Crew – The Show / La-Di-Da-Di sleeve" loading="lazy">
+          <span class="tag">1985</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Doug E. Fresh And The Get Fresh Crew</p>
+            <p class="title">The Show / La-Di-Da-Di</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Doug E. Fresh And The Get Fresh Crew — The Show / La-Di-Da-Di</p>
+            <p class="label-name">Reality</p>
+          </div>
+          <ul class="tracks">
+            <li>The Show (Vocal)</li>
+            <li>The Show</li>
+            <li>La-Di-Da-Di</li>
+            <li>The Show (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1985-la-va-ba-that-girl.jpg" alt="La Va'ba – That Girl sleeve" loading="lazy">
+          <span class="tag">1985</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">La Va'ba</p>
+            <p class="title">That Girl</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">La Va'ba — That Girl</p>
+            <p class="label-name">Sugar Hill Records</p>
+          </div>
+          <ul class="tracks">
+            <li>The Show (Vocal)</li>
+            <li>The Show</li>
+            <li>La-Di-Da-Di</li>
+            <li>The Show (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1985-the-masters-of-ceremony-crime.jpg" alt="The Masters Of Ceremony – Crime sleeve" loading="lazy">
+          <span class="tag">1985</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Masters Of Ceremony</p>
+            <p class="title">Crime</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Masters Of Ceremony — Crime</p>
+            <p class="label-name">M-Low Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Crime (Vocal)</li>
+            <li>Crime (Instrumental)</li>
+            <li>Crime (Dub Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="year-rule">1986</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1986-al-b-just-two-mc-s-wrong.jpg" alt="Al B. Just Two Mc's – Wrong sleeve" loading="lazy">
+          <span class="tag">1986</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Al B. Just Two Mc's</p>
+            <p class="title">Wrong</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Al B. Just Two Mc's — Wrong</p>
+            <p class="label-name">World to World Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Wong</li>
+            <li>Wong (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1986-awesome-foursome-monster-beat.jpg" alt="Awesome Foursome – Monster Beat sleeve" loading="lazy">
+          <span class="tag">1986</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Awesome Foursome</p>
+            <p class="title">Monster Beat</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Awesome Foursome — Monster Beat</p>
+            <p class="label-name">Reality</p>
+          </div>
+          <ul class="tracks">
+            <li>Monster Beat</li>
+            <li>Monster Beat (Short Version)</li>
+            <li>Monster Beat (Dub)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1986-b-fats-woppit.jpg" alt="B-Fats – Woppit sleeve" loading="lazy">
+          <span class="tag">1986</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">B-Fats</p>
+            <p class="title">Woppit</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">B-Fats — Woppit</p>
+            <p class="label-name">Posse Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Woppit</li>
+            <li>Woppit (Dub Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1986-delicious-my-body-and-soul.jpg" alt="Delicious – My Body And Soul sleeve" loading="lazy">
+          <span class="tag">1986</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Delicious</p>
+            <p class="title">My Body And Soul</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Delicious — My Body And Soul</p>
+            <p class="label-name">Twin Tower Records</p>
+          </div>
+          <ul class="tracks">
+            <li>My Body And Soul (Main)</li>
+            <li>My Body And Soul (Short)</li>
+            <li>My Body And Soul (Radio Version)</li>
+            <li>My Body And Soul (Instrumental)</li>
+            <li>My Body and Soul (Instrumental '86)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1986-disco-four-get-busy-stomp-stomp-clap.jpg" alt="Disco Four – Get Busy / Stomp, Stomp, Clap sleeve" loading="lazy">
+          <span class="tag">1986</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Disco Four</p>
+            <p class="title">Get Busy / Stomp, Stomp, Clap</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Disco Four — Get Busy / Stomp, Stomp, Clap</p>
+            <p class="label-name">Reality</p>
+          </div>
+          <ul class="tracks">
+            <li>Get Busy (Radio Edit)</li>
+            <li>Get Busy</li>
+            <li>Get Busy (Dub)</li>
+            <li>Stomp, Stomp, Clap (Vocal)</li>
+            <li>Stomp, Stomp, Clap (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1986-kool-moe-dee-go-see-the-doctor-monster-crack.jpg" alt="Kool Moe Dee – Go See The Doctor / Monster Crack sleeve" loading="lazy">
+          <span class="tag">1986</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">Go See The Doctor / Monster Crack</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — Go See The Doctor / Monster Crack</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Go See The Doctor (Uncensored)</li>
+            <li>Go See The Doctor (Almost Clean)</li>
+            <li>Go See the Doctor (Instrumental) (Explicit)</li>
+            <li>Monster Crack (Street Mix)</li>
+            <li>Monster Crack (Radio Edit)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1986-kids-at-work-so-bad-togetherness.jpg" alt="Kids At Work – So Bad / Togetherness sleeve" loading="lazy">
+          <span class="tag">1986</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kids At Work</p>
+            <p class="title">So Bad / Togetherness</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kids At Work — So Bad / Togetherness</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Togetherness</li>
+            <li>She's So Bad</li>
+            <li>So Bad Mix</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1986-ray-rock-k-c-minnie-rayrock-kick-it.jpg" alt="Ray Rock &amp; K.C. – Minnie / Rayrock Kick It sleeve" loading="lazy">
+          <span class="tag">1986</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Ray Rock &amp; K.C.</p>
+            <p class="title">Minnie / Rayrock Kick It</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Ray Rock &amp; K.C. — Minnie / Rayrock Kick It</p>
+            <p class="label-name">N.V.</p>
+          </div>
+          <ul class="tracks">
+            <li>Minnie (Long Version)</li>
+            <li>Minnie (Dub)</li>
+            <li>Minnie (Short Version)</li>
+            <li>Rayrock Kick It (Vocal Version)</li>
+            <li>Rayrock Kick It (Dub)</li>
+            <li>Rayrock Kick It (Short Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="year-rule">1987</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-b-fats-b-fats.jpg" alt="B-Fats – B-Fats sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">B-Fats</p>
+            <p class="title">B-Fats</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">B-Fats — B-Fats</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>The B-Fats</li>
+            <li>The B-Fats (Radio Mix)</li>
+            <li>The B-Fats (Dub)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-d-j-hollywood-love-in-the-afternoon.jpg" alt="D.J. Hollywood – Love In The Afternoon sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">D.J. Hollywood</p>
+            <p class="title">Love In The Afternoon</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">D.J. Hollywood — Love In The Afternoon</p>
+            <p class="label-name">World to World Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Love In The Afternoon</li>
+            <li>Love In The Afternoon (Dub Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-d-j-short-max-zeke-my-phone.jpg" alt="D.J. Short &amp; Max Zeke – My Phone sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">D.J. Short &amp; Max Zeke</p>
+            <p class="title">My Phone</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">D.J. Short &amp; Max Zeke — My Phone</p>
+            <p class="label-name">Hechomance Records</p>
+          </div>
+          <ul class="tracks">
+            <li>My Phone</li>
+            <li>My Phone (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-delicious-stop-playing.jpg" alt="Delicious – Stop Playing sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Delicious</p>
+            <p class="title">Stop Playing</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Delicious — Stop Playing</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Stop Playing (Radio Version)</li>
+            <li>Stop Playing (Club Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-divine-force-t-v-guide-the-jizer-we-came-here.jpg" alt="Divine Force – T.V. Guide / The Jizer / We Came Here sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Divine Force</p>
+            <p class="title">T.V. Guide / The Jizer / We Came Here</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Divine Force — T.V. Guide / The Jizer / We Came Here</p>
+            <p class="label-name">Yamak-ka Records</p>
+          </div>
+          <ul class="tracks">
+            <li>T.V. Guide (Vocal)</li>
+            <li>The Jizer (Vocal)</li>
+            <li>We Came Here… (Vocal)</li>
+            <li>We Came Here… (Dub)</li>
+            <li>The Jizer (Listen To This) (Dub)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-heavy-d-the-boyz-living-large.jpg" alt="Heavy D. &amp; The Boyz – Living Large sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Heavy D. &amp; The Boyz</p>
+            <p class="title">Living Large</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Heavy D. &amp; The Boyz — Living Large</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — The Overweight Lover's In The House</li>
+            <li>02 — Nike</li>
+            <li>03 — Chunky But Funky (Remix)</li>
+            <li>04 — Dedicated</li>
+            <li>05 — Here We Go</li>
+            <li>06 — On The Dance Floor</li>
+            <li>07 — Money-Earnin' Mount Vernon</li>
+            <li>08 — I'm Gonna Make You Love Me</li>
+            <li>10 — I'm Getting Paid</li>
+            <li>11 — Rock The Bass</li>
+            <li>12 — Mr. Big Stuff (Remix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-heavy-d-the-boyz-featuring-al-b-sure-money-ernin-mt-vernon.jpg" alt="Heavy D. &amp; The Boyz Featuring Al B. Sure! – Money Ernin' Mt. Vernon sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Heavy D. &amp; The Boyz Featuring Al B. Sure!</p>
+            <p class="title">Money Ernin' Mt. Vernon</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Heavy D. &amp; The Boyz Featuring Al B. Sure! — Money Ernin' Mt. Vernon</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Money Ernin' Mt. Vernon (12&Prime;)</li>
+            <li>Money Ernin' Mt. Vernon (Instrumental)</li>
+            <li>Money Ernin' Mt. Vernon (Bonus Beats)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-keith-sweat-i-want-her.jpg" alt="Keith Sweat – I Want Her sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Keith Sweat</p>
+            <p class="title">I Want Her</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Keith Sweat — I Want Her</p>
+            <p class="label-name">Vintertainment</p>
+          </div>
+          <ul class="tracks">
+            <li>I Want Her (Edit Of LP Version)</li>
+            <li>I Want Her (Instrumental)</li>
+            <li>I Want Her (LP Version)</li>
+            <li>I Want Her (Extended Version)</li>
+            <li>I Want Her (Acappella Dub Beat)</li>
+            <li>I Want Her (Part 2)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-keith-sweat-make-it-last-forever.jpg" alt="Keith Sweat – Make It Last Forever sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Keith Sweat</p>
+            <p class="title">Make It Last Forever</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Keith Sweat — Make It Last Forever</p>
+            <p class="label-name">Vintertainment</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — Something Just Ain't Right</li>
+            <li>02 — Right And A Wrong Way</li>
+            <li>03 — Tell Me It's Me You Want</li>
+            <li>04 — I Want Her</li>
+            <li>05 — Make It Last Forever</li>
+            <li>06 — In The Rain</li>
+            <li>07 — How Deep Is Your Love</li>
+            <li>08 — Don't Stop Your Love</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-kool-moe-dee-do-you-know-what-time-it-is-i-m-kool-moe-dee.jpg" alt="Kool Moe Dee – Do You Know What Time It Is? / I'm Kool Moe Dee sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">Do You Know What Time It Is? / I'm Kool Moe Dee</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — Do You Know What Time It Is? / I'm Kool Moe Dee</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>Do You Know What Time It Is? (12&Prime; Remix)</li>
+            <li>Do You Know What Time It Is? (Instrumental Version)</li>
+            <li>I'm Kool Moe Dee (Instrumental Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-kool-moe-dee-dumb-dick-richard.jpg" alt="Kool Moe Dee – Dumb Dick (Richard) sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">Dumb Dick (Richard)</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — Dumb Dick (Richard)</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>Dumb Dick (Extended Version)</li>
+            <li>Dumb Dick (Single Edit)</li>
+            <li>Dumb Dick (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-kool-moe-dee-how-ya-like-me-now.jpg" alt="Kool Moe Dee – How Ya Like Me Now sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">How Ya Like Me Now</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — How Ya Like Me Now</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>How Ya Like Me Now (Extended Mix)</li>
+            <li>How Ya Like Me Now (Single Edit)</li>
+            <li>How Ya Like Me Now (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-kool-moe-dee-how-ya-like-me-now-2.jpg" alt="Kool Moe Dee – How Ya Like Me Now sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">How Ya Like Me Now</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — How Ya Like Me Now</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — How Ya Like Me Now</li>
+            <li>02 — Wild Wild West</li>
+            <li>03 — Way Way Back</li>
+            <li>04 — 50 Ways</li>
+            <li>05 — No Respect</li>
+            <li>06 — Don't Dance</li>
+            <li>07 — I'm A Player</li>
+            <li>08 — Suckers</li>
+            <li>09 — Stupid</li>
+            <li>10 — Rock You</li>
+            <li>11 — Get Paid</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-kool-moe-dee-kool-moe-dee.jpg" alt="Kool Moe Dee – Kool Moe Dee sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">Kool Moe Dee</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — Kool Moe Dee</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — Go See The Doctor</li>
+            <li>02 — Dumb Dick (Richard)</li>
+            <li>03 — Bad Mutha</li>
+            <li>04 — Little Jon</li>
+            <li>05 — Do You Know What Time It Is?</li>
+            <li>06 — Rock Steady</li>
+            <li>07 — Monster Crack</li>
+            <li>08 — The Best</li>
+            <li>09 —I'm Kool Moe Dee</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-kool-moe-dee-wild-wild-west.jpg" alt="Kool Moe Dee – Wild, Wild West sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">Wild, Wild West</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — Wild, Wild West</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>Wild, Wild West (Special Extended Re-mix)</li>
+            <li>Wild, Wild West (Single Edit)</li>
+            <li>Wild, Wild West (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-roof-top-crew-caught-out-there.jpg" alt="Roof Top Crew – Caught Out There sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Roof Top Crew</p>
+            <p class="title">Caught Out There</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Roof Top Crew — Caught Out There</p>
+            <p class="label-name">Hechomance Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Hechomance Records</li>
+            <li>Caught Out There</li>
+            <li>Caught Out There (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-spoonie-gee-i-m-all-shook-up.jpg" alt="Spoonie Gee – I'm All Shook Up sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Spoonie Gee</p>
+            <p class="title">I'm All Shook Up</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Spoonie Gee — I'm All Shook Up</p>
+            <p class="label-name">Tuff City</p>
+          </div>
+          <ul class="tracks">
+            <li>I'm All Shook Up</li>
+            <li>I'm All Shook Up (Instrumental)</li>
+            <li>I'm All Shook Up (Bonus Beats)</li>
+            <li>Spoonie's Rap (Live)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-the-classical-two-new-generation.jpg" alt="The Classical Two – New Generation sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Classical Two</p>
+            <p class="title">New Generation</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Classical Two — New Generation</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>New Generation</li>
+            <li>(She's A) Freak Dog</li>
+            <li>Next Generation Dub</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-the-crash-crew-the-crash-crew-is-back.jpg" alt="The Crash Crew – The Crash Crew Is Back sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Crash Crew</p>
+            <p class="title">The Crash Crew Is Back</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Crash Crew — The Crash Crew Is Back</p>
+            <p class="label-name">World To World Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Crash Crew Is Back (Vocal)</li>
+            <li>Crash Crew's Back (Dub)</li>
+            <li>Back From Vacation</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-tony-tee-the-composer-expressing-my-thoughts.jpg" alt="Tony Tee The Composer – Expressing My Thoughts sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Tony Tee The Composer</p>
+            <p class="title">Expressing My Thoughts</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Tony Tee The Composer — Expressing My Thoughts</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Expressing My Thoughts</li>
+            <li>Rap Is Music</li>
+            <li>Expressing My Thoughts (Dub)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1987-woody-rock-bigger-s-beat.jpg" alt="Woody Rock – Bigger's Beat sleeve" loading="lazy">
+          <span class="tag">1987</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Woody Rock</p>
+            <p class="title">Bigger's Beat</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Woody Rock — Bigger's Beat</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>I Introduce The Beat (Radio Mix)</li>
+            <li>I Introduce The Beat (Instrumental)</li>
+            <li>I Introduce The Beat (Extended)</li>
+            <li>I Introduce The Beat (Hip Hop Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="year-rule">1988</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-al-b-sure-in-effect-mode.jpg" alt="Al B. Sure! – In Effect Mode sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Al B. Sure!</p>
+            <p class="title">In Effect Mode</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Al B. Sure! — In Effect Mode</p>
+            <p class="label-name">Uptown Records</p>
+          </div>
+          <ul class="tracks">
+            <li>07 — If I'm Not Your Lover</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-al-b-sure-feat-slick-rick-if-i-m-not-your-lover.jpg" alt="Al B. Sure! feat. Slick Rick – If I'm Not Your Lover sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Al B. Sure! feat. Slick Rick</p>
+            <p class="title">If I'm Not Your Lover</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Al B. Sure! feat. Slick Rick — If I'm Not Your Lover</p>
+            <p class="label-name">Uptown Records</p>
+          </div>
+          <ul class="tracks">
+            <li>If I'm Not Your Lover (12&Prime; Remix)</li>
+            <li>If I'm Not Your Lover (LP Version)</li>
+            <li>If I'm Not Your Lover (R&amp;B Remix)</li>
+            <li>If I'm Not Your Lover (7&Prime; Remix)</li>
+            <li>If I'm Not Your Lover (CHR Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-billy-ocean-tear-down-these-walls.jpg" alt="Billy Ocean – Tear Down These Walls sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Billy Ocean</p>
+            <p class="title">Tear Down These Walls</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Billy Ocean — Tear Down These Walls</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — Tear Down These Walls</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-blondie-rapture-the-teddy-riley-remix.jpg" alt="Blondie – Rapture (The Teddy Riley Remix) sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Blondie</p>
+            <p class="title">Rapture (The Teddy Riley Remix)</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Blondie — Rapture (The Teddy Riley Remix)</p>
+            <p class="label-name">Chrysalis</p>
+          </div>
+          <ul class="tracks">
+            <li>Rapture (The Teddy Riley 7&Prime; Remix)</li>
+            <li>Rapture (The Teddy Riley Remix)</li>
+            <li>Rapture (Dub Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-bobby-brown-don-t-be-cruel.jpg" alt="Bobby Brown – Don't Be Cruel sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Bobby Brown</p>
+            <p class="title">Don't Be Cruel</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Bobby Brown — Don't Be Cruel</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>03 — My Prerogative</li>
+            <li>07 — I'll Be Good To You</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-bobby-brown-my-prerogative.jpg" alt="Bobby Brown – My Prerogative sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Bobby Brown</p>
+            <p class="title">My Prerogative</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Bobby Brown — My Prerogative</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>My Prerogative (7&Prime; Version)</li>
+            <li>My Prerogative (Radio Edit)</li>
+            <li>My Prerogative (Extended Remix)</li>
+            <li>My Prerogative (Dub)</li>
+            <li>My Prerogative (Instrumental) 5:20</li>
+            <li>My Prerogative (Instrumental) 4:30</li>
+            <li>My Prerogative (CHR Edit)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-clurel-hurtown.jpg" alt="Clurel – Hurtown sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Clurel</p>
+            <p class="title">Hurtown</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Clurel — Hurtown</p>
+            <p class="label-name">Rooftop Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Hurtown (Radio Version)</li>
+            <li>Hurtown (T.V. Version)</li>
+            <li>Hurtown (Dub Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-d-j-going-crazy.jpg" alt="Déjà – Going Crazy sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Déjà</p>
+            <p class="title">Going Crazy</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Déjà — Going Crazy</p>
+            <p class="label-name">Virgin</p>
+          </div>
+          <ul class="tracks">
+            <li>Going Crazy (12&Prime; Mix)</li>
+            <li>Going Crazy (Dub)</li>
+            <li>Going Crazy (7&Prime; Edit)</li>
+            <li>Going Crazy (Alt. 12&Prime;)</li>
+            <li>Going Crazy (Alt. Dub)</li>
+            <li>Goin' Crazy (Bonus Beats)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-d-j-made-to-be-together.jpg" alt="Déjà – Made To Be Together sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Déjà</p>
+            <p class="title">Made To Be Together</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Déjà — Made To Be Together</p>
+            <p class="label-name">Virgin</p>
+          </div>
+          <ul class="tracks">
+            <li>Made To Be Together (7&Prime; Remix)</li>
+            <li>Made To Be Together (12&Prime; Mix)</li>
+            <li>Made To Be Together (Accapella)</li>
+            <li>Made To Be Together (Dub)</li>
+            <li>Made To Be Together (Jazz)</li>
+            <li>Made To Be Together (Engagement Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-guy-groove-me.jpg" alt="Guy – Groove Me sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Guy</p>
+            <p class="title">Groove Me</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Guy — Groove Me</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Groove Me (Extended Version 1) (7:53)</li>
+            <li>Groove Me (Extended Version 2) (7:11)</li>
+            <li>Groove Me (Extended Version 3 ) (6:10)</li>
+            <li>Groove Me (Radio Edit)</li>
+            <li>Groove Me (Radio Mix)</li>
+            <li>Groove Me (Bassapella)</li>
+            <li>Groove Me (Bonus Beats)</li>
+            <li>Groove Me (A Cappella)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-guy-guy.jpg" alt="Guy – Guy sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Guy</p>
+            <p class="title">Guy</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Guy — Guy</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — Groove Me</li>
+            <li>02 — Teddy's Jam</li>
+            <li>03 — Don't Clap … Just Dance</li>
+            <li>04 — You Can Call Me Crazy</li>
+            <li>05 — Piece Of My Love</li>
+            <li>06 — I Like</li>
+            <li>07 — 'Round And 'Round (Merry Go 'Round Of Love)</li>
+            <li>08 — Spend The Night</li>
+            <li>09 — Goodbye Love</li>
+            <li>10 — My Business</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-guy-round-and-round-merry-go-round-of-love.jpg" alt="Guy – 'Round And 'Round (Merry Go 'Round Of Love) sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Guy</p>
+            <p class="title">'Round And 'Round (Merry Go 'Round Of Love)</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Guy — 'Round And 'Round (Merry Go 'Round Of Love)</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>'Round And 'Round (Merry Go 'Round Of Love) (12&Prime; Extended Version)</li>
+            <li>'Round And 'Round (Merry Go 'Round Of Love) (Acapella)</li>
+            <li>'Round And 'Round (Merry Go 'Round Of Love) (Radio Edit)</li>
+            <li>'Round And 'Round (Merry Go 'Round Of Love) (Dub Version)</li>
+            <li>'Round And 'Round (Merry Go 'Round Of Love) (House Mix)</li>
+            <li>'Round And 'Round (Merry Go 'Round Of Love) (Bonus Beats)</li>
+            <li>'Round And 'Round (Merry Go 'Round Of Love) (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-guy-teddy-s-jam.jpg" alt="Guy – Teddy's Jam sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Guy</p>
+            <p class="title">Teddy's Jam</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Guy — Teddy's Jam</p>
+            <p class="label-name">Uptown Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Teddy's Jam (Radio Edit)</li>
+            <li>Teddy's Jam (Extended 01)</li>
+            <li>Teddy's Jam (Club / Extended Mix)</li>
+            <li>Teddy's Jam (Hype Mix)</li>
+            <li>Teddy's Jam (Hype Beats)</li>
+            <li>Teddy's Jam (Bonus Beats)</li>
+            <li>Teddy's Jazz</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-heavy-d-the-boyz-don-t-you-know-moneyearnin-mount-vernon.jpg" alt="Heavy D &amp; The Boyz – Don't You Know / Moneyearnin' Mount Vernon sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Heavy D &amp; The Boyz</p>
+            <p class="title">Don't You Know / Moneyearnin' Mount Vernon</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Heavy D &amp; The Boyz — Don't You Know / Moneyearnin' Mount Vernon</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Moneyearnin' Mount Vernon (12&Prime; Vocal Mix)</li>
+            <li>Moneyearnin' Mount Vernon (Instrumental)</li>
+            <li>Moneyearnin' Mount Vernon (Bonus Beats)</li>
+            <li>Moneyearnin' Mount Vernon (Instrumental 02)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-johnny-kemp-secrets-of-flying.jpg" alt="Johnny Kemp – Secrets Of Flying sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Johnny Kemp</p>
+            <p class="title">Secrets Of Flying</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Johnny Kemp — Secrets Of Flying</p>
+            <p class="label-name">CBS</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — Just Got Paid</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-johnny-kemp-just-got-paid.jpg" alt="Johnny Kemp – Just Got Paid sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Johnny Kemp</p>
+            <p class="title">Just Got Paid</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Johnny Kemp — Just Got Paid</p>
+            <p class="label-name">CBS</p>
+          </div>
+          <ul class="tracks">
+            <li>Just Got Paid (7&Prime; Version)</li>
+            <li>Just Got Paid (7&Prime; Instrumental)</li>
+            <li>Just Got Paid (Dub Mix)</li>
+            <li>Just Got Paid (LP Version)</li>
+            <li>Just Got Paid (Album Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-jonathan-butler-more-than-friends.jpg" alt="Jonathan Butler – More Than Friends sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Jonathan Butler</p>
+            <p class="title">More Than Friends</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Jonathan Butler — More Than Friends</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>07 — She's Hot (Burning Up)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-keith-sweat-make-it-last-forever.jpg" alt="Keith Sweat – Make It Last Forever sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Keith Sweat</p>
+            <p class="title">Make It Last Forever</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Keith Sweat — Make It Last Forever</p>
+            <p class="label-name">Vintertainment</p>
+          </div>
+          <ul class="tracks">
+            <li>Make It Last Forever (Extended)</li>
+            <li>Make It Last Forever (LP Mix)</li>
+            <li>Make It Last Forever (Vocal Beat)</li>
+            <li>Make It Last Forever (Instrumental)</li>
+            <li>Make It Last Forever (Edit Of LP Version) / (Edited Version) / (LP Edit)</li>
+            <li>Make It Last Forever (Edit)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-kool-moe-dee-no-respect.jpg" alt="Kool Moe Dee – No Respect sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">No Respect</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — No Respect</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>No Respect (Single Edit)</li>
+            <li>No Respect (Extended Version)</li>
+            <li>No Respect (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-levert-just-coolin.jpg" alt="Levert – Just Coolin' sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Levert</p>
+            <p class="title">Just Coolin'</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Levert — Just Coolin'</p>
+            <p class="label-name">Atlantic</p>
+          </div>
+          <ul class="tracks">
+            <li>02 — Just Coolin' feat. Heavy D</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-stevie-wonder-my-eyes-don-t-cry.jpg" alt="Stevie Wonder – My Eyes Don't Cry sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Stevie Wonder</p>
+            <p class="title">My Eyes Don't Cry</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Stevie Wonder — My Eyes Don't Cry</p>
+            <p class="label-name">Motown</p>
+          </div>
+          <ul class="tracks">
+            <li>My Eyes Don't Cry (Extended Version)</li>
+            <li>My Eyes Don't Cry (Radio Edit)</li>
+            <li>My Eyes Don't Cry (Dub Mix)</li>
+            <li>My Eyes Don't Cry (Album Version)</li>
+            <li>My Eyes Don't Cry (12&Prime; Version)</li>
+            <li>My Eyes Don't Cry (A Cappella)</li>
+            <li>My Eyes Don't Cry (Beats)</li>
+            <li>My Eyes Don't Cry (Dub Version)</li>
+            <li>My Eyes Don't Cry (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-the-classical-two-the-classical-two-is-back.jpg" alt="The Classical Two – The Classical Two Is Back sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Classical Two</p>
+            <p class="title">The Classical Two Is Back</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Classical Two — The Classical Two Is Back</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>The Classical Two Is Back (Vocal)</li>
+            <li>The Classical Two Is Back (Instrumental)</li>
+            <li>The Classical Two Is Back (Dub)</li>
+            <li>New York's On Fire (Vocal)</li>
+            <li>New York's On Fire (Instrumental)</li>
+            <li>New York's On Fire (Dub)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-the-gyrlz-love-me-or-leave-me.jpg" alt="The Gyrlz – Love Me Or Leave Me sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Gyrlz</p>
+            <p class="title">Love Me Or Leave Me</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Gyrlz — Love Me Or Leave Me</p>
+            <p class="label-name">Capitol</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — If It's Games You're Playing</li>
+            <li>02 — Do You Want Me</li>
+            <li>03 — Wishing You Were Here</li>
+            <li>04 — Jam Jam (If You Can)</li>
+            <li>05 — Think You Know Me</li>
+            <li>06 — It's Over</li>
+            <li>07 — It's All Because Of You</li>
+            <li>08 — Love Stories</li>
+            <li>09 — Love Me Or Leave Me</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-the-gyrlz-wishing-you-were-here.jpg" alt="The Gyrlz – Wishing You Were Here sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Gyrlz</p>
+            <p class="title">Wishing You Were Here</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Gyrlz — Wishing You Were Here</p>
+            <p class="label-name">Capitol</p>
+          </div>
+          <ul class="tracks">
+            <li>Wishing You Were Here (Gyrlz Meet Boyz 12" Mix)</li>
+            <li>Wishing You Were Here (7" Edit)</li>
+            <li>Wishing You Were Here (Percappella Mix)</li>
+            <li>Wishing You Were Here (Down South Dub)</li>
+            <li>Wishing You Were Here (Uptown Instrumental)</li>
+            <li>Wishing You Were Here (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-the-wee-papa-girl-rappers-faith.jpg" alt="The Wee Papa Girl Rappers – Faith sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Wee Papa Girl Rappers</p>
+            <p class="title">Faith</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Wee Papa Girl Rappers — Faith</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>Faith (Single Version)</li>
+            <li>Faith (Extended Version)</li>
+            <li>Faith (Instrumental Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-the-wee-papa-girl-rappers-the-beat-the-rhyme-the-noise.jpg" alt="The Wee Papa Girl Rappers – The Beat, the Rhyme, the Noise sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Wee Papa Girl Rappers</p>
+            <p class="title">The Beat, the Rhyme, the Noise</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Wee Papa Girl Rappers — The Beat, the Rhyme, the Noise</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>02 — Faith</li>
+            <li>09 — You've Got the Beat</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-today-today.jpg" alt="Today – Today sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Today</p>
+            <p class="title">Today</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Today — Today</p>
+            <p class="label-name">Motown</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — Him Or Me</li>
+            <li>02 — Girl I Got My Eyes On You</li>
+            <li>03 — Take It Off</li>
+            <li>04 — Take Your Time</li>
+            <li>05 — Style</li>
+            <li>06 — You Stood Me Up</li>
+            <li>07 — Your Love Is Not True</li>
+            <li>08 — Lady</li>
+            <li>09 — Sexy Lady</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-today-him-or-me.jpg" alt="Today – Him Or Me sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Today</p>
+            <p class="title">Him Or Me</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Today — Him Or Me</p>
+            <p class="label-name">Motown</p>
+          </div>
+          <ul class="tracks">
+            <li>Him Or Me (12" Version)</li>
+            <li>Him Or Me (Radio Edit)</li>
+            <li>Him Or Me (Dub)</li>
+            <li>Him Or Me (Bonus Beats)</li>
+            <li>Him Or Me (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-tony-toni-ton-baby-doll.jpg" alt="Tony! Toni! Toné! – Baby Doll sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Tony! Toni! Toné!</p>
+            <p class="title">Baby Doll</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Tony! Toni! Toné! — Baby Doll</p>
+            <p class="label-name">Wing</p>
+          </div>
+          <ul class="tracks">
+            <li>Baby Doll (Teddy's 12")</li>
+            <li>Baby Doll (Teddy's 7")</li>
+            <li>Baby Doll (Teddy's Dub)</li>
+            <li>Baby Doll (Teddy's Beats)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-wrecks-n-effect-wrecks-n-effect.jpg" alt="Wrecks-N-Effect – Wrecks-N-Effect sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Wrecks-N-Effect</p>
+            <p class="title">Wrecks-N-Effect</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Wrecks-N-Effect — Wrecks-N-Effect</p>
+            <p class="label-name">Atlantic Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — Go For What U Know</li>
+            <li>02 — We The Mafia</li>
+            <li>03 — Wrecks-N-Effect</li>
+            <li>04 — I Need Money</li>
+            <li>05 — Let's Do It Again</li>
+            <li>06 — Wrecks-N-Effect (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-wrecks-n-effect-go-for-what-u-know.jpg" alt="Wrecks-N-Effect – Go For What U Know sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Wrecks-N-Effect</p>
+            <p class="title">Go For What U Know</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Wrecks-N-Effect — Go For What U Know</p>
+            <p class="label-name">Atlantic Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Go For What U Know (Vocal + Extended 12" Remix)</li>
+            <li>Go For What U Know (Vocal + Radio Mix)</li>
+            <li>Go For What U Know (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-wrecks-n-effect-let-s-do-it-again.jpg" alt="Wrecks-N-Effect – Let's Do It Again sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Wrecks-N-Effect</p>
+            <p class="title">Let's Do It Again</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Wrecks-N-Effect — Let's Do It Again</p>
+            <p class="label-name">Atlantic Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Let's Do It Again (LP Version)</li>
+            <li>Let's Do It Again (Edited Version)</li>
+            <li>Let's Do It Again (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1988-wrecks-n-effect-wrecks-n-effect-2.jpg" alt="Wrecks-N-Effect – Wrecks-N-Effect sleeve" loading="lazy">
+          <span class="tag">1988</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Wrecks-N-Effect</p>
+            <p class="title">Wrecks-N-Effect</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Wrecks-N-Effect — Wrecks-N-Effect</p>
+            <p class="label-name">Motown</p>
+          </div>
+          <ul class="tracks">
+            <li>01 — New Jack Swing</li>
+            <li>02 — Leave The Mike Smokin'</li>
+            <li>03 — Juicy</li>
+            <li>04 — Club Head</li>
+            <li>05 — Soul Man</li>
+            <li>06 — Deep</li>
+            <li>07 — Wipe Your Sweat</li>
+            <li>08 — V-Man</li>
+            <li>09 — Peanut Butter</li>
+            <li>10 — Friends To The End</li>
+            <li>11 — Rock Steady</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="year-rule">1989</div>
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-abstrac-abstrac.jpg" alt="Abstrac' – Abstrac' sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Abstrac'</p>
+            <p class="title">Abstrac'</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Abstrac' — Abstrac'</p>
+            <p class="label-name">Reprise Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01 Lookin' Out For #1</li>
+            <li>02 I'll Be Your Friend</li>
+            <li>03 Sleaze</li>
+            <li>04 Right And Hype</li>
+            <li>05 Make Me Sweat</li>
+            <li>06 Strategy</li>
+            <li>07 Trust Me</li>
+            <li>08 Buggin' Over You</li>
+            <li>09 You're My Kind Of Guy</li>
+            <li>10 You Are The Party (I Am The Fun)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-abstrac-right-and-hype.jpg" alt="Abstrac' – Right And Hype sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Abstrac'</p>
+            <p class="title">Right And Hype</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Abstrac' — Right And Hype</p>
+            <p class="label-name">Reprise Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Right And Hype (Remix Edit)</li>
+            <li>Right And Hype (12 Version)</li>
+            <li>Right And Hype (AccaFella Fade)</li>
+            <li>Right And Hype (Bonus Beats)</li>
+            <li>Right And Hype (Dave's Club Dub)</li>
+            <li>Right And Hype (Fade)</li>
+            <li>Right And Hype (LP Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-aretha-franklin-whitney-houston-it-isn-t-it-wasn-t-it-ain-t-never-gonna-be.jpg" alt="Aretha Franklin &amp; Whitney Houston – It Isn't, It Wasn't, It Ain't Never Gonna Be sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Aretha Franklin &amp; Whitney Houston</p>
+            <p class="title">It Isn't, It Wasn't, It Ain't Never Gonna Be</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Aretha Franklin &amp; Whitney Houston — It Isn't, It Wasn't, It Ain't Never Gonna Be</p>
+            <p class="label-name">Arista</p>
+          </div>
+          <ul class="tracks">
+            <li>It Isn't, It Wasn't, It Ain't Never Gonna Be (Extended Radio Mix)</li>
+            <li>It Isn't, It Wasn't, It Ain't Never Gonna Be (Hip Hop Radio Mix)</li>
+            <li>It Isn't, It Wasn't, It Ain't Never Gonna Be (House Radio Mix)</li>
+            <li>It Isn't, It Wasn't, It Ain't Never Gonna Be (New Jack Swing Dub Mix)</li>
+            <li>It Isn't, It Wasn't, It Ain't Never Gonna Be (Single Mix</li>
+            <li>It Isn't, It Wasn't, It Ain't Never Gonna Be (Teddy Riley Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-big-daddy-kane-i-get-the-job-done.jpg" alt="Big Daddy Kane – I Get The Job Done sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Big Daddy Kane</p>
+            <p class="title">I Get The Job Done</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Big Daddy Kane — I Get The Job Done</p>
+            <p class="label-name">Cold Chillin'</p>
+          </div>
+          <ul class="tracks">
+            <li>I Get The Job Done (LP Version)</li>
+            <li>I Get The Job Done (Dub)</li>
+            <li>I Get The Job Done (Edit)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-big-daddy-kane-it-s-a-big-daddy-thing.jpg" alt="Big Daddy Kane – It's A Big Daddy Thing sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Big Daddy Kane</p>
+            <p class="title">It's A Big Daddy Thing</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Big Daddy Kane — It's A Big Daddy Thing</p>
+            <p class="label-name">Cold Chillin'</p>
+          </div>
+          <ul class="tracks">
+            <li>I Get the Job Done (Album Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-bobby-brown-i-ll-be-good-to-you.jpg" alt="Bobby Brown – I'll Be Good To You sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Bobby Brown</p>
+            <p class="title">I'll Be Good To You</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Bobby Brown — I'll Be Good To You</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>I'll Be Good To You (7&Prime; Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-boy-george-don-t-take-my-mind-on-a-trip.jpg" alt="Boy George – Don't Take My Mind On A Trip sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Boy George</p>
+            <p class="title">Don't Take My Mind On A Trip</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Boy George — Don't Take My Mind On A Trip</p>
+            <p class="label-name">Virgin</p>
+          </div>
+          <ul class="tracks">
+            <li>Don't Take My Mind On A Trip (12&Prime; U.K. Acid)</li>
+            <li>Don't Take My Mind On A Trip (12&Prime; U.K. Acid Dub)</li>
+            <li>Don't Take My Mind On A Trip (Main Club 12&Prime;) / (U.S. Club Mix)</li>
+            <li>Don't Take My Mind On A Trip (7&Prime; Edit)</li>
+            <li>Don't Take My Mind On A Trip (Big Drum Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-boy-george-high-hat-boyfriend.jpeg" alt="Boy George – High Hat / Boyfriend sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Boy George</p>
+            <p class="title">High Hat / Boyfriend</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Boy George — High Hat / Boyfriend</p>
+            <p class="label-name">Virgin</p>
+          </div>
+          <ul class="tracks">
+            <li>01. Don't Take My Mind On A Trip</li>
+            <li>03. Whether They Like It Or Not</li>
+            <li>04. You Found Another Guy</li>
+            <li>06. I'm Not Sleeping Anymore</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-club-nouveau-no-friend-of-mine.jpg" alt="Club Nouveau – No Friend Of Mine sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Club Nouveau</p>
+            <p class="title">No Friend Of Mine</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Club Nouveau — No Friend Of Mine</p>
+            <p class="label-name">Warner Bros. Records</p>
+          </div>
+          <ul class="tracks">
+            <li>No Friend Of Mine (Street Mix)</li>
+            <li>No Friend Of Mine (7&Prime; Version)</li>
+            <li>No Friend Of Mine (12&Prime; Version)</li>
+            <li>No Friend Of Mine (Bonus Beats)</li>
+            <li>No Friend Of Mine (Club Mix)</li>
+            <li>No Friend Of Mine (Fade)</li>
+            <li>No Friend Of Mine (Instrumental)</li>
+            <li>No Friend Of Mine (Percapella)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-david-peaston-introducing-david-peaston.jpg" alt="David Peaston – Introducing … David Peaston sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">David Peaston</p>
+            <p class="title">Introducing … David Peaston</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">David Peaston — Introducing … David Peaston</p>
+            <p class="label-name">Geffen Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01.Two Wrongs (Don't Make It Right) (Album Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-david-peaston-two-wrongs-don-t-make-it-right.jpg" alt="David Peaston – Two Wrongs (Don't Make It Right) sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">David Peaston</p>
+            <p class="title">Two Wrongs (Don't Make It Right)</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">David Peaston — Two Wrongs (Don't Make It Right)</p>
+            <p class="label-name">Geffen Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Two Wrongs (Don't Make It Right) (Club Body Mix)</li>
+            <li>Two Wrongs (Don't Make It Right) (Percapella Mix)</li>
+            <li>Two Wrongs (Don't Make It Right) (Bonus Beats)</li>
+            <li>Two Wrongs (Don't Make It Right) (7 Radio Mix)</li>
+            <li>Two Wrongs (Don't Make It Right) (Almost There — Fairly Straight)</li>
+            <li>Two Wrongs (Don't Make Right) (Club 2 Body Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-david-peaston-we-re-all-in-this-together.jpg" alt="David Peaston – We're All In This Together sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">David Peaston</p>
+            <p class="title">We're All In This Together</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">David Peaston — We're All In This Together</p>
+            <p class="label-name">Geffen</p>
+          </div>
+          <ul class="tracks">
+            <li>We're All In This Together (12" Mix)</li>
+            <li>We're All In This Together (Club Mix Edit)</li>
+            <li>We're All In This Together (Club Mix)</li>
+            <li>We're All In This Together (Bonus Beats)</li>
+            <li>We're All In This Together (7" Remix)</li>
+            <li>We're All In This Together (Percappella Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-d-j-made-to-be-together.jpg" alt="Déjà – Made To Be Together sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Déjà</p>
+            <p class="title">Made To Be Together</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Déjà — Made To Be Together</p>
+            <p class="label-name">Virgin</p>
+          </div>
+          <ul class="tracks">
+            <li>01. Made To Be Together</li>
+            <li>02. Dreamer</li>
+            <li>03. Time Is Running Out</li>
+            <li>04. Waiting Downtown</li>
+            <li>05. Dance</li>
+            <li>06. More &amp; More</li>
+            <li>07. You Don't Appreciate My Love</li>
+            <li>08. Going Crazy</li>
+            <li>09. Patience And Time</li>
+            <li>10. Sexy DancerTracks</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-various-artists-do-the-right-thing-soundtrack.jpg" alt="Various Artists – Do The Right Thing Soundtrack sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Various Artists</p>
+            <p class="title">Do The Right Thing Soundtrack</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Various Artists — Do The Right Thing Soundtrack</p>
+            <p class="label-name">Motown</p>
+          </div>
+          <ul class="tracks">
+            <li>Teddy Riley Featuring Guy – My Fantasy</li>
+            <li>2001 Re-Release Bonus Tracks</li>
+            <li>Teddy Riley Featuring Guy – My Fantasy (Extended Version)</li>
+            <li>Teddy Riley Featuring Guy – My Fantasy (Rap Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-guy-don-t-clap-just-dance.jpg" alt="Guy – Don't Clap… Just Dance sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Guy</p>
+            <p class="title">Don't Clap… Just Dance</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Guy — Don't Clap… Just Dance</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Don't Clap… Just Dance (12&Prime; Mix)</li>
+            <li>Don't Clap… Just Dance (A Cappella)</li>
+            <li>Don't Clap… Just Dance (Drum Beats)</li>
+            <li>Don't Clap… Just Dance (Dub)</li>
+            <li>Don't Clap… Just Dance (Radio Edit)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-guy-i-like.jpg" alt="Guy – I Like sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Guy</p>
+            <p class="title">I Like</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Guy — I Like</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>I Like (Album Version)</li>
+            <li>I Like (Acappella)</li>
+            <li>I Like (Dub Version)</li>
+            <li>I Like (Extended Version)</li>
+            <li>I Like (Hype Mix)</li>
+            <li>I Like (Hype Version)</li>
+            <li>I Like (Instrumental)</li>
+            <li>I Like (Radio Edit)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-guy-spend-the-night.jpg" alt="Guy – Spend The Night sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Guy</p>
+            <p class="title">Spend The Night</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Guy — Spend The Night</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Spend The Night (Accapella)</li>
+            <li>Spend The Night (Album Version)</li>
+            <li>Spend The Night (Dub Version)</li>
+            <li>Spend The Night (Extended Version) Spend The Night (Instrumental)</li>
+            <li>Spend The Night (Radio Edit)</li>
+            <li>Spend The Night (Teddy's Rap)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-heavy-d-the-boyz-big-tyme.jpg" alt="Heavy D &amp; The Boyz – Big Tyme sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Heavy D &amp; The Boyz</p>
+            <p class="title">Big Tyme</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Heavy D &amp; The Boyz — Big Tyme</p>
+            <p class="label-name">Uptown Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01. We Got Our Own Thang</li>
+            <li>2022 Expanded Edition</li>
+            <li>14. We Got Our Own Thang (Club Version)</li>
+            <li>15. We Got Our Own Thang (7&Prime; Version)</li>
+            <li>16. We Got Our Own Thang (A Cappella)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-heavy-d-the-boyz-we-got-our-own-thang.jpg" alt="Heavy D. &amp; The Boyz – We Got Our Own Thang sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Heavy D. &amp; The Boyz</p>
+            <p class="title">We Got Our Own Thang</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Heavy D. &amp; The Boyz — We Got Our Own Thang</p>
+            <p class="label-name">Uptown Records</p>
+          </div>
+          <ul class="tracks">
+            <li>We Got Our Own Thang (7&Prime; Version)</li>
+            <li>We Got Our Own Thang (12&Prime; Vocal)</li>
+            <li>We Got Our Own Thang (A Cappella)</li>
+            <li>We Got Our Own Thang (Club Version)</li>
+            <li>We Got Our Own Thang (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-james-ingram-it-s-real.jpg" alt="James Ingram – It's Real sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">James Ingram</p>
+            <p class="title">It's Real</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">James Ingram — It's Real</p>
+            <p class="label-name">Warner Bros. Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01 It's Real</li>
+            <li>05 Love Come Down</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-james-ingram-it-s-real-2.jpg" alt="James Ingram – It's Real sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">James Ingram</p>
+            <p class="title">It's Real</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">James Ingram — It's Real</p>
+            <p class="label-name">Warner Bros. Records</p>
+          </div>
+          <ul class="tracks">
+            <li>It's Real (7" Edit)</li>
+            <li>It's Real (12" Extended Version)</li>
+            <li>It's Real (Smooth Dub Mix)</li>
+            <li>It's Real (Album Version)</li>
+            <li>It's Real (7&Prime; Instrumental Smooth Dub Moaner Mix)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-kool-moe-dee-all-night-long.jpg" alt="Kool Moe Dee – All Night Long sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">All Night Long</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — All Night Long</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>All Night Long (Extended Remix)</li>
+            <li>All Night Long (Single Edit)</li>
+            <li>All Night Long (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-kool-moe-dee-i-go-to-work.jpg" alt="Kool Moe Dee – I Go To Work sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">I Go To Work</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — I Go To Work</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>I Go to Work (Extended Remix)</li>
+            <li>I Go to Work (Single Edit)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-kool-moe-dee-knowledge-is-king.jpg" alt="Kool Moe Dee – Knowledge Is King sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">Knowledge Is King</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — Knowledge Is King</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>01. They Want Money</li>
+            <li>02. The Avenue</li>
+            <li>03. I Go To Work</li>
+            <li>04. All Night Long</li>
+            <li>05. Knowledge Is King</li>
+            <li>06. I'm Hittin' Hard</li>
+            <li>07. Get The Picture</li>
+            <li>08. I'm Blowin' Up</li>
+            <li>09. The Don</li>
+            <li>10. Pump Your Fist</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-kool-moe-dee-they-want-money.jpg" alt="Kool Moe Dee – They Want Money sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Kool Moe Dee</p>
+            <p class="title">They Want Money</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Kool Moe Dee — They Want Money</p>
+            <p class="label-name">Jive</p>
+          </div>
+          <ul class="tracks">
+            <li>They Want Money (Extended Remix)</li>
+            <li>They Want Money (Single Edit)</li>
+            <li>They Want Money (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-levert-just-coolin.jpg" alt="Levert – Just Coolin' sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Levert</p>
+            <p class="title">Just Coolin'</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Levert — Just Coolin'</p>
+            <p class="label-name">Atlantic</p>
+          </div>
+          <ul class="tracks">
+            <li>01 Just Coolin' (Edit Pop)</li>
+            <li>02 Just Coolin' (Edited Version)</li>
+            <li>03 Just Coolin' (LP Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-redhead-kingpin-the-f-b-i-do-the-right-thing.jpg" alt="Redhead Kingpin &amp; The F.B.I. – Do The Right Thing sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Redhead Kingpin &amp; The F.B.I.</p>
+            <p class="title">Do The Right Thing</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Redhead Kingpin &amp; The F.B.I. — Do The Right Thing</p>
+            <p class="label-name">10 Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Do The Right Thing (U.S. Radio Mix)</li>
+            <li>Do The Right Thing (Teddy Riley 12" Mix)</li>
+            <li>Do The Right Thing (12" Mix)</li>
+            <li>Do The Right Thing (U.S. Radio Mix)</li>
+            <li>Do The Right Thing (A Capella)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-redhead-kingpin-the-f-b-i-pump-it-hottie.jpg" alt="Redhead Kingpin &amp; The F.B.I. – Pump It Hottie sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Redhead Kingpin &amp; The F.B.I.</p>
+            <p class="title">Pump It Hottie</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Redhead Kingpin &amp; The F.B.I. — Pump It Hottie</p>
+            <p class="label-name">10 Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Pump It Hottie (12" Mix)</li>
+            <li>Pump It Hottie (Edit)</li>
+            <li>Pump It Hottie (LP Version)</li>
+            <li>Pump It Hottie (Street Mix)</li>
+            <li>Pump It Hottie (Teddy's A Cappella)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-redhead-kingpin-the-f-b-i-a-shade-of-red.jpg" alt="Redhead Kingpin, The F.B.I – A Shade Of Red sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Redhead Kingpin, The F.B.I</p>
+            <p class="title">A Shade Of Red</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Redhead Kingpin, The F.B.I — A Shade Of Red</p>
+            <p class="label-name">10 Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01. Do The Right Thing</li>
+            <li>02. Pump It Hottie</li>
+            <li>03. We Rock The Mic Right</li>
+            <li>04. Superbad Superslick</li>
+            <li>05. The Redhead One</li>
+            <li>06. Scram!</li>
+            <li>07. Kilimanjaro Style</li>
+            <li>08. Do That Dance</li>
+            <li>09. Speaking On Everything</li>
+            <li>10. A Shade Of Red</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-soul-ii-soul-keep-on-movin.jpg" alt="Soul II Soul – Keep On Movin' sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Soul II Soul</p>
+            <p class="title">Keep On Movin'</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Soul II Soul — Keep On Movin'</p>
+            <p class="label-name">Virgin</p>
+          </div>
+          <ul class="tracks">
+            <li>Keep On Movin' (Teddy Riley Remix)</li>
+            <li>Keep On Movin (Teddy Riley's Rubba Dub)</li>
+            <li>Keep On Movin (Teddy Riley's Bonus Beats)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-stephanie-mills-home.jpg" alt="Stephanie Mills – Home sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Stephanie Mills</p>
+            <p class="title">Home</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Stephanie Mills — Home</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>02. Real Love</li>
+            <li>09. Fast Talk</li>
+            <li>02 Real Love (Extended Vocal Version)</li>
+            <li>02 Real Love (Single Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-teddy-riley-feat-guy-my-fantasy.jpg" alt="Teddy Riley feat. Guy – My Fantasy sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Teddy Riley feat. Guy</p>
+            <p class="title">My Fantasy</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Teddy Riley feat. Guy — My Fantasy</p>
+            <p class="label-name">MCA Records</p>
+          </div>
+          <ul class="tracks">
+            <li>My Fantasy (7 Version)</li>
+            <li>My Fantasy (Bonus Beats)</li>
+            <li>My Fantasy (Extended Version)</li>
+            <li>My Fantasy (Fantasy Mix)</li>
+            <li>My Fantasy (Instrumental)</li>
+            <li>My Fantasy (Rap Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-the-gyrlz-jam-jam-if-you-can.jpg" alt="The Gyrlz – Jam Jam (If You Can) sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Gyrlz</p>
+            <p class="title">Jam Jam (If You Can)</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Gyrlz — Jam Jam (If You Can)</p>
+            <p class="label-name">Capitol Records</p>
+          </div>
+          <ul class="tracks">
+            <li>Jam Jam (If You Can) (7" Radio Edit)</li>
+            <li>Jam Jam (If You Can) (Hip Hop Version)</li>
+            <li>Jam Jam (If You Can) (Club Hip Hop)</li>
+            <li>Jam Jam (If You Can) (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-the-jacksons-2300-jackson-street.jpg" alt="The Jacksons – 2300 Jackson Street sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">The Jacksons</p>
+            <p class="title">2300 Jackson Street</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">The Jacksons — 2300 Jackson Street</p>
+            <p class="label-name">Epic</p>
+          </div>
+          <ul class="tracks">
+            <li>05. 2300 Jackson Street</li>
+            <li>07 She</li>
+            <li>18. 2300 Jackson Street (Short Version)</li>
+            <li>21. 2300 Jackson Street (Instrumental)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-troop-that-s-my-attitude.jpg" alt="Troop – That's My Attitude sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Troop</p>
+            <p class="title">That's My Attitude</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Troop — That's My Attitude</p>
+            <p class="label-name">Rooftop</p>
+          </div>
+          <ul class="tracks">
+            <li>That's My Attitude (Remix Edit)</li>
+            <li>That's My Attitude (Club Remix Edit)</li>
+            <li>That's My Attitude (Remix Edit Without Rap)</li>
+            <li>That's My Attitude (Percapella)</li>
+            <li>That's My Attitude (12 Hip Hop Remix)</li>
+            <li>That's My Attitude (12 Club Remix)</li>
+            <li>That's My Attitude (Club A Dub)</li>
+            <li>That's My Attitude (Bonus Beats)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-wrecks-n-effect-juicy.jpg" alt="Wrecks-N-Effect – Juicy sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Wrecks-N-Effect</p>
+            <p class="title">Juicy</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Wrecks-N-Effect — Juicy</p>
+            <p class="label-name">Sound Of New York</p>
+          </div>
+          <ul class="tracks">
+            <li>Juicy (12&Prime; Version)</li>
+            <li>Juicy (Bonus Beats)</li>
+            <li>Juicy (Love Juicy)</li>
+            <li>Juicy (Percapella)</li>
+            <li>Juicy (Single Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-wrecks-n-effect-new-jack-swing.jpg" alt="Wrecks-N-Effect – New Jack Swing sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Wrecks-N-Effect</p>
+            <p class="title">New Jack Swing</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Wrecks-N-Effect — New Jack Swing</p>
+            <p class="label-name">Sound Of New York</p>
+          </div>
+          <ul class="tracks">
+            <li>New Jack Swing (12&Prime; Version)</li>
+            <li>New Jack Swing (7" Version)</li>
+            <li>New Jack Swing (Bonus Beats)</li>
+            <li>New Jack Swing (Club Mix)</li>
+            <li>New Jack Swing (Instrumental)</li>
+            <li>New Jack Swing (Percapella)</li>
+            <li>New Jack Swing (Single Version)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-zan-house-you.jpg" alt="Zan – House You sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Zan</p>
+            <p class="title">House You</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Zan — House You</p>
+            <p class="label-name">Warner Bros. Records</p>
+          </div>
+          <ul class="tracks">
+            <li>House You (7" Edit)</li>
+            <li>House You (Club Mix)</li>
+            <li>House You (House Mix)</li>
+            <li>House You (Instrumental Phaze)</li>
+            <li>House You (RawCapella Fade)</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+        <div class="face front">
+          <img src="imgs/1989-zan-zan.jpg" alt="Zan – Zan sleeve" loading="lazy">
+          <span class="tag">1989</span>
+          <span class="flip-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+          </span>
+          <div class="scrim">
+            <p class="artist">Zan</p>
+            <p class="title">Zan</p>
+          </div>
+        </div>
+        <div class="face back">
+          <div class="back-head">
+            <p class="artist">Zan — Zan</p>
+            <p class="label-name">Warner Bros. Records</p>
+          </div>
+          <ul class="tracks">
+            <li>01. House You</li>
+            <li>02. Want To Be With You</li>
+            <li>03. Fight The Funk</li>
+            <li>04. Share The Night Away</li>
+            <li>05. Straight Up Nasty</li>
+            <li>06. I Ain't The One</li>
+            <li>07. I Got Work To Do</li>
+            <li>08. Why Don't You Call</li>
+            <li>09. Heat Of The Moment</li>
+            <li>10. Love Juicy</li>
+          </ul>
+          <div class="back-foot">
+            <button type="button">Flip back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Cover art and tracklist copy sourced from teddyrileyproductions.com/1980s/.
+  </footer>
+</div>
+
+<script>
+  document.querySelectorAll('.card-inner').forEach(function(card){
+    function toggle(){
+      var flipped = card.classList.toggle('flipped');
+      card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
+    }
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+</script>
