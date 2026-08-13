@@ -67,6 +67,20 @@ Copy `1990s.html`, swap the hero image and `--hero-pos`, add a `"2000s"` key to
 `releases.json`, add the page to `PAGES` in `extract.py` and to the nav on every
 page, and un-grey its panel in `index.html`.
 
+## Annual: bump the copyright year
+
+The footer year is hardcoded, deliberately — a JS-generated year disappears
+when JavaScript is off, and a copyright notice that vanishes is worse than one
+a year stale. Every January, update it in all four pages:
+
+```bash
+grep -rln '© 2026 TeddyRileyProductions.com' *.html
+sed -i '' 's/© 2026 TeddyRileyProductions.com/© 2027 TeddyRileyProductions.com/' *.html
+```
+
+The footer is hand-written markup repeated in index.html, 1980s.html,
+1990s.html and contact.html — build.py does not touch it.
+
 ## Things that are easy to get wrong
 
 - **Anchors are `y`-prefixed** (`id="y1982"`). Ids starting with a digit can't be
