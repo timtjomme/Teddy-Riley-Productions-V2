@@ -51,14 +51,17 @@
           </linearGradient>
         </defs>
 
-        <!-- outer sleeve -->
+        <!-- outer sleeve: a promo jacket carrying the Lil' Man mark -->
         <g class="pc pc-1">
-          <rect x="30" y="70" width="300" height="300" rx="4" transform="rotate(-13 180 220)"
-                fill="url(#sleeve)"/>
-          <rect x="30" y="70" width="300" height="300" rx="4" transform="rotate(-13 180 220)"
-                stroke="#3d3d45" stroke-width="1.5"/>
-          <circle cx="180" cy="220" r="52" transform="rotate(-13 180 220)"
-                  fill="none" stroke="#4a4a54" stroke-width="1.2" stroke-dasharray="3 6"/>
+          <g transform="rotate(-13 180 220)">
+            <rect x="30" y="70" width="300" height="300" rx="4" fill="url(#sleeve)"/>
+            <rect x="30" y="70" width="300" height="300" rx="4"
+                  stroke="#3d3d45" stroke-width="1.5"/>
+            <image href="imgs/logo.png" x="126" y="118" width="108" height="200"
+                   opacity="0.92"/>
+            <text x="180" y="344" text-anchor="middle" class="lbl lbl-sleeve">
+              LIL&#8217; MAN RECORDS</text>
+          </g>
         </g>
 
         <!-- shrink wrap, peeling off -->
@@ -92,14 +95,20 @@
           <circle cx="560" cy="430" r="7"  fill="#f4f4f6"/>
         </g>
 
-        <!-- the label, floating clear of the disc -->
+        <!-- the label, drawn the way a pressing actually looks -->
         <g class="pc pc-5">
-          <circle cx="662" cy="596" r="86" fill="#e8e8ec" stroke="#c2c2ca" stroke-width="1.4"/>
-          <circle cx="662" cy="596" r="72" fill="none" stroke="#c9c9d1" stroke-width="0.8"/>
-          <circle cx="662" cy="596" r="7"  fill="#f4f4f6" stroke="#b4b4bd" stroke-width="1.2"/>
-          <text x="662" y="558" text-anchor="middle" class="lbl lbl-top">LIL&#8217; MAN RECORDS</text>
-          <text x="662" y="646" text-anchor="middle" class="lbl lbl-big">404</text>
-          <text x="662" y="662" text-anchor="middle" class="lbl lbl-sm">NEVER PRESSED</text>
+          <circle cx="662" cy="596" r="104" fill="#efe9dc" stroke="#cfc7b6" stroke-width="1.4"/>
+          <circle cx="662" cy="596" r="94"  fill="none" stroke="#d8d1c2" stroke-width="0.8"/>
+          <path id="lblArc" d="M 662 596 m -74 0 a 74 74 0 1 1 148 0" fill="none"/>
+          <text class="lbl lbl-arc">
+            <textPath href="#lblArc" startOffset="50%" text-anchor="middle">
+              LIL&#8217; MAN RECORDS</textPath>
+          </text>
+          <image href="imgs/logo-dark.png" x="640" y="536" width="44" height="52" opacity="0.9"/>
+          <text x="662" y="628" text-anchor="middle" class="lbl lbl-big">404</text>
+          <text x="662" y="650" text-anchor="middle" class="lbl lbl-sm">NEVER PRESSED</text>
+          <text x="662" y="676" text-anchor="middle" class="lbl lbl-cat">LMR-000 &#183; PROMO</text>
+          <circle cx="662" cy="596" r="8" fill="#f4f4f6" stroke="#b9b1a2" stroke-width="1.2"/>
         </g>
 
         <!-- 45 adapter -->
