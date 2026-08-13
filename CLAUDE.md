@@ -119,6 +119,19 @@ Formspree `moeawjre`. The endpoint lives in `FORM_ENDPOINT` in `script.js` and i
 the `action` on `contact.html`. No email address appears in the markup. Forms work
 without JS as a plain POST; JS only upgrades them to submit in place.
 
+## The YEP YEP widget
+
+A floating prompt bottom-left, built by `script.js` (`buildYepWidget`) rather
+than repeated in each page's markup. It posts to the same Formspree endpoint
+through the shared `wireContactForm`, so there is one submit path for all three
+forms on the site.
+
+It is skipped on contact.html, which is already the form — the guard looks for a
+`.contact-form` that is not inside `.ask` or `.yep`.
+
+The avatar is `imgs/yep-avatar.jpg`, cropped from `imgs/story/ins08.jpg`, the
+photo where he is holding the YEP YUP licence plate frame.
+
 ## Deploying
 
 Push to `main`. The repo is **private** on GitHub. Nothing auto-deploys yet — see

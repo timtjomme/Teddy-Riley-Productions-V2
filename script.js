@@ -100,7 +100,76 @@ function buildAskPanel(ask){
   document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
 }
 
+// The floating YEP YEP prompt. Injected rather than repeated in each page's
+// markup, and skipped on the contact page, which is already the form.
+function buildYepWidget(){
+  var w = document.createElement('div');
+  w.className = 'yep';
+  w.innerHTML =
+    '<div class="yep-bubble" aria-hidden="true">YEP YEP!</div>' +
+    '<button class="yep-btn" type="button" aria-expanded="false" ' +
+      'aria-controls="yep-panel">' +
+      '<img src="imgs/yep-avatar.jpg" alt="" width="64" height="64">' +
+      '<span class="sr-only">Add something to the archive</span>' +
+    '</button>' +
+    '<div class="yep-panel" id="yep-panel" role="dialog" aria-modal="false" ' +
+      'aria-label="Add something to the archive" hidden>' +
+      '<div class="yep-head">' +
+        '<p class="yep-title">YEP YEP!</p>' +
+        '<button class="yep-close" type="button" aria-label="Close">&times;</button>' +
+      '</div>' +
+      '<p class="yep-sub">Know a release or a credit this archive is missing? ' +
+        'Send it over.</p>' +
+      '<form class="contact-form yep-form" action="' + FORM_ENDPOINT + '" method="POST">' +
+        '<div class="field"><label for="yep-name">Your name ' +
+          '<span class="opt">optional</span></label>' +
+          '<input id="yep-name" name="name" type="text" autocomplete="name"></div>' +
+        '<div class="field"><label for="yep-email">Your email</label>' +
+          '<input id="yep-email" name="email" type="email" required ' +
+          'autocomplete="email"></div>' +
+        '<div class="field"><label for="yep-msg">What should we add?</label>' +
+          '<textarea id="yep-msg" name="message" rows="3" required></textarea></div>' +
+        '<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" ' +
+          'aria-hidden="true">' +
+        '<div class="form-foot"><button type="submit">Yep, send it</button>' +
+        '<p class="form-status" role="status" aria-live="polite"></p></div>' +
+      '</form>' +
+    '</div>';
+  document.body.appendChild(w);
+
+  var btn   = w.querySelector('.yep-btn');
+  var panel = w.querySelector('.yep-panel');
+  var close = w.querySelector('.yep-close');
+  wireContactForm(w.querySelector('.contact-form'));
+
+  function open(){
+    panel.hidden = false;
+    w.classList.add('is-open');
+    btn.setAttribute('aria-expanded', 'true');
+    w.querySelector('#yep-name').focus();   // land inside, not on the trigger
+  }
+  function shut(returnFocus){
+    panel.hidden = true;
+    w.classList.remove('is-open');
+    btn.setAttribute('aria-expanded', 'false');
+    if(returnFocus) btn.focus();            // don't strand keyboard users
+  }
+
+  btn.addEventListener('click', function(){
+    panel.hidden ? open() : shut(false);
+  });
+  close.addEventListener('click', function(){ shut(true); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && !panel.hidden) shut(true);
+  });
+}
+
 document.querySelectorAll('.ask').forEach(buildAskPanel);
 document.querySelectorAll('.contact-form').forEach(function(f){
-  if(!f.closest('.ask')) wireContactForm(f);
+  if(!f.closest('.ask') && !f.closest('.yep')) wireContactForm(f);
 });
+
+// contact.html ships a real form in its markup; everywhere else gets the widget
+if(!document.querySelector('.contact-form:not(.ask .contact-form):not(.yep-form)')){
+  buildYepWidget();
+}

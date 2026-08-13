@@ -781,3 +781,127 @@
     margin-top: 12px !important;
     text-wrap: pretty;
   }
+
+  /* ---- YEP YEP WIDGET ---- */
+  .sr-only{
+    position:absolute; width:1px; height:1px;
+    padding:0; margin:-1px; overflow:hidden;
+    clip:rect(0 0 0 0); white-space:nowrap; border:0;
+  }
+
+  .yep{
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 50;
+  }
+
+  .yep-btn{
+    display:block;
+    width: 64px; height: 64px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid var(--label);
+    background: var(--label);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 8px 24px -6px rgba(0,0,0,0.45);
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+  }
+  .yep-btn img{
+    width:100%; height:100%;
+    object-fit: cover;
+    display:block;
+  }
+  .yep-btn:hover{ transform: scale(1.06); box-shadow: 0 10px 28px -6px rgba(0,0,0,0.55); }
+  .yep-btn:focus-visible{ outline: 3px solid var(--accent); outline-offset: 3px; }
+
+  .yep-bubble{
+    position:absolute;
+    bottom: 72px; left: 0;
+    background: var(--label);
+    color: var(--ink);
+    font: 600 11px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.1em;
+    padding: 7px 10px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.22s ease, transform 0.22s ease;
+    pointer-events: none;
+  }
+  .yep:hover .yep-bubble,
+  .yep-btn:focus-visible + .yep-bubble{ opacity: 1; transform: translateY(0); }
+  /* once the panel is open the bubble would sit on top of it */
+  .yep.is-open .yep-bubble{ opacity: 0; }
+
+  .yep-panel{
+    position:absolute;
+    bottom: 80px; left: 0;
+    width: min(320px, calc(100vw - 48px));
+    background: var(--label);
+    color: var(--ink);
+    border-radius: 4px;
+    padding: 18px;
+    box-shadow: 0 20px 44px -12px rgba(0,0,0,0.55);
+  }
+  .yep-head{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-bottom: 6px;
+  }
+  .yep-title{
+    font: 600 12px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.16em;
+    margin: 0;
+  }
+  .yep-close{
+    background:none; border:none; cursor:pointer;
+    color: var(--ink-soft);
+    font-size: 22px; line-height:1;
+    padding: 0 2px;
+  }
+  .yep-close:hover{ color: var(--ink); }
+  .yep-close:focus-visible{ outline: 2px solid var(--ink); outline-offset: 2px; }
+
+  .yep-sub{
+    font: 400 13px/1.5 'Open Sans', sans-serif;
+    color: var(--ink-soft);
+    margin: 0 0 14px;
+  }
+
+  /* the shared .contact-form styles are built for the light page — restate the
+     few that need to flip on this dark panel */
+  .yep-form{ margin: 0; max-width: none; }
+  .yep-form .field{ margin-bottom: 12px; }
+  .yep-form label{ font-size: 11px; }
+  .yep-form label .opt{ color: var(--ink-soft); }
+  .yep-form input,
+  .yep-form textarea{
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.22);
+    color: var(--ink);
+    font-size: 13px;
+  }
+  .yep-form input:focus,
+  .yep-form textarea:focus{
+    border-color: var(--ink);
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.12);
+  }
+  .yep-form button[type="submit"]{
+    background: var(--ink);
+    color: var(--label);
+    padding: 11px 18px;
+  }
+  .yep-form .form-status{ color: var(--ink-soft); }
+  .yep-form .form-status.is-ok{ color: var(--ink); }
+  .yep-form .form-status.is-error{ color: var(--missing); }
+
+  @media (prefers-reduced-motion: reduce){
+    .yep-btn, .yep-bubble{ transition: none; }
+  }
+  /* on a narrow screen the widget would sit on top of the footer prompt */
+  @media (max-width: 560px){
+    .yep{ bottom: 16px; left: 16px; }
+    .yep-btn{ width: 54px; height: 54px; }
+  }
