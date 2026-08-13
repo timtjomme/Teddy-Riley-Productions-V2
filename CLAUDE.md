@@ -97,6 +97,21 @@ The footer is hand-written markup repeated in index.html, 1980s.html,
 - The source page occasionally **merges two tracks onto one line** where a `<br>`
   is missing. Check tracklists against the source when they look short.
 
+## Favicon
+
+Three files at the repo root, all derived from `imgs/logo.png`:
+
+- `favicon.png` — the logo **inverted to dark**, for light browser tabs
+- `favicon-dark.png` — the original white, served via
+  `media="(prefers-color-scheme: dark)"`
+- `apple-touch-icon.png` — white logo on solid `#121214`, since iOS
+  composites these opaque and would otherwise flatten the transparency
+
+The source logo is white line art on transparency, so a single favicon would be
+invisible on one theme or the other — hence the pair. Regenerate with ffmpeg by
+squaring the tall logo first (`force_original_aspect_ratio=decrease` then pad),
+then `negate` for the dark variant.
+
 ## Contact form
 
 Both forms (contact page, and the footer prompt built by `script.js`) POST to
