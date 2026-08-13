@@ -759,3 +759,25 @@
   }
   /* so a jumped-to year isn't jammed against the top of the viewport */
   .year-rule{ scroll-margin-top: 28px; }
+
+  /* ---- FOOTER TEXT ---- */
+  footer p,
+  .home-foot p{
+    margin: 0 0 8px;
+  }
+  footer p:last-child,
+  .home-foot p:last-child{ margin-bottom: 0; }
+
+  .foot-copy{
+    font: 400 12px/1.6 'Open Sans', sans-serif;
+    color: var(--muted);
+  }
+  /* the disclaimer is the quietest thing on the page */
+  .foot-legal{
+    font: 400 11px/1.65 'Open Sans', sans-serif;
+    color: var(--muted);
+    opacity: 0.75;
+    max-width: 760px;
+    margin-top: 12px !important;
+    text-wrap: pretty;
+  }
