@@ -191,8 +191,10 @@ document.querySelectorAll('.contact-form').forEach(function(f){
   if(!f.closest('.ask') && !f.closest('.yep')) wireContactForm(f);
 });
 
-// contact.html ships a real form in its markup; everywhere else gets the widget
-if(!document.querySelector('.contact-form:not(.ask .contact-form):not(.yep-form)')){
+// contact.html ships a real form in its markup, and the 404 already offers
+// plenty of ways out — the widget would just sit on its call to action
+if(!document.querySelector('.contact-form:not(.ask .contact-form):not(.yep-form)') &&
+   !document.querySelector('.lost')){
   buildYepWidget();
 }
 
@@ -200,8 +202,7 @@ if(!document.querySelector('.contact-form:not(.ask .contact-form):not(.yep-form)
 // Reads data/releases.json so the page knows which years actually exist, can
 // point a mistyped year at the right anchor, and can offer a real release.
 function initLostPage(){
-  var root = document.querySelector('[data-lost-search]');
-  if(!root) return;
+  if(!document.querySelector('.lost')) return;
 
   var pathEl   = document.querySelector('[data-lost-path]');
   var hintEl   = document.querySelector('[data-lost-hint]');
@@ -217,23 +218,38 @@ function initLostPage(){
     pathEl.querySelector('.lost-slug').textContent = asked;
   }
 
-  // --- 2. dig through the labels ------------------------------------------
+  // --- 2. dig through the crates, then reveal ------------------------------
   var LABELS = ["Lil' Man Records", "Funky Mamma", "G.R. Productions",
-                "New Jack Swing"];
-  var SETTLED = 'Nothing. Not even a white label.';
+                "New Jack Swing", "Future Records", "LOR Records",
+                "Sound Of New York", "Rooftop Records", "QDT"];
 
-  if(calm){
-    root.textContent = 'We checked ' + LABELS.join(', ') + '. ' + SETTLED;
+  var dig     = document.querySelector('[data-lost-dig]');
+  var digName = document.querySelector('[data-lost-dig-name]');
+  var reveal  = document.querySelector('[data-lost-reveal]');
+
+  function showReveal(){
+    if(dig) dig.hidden = true;
+    if(reveal){
+      reveal.hidden = false;
+      requestAnimationFrame(function(){ reveal.classList.add('is-in'); });
+    }
+  }
+
+  if(calm || !dig || !digName || !reveal){
+    showReveal();                       // no animation: go straight to the answer
   } else {
-    root.textContent = '';
     var i = 0;
-    (function dig(){
+    (function nextLabel(){
       if(i < LABELS.length){
-        root.innerHTML = 'Digging through <strong>' + LABELS[i] + '</strong>…';
+        digName.textContent = LABELS[i];
+        digName.classList.remove('is-flip');
+        void digName.offsetWidth;       // restart the flip animation
+        digName.classList.add('is-flip');
         i++;
-        setTimeout(dig, 620);
+        setTimeout(nextLabel, 400);
       } else {
-        root.innerHTML = '<strong>' + SETTLED + '</strong>';
+        digName.textContent = 'Nothing.';
+        setTimeout(showReveal, 700);
       }
     })();
   }

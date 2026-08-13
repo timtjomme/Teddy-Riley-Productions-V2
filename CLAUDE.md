@@ -146,8 +146,12 @@ convention changes, this page follows it automatically.
 `initLostPage()` in `script.js` makes it react to the visitor:
 
 - echoes the URL they actually asked for
-- animates a dig through the four labels, then gives up (skipped under
-  `prefers-reduced-motion`, which shows the settled text instead)
+- runs a two-phase sequence: it first digs through the nine labels in large
+  type — Lil' Man Records, Funky Mamma, G.R. Productions, New Jack Swing,
+  Future Records, LOR Records, Sound Of New York, Rooftop Records, QDT — and
+  only when that finishes does the "Never pressed." block fade in. Under
+  `prefers-reduced-motion` it skips straight to the answer. Add a label by
+  editing `LABELS` in `initLostPage`.
 - reads `data/releases.json`, so a year in the URL — `/1987-anything` — offers a
   link straight to `1980s.html#y1987` with the real release count
 - renders one genuine release picked at random from the archive, using

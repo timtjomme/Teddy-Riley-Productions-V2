@@ -922,68 +922,171 @@
     .yep{ transition: none; }
   }
 
-  /* ---- 404 ---- */
-  .grid-404{
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    align-items: start;
-    margin-bottom: 20px;
+
+  /* ---- 404: image-led, one screen ---- */
+  .lost{
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(160deg, #9ea3ad 0%, #878c96 55%, #767b85 100%);
+    overflow: hidden;
   }
-  .lost-copy p{
-    font: 400 15px/1.7 'Open Sans', sans-serif;
-    color: var(--muted);
+  .lost-nav{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 28px 40px;
+  }
+  .lost-nav a{
+    font: 600 12px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.72);
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+  }
+  .lost-nav a:hover{ color:#fff; border-bottom-color: rgba(255,255,255,0.8); }
+  .lost-nav a:focus-visible{ outline: 2px solid #fff; outline-offset: 3px; }
+
+  .lost-inner{
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(300px, 460px) 1fr;
+    align-items: center;
+    gap: 20px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px 40px;
+  }
+
+  .lost-text{ color:#fff; max-width: 520px; }
+
+  /* --- phase 1: the dig --- */
+  .lost-dig-label{
+    font: 600 12px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    margin: 0 0 18px;
+  }
+  .lost-dig-name{
+    font: 300 clamp(38px, 5.4vw, 68px)/1.05 'Open Sans', sans-serif;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin: 0;
+    min-height: 1.05em;
+  }
+  .lost-dig-name.is-flip{ animation: digFlip 0.4s ease both; }
+  @keyframes digFlip{
+    from{ opacity: 0; transform: translateY(14px); }
+    to  { opacity: 1; transform: translateY(0); }
+  }
+
+  /* --- phase 2: the answer --- */
+  .lost-reveal{
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .lost-reveal.is-in{ opacity: 1; transform: none; }
+
+  .lost-eyebrow{
+    font: 600 11px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
     margin: 0 0 16px;
+  }
+  .lost-text h1{
+    font: 300 clamp(44px, 6vw, 76px)/1.02 'Open Sans', sans-serif;
+    letter-spacing: -0.03em;
+    margin: 0 0 20px;
+    color: #fff;
+  }
+  .lost-lede{
+    font: 400 16px/1.65 'Open Sans', sans-serif;
+    color: rgba(255,255,255,0.82);
+    margin: 0 0 14px;
     text-wrap: pretty;
   }
-  .lost-links{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 0 0 22px;
+  .lost-path, .lost-hint{
+    font: 400 14px/1.6 'Open Sans', sans-serif;
+    color: rgba(255,255,255,0.72);
+    margin: 0 0 8px;
   }
-  .lost-links a{
-    font: 400 17px/1 'Open Sans', sans-serif;
-    color: var(--accent);
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    padding-bottom: 3px;
-    transition: border-color 0.2s ease;
-  }
-  .lost-links a:hover{ border-bottom-color: var(--accent); }
-  .lost-links a:focus-visible{ outline: 2px solid var(--accent); outline-offset: 3px; }
-  .lost-tip{ font-size: 14px !important; }
-  .lost-tip a{ color: var(--accent); }
-
-  .lost-path{ margin-bottom: 10px !important; }
   .lost-slug{
     font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    font-size: 0.92em;
-    background: rgba(0,0,0,0.06);
-    border: 1px solid var(--rule);
+    font-size: 0.9em;
+    background: rgba(0,0,0,0.22);
+    border: 1px solid rgba(255,255,255,0.22);
     border-radius: 3px;
     padding: 2px 6px;
-    color: var(--accent);
     word-break: break-all;
   }
-  .lost-search{ min-height: 1.6em; margin-bottom: 10px !important; }
-  .lost-search strong{ font-weight: 600; color: var(--accent); }
-  .lost-hint{ margin: 0 0 10px !important; }
   .lost-hint a{
-    font: 600 14px/1.5 'Open Sans', sans-serif;
-    color: var(--accent);
+    color:#fff;
+    font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid var(--accent);
+    border-bottom: 2px solid rgba(255,255,255,0.85);
     padding-bottom: 2px;
   }
-  .lost-hint a:hover{ opacity: 0.65; }
+  .lost-hint a:hover{ opacity: 0.75; }
 
-  .lost-real .year-rule{ margin-top: 20px; }
+  .lost-cta{
+    display:inline-block;
+    margin-top: 18px;
+    background:#fff;
+    color:#121214;
+    font: 600 14px/1 'Open Sans', sans-serif;
+    text-decoration:none;
+    padding: 17px 30px;
+    border-radius: 999px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 20px -6px rgba(0,0,0,0.4);
+  }
+  .lost-cta:hover{ transform: translateY(-2px); box-shadow: 0 10px 26px -6px rgba(0,0,0,0.5); }
+  .lost-cta:focus-visible{ outline: 3px solid #fff; outline-offset: 4px; }
+
+  .lost-art{ justify-self: center; width: 100%; max-width: 860px; }
+  .lost-art svg{ width: 100%; height: auto; display: block; overflow: visible; }
+  .lost-art .lbl{
+    font-family: 'Open Sans', sans-serif;
+    fill: #55555d;
+  }
+  .lost-art .lbl-top{ font-size: 13px; font-weight: 600; letter-spacing: 0.14em; }
+  .lost-art .lbl-sm { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; }
+  .lost-art .lbl-big{ font-size: 44px; font-weight: 300; fill: #121214; letter-spacing: -0.02em; }
+
+  /* the pieces drift, like an exploded diagram that never reassembles */
+  .pc{ animation: pcDrift 7s ease-in-out infinite alternate; transform-box: fill-box;
+       transform-origin: center; }
+  .pc-1{ animation-duration: 7.5s; }
+  .pc-2{ animation-duration: 6.2s; animation-delay: -1.4s; }
+  .pc-3{ animation-duration: 8.1s; animation-delay: -0.7s; }
+  .pc-4{ animation-duration: 9.0s; animation-delay: -2.1s; }
+  .pc-5{ animation-duration: 6.8s; animation-delay: -3.0s; }
+  .pc-6{ animation-duration: 7.9s; animation-delay: -1.1s; }
+  .pc-7{ animation-duration: 6.5s; animation-delay: -2.6s; }
+  @keyframes pcDrift{
+    from{ transform: translate3d(0,-8px,0) rotate(-0.6deg); }
+    to  { transform: translate3d(0, 8px,0) rotate(0.6deg); }
+  }
+
+  .lost-real{ padding-top: 60px; }
+  .lost-real .year-rule{ margin-top: 0; }
   .lost-real-sub{
     font: 400 14px/1.6 'Open Sans', sans-serif;
     color: var(--muted);
-    margin: -12px 0 24px;
+    margin: -14px 0 26px;
   }
-  .lost-real .grid{ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
   .lost-real .card{ max-width: 347px; }
   .lost-real-link{
     display:inline-block;
@@ -993,6 +1096,35 @@
     text-decoration: none;
     border-bottom: 2px solid transparent;
     padding-bottom: 3px;
-    transition: border-color 0.2s ease;
   }
   .lost-real-link:hover{ border-bottom-color: var(--accent); }
+
+  @media (max-width: 900px){
+    .lost-inner{ grid-template-columns: 1fr; padding: 0 24px 40px; gap: 8px; }
+    .lost-art{ order: -1; max-width: 560px; }
+    .lost-nav{ padding: 20px 24px; gap: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .pc{ animation: none; }
+    .lost-cta{ transition: none; }
+  }
+
+  /* the 404 itself, sitting behind everything */
+  .lost-bg{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: 700 clamp(320px, 44vw, 880px)/0.78 'Open Sans', sans-serif;
+    letter-spacing: -0.06em;
+    color: rgba(255,255,255,0.11);
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
+  .lost-nav, .lost-inner{ position: relative; z-index: 2; }
+  @media (prefers-reduced-motion: reduce){
+    .lost-dig-name.is-flip{ animation: none; }
+    .lost-reveal{ transition: none; }
+  }
