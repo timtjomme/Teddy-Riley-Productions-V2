@@ -905,3 +905,19 @@
     .yep{ bottom: 16px; left: 16px; }
     .yep-btn{ width: 54px; height: 54px; }
   }
+
+  /* the widget waits until the header has scrolled past */
+  .yep{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.35s ease, transform 0.35s ease, visibility 0.35s;
+  }
+  .yep.is-visible{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce){
+    .yep{ transition: none; }
+  }

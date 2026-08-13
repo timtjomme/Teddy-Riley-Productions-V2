@@ -148,11 +148,16 @@ function buildYepWidget(){
     btn.setAttribute('aria-expanded', 'true');
     w.querySelector('#yep-name').focus();   // land inside, not on the trigger
   }
+  var headerOnScreen = true;   // kept current by the observer below
+
   function shut(returnFocus){
     panel.hidden = true;
     w.classList.remove('is-open');
     btn.setAttribute('aria-expanded', 'false');
     if(returnFocus) btn.focus();            // don't strand keyboard users
+    // the observer only fires on a crossing, so re-check here: closing while
+    // the header is on screen should tuck the widget away again
+    if(headerOnScreen) w.classList.remove('is-visible');
   }
 
   btn.addEventListener('click', function(){
@@ -162,6 +167,20 @@ function buildYepWidget(){
   document.addEventListener('keydown', function(e){
     if(e.key === 'Escape' && !panel.hidden) shut(true);
   });
+
+  // Stay out of the way until the header has scrolled past.
+  var header = document.querySelector('.hero-video, .hero');
+  if(!header || !('IntersectionObserver' in window)){
+    w.classList.add('is-visible');           // no header to wait on
+    return;
+  }
+  new IntersectionObserver(function(entries){
+    // entries can coalesce; the last one is the current state
+    headerOnScreen = entries[entries.length - 1].isIntersecting;
+    // never yank it away mid-typing
+    if(headerOnScreen && panel.hidden) w.classList.remove('is-visible');
+    if(!headerOnScreen) w.classList.add('is-visible');
+  }, { threshold: 0 }).observe(header);
 }
 
 document.querySelectorAll('.ask').forEach(buildAskPanel);
