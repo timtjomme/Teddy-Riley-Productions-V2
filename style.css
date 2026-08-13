@@ -394,7 +394,9 @@
     justify-content:center;
     min-height: 58vh;
     background-size: cover;
-    background-position: 50% 35%;
+    /* lower --panel-pos pushes the photo down, showing more of the top of the
+       frame — these portraits sit high, so a centred crop loses the face */
+    background-position: 50% var(--panel-pos, 35%);
     background-repeat: no-repeat;
     text-decoration:none;
     overflow:hidden;
