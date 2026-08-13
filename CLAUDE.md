@@ -143,6 +143,22 @@ that is missing from the collection, with every version rendered in the red
 `li.missing` style, pressed on Lil' Man Records. If the missing-marker colour or
 convention changes, this page follows it automatically.
 
+`initLostPage()` in `script.js` makes it react to the visitor:
+
+- echoes the URL they actually asked for
+- animates a dig through the four labels, then gives up (skipped under
+  `prefers-reduced-motion`, which shows the settled text instead)
+- reads `data/releases.json`, so a year in the URL — `/1987-anything` — offers a
+  link straight to `1980s.html#y1987` with the real release count
+- renders one genuine release picked at random from the archive, using
+  `wireCard()` so it flips like any other
+
+All release text is set with `textContent`, never `innerHTML` — the data must not
+be parsed as markup.
+
+Testing it needs a server that actually serves 404.html on a miss;
+`python3 -m http.server` returns its own error page instead.
+
 ## Deploying
 
 Push to `main`. The repo is **private** on GitHub. Nothing auto-deploys yet — see

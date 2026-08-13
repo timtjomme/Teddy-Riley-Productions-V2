@@ -1,16 +1,19 @@
-document.querySelectorAll('.card-inner').forEach(function(card){
-    function toggle(){
-      var flipped = card.classList.toggle('flipped');
-      card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
+// Named so cards created later (the 404's random pick) can reuse it.
+function wireCard(card){
+  function toggle(){
+    var flipped = card.classList.toggle('flipped');
+    card.setAttribute('aria-pressed', flipped ? 'true' : 'false');
+  }
+  card.addEventListener('click', toggle);
+  card.addEventListener('keydown', function(e){
+    if(e.key === 'Enter' || e.key === ' '){
+      e.preventDefault();
+      toggle();
     }
-    card.addEventListener('click', toggle);
-    card.addEventListener('keydown', function(e){
-      if(e.key === 'Enter' || e.key === ' '){
-        e.preventDefault();
-        toggle();
-      }
-    });
   });
+}
+
+document.querySelectorAll('.card-inner').forEach(wireCard);
 
 var FORM_ENDPOINT = 'https://formspree.io/f/moeawjre';
 
@@ -192,3 +195,125 @@ document.querySelectorAll('.contact-form').forEach(function(f){
 if(!document.querySelector('.contact-form:not(.ask .contact-form):not(.yep-form)')){
   buildYepWidget();
 }
+
+// ---- 404 -------------------------------------------------------------------
+// Reads data/releases.json so the page knows which years actually exist, can
+// point a mistyped year at the right anchor, and can offer a real release.
+function initLostPage(){
+  var root = document.querySelector('[data-lost-search]');
+  if(!root) return;
+
+  var pathEl   = document.querySelector('[data-lost-path]');
+  var hintEl   = document.querySelector('[data-lost-hint]');
+  var realWrap = document.querySelector('[data-lost-real]');
+  var realSub  = document.querySelector('[data-lost-real-sub]');
+  var realGrid = document.querySelector('[data-lost-real-grid]');
+  var calm     = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // --- 1. name what they actually asked for -------------------------------
+  var asked = decodeURIComponent(location.pathname.split('/').pop() || '');
+  if(asked && asked !== '404.html'){
+    pathEl.innerHTML = 'No pressing of <span class="lost-slug"></span> exists.';
+    pathEl.querySelector('.lost-slug').textContent = asked;
+  }
+
+  // --- 2. dig through the labels ------------------------------------------
+  var LABELS = ["Lil' Man Records", "Funky Mamma", "G.R. Productions",
+                "New Jack Swing"];
+  var SETTLED = 'Nothing. Not even a white label.';
+
+  if(calm){
+    root.textContent = 'We checked ' + LABELS.join(', ') + '. ' + SETTLED;
+  } else {
+    root.textContent = '';
+    var i = 0;
+    (function dig(){
+      if(i < LABELS.length){
+        root.innerHTML = 'Digging through <strong>' + LABELS[i] + '</strong>…';
+        i++;
+        setTimeout(dig, 620);
+      } else {
+        root.innerHTML = '<strong>' + SETTLED + '</strong>';
+      }
+    })();
+  }
+
+  // --- 3. the data knows which years exist --------------------------------
+  fetch('data/releases.json').then(function(r){ return r.json(); }).then(function(data){
+    var all = [];
+    Object.keys(data).forEach(function(page){
+      data[page].forEach(function(rel){ all.push({ page: page, rel: rel }); });
+    });
+    if(!all.length) return;
+
+    // a year in the URL they typed -> jump straight to that section
+    var m = asked.match(/(19|20)\d{2}/);
+    if(m){
+      var year = m[0];
+      var hit = all.filter(function(x){ return x.rel.year === year; });
+      if(hit.length){
+        hintEl.innerHTML = '';
+        var a = document.createElement('a');
+        a.href = hit[0].page + '.html#y' + year;
+        a.textContent = 'Looking for ' + year + '? ' + hit.length +
+                        (hit.length === 1 ? ' release' : ' releases') + ' →';
+        hintEl.appendChild(a);
+        hintEl.hidden = false;
+      }
+    }
+
+    // --- 4. hand them something that does exist ---------------------------
+    var pick = all[Math.floor(Math.random() * all.length)];
+    var r = pick.rel;
+    realSub.textContent = 'This one is real. Pulled at random from ' +
+                          all.length + ' releases in the archive.';
+    var card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML =
+      '<div class="card-inner" role="button" tabindex="0" aria-pressed="false">' +
+        '<div class="face front">' +
+          '<img src="imgs/' + r.image + '" alt="">' +
+          '<span class="tag">' + r.year + '</span>' +
+          '<div class="scrim"><p class="artist"></p><p class="title"></p></div>' +
+        '</div>' +
+        '<div class="face back">' +
+          '<div class="back-head"><p class="artist"></p>' +
+          '<p class="label-name"></p></div>' +
+          '<ul class="tracks"></ul>' +
+          '<div class="back-foot"><button type="button">Flip back</button></div>' +
+        '</div>' +
+      '</div>';
+    // textContent throughout: release data must never be parsed as markup
+    card.querySelector('.front .artist').textContent = r.artist;
+    card.querySelector('.front .title').textContent  = r.title;
+    card.querySelector('.back .artist').textContent  = r.artist + ' — ' + r.title;
+    card.querySelector('.label-name').textContent    = r.label;
+    card.querySelector('img').alt = r.artist + ' – ' + r.title + ' sleeve';
+    var ul = card.querySelector('.tracks');
+    var missing = r.missing || [];
+    r.tracks.forEach(function(t){
+      var li = document.createElement('li');
+      li.textContent = t;
+      if(missing.indexOf(t) !== -1) li.className = 'missing';
+      ul.appendChild(li);
+    });
+    if(missing.length){
+      var legend = document.createElement('span');
+      legend.className = 'legend';
+      legend.innerHTML = '<span></span>missing from collection';
+      card.querySelector('.back-foot').insertBefore(
+        legend, card.querySelector('.back-foot button'));
+    }
+    realGrid.appendChild(card);
+    realWrap.hidden = false;
+    wireCard(card.querySelector('.card-inner'));
+
+    var link = document.createElement('a');
+    link.className = 'lost-real-link';
+    link.href = pick.page + '.html#y' + r.year;
+    link.textContent = 'See all of ' + r.year + ' →';
+    realWrap.appendChild(link);
+  }).catch(function(){ /* no data, no bonus card — the page still works */ });
+}
+
+initLostPage();
