@@ -1812,6 +1812,74 @@
         "03. Don't Leave Me",
         "04. A Friend"
       ]
+    },
+    {
+      "year": "1991",
+      "artist": "Bubba",
+      "title": "I Like Your Style",
+      "label": "Motown",
+      "image": "1991-bubba-i-like-your-style.jpg",
+      "tracks": [
+        "I Like Your Style (Extended Vocal Version)",
+        "I Like Your Style (Dub)",
+        "I Like Your Style (Instrumental)",
+        "I Like Your Style (LP Version)",
+        "I Like Your Style (Percapella)",
+        "I Like Your Style (Radio Version)"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Guy",
+      "title": "D-O-G Me Out",
+      "label": "MCA Records",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "D-O-G Me Out (Canine Club Version)",
+        "D-O-G Me Out (Dogapella)",
+        "D-O-G Me Out (Mike Nice Dub Mix)",
+        "D-O-G Me Out (Mike Nice Mix)",
+        "D-O-G Me Out (Single Edit With Rap)",
+        "D-O-G Me Out (Single Edit)",
+        "D-O-G Me Out (Wrecks N Effect Mix)",
+        "D-O-G Me Out (Wrecks N Effect Rap)",
+        "D-O-G Me Out (Wrecks N Effectstrumental)"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Guy",
+      "title": "Her",
+      "label": "MCA Records",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "Her (7″ Mix)",
+        "Her (Dub)",
+        "Her (Extended Mix)",
+        "Her (Hip Hop Edit)",
+        "Her (House Mix)",
+        "Her (Original Edit)",
+        "Her (Original Mix)"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Guy",
+      "title": "Let's Chill",
+      "label": "MCA Records",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "Let's Chill (Chilled Suite)",
+        "Let's Chill (Chilled Vocal Version)",
+        "Let's Chill (Edit)",
+        "Let's Chill (Extended Remix Version)",
+        "Let's Chill (Instrumental)",
+        "Let's Chill (LP Version)",
+        "Let's Chill (Quiet Storm Version)",
+        "Let's Chill (Radio Edit)",
+        "Let's Chill (Suite)",
+        "Let's Chill (The Seduction Soliloquy)"
+      ]
     }
   ]
 }
