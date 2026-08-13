@@ -921,3 +921,35 @@
   @media (prefers-reduced-motion: reduce){
     .yep{ transition: none; }
   }
+
+  /* ---- 404 ---- */
+  .grid-404{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: start;
+    margin-bottom: 20px;
+  }
+  .lost-copy p{
+    font: 400 15px/1.7 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 0 0 16px;
+    text-wrap: pretty;
+  }
+  .lost-links{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 0 0 22px;
+  }
+  .lost-links a{
+    font: 400 17px/1 'Open Sans', sans-serif;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: border-color 0.2s ease;
+  }
+  .lost-links a:hover{ border-bottom-color: var(--accent); }
+  .lost-links a:focus-visible{ outline: 2px solid var(--accent); outline-offset: 3px; }
+  .lost-tip{ font-size: 14px !important; }
+  .lost-tip a{ color: var(--accent); }

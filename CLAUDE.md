@@ -132,6 +132,17 @@ It is skipped on contact.html, which is already the form — the guard looks for
 The avatar is `imgs/yep-avatar.jpg`, cropped from `imgs/story/ins08.jpg`, the
 photo where he is holding the YEP YUP licence plate frame.
 
+## 404
+
+`404.html` at the repo root. Netlify, Cloudflare Pages and GitHub Pages all
+serve that filename automatically for unmatched routes — no config needed. On
+Apache you would need `ErrorDocument 404 /404.html` in `.htaccess`.
+
+The joke reuses the site's own machinery: the page presents itself as a release
+that is missing from the collection, with every version rendered in the red
+`li.missing` style, pressed on Lil' Man Records. If the missing-marker colour or
+convention changes, this page follows it automatically.
+
 ## Deploying
 
 Push to `main`. The repo is **private** on GitHub. Nothing auto-deploys yet — see
