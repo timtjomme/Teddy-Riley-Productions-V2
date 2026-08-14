@@ -121,8 +121,8 @@ function buildYepWidget(){
         '<p class="yep-title">YEP YEP!</p>' +
         '<button class="yep-close" type="button" aria-label="Close">&times;</button>' +
       '</div>' +
-      '<p class="yep-sub">Know a release or a credit this archive is missing? ' +
-        'Send it over.</p>' +
+      '<p class="yep-sub">Have more info in a release; see something missing; ' +
+        'saw a fault; or just want to connect? Hit my inbox!</p>' +
       '<form class="contact-form yep-form" action="' + FORM_ENDPOINT + '" method="POST">' +
         '<div class="field"><label for="yep-name">Your name ' +
           '<span class="opt">optional</span></label>' +
