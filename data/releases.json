@@ -1157,7 +1157,7 @@
     },
     {
       "year": "1989",
-      "artist": "Various Artists",
+      "artist": "Various",
       "title": "Do The Right Thing Soundtrack",
       "label": "Motown",
       "image": "1989-various-artists-do-the-right-thing-soundtrack.jpg",
@@ -2055,6 +2055,51 @@
         "05. Remember The Time",
         "06. Can't Let Her Get Away",
         "14. Dangerous"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Various",
+      "title": "New Jack City (Music From The Motion Picture)",
+      "label": "Giant Records",
+      "image": "1991-various-artists-new-jack-city.jpg",
+      "tracks": [
+        "03. Guy – New Jack City (Explicit)"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Various",
+      "title": "Juice (Original Motion Picture Soundtrack)",
+      "label": "SOUL",
+      "image": "1991-various-artists-juice.jpg",
+      "tracks": [
+        "03. Teddy Riley Featuring Tammy Lucas – Is It Good To You"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Various",
+      "title": "House Party 2 (Original Motion Picture Soundtrack)",
+      "label": "MCA Records",
+      "image": "1991-various-artists-house-party-2.jpg",
+      "tracks": [
+        "04. Wrecks-N-Effect – Ready Or Not (House Party II New Jack Theme)"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Wrecks-N-Effect",
+      "title": "Ready Or Not (House Party II New Jack Theme)",
+      "label": "MCA Records",
+      "image": "1991-wrecks-n-effect-ready-or-not.jpg",
+      "tracks": [
+        "Ready Or Not (Extended Vocal Version)",
+        "Ready Or Not (Wrecks-N-Effect Version)",
+        "Ready Or Not (Accapella)",
+        "Ready Or Not (LP Version)",
+        "Ready Or Not (Extended Instrumental Version)",
+        "Ready Or Not (Suite)"
       ]
     },
     {
