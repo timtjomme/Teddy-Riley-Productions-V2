@@ -1958,6 +1958,40 @@
         "01. Now That We Found Love",
         "09. Is It Good To You"
       ]
+    },
+    {
+      "year": "1991",
+      "artist": "Keith Sweat",
+      "title": "Keep It Comin'",
+      "label": "Elektra",
+      "image": "1991-keith-sweat-keep-it-comin.jpg",
+      "tracks": [
+        "03. Why Me Baby"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Keith Sweat",
+      "title": "Why Me Baby?",
+      "label": "Elektra",
+      "image": "1991-keith-sweat-why-me-baby.jpg",
+      "tracks": [
+        "Why Me Baby? (Edit Of LP Version) 3:59",
+        "Why Me Baby? (LP Version) 5:28"
+      ]
+    },
+    {
+      "year": "1991",
+      "artist": "Keith Sweat",
+      "title": "Your Love",
+      "label": "Elektra",
+      "image": "1991-keith-sweat-your-love.jpg",
+      "tracks": [
+        "Your Love (Radio Version) 4:29",
+        "Your Love (Club Mix) 8:58",
+        "Your Love (Acappella) 5:10",
+        "Your Love (Instrumental) 5:52"
+      ]
     }
   ]
 }

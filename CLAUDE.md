@@ -132,6 +132,17 @@ It is skipped on contact.html, which is already the form — the guard looks for
 The avatar is `imgs/yep-avatar.jpg`, cropped from `imgs/story/ins08.jpg`, the
 photo where he is holding the YEP YUP licence plate frame.
 
+## Back to top
+
+`initToTop()` in `script.js` injects one control on every page — not markup
+repeated five times. Fixed bottom-right, opacity 0.5 at rest, full on
+hover/focus, hidden entirely until you've scrolled past 80% of a viewport
+height. A page short enough to never cross that threshold just never shows it,
+which is why it needs no per-page opt-out.
+
+Sits bottom-right specifically so it never collides with the YEP YEP widget
+(bottom-left) or the footer prompt.
+
 ## 404
 
 `404.html` at the repo root. Netlify, Cloudflare Pages and GitHub Pages all

@@ -1130,3 +1130,38 @@
     .lost-dig-name.is-flip{ animation: none; }
     .lost-reveal{ transition: none; }
   }
+
+  /* ---- BACK TO TOP ----
+     Deliberately quiet: low opacity at rest, only appears past one screen of
+     scroll, sits bottom-right so it never competes with the YEP YEP widget
+     (bottom-left) or the footer prompt. */
+  .to-top{
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 40;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--label);
+    color: var(--ink);
+    box-shadow: 0 6px 18px -6px rgba(0,0,0,0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  }
+  .to-top.is-visible{ opacity: 0.5; visibility: visible; transform: none; }
+  .to-top:hover,
+  .to-top:focus-visible{ opacity: 1; }
+  .to-top:focus-visible{ outline: 2px solid var(--accent); outline-offset: 3px; }
+  .to-top svg{ width: 15px; height: 15px; }
+
+  @media (max-width: 560px){
+    .to-top{ right: 16px; bottom: 16px; width: 36px; height: 36px; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .to-top{ transition: none; }
+  }
