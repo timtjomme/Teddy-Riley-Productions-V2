@@ -1961,6 +1961,17 @@
     },
     {
       "year": "1991",
+      "artist": "Hi-Five",
+      "title": "I Like The Way (The Kissing Game)",
+      "label": "Jive Records",
+      "image": "1991-hi-five-i-like-the-way-the-kissing-game.jpg",
+      "tracks": [
+        "I Like The Way (The Kissing Game) (Album Version)",
+        "I Like The Way (The Kissing Game) (Instrumental)"
+      ]
+    },
+    {
+      "year": "1991",
       "artist": "Keith Sweat",
       "title": "Keep It Comin'",
       "label": "Elektra",
