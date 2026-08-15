@@ -2106,6 +2106,83 @@
     },
     {
       "year": "1992",
+      "artist": "Bobby Brown",
+      "title": "Bobby",
+      "label": "MCA Records",
+      "image": "1992-bobby-brown-bobby.jpg",
+      "tracks": [
+        "03. Two Can Play That Game",
+        "04. Get Away",
+        "05. Til The End Of Time",
+        "08. Lovin' You Down",
+        "09. One More Night",
+        "10. Something In Common feat. Whitney Houston",
+        "11. That's The Way Love Is"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Bobby Brown",
+      "title": "Get Away",
+      "label": "MCA Records",
+      "image": "1992-bobby-brown-get-away.jpg",
+      "tracks": [
+        "Get Away (12″ Body)",
+        "Get Away (Acapella)",
+        "Get Away (Acapella)2",
+        "Get Away (Bonus Beats)",
+        "Get Away (Bonus Beats)2",
+        "Get Away (Getaway Club Version)",
+        "Get Away (Instrumental)",
+        "Get Away (Percussapella)",
+        "Get Away (Radio Edit)",
+        "Get Away (Single Edit No Rap)",
+        "Get Away (Single Edit With Rap)",
+        "Get Away (Suite)",
+        "Get Away (Teddy's Club Version)",
+        "Get Away (Teddy's Dub)",
+        "Get Away (Teddy's Radio Edit)",
+        "Get Away (Teddy's Tribal Club Version)"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Glenn Jones",
+      "title": "The Best Of Glenn Jones",
+      "label": "Jive",
+      "image": "1992-glenn-jones-the-best-of-glenn-jones.jpg",
+      "tracks": [
+        "09. Different"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Guy",
+      "title": "Teddy's Jam 2",
+      "label": "MCA Records",
+      "image": "1992-guy-teddy-s-jam-2.jpg",
+      "tracks": [
+        "Teddy's Jam 2 (Club A Dub Jam)",
+        "Teddy's Jam 2 (Club Jam)",
+        "Teddy's Jam 2 (Dub Jam)",
+        "Teddy's Jam 2 (Jammin' Beats)",
+        "Teddy's Jam 2 (Radio Jam)",
+        "Teddy's Jam 2 (Single Jam)"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Mary J. Blige",
+      "title": "What's The 411 (Remix)",
+      "label": "Uptown Records",
+      "image": "1992-mary-j-blige-what-s-the-411-remix.jpg",
+      "tracks": [
+        "03. My Love (Remix)",
+        "11. Changes I've Been Going Through (Teddy Riley Remix)"
+      ]
+    },
+    {
+      "year": "1992",
       "artist": "Michael Jackson",
       "title": "Jam",
       "label": "Epic",
