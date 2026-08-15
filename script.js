@@ -243,7 +243,9 @@ function initLostPage(){
   var calm     = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // --- 1. name what they actually asked for -------------------------------
-  var asked = decodeURIComponent(location.pathname.split('/').pop() || '');
+  // filter(Boolean): a directory-style miss (/1988-guy-groove-me/) ends in a
+  // slash, so a plain pop() would hand back an empty string.
+  var asked = decodeURIComponent(location.pathname.split('/').filter(Boolean).pop() || '');
   if(asked && asked !== '404.html'){
     pathEl.innerHTML = 'No pressing of <span class="lost-slug"></span> exists.';
     pathEl.querySelector('.lost-slug').textContent = asked;
