@@ -15,6 +15,15 @@ function wireCard(card){
 
 document.querySelectorAll('.card-inner').forEach(wireCard);
 
+// LP or Single for a release straight out of releases.json — the decade pages
+// get this stamped in by tools/build.py, but the 404 builds its card at runtime.
+// Same rule as NUMBERED there: a numbered tracklist is an album. Keep in step.
+var NUMBERED = /^\s*(?:\d{1,2}\s*[–—.)]|\d{2}\s)/;
+function releaseFormat(r){
+  if(r.format) return r.format;
+  return r.tracks.some(function(t){ return NUMBERED.test(t); }) ? 'LP' : 'Single';
+}
+
 var FORM_ENDPOINT = 'https://formspree.io/f/moeawjre';
 
 // Wire a contact form to submit in place. Every form still works as a plain
@@ -322,7 +331,7 @@ function initLostPage(){
       '<div class="card-inner" role="button" tabindex="0" aria-pressed="false">' +
         '<div class="face front">' +
           '<img src="imgs/' + r.image + '" alt="">' +
-          '<span class="tag">' + r.year + '</span>' +
+          '<span class="format"></span>' +
           '<div class="scrim"><p class="artist"></p><p class="title"></p></div>' +
         '</div>' +
         '<div class="face back">' +
@@ -333,6 +342,7 @@ function initLostPage(){
         '</div>' +
       '</div>';
     // textContent throughout: release data must never be parsed as markup
+    card.querySelector('.format').textContent = releaseFormat(r);
     card.querySelector('.front .artist').textContent = r.artist;
     card.querySelector('.front .title').textContent  = r.title;
     card.querySelector('.back .artist').textContent  = r.artist + ' — ' + r.title;

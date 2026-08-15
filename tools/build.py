@@ -6,7 +6,7 @@ Only the block between the RELEASES:START / RELEASES:END markers in each page
 is rewritten. Everything else — hero, intro copy, nav, footer — is hand-written
 and left untouched.
 """
-import json, sys
+import json, re, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -17,10 +17,25 @@ FLIP_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
             'stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 '
             '12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>')
 
+# An album tracklist is numbered — "01. Her", "05 — Sleaze", "3. Can We Try Again".
+# A single lists versions of one song, never numbered. That is the only tell the
+# source site gives us, so it is what decides LP vs Single. A bare digit followed
+# by a space is not enough ("8 Days A Week (Sax Mix)" is a single), so a lone
+# number needs its separator, or a two-digit index its leading zero.
+# Mirrored in releaseFormat() in script.js, for the card the 404 page builds.
+NUMBERED = re.compile(r'^\s*(?:\d{1,2}\s*[–—.)]|\d{2}\s)')
+
 
 def esc(s):
     """& first, then the inch mark. Matches the entities already in the pages."""
     return s.replace("&", "&amp;").replace("″", "&Prime;")
+
+
+def fmt(r):
+    """LP or Single. "format" in the JSON wins where the tracklist can't tell."""
+    if r.get("format"):
+        return r["format"]
+    return "LP" if any(NUMBERED.match(t) for t in r["tracks"]) else "Single"
 
 
 def card_html(r):
@@ -37,7 +52,7 @@ def card_html(r):
       <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
         <div class="face front">
           <img src="imgs/{r["image"]}" alt="{artist} – {title} sleeve" loading="lazy">
-          <span class="tag">{r["year"]}</span>
+          <span class="format">{fmt(r)}</span>
           <span class="flip-hint" aria-hidden="true">
             {FLIP_SVG}
           </span>
@@ -102,7 +117,9 @@ def main():
     for page, releases in data.items():
         changed = splice(page, grids_html(releases))
         n_missing = sum(len(r.get("missing", [])) for r in releases)
-        print(f"  {page}.html: {len(releases)} releases, "
+        n_lp = sum(1 for r in releases if fmt(r) == "LP")
+        print(f"  {page}.html: {len(releases)} releases "
+              f"({n_lp} LP, {len(releases) - n_lp} single), "
               f"{sum(len(r['tracks']) for r in releases)} tracks, {n_missing} flagged"
               f"{'  (updated)' if changed else '  (no change)'}")
         jump = jump_html(releases)

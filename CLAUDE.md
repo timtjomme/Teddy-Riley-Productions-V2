@@ -43,6 +43,7 @@ a `<div class="card">` — the next build overwrites it.
 - `missing` is optional; list the exact track strings that are missing from the
   collection. They render red and give that card a legend. It comes from the
   red `<mark>` spans on the source site.
+- `format` is optional and usually unnecessary — see below.
 - `image` is a filename inside `imgs/`. Download the cover, name it
   `<year>-<artist>-<title>` kebab-cased, and drop it there.
 - No cover available? Use `"image": "placeholder-sleeve.svg"` — a neutral
@@ -54,6 +55,31 @@ a `<div class="card">` — the next build overwrites it.
 
 `build.py` rewrites only the region between the `RELEASES:START` / `RELEASES:END`
 markers. Hero, intro copy, nav and footer are hand-written; edit those directly.
+
+### LP or Single
+
+Each sleeve carries its format top-left, where the year used to sit — the year
+is already the section heading above the grid, so the card repeated it.
+
+Nothing in the JSON says LP or Single, so **a numbered tracklist is the tell**:
+`"01. Her"`, `"05 — Sleaze"`, `"3. Can We Try Again"` means the entry is an
+album; a list of versions of one song (`"Groove Me (Radio Edit)"`) means it's a
+single. That is how the source site writes them, so pasted tracklists classify
+themselves. `NUMBERED` in `build.py` is the rule, mirrored by `releaseFormat()`
+in `script.js` for the card the 404 page builds at runtime — change one, change
+both.
+
+Where the tracklist can't tell — one unnumbered track lifted off an album, a
+soundtrack — add `"format": "LP"` (or `"Single"`) to that release and it wins.
+Two entries need it today: Big Daddy Kane's *It's A Big Daddy Thing* and the
+*Do The Right Thing* soundtrack. `build.py` prints the LP/single split per page,
+which is the quickest way to spot a new release landing on the wrong side.
+
+The mark itself is the same frosted paper plate as `.flip-hint` in the opposite
+corner, minus the border — the two corners read as a pair. A third of these
+sleeves are near-white and a third near-black, so no single ink survives both
+on its own; the plate is what carries the caps, and on a pale sleeve it all but
+disappears.
 
 ### A new year
 
