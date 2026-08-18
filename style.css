@@ -236,21 +236,148 @@
   }
   .flip-hint svg{ width:13px; height:13px; }
 
+  /* ---- VIDEO MODAL ---- */
+  .video-modal{
+    position:fixed; inset:0;
+    z-index:200;
+    display:flex; align-items:center; justify-content:center;
+    padding: 60px 24px 24px;
+  }
+  .video-modal[hidden]{ display:none; }
+  .video-modal-backdrop{
+    position:absolute; inset:0;
+    background: rgba(8,8,10,0.88);
+    opacity:0;
+    transition: opacity 0.25s ease;
+  }
+  .video-modal.is-open .video-modal-backdrop{ opacity:1; }
+  .video-modal-box{
+    position:relative;
+    width:100%; max-width: 900px;
+    opacity:0;
+    transform: scale(0.97);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+  .video-modal.is-open .video-modal-box{ opacity:1; transform:none; }
+  .video-modal-close{
+    all:unset;
+    position:absolute; top:-38px; right:0;
+    width:32px; height:32px;
+    display:flex; align-items:center; justify-content:center;
+    color:#fff;
+    font-size:26px;
+    line-height:1;
+    cursor:pointer;
+  }
+  .video-modal-close:hover{ opacity:0.8; }
+  .video-modal-tabs{
+    display:flex; flex-wrap:wrap; gap:8px;
+    margin-bottom:10px;
+  }
+  .video-modal-tabs button{
+    all:unset;
+    cursor:pointer;
+    font: 600 10px/1 'Open Sans', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color: rgba(255,255,255,0.75);
+    padding: 7px 11px;
+    border: 1px solid rgba(255,255,255,0.32);
+    border-radius: 2px;
+  }
+  .video-modal-tabs button[aria-current]{
+    color:#0a0a0c;
+    background:#fff;
+    border-color:#fff;
+  }
+  .video-modal-frame{
+    position:relative;
+    width:100%;
+    aspect-ratio: 16 / 9;
+    background:#000;
+  }
+  .video-modal-frame iframe{
+    position:absolute; inset:0;
+    width:100%; height:100%;
+    border:0;
+  }
+
   /* ---- BACK (label) ---- */
   .back{
+    /* no position here — .face already sets position:absolute, which the
+       flip depends on; re-declaring it (even to the same-looking "relative")
+       would win the cascade tie against .face and silently break the flip */
     transform: rotateY(180deg);
-    background: var(--label);
-    color: var(--ink);
+    /* the cover itself, sharp and un-blurred — .back::before does the
+       blurring via backdrop-filter, not this. Same neutral .front falls
+       back to if its own image is missing, not --label: a dark fallback
+       under a pale wash turns any rendering seam into a visible black line,
+       where a light one just disappears. */
+    background-image: var(--cover-img);
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f2;
+    color: var(--label);
     padding: 16px 16px 14px;
     display:flex;
     flex-direction:column;
+    /* the missing-track red was brightened for the old dark face; on this
+       pale, image-washed one the bright version reads too light, so it's
+       darkened back down again, scoped here so .missing-note and the YEP
+       widget elsewhere keep the brighter one */
+    --missing: #b3261e;
+  }
+  /* Blurs the cover via backdrop-filter — the same frosted-glass technique
+     as .format's badge on the front face — rather than filter:blur() on an
+     oversized copy of it. filter:blur() needs a bled, negatively-inset box
+     to fade out in before .face's rounded overflow:hidden clips it, and in
+     practice that clip edge still shows a faint seam against the blur layer
+     no matter how much bleed it's given (a known rendering quirk of
+     rounding + clipping + a blurred child, worse again on a
+     backface-visibility:hidden face). backdrop-filter blurs what's already
+     composited behind it instead of blurring its own box, so there's no
+     oversized layer for the clip to catch a seam against — .format proves
+     this same combination (rounded, clipped, backface-hidden face) renders
+     clean with backdrop-filter right on this site. */
+  .back::before{
+    content:"";
+    position:absolute;
+    inset: 0;
+    backdrop-filter: blur(18px) saturate(1.15);
+    background: rgba(255,255,255,0.82);
+  }
+  /* real content sits above the frosted layer */
+  .back > *{
+    position: relative;
+    z-index: 1;
   }
 
   .back-head{
-    border-bottom: 1px solid rgba(255,255,255,0.16);
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:10px;
+    border-bottom: 1px solid var(--rule);
     padding-bottom: 8px;
     margin-bottom: 8px;
   }
+  .back-head-text{ min-width:0; }
+  /* Sits right of the title — appears only on releases with a matching
+     clip. Same circular-icon language as .flip-hint on the front. */
+  .video-btn{
+    all: unset;
+    flex-shrink:0;
+    width:26px; height:26px;
+    margin-top:1px;
+    border-radius:50%;
+    border: 1px solid rgba(0,0,0,0.28);
+    display:flex; align-items:center; justify-content:center;
+    color: var(--label);
+    cursor:pointer;
+  }
+  .video-btn:hover{ background: rgba(0,0,0,0.06); }
+  .video-btn:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+  .video-btn svg{ width:12px; height:12px; margin-left:1px; }
   .back .artist{
     font: 600 15px/1.2 'Open Sans', sans-serif;
     margin:0;
@@ -258,15 +385,15 @@
   .back .title{
     font: 400 12px/1.2 'Open Sans', sans-serif;
     font-style: italic;
-    color: var(--ink-soft);
+    color: var(--muted);
     margin: 1px 0 0;
   }
   .back .label-name{
     font: 600 10px/1 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    /* --ink-soft, not --accent-soft: this sits on the dark label face */
-    color: var(--ink-soft);
+    /* --muted, not --ink-soft: this face is a pale wash now, not dark */
+    color: var(--muted);
     margin: 6px 0 0;
   }
 
@@ -286,10 +413,18 @@
     content:"";
     width:5px; height:5px;
     border-radius:50%;
-    background: var(--ink-soft);
+    background: var(--muted);
     margin-top:6px;
     flex-shrink:0;
-    opacity:0.35;
+    opacity:0.45;
+  }
+  .back .note{
+    font: 400 10.5px/1.4 'Open Sans', sans-serif;
+    font-style: italic;
+    color: var(--muted);
+    margin: 8px 0 0;
+    padding-top: 8px;
+    border-top: 1px solid var(--rule);
   }
   .back-foot{
     display:flex;
@@ -297,7 +432,7 @@
     justify-content:flex-end;
     padding-top:8px;
     margin-top:6px;
-    border-top: 1px solid rgba(255,255,255,0.16);
+    border-top: 1px solid var(--rule);
   }
   .back-foot button{
     all:unset;
@@ -305,12 +440,12 @@
     font: 600 10px/1 'Open Sans', sans-serif;
     text-transform:uppercase;
     letter-spacing:0.06em;
-    color: var(--ink);
+    color: var(--label);
     padding: 6px 10px;
-    border: 1px solid rgba(255,255,255,0.32);
+    border: 1px solid rgba(0,0,0,0.28);
     border-radius: 2px;
   }
-  .back-foot button:hover{ background: rgba(255,255,255,0.09); }
+  .back-foot button:hover{ background: rgba(0,0,0,0.06); }
 
   footer{
     max-width: 1040px;
@@ -444,6 +579,12 @@
   .panel.is-soon .panel-label{ opacity: 0.82; }
   .panel.is-soon::after{ background: rgba(10,10,12,0.52); }
 
+  .panel-1980s{ background-image: url('imgs/hero-1980s.jpg'); --panel-pos: 14%; }
+  .panel-1990s{ background-image: url('imgs/panel-1990s.jpg'); --panel-pos: 8%; }
+  .panel-2000s{ background-image: url('imgs/panel-2000s.jpg'); }
+  .panel-2010s{ background-image: url('imgs/panel-2010s.jpg'); }
+  .panel-2020s{ background-image: url('imgs/panel-2020s.jpg'); --panel-pos: 28%; }
+
   .home-foot{
     max-width: 1040px;
     margin: 0 auto;
@@ -486,6 +627,28 @@
     font-size: clamp(26px, 4.4vw, 50px);
     letter-spacing: -0.01em;
   }
+
+  /* same dark-ground-plus-logo treatment as .panel.is-njs, for the page's
+     own header — there's no decade photo to hang --hero-img on */
+  .hero.is-njs{
+    flex-direction: column;
+    gap: 22px;
+    background-color: #121214;
+    background-image: none;
+  }
+  .hero.is-njs::after{ background: transparent; }
+  .hero-njs-logo{
+    position: relative;
+    z-index: 1;
+    display:block;
+    width: 120px;
+    height:auto;
+    opacity: 0.9;
+  }
+  .hero.is-njs .hero-title{
+    font-size: clamp(40px, 7vw, 84px);
+  }
+
   /* same white logo on the light footer needs inverting to stay visible */
   .home-foot img{ filter: invert(1); }
 
@@ -602,9 +765,32 @@
   }
   .home-foot .contact-cta a:hover{ opacity: 0.6; }
 
+  /* ---- PRIVACY POLICY ---- */
+  .policy{ max-width: 720px; }
+  .policy h3{
+    font: 600 20px/1.3 'Open Sans', sans-serif;
+    margin: 40px 0 12px;
+  }
+  .policy h3:first-child{ margin-top: 0; }
+  .policy p{
+    font: 400 15px/1.7 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 0 0 14px;
+    text-wrap: pretty;
+  }
+  .policy p:last-child{ margin-bottom: 0; }
+  .policy a{
+    color: var(--label);
+    text-decoration-color: var(--rule);
+    text-underline-offset: 2px;
+  }
+  .policy a:hover{ text-decoration-color: currentColor; }
+
   /* ---- MISSING FROM COLLECTION ---- */
   :root{
-    /* brighter than the original red: this sits on the dark label face */
+    /* brighter than the original red: for .missing-note and the dark YEP
+       widget. The card back overrides this to a darker red of its own,
+       scoped inside .back — see the comment there. */
     --missing: #ff6f6b;
   }
   .tracks li.missing{ color: var(--missing); font-weight: 600; }
@@ -612,7 +798,7 @@
 
   .legend{
     font: 400 10px/1 'Open Sans', sans-serif;
-    color: var(--ink-soft);
+    color: var(--muted);
     display:flex; align-items:center; gap:6px;
   }
   .legend span{
@@ -786,6 +972,14 @@
     margin-top: 12px !important;
     text-wrap: pretty;
   }
+  .foot-links{
+    font: 400 12px/1.6 'Open Sans', sans-serif;
+  }
+  .foot-links a{
+    color: var(--muted);
+    text-underline-offset: 2px;
+  }
+  .foot-links a:hover{ color: var(--label); }
 
   /* ---- YEP YEP WIDGET ---- */
   .sr-only{
@@ -803,22 +997,19 @@
 
   .yep-btn{
     display:block;
-    width: 64px; height: 64px;
+    height: 64px;
     padding: 0;
-    border-radius: 50%;
-    border: 2px solid var(--label);
-    background: var(--label);
-    overflow: hidden;
+    border: 0;
+    background: none;
     cursor: pointer;
-    box-shadow: 0 8px 24px -6px rgba(0,0,0,0.45);
-    transition: transform 0.22s ease, box-shadow 0.22s ease;
+    transition: transform 0.22s ease;
   }
   .yep-btn img{
-    width:100%; height:100%;
-    object-fit: cover;
+    width:auto; height:100%;
+    object-fit: contain;
     display:block;
   }
-  .yep-btn:hover{ transform: scale(1.06); box-shadow: 0 10px 28px -6px rgba(0,0,0,0.55); }
+  .yep-btn:hover{ transform: scale(1.06); }
   .yep-btn:focus-visible{ outline: 3px solid var(--accent); outline-offset: 3px; }
 
   .yep-bubble{
@@ -908,7 +1099,7 @@
   /* on a narrow screen the widget would sit on top of the footer prompt */
   @media (max-width: 560px){
     .yep{ bottom: 16px; left: 16px; }
-    .yep-btn{ width: 54px; height: 54px; }
+    .yep-btn{ height: 54px; }
   }
 
   /* the widget waits until the header has scrolled past */

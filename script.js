@@ -6,7 +6,10 @@ function wireCard(card){
   }
   card.addEventListener('click', toggle);
   card.addEventListener('keydown', function(e){
-    if(e.key === 'Enter' || e.key === ' '){
+    // e.target guards against a nested control (the video button) bubbling
+    // its own Enter/Space up here — only the card itself being the focused
+    // target should flip it.
+    if(e.target === card && (e.key === 'Enter' || e.key === ' ')){
       e.preventDefault();
       toggle();
     }
@@ -121,7 +124,7 @@ function buildYepWidget(){
     '<div class="yep-bubble" aria-hidden="true">YEP YEP!</div>' +
     '<button class="yep-btn" type="button" aria-expanded="false" ' +
       'aria-controls="yep-panel">' +
-      '<img src="imgs/yep-avatar.jpg" alt="" width="64" height="64">' +
+      '<img src="imgs/yep-avatar.png" alt="" height="64">' +
       '<span class="sr-only">Add something to the archive</span>' +
     '</button>' +
     '<div class="yep-panel" id="yep-panel" role="dialog" aria-modal="false" ' +
@@ -226,6 +229,91 @@ function initToTop(){
   onScroll();
 }
 
+// ---- VIDEO MODAL -------------------------------------------------------
+// A release can carry one or more YouTube clips: a .video-btn's data-videos
+// is a JSON array of {id, label}. Delegated at the document level so it
+// also catches the 404 page's card, built after this runs.
+function videoModal(){
+  var modal, frame, tabs, lastFocus;
+
+  function ensure(){
+    if(modal) return;
+    modal = document.createElement('div');
+    modal.className = 'video-modal';
+    modal.hidden = true;
+    modal.innerHTML =
+      '<div class="video-modal-backdrop"></div>' +
+      '<div class="video-modal-box" role="dialog" aria-modal="true" aria-label="Video">' +
+        '<button type="button" class="video-modal-close" aria-label="Close">&times;</button>' +
+        '<div class="video-modal-tabs"></div>' +
+        '<div class="video-modal-frame">' +
+          '<iframe src="" title="" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(modal);
+    frame = modal.querySelector('iframe');
+    tabs  = modal.querySelector('.video-modal-tabs');
+    modal.querySelector('.video-modal-backdrop').addEventListener('click', close);
+    modal.querySelector('.video-modal-close').addEventListener('click', close);
+  }
+
+  function show(id){
+    frame.title = 'YouTube video player';
+    frame.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+  }
+
+  function open(videos){
+    ensure();
+    lastFocus = document.activeElement;
+    tabs.innerHTML = '';
+    tabs.hidden = videos.length < 2;
+    videos.forEach(function(v, i){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = v.label;
+      if(i === 0) b.setAttribute('aria-current', 'true');
+      b.addEventListener('click', function(){
+        show(v.id);
+        Array.prototype.forEach.call(tabs.querySelectorAll('button'), function(x){
+          x.removeAttribute('aria-current');
+        });
+        b.setAttribute('aria-current', 'true');
+      });
+      tabs.appendChild(b);
+    });
+    show(videos[0].id);
+    modal.hidden = false;
+    requestAnimationFrame(function(){ modal.classList.add('is-open'); });
+    modal.querySelector('.video-modal-close').focus();
+  }
+
+  function close(){
+    if(!modal || modal.hidden) return;
+    modal.classList.remove('is-open');
+    frame.src = '';                 // stop playback, not just hide it
+    modal.hidden = true;
+    if(lastFocus) lastFocus.focus();
+  }
+
+  // Capture phase, not bubble: .card-inner's own click-to-flip listener
+  // sits between this button and document, so by the time a bubbling
+  // listener up here saw the click, the flip had already fired. Capture
+  // runs root-down, ahead of that listener, so stopPropagation here
+  // actually pre-empts it instead of reacting a step too late.
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.video-btn');
+    if(!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    open(JSON.parse(btn.getAttribute('data-videos')));
+  }, true);
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') close();
+  });
+}
+
+videoModal();
+
 initToTop();
 document.querySelectorAll('.contact-form').forEach(function(f){
   if(!f.closest('.ask') && !f.closest('.yep')) wireContactForm(f);
@@ -328,15 +416,15 @@ function initLostPage(){
     var card = document.createElement('div');
     card.className = 'card';
     card.innerHTML =
-      '<div class="card-inner" role="button" tabindex="0" aria-pressed="false">' +
+      '<div class="card-inner" role="button" tabindex="0" aria-pressed="false" style="--cover-img:url(\'imgs/' + r.image + '\')">' +
         '<div class="face front">' +
           '<img src="imgs/' + r.image + '" alt="">' +
           '<span class="format"></span>' +
           '<div class="scrim"><p class="artist"></p><p class="title"></p></div>' +
         '</div>' +
         '<div class="face back">' +
-          '<div class="back-head"><p class="artist"></p>' +
-          '<p class="label-name"></p></div>' +
+          '<div class="back-head"><div class="back-head-text"><p class="artist"></p>' +
+          '<p class="label-name"></p></div></div>' +
           '<ul class="tracks"></ul>' +
           '<div class="back-foot"><button type="button">Flip back</button></div>' +
         '</div>' +
@@ -348,6 +436,15 @@ function initLostPage(){
     card.querySelector('.back .artist').textContent  = r.artist + ' — ' + r.title;
     card.querySelector('.label-name').textContent    = r.label;
     card.querySelector('img').alt = r.artist + ' – ' + r.title + ' sleeve';
+    if(r.videos && r.videos.length){
+      var videoBtn = document.createElement('button');
+      videoBtn.type = 'button';
+      videoBtn.className = 'video-btn';
+      videoBtn.setAttribute('aria-label', 'Watch video');
+      videoBtn.setAttribute('data-videos', JSON.stringify(r.videos));
+      videoBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+      card.querySelector('.back-head').appendChild(videoBtn);
+    }
     var ul = card.querySelector('.tracks');
     var missing = r.missing || [];
     r.tracks.forEach(function(t){

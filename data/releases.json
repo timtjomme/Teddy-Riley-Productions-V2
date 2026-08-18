@@ -2,16 +2,17 @@
   "1980s": [
     {
       "year": "1982",
-      "artist": "Atlantis",
+      "artist": "Atlantis / Total Climax",
       "title": "Keep On Movin' And Groovin'",
       "label": "Barclay",
       "image": "1982-atlantis-keep-on-movin-and-groovin.jpg",
       "tracks": [
         "Keep On Movin' And Groovin'",
-        "Keep On Movin' And Groovin' (Vocal)",
+        "Keep On Movin' And Groovin' (\"Hard\" Version)",
         "Keep On Movin' And Groovin' (Instrumental)",
-        "Keep On Movin' And Groovin' (\"Hard\" Version)"
-      ]
+        "Keep On Movin' And Groovin' (Vocal)"
+      ],
+      "note": "Teddy Riley played keyboards in this group as a teenager, mentored and produced by Royal Bayyan — the band was originally known as Total Climax before taking the Atlantis name."
     },
     {
       "year": "1984",
@@ -20,10 +21,10 @@
       "label": "Sound Of New York",
       "image": "1984-kids-at-work-sugar-baby.jpg",
       "tracks": [
-        "Sugar Baby (Vocal Version) (7″ Edit)",
-        "Sugar Baby (Vocal Version)",
+        "Sugar Baby (Disco Version)",
         "Sugar Baby (Disco Version) (7″ Edit)",
-        "Sugar Baby (Disco Version)"
+        "Sugar Baby (Vocal Version)",
+        "Sugar Baby (Vocal Version) (7″ Edit)"
       ]
     },
     {
@@ -49,9 +50,9 @@
       "label": "Sound Of New York",
       "image": "1984-kids-at-work-singing-hey-yea.jpg",
       "tracks": [
-        "Singing Hey Yea (7″ Edit)",
+        "Reggae Kids (7″ Edit)",
         "Singing Hey Yea",
-        "Reggae Kids (7″ Edit)"
+        "Singing Hey Yea (7″ Edit)"
       ]
     },
     {
@@ -61,10 +62,10 @@
       "label": "Reality",
       "image": "1985-doug-e-fresh-and-the-get-fresh-crew-the-show-la-di-da-di.jpg",
       "tracks": [
-        "The Show (Vocal)",
-        "The Show",
         "La-Di-Da-Di",
-        "The Show (Instrumental)"
+        "The Show",
+        "The Show (Instrumental)",
+        "The Show (Vocal)"
       ]
     },
     {
@@ -74,10 +75,10 @@
       "label": "Sugar Hill Records",
       "image": "1985-la-va-ba-that-girl.jpg",
       "tracks": [
-        "The Show (Vocal)",
-        "The Show",
         "La-Di-Da-Di",
-        "The Show (Instrumental)"
+        "The Show",
+        "The Show (Instrumental)",
+        "The Show (Vocal)"
       ]
     },
     {
@@ -87,9 +88,9 @@
       "label": "M-Low Records",
       "image": "1985-the-masters-of-ceremony-crime.jpg",
       "tracks": [
-        "Crime (Vocal)",
+        "Crime (Dub Version)",
         "Crime (Instrumental)",
-        "Crime (Dub Version)"
+        "Crime (Vocal)"
       ]
     },
     {
@@ -111,8 +112,8 @@
       "image": "1986-awesome-foursome-monster-beat.jpg",
       "tracks": [
         "Monster Beat",
-        "Monster Beat (Short Version)",
-        "Monster Beat (Dub)"
+        "Monster Beat (Dub)",
+        "Monster Beat (Short Version)"
       ]
     },
     {
@@ -133,11 +134,11 @@
       "label": "Twin Tower Records",
       "image": "1986-delicious-my-body-and-soul.jpg",
       "tracks": [
-        "My Body And Soul (Main)",
-        "My Body And Soul (Short)",
-        "My Body And Soul (Radio Version)",
         "My Body And Soul (Instrumental)",
-        "My Body and Soul (Instrumental '86)"
+        "My Body and Soul (Instrumental '86)",
+        "My Body And Soul (Main)",
+        "My Body And Soul (Radio Version)",
+        "My Body And Soul (Short)"
       ]
     },
     {
@@ -147,11 +148,11 @@
       "label": "Reality",
       "image": "1986-disco-four-get-busy-stomp-stomp-clap.jpg",
       "tracks": [
-        "Get Busy (Radio Edit)",
         "Get Busy",
         "Get Busy (Dub)",
-        "Stomp, Stomp, Clap (Vocal)",
-        "Stomp, Stomp, Clap (Instrumental)"
+        "Get Busy (Radio Edit)",
+        "Stomp, Stomp, Clap (Instrumental)",
+        "Stomp, Stomp, Clap (Vocal)"
       ]
     },
     {
@@ -161,11 +162,11 @@
       "label": "Rooftop Records",
       "image": "1986-kool-moe-dee-go-see-the-doctor-monster-crack.jpg",
       "tracks": [
-        "Go See The Doctor (Uncensored)",
         "Go See The Doctor (Almost Clean)",
         "Go See the Doctor (Instrumental) (Explicit)",
-        "Monster Crack (Street Mix)",
-        "Monster Crack (Radio Edit)"
+        "Go See The Doctor (Uncensored)",
+        "Monster Crack (Radio Edit)",
+        "Monster Crack (Street Mix)"
       ]
     },
     {
@@ -175,9 +176,9 @@
       "label": "Rooftop Records",
       "image": "1986-kids-at-work-so-bad-togetherness.jpg",
       "tracks": [
-        "Togetherness",
         "She's So Bad",
-        "So Bad Mix"
+        "So Bad Mix",
+        "Togetherness"
       ]
     },
     {
@@ -187,12 +188,12 @@
       "label": "N.V.",
       "image": "1986-ray-rock-k-c-minnie-rayrock-kick-it.jpg",
       "tracks": [
-        "Minnie (Long Version)",
         "Minnie (Dub)",
+        "Minnie (Long Version)",
         "Minnie (Short Version)",
-        "Rayrock Kick It (Vocal Version)",
         "Rayrock Kick It (Dub)",
-        "Rayrock Kick It (Short Version)"
+        "Rayrock Kick It (Short Version)",
+        "Rayrock Kick It (Vocal Version)"
       ]
     },
     {
@@ -203,8 +204,8 @@
       "image": "1987-b-fats-b-fats.jpg",
       "tracks": [
         "The B-Fats",
-        "The B-Fats (Radio Mix)",
-        "The B-Fats (Dub)"
+        "The B-Fats (Dub)",
+        "The B-Fats (Radio Mix)"
       ]
     },
     {
@@ -236,8 +237,8 @@
       "label": "Rooftop Records",
       "image": "1987-delicious-stop-playing.jpg",
       "tracks": [
-        "Stop Playing (Radio Version)",
-        "Stop Playing (Club Version)"
+        "Stop Playing (Club Version)",
+        "Stop Playing (Radio Version)"
       ]
     },
     {
@@ -247,11 +248,11 @@
       "label": "Yamak-ka Records",
       "image": "1987-divine-force-t-v-guide-the-jizer-we-came-here.jpg",
       "tracks": [
-        "T.V. Guide (Vocal)",
+        "The Jizer (Listen To This) (Dub)",
         "The Jizer (Vocal)",
-        "We Came Here… (Vocal)",
+        "T.V. Guide (Vocal)",
         "We Came Here… (Dub)",
-        "The Jizer (Listen To This) (Dub)"
+        "We Came Here… (Vocal)"
       ]
     },
     {
@@ -282,8 +283,8 @@
       "image": "1987-heavy-d-the-boyz-feat-al-b-sure-money-ernin-mt-vernon.jpg",
       "tracks": [
         "Money Ernin' Mt. Vernon (12″)",
-        "Money Ernin' Mt. Vernon (Instrumental)",
-        "Money Ernin' Mt. Vernon (Bonus Beats)"
+        "Money Ernin' Mt. Vernon (Bonus Beats)",
+        "Money Ernin' Mt. Vernon (Instrumental)"
       ],
       "missing": [
         "Money Ernin' Mt. Vernon (12″)",
@@ -298,12 +299,18 @@
       "label": "Vintertainment",
       "image": "1987-keith-sweat-i-want-her.jpg",
       "tracks": [
+        "I Want Her (Acappella Dub Beat)",
         "I Want Her (Edit Of LP Version)",
+        "I Want Her (Extended Version)",
         "I Want Her (Instrumental)",
         "I Want Her (LP Version)",
-        "I Want Her (Extended Version)",
-        "I Want Her (Acappella Dub Beat)",
         "I Want Her (Part 2)"
+      ],
+      "videos": [
+        {
+          "id": "ECnOEfQipiE",
+          "label": "I Want Her"
+        }
       ]
     },
     {
@@ -343,8 +350,8 @@
       "image": "1987-kool-moe-dee-dumb-dick-richard.jpg",
       "tracks": [
         "Dumb Dick (Extended Version)",
-        "Dumb Dick (Single Edit)",
-        "Dumb Dick (Instrumental)"
+        "Dumb Dick (Instrumental)",
+        "Dumb Dick (Single Edit)"
       ]
     },
     {
@@ -355,8 +362,8 @@
       "image": "1987-kool-moe-dee-how-ya-like-me-now.jpg",
       "tracks": [
         "How Ya Like Me Now (Extended Mix)",
-        "How Ya Like Me Now (Single Edit)",
-        "How Ya Like Me Now (Instrumental)"
+        "How Ya Like Me Now (Instrumental)",
+        "How Ya Like Me Now (Single Edit)"
       ]
     },
     {
@@ -404,9 +411,9 @@
       "label": "Jive",
       "image": "1987-kool-moe-dee-wild-wild-west.jpg",
       "tracks": [
-        "Wild, Wild West (Special Extended Re-mix)",
+        "Wild, Wild West (Instrumental)",
         "Wild, Wild West (Single Edit)",
-        "Wild, Wild West (Instrumental)"
+        "Wild, Wild West (Special Extended Re-mix)"
       ]
     },
     {
@@ -416,9 +423,9 @@
       "label": "Hechomance Records",
       "image": "1987-roof-top-crew-caught-out-there.jpg",
       "tracks": [
-        "Hechomance Records",
         "Caught Out There",
-        "Caught Out There (Instrumental)"
+        "Caught Out There (Instrumental)",
+        "Hechomance Records"
       ]
     },
     {
@@ -429,8 +436,8 @@
       "image": "1987-spoonie-gee-i-m-all-shook-up.jpg",
       "tracks": [
         "I'm All Shook Up",
-        "I'm All Shook Up (Instrumental)",
         "I'm All Shook Up (Bonus Beats)",
+        "I'm All Shook Up (Instrumental)",
         "Spoonie's Rap (Live)"
       ]
     },
@@ -442,8 +449,8 @@
       "image": "1987-the-classical-two-new-generation.jpg",
       "tracks": [
         "New Generation",
-        "(She's A) Freak Dog",
-        "Next Generation Dub"
+        "Next Generation Dub",
+        "(She's A) Freak Dog"
       ]
     },
     {
@@ -453,9 +460,9 @@
       "label": "World To World Records",
       "image": "1987-the-crash-crew-the-crash-crew-is-back.jpg",
       "tracks": [
+        "Back From Vacation",
         "Crash Crew Is Back (Vocal)",
-        "Crash Crew's Back (Dub)",
-        "Back From Vacation"
+        "Crash Crew's Back (Dub)"
       ]
     },
     {
@@ -466,8 +473,8 @@
       "image": "1987-tony-tee-the-composer-expressing-my-thoughts.jpg",
       "tracks": [
         "Expressing My Thoughts",
-        "Rap Is Music",
-        "Expressing My Thoughts (Dub)"
+        "Expressing My Thoughts (Dub)",
+        "Rap Is Music"
       ]
     },
     {
@@ -477,10 +484,10 @@
       "label": "MCA Records",
       "image": "1987-woody-rock-bigger-s-beat.jpg",
       "tracks": [
-        "I Introduce The Beat (Radio Mix)",
-        "I Introduce The Beat (Instrumental)",
         "I Introduce The Beat (Extended)",
-        "I Introduce The Beat (Hip Hop Mix)"
+        "I Introduce The Beat (Hip Hop Mix)",
+        "I Introduce The Beat (Instrumental)",
+        "I Introduce The Beat (Radio Mix)"
       ],
       "missing": [
         "I Introduce The Beat (Extended)",
@@ -505,10 +512,10 @@
       "image": "1988-al-b-sure-feat-slick-rick-if-i-m-not-your-lover.jpg",
       "tracks": [
         "If I'm Not Your Lover (12″ Remix)",
-        "If I'm Not Your Lover (LP Version)",
-        "If I'm Not Your Lover (R&B Remix)",
         "If I'm Not Your Lover (7″ Remix)",
-        "If I'm Not Your Lover (CHR Mix)"
+        "If I'm Not Your Lover (CHR Mix)",
+        "If I'm Not Your Lover (LP Version)",
+        "If I'm Not Your Lover (R&B Remix)"
       ]
     },
     {
@@ -528,9 +535,9 @@
       "label": "Chrysalis",
       "image": "1988-blondie-rapture-the-teddy-riley-remix.jpg",
       "tracks": [
+        "Rapture (Dub Version)",
         "Rapture (The Teddy Riley 7″ Remix)",
-        "Rapture (The Teddy Riley Remix)",
-        "Rapture (Dub Version)"
+        "Rapture (The Teddy Riley Remix)"
       ]
     },
     {
@@ -552,15 +559,21 @@
       "image": "1988-bobby-brown-my-prerogative.jpg",
       "tracks": [
         "My Prerogative (7″ Version)",
-        "My Prerogative (Radio Edit)",
-        "My Prerogative (Extended Remix)",
+        "My Prerogative (CHR Edit)",
         "My Prerogative (Dub)",
-        "My Prerogative (Instrumental) 5:20",
+        "My Prerogative (Extended Remix)",
         "My Prerogative (Instrumental) 4:30",
-        "My Prerogative (CHR Edit)"
+        "My Prerogative (Instrumental) 5:20",
+        "My Prerogative (Radio Edit)"
       ],
       "missing": [
         "My Prerogative (CHR Edit)"
+      ],
+      "videos": [
+        {
+          "id": "XHxHlkf7ePc",
+          "label": "My Prerogative"
+        }
       ]
     },
     {
@@ -570,9 +583,9 @@
       "label": "Rooftop Records",
       "image": "1988-clurel-hurtown.jpg",
       "tracks": [
+        "Hurtown (Dub Version)",
         "Hurtown (Radio Version)",
-        "Hurtown (T.V. Version)",
-        "Hurtown (Dub Version)"
+        "Hurtown (T.V. Version)"
       ]
     },
     {
@@ -582,12 +595,12 @@
       "label": "Virgin",
       "image": "1988-d-j-going-crazy.jpg",
       "tracks": [
+        "Goin' Crazy (Bonus Beats)",
         "Going Crazy (12″ Mix)",
-        "Going Crazy (Dub)",
         "Going Crazy (7″ Edit)",
         "Going Crazy (Alt. 12″)",
         "Going Crazy (Alt. Dub)",
-        "Goin' Crazy (Bonus Beats)"
+        "Going Crazy (Dub)"
       ],
       "missing": [
         "Goin' Crazy (Bonus Beats)"
@@ -600,16 +613,22 @@
       "label": "Virgin",
       "image": "1988-d-j-made-to-be-together.jpg",
       "tracks": [
-        "Made To Be Together (7″ Remix)",
         "Made To Be Together (12″ Mix)",
+        "Made To Be Together (7″ Remix)",
         "Made To Be Together (Accapella)",
         "Made To Be Together (Dub)",
-        "Made To Be Together (Jazz)",
-        "Made To Be Together (Engagement Mix)"
+        "Made To Be Together (Engagement Mix)",
+        "Made To Be Together (Jazz)"
       ],
       "missing": [
         "Made To Be Together (Accapella)",
         "Made To Be Together (Engagement Mix)"
+      ],
+      "videos": [
+        {
+          "id": "JbWXUegSMUs",
+          "label": "Made To Be Together"
+        }
       ]
     },
     {
@@ -619,14 +638,20 @@
       "label": "MCA Records",
       "image": "1988-guy-groove-me.jpg",
       "tracks": [
+        "Groove Me (A Cappella)",
+        "Groove Me (Bassapella)",
+        "Groove Me (Bonus Beats)",
         "Groove Me (Extended Version 1) (7:53)",
         "Groove Me (Extended Version 2) (7:11)",
         "Groove Me (Extended Version 3 ) (6:10)",
         "Groove Me (Radio Edit)",
-        "Groove Me (Radio Mix)",
-        "Groove Me (Bassapella)",
-        "Groove Me (Bonus Beats)",
-        "Groove Me (A Cappella)"
+        "Groove Me (Radio Mix)"
+      ],
+      "videos": [
+        {
+          "id": "N00HuG0QM7o",
+          "label": "Groove Me"
+        }
       ]
     },
     {
@@ -657,11 +682,11 @@
       "tracks": [
         "'Round And 'Round (Merry Go 'Round Of Love) (12″ Extended Version)",
         "'Round And 'Round (Merry Go 'Round Of Love) (Acapella)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (Radio Edit)",
+        "'Round And 'Round (Merry Go 'Round Of Love) (Bonus Beats)",
         "'Round And 'Round (Merry Go 'Round Of Love) (Dub Version)",
         "'Round And 'Round (Merry Go 'Round Of Love) (House Mix)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (Bonus Beats)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (Instrumental)"
+        "'Round And 'Round (Merry Go 'Round Of Love) (Instrumental)",
+        "'Round And 'Round (Merry Go 'Round Of Love) (Radio Edit)"
       ]
     },
     {
@@ -671,12 +696,12 @@
       "label": "Uptown Records",
       "image": "1988-guy-teddy-s-jam.jpg",
       "tracks": [
-        "Teddy's Jam (Radio Edit)",
-        "Teddy's Jam (Extended 01)",
-        "Teddy's Jam (Club / Extended Mix)",
-        "Teddy's Jam (Hype Mix)",
-        "Teddy's Jam (Hype Beats)",
         "Teddy's Jam (Bonus Beats)",
+        "Teddy's Jam (Club / Extended Mix)",
+        "Teddy's Jam (Extended 01)",
+        "Teddy's Jam (Hype Beats)",
+        "Teddy's Jam (Hype Mix)",
+        "Teddy's Jam (Radio Edit)",
         "Teddy's Jazz"
       ]
     },
@@ -688,8 +713,8 @@
       "image": "1988-heavy-d-the-boyz-don-t-you-know-moneyearnin-mount-vernon.jpg",
       "tracks": [
         "Moneyearnin' Mount Vernon (12″ Vocal Mix)",
-        "Moneyearnin' Mount Vernon (Instrumental)",
         "Moneyearnin' Mount Vernon (Bonus Beats)",
+        "Moneyearnin' Mount Vernon (Instrumental)",
         "Moneyearnin' Mount Vernon (Instrumental 02)"
       ]
     },
@@ -710,11 +735,11 @@
       "label": "CBS",
       "image": "1988-johnny-kemp-just-got-paid.jpg",
       "tracks": [
-        "Just Got Paid (7″ Version)",
         "Just Got Paid (7″ Instrumental)",
+        "Just Got Paid (7″ Version)",
+        "Just Got Paid (Album Instrumental)",
         "Just Got Paid (Dub Mix)",
-        "Just Got Paid (LP Version)",
-        "Just Got Paid (Album Instrumental)"
+        "Just Got Paid (LP Version)"
       ]
     },
     {
@@ -734,12 +759,12 @@
       "label": "Vintertainment",
       "image": "1988-keith-sweat-make-it-last-forever.jpg",
       "tracks": [
-        "Make It Last Forever (Extended)",
-        "Make It Last Forever (LP Mix)",
-        "Make It Last Forever (Vocal Beat)",
-        "Make It Last Forever (Instrumental)",
+        "Make It Last Forever (Edit)",
         "Make It Last Forever (Edit Of LP Version) / (Edited Version) / (LP Edit)",
-        "Make It Last Forever (Edit)"
+        "Make It Last Forever (Extended)",
+        "Make It Last Forever (Instrumental)",
+        "Make It Last Forever (LP Mix)",
+        "Make It Last Forever (Vocal Beat)"
       ],
       "missing": [
         "Make It Last Forever (Edit Of LP Version) / (Edited Version) / (LP Edit)",
@@ -753,9 +778,9 @@
       "label": "Jive",
       "image": "1988-kool-moe-dee-no-respect.jpg",
       "tracks": [
-        "No Respect (Single Edit)",
         "No Respect (Extended Version)",
-        "No Respect (Instrumental)"
+        "No Respect (Instrumental)",
+        "No Respect (Single Edit)"
       ]
     },
     {
@@ -775,15 +800,15 @@
       "label": "Motown",
       "image": "1988-stevie-wonder-my-eyes-don-t-cry.jpg",
       "tracks": [
-        "My Eyes Don't Cry (Extended Version)",
-        "My Eyes Don't Cry (Radio Edit)",
-        "My Eyes Don't Cry (Dub Mix)",
-        "My Eyes Don't Cry (Album Version)",
         "My Eyes Don't Cry (12″ Version)",
         "My Eyes Don't Cry (A Cappella)",
+        "My Eyes Don't Cry (Album Version)",
         "My Eyes Don't Cry (Beats)",
+        "My Eyes Don't Cry (Dub Mix)",
         "My Eyes Don't Cry (Dub Version)",
-        "My Eyes Don't Cry (Instrumental)"
+        "My Eyes Don't Cry (Extended Version)",
+        "My Eyes Don't Cry (Instrumental)",
+        "My Eyes Don't Cry (Radio Edit)"
       ]
     },
     {
@@ -793,12 +818,12 @@
       "label": "Jive",
       "image": "1988-the-classical-two-the-classical-two-is-back.jpg",
       "tracks": [
-        "The Classical Two Is Back (Vocal)",
-        "The Classical Two Is Back (Instrumental)",
-        "The Classical Two Is Back (Dub)",
-        "New York's On Fire (Vocal)",
+        "New York's On Fire (Dub)",
         "New York's On Fire (Instrumental)",
-        "New York's On Fire (Dub)"
+        "New York's On Fire (Vocal)",
+        "The Classical Two Is Back (Dub)",
+        "The Classical Two Is Back (Instrumental)",
+        "The Classical Two Is Back (Vocal)"
       ]
     },
     {
@@ -826,12 +851,12 @@
       "label": "Capitol",
       "image": "1988-the-gyrlz-wishing-you-were-here.jpg",
       "tracks": [
-        "Wishing You Were Here (Gyrlz Meet Boyz 12\" Mix)",
         "Wishing You Were Here (7\" Edit)",
-        "Wishing You Were Here (Percappella Mix)",
         "Wishing You Were Here (Down South Dub)",
-        "Wishing You Were Here (Uptown Instrumental)",
-        "Wishing You Were Here (Instrumental)"
+        "Wishing You Were Here (Gyrlz Meet Boyz 12\" Mix)",
+        "Wishing You Were Here (Instrumental)",
+        "Wishing You Were Here (Percappella Mix)",
+        "Wishing You Were Here (Uptown Instrumental)"
       ],
       "missing": [
         "Wishing You Were Here (Instrumental)"
@@ -844,9 +869,9 @@
       "label": "Jive",
       "image": "1988-the-wee-papa-girl-rappers-faith.jpg",
       "tracks": [
-        "Faith (Single Version)",
         "Faith (Extended Version)",
-        "Faith (Instrumental Version)"
+        "Faith (Instrumental Version)",
+        "Faith (Single Version)"
       ]
     },
     {
@@ -876,6 +901,12 @@
         "07 — Your Love Is Not True",
         "08 — Lady",
         "09 — Sexy Lady"
+      ],
+      "videos": [
+        {
+          "id": "J5ZQdTsIS2c",
+          "label": "Take It Off"
+        }
       ]
     },
     {
@@ -886,10 +917,10 @@
       "image": "1988-today-him-or-me.jpg",
       "tracks": [
         "Him Or Me (12\" Version)",
-        "Him Or Me (Radio Edit)",
-        "Him Or Me (Dub)",
         "Him Or Me (Bonus Beats)",
-        "Him Or Me (Instrumental)"
+        "Him Or Me (Dub)",
+        "Him Or Me (Instrumental)",
+        "Him Or Me (Radio Edit)"
       ]
     },
     {
@@ -901,8 +932,8 @@
       "tracks": [
         "Baby Doll (Teddy's 12\")",
         "Baby Doll (Teddy's 7\")",
-        "Baby Doll (Teddy's Dub)",
-        "Baby Doll (Teddy's Beats)"
+        "Baby Doll (Teddy's Beats)",
+        "Baby Doll (Teddy's Dub)"
       ]
     },
     {
@@ -927,9 +958,9 @@
       "label": "Atlantic Records",
       "image": "1988-wrecks-n-effect-go-for-what-u-know.jpg",
       "tracks": [
+        "Go For What U Know (Instrumental)",
         "Go For What U Know (Vocal + Extended 12\" Remix)",
-        "Go For What U Know (Vocal + Radio Mix)",
-        "Go For What U Know (Instrumental)"
+        "Go For What U Know (Vocal + Radio Mix)"
       ]
     },
     {
@@ -939,9 +970,9 @@
       "label": "Atlantic Records",
       "image": "1988-wrecks-n-effect-let-s-do-it-again.jpg",
       "tracks": [
-        "Let's Do It Again (LP Version)",
         "Let's Do It Again (Edited Version)",
-        "Let's Do It Again (Instrumental)"
+        "Let's Do It Again (Instrumental)",
+        "Let's Do It Again (LP Version)"
       ]
     },
     {
@@ -990,13 +1021,19 @@
       "label": "Reprise Records",
       "image": "1989-abstrac-right-and-hype.jpg",
       "tracks": [
-        "Right And Hype (Remix Edit)",
         "Right And Hype (12 Version)",
         "Right And Hype (AccaFella Fade)",
         "Right And Hype (Bonus Beats)",
         "Right And Hype (Dave's Club Dub)",
         "Right And Hype (Fade)",
-        "Right And Hype (LP Version)"
+        "Right And Hype (LP Version)",
+        "Right And Hype (Remix Edit)"
+      ],
+      "videos": [
+        {
+          "id": "xhDnSi6ab_c",
+          "label": "Right And Hype"
+        }
       ]
     },
     {
@@ -1024,9 +1061,15 @@
       "label": "Cold Chillin'",
       "image": "1989-big-daddy-kane-i-get-the-job-done.jpg",
       "tracks": [
-        "I Get The Job Done (LP Version)",
         "I Get The Job Done (Dub)",
-        "I Get The Job Done (Edit)"
+        "I Get The Job Done (Edit)",
+        "I Get The Job Done (LP Version)"
+      ],
+      "videos": [
+        {
+          "id": "LzY-NpUqJgc",
+          "label": "I Get The Job Done"
+        }
       ]
     },
     {
@@ -1059,12 +1102,18 @@
       "tracks": [
         "Don't Take My Mind On A Trip (12″ U.K. Acid)",
         "Don't Take My Mind On A Trip (12″ U.K. Acid Dub)",
-        "Don't Take My Mind On A Trip (Main Club 12″) / (U.S. Club Mix)",
         "Don't Take My Mind On A Trip (7″ Edit)",
-        "Don't Take My Mind On A Trip (Big Drum Mix)"
+        "Don't Take My Mind On A Trip (Big Drum Mix)",
+        "Don't Take My Mind On A Trip (Main Club 12″) / (U.S. Club Mix)"
       ],
       "missing": [
         "Don't Take My Mind On A Trip (Big Drum Mix)"
+      ],
+      "videos": [
+        {
+          "id": "zFzHNVHoTtg",
+          "label": "Don't Take My Mind On A Trip"
+        }
       ]
     },
     {
@@ -1087,14 +1136,14 @@
       "label": "Warner Bros. Records",
       "image": "1989-club-nouveau-no-friend-of-mine.jpg",
       "tracks": [
-        "No Friend Of Mine (Street Mix)",
-        "No Friend Of Mine (7″ Version)",
         "No Friend Of Mine (12″ Version)",
+        "No Friend Of Mine (7″ Version)",
         "No Friend Of Mine (Bonus Beats)",
         "No Friend Of Mine (Club Mix)",
         "No Friend Of Mine (Fade)",
         "No Friend Of Mine (Instrumental)",
-        "No Friend Of Mine (Percapella)"
+        "No Friend Of Mine (Percapella)",
+        "No Friend Of Mine (Street Mix)"
       ]
     },
     {
@@ -1114,12 +1163,18 @@
       "label": "Geffen Records",
       "image": "1989-david-peaston-two-wrongs-don-t-make-it-right.jpg",
       "tracks": [
-        "Two Wrongs (Don't Make It Right) (Club Body Mix)",
-        "Two Wrongs (Don't Make It Right) (Percapella Mix)",
-        "Two Wrongs (Don't Make It Right) (Bonus Beats)",
         "Two Wrongs (Don't Make It Right) (7 Radio Mix)",
         "Two Wrongs (Don't Make It Right) (Almost There — Fairly Straight)",
+        "Two Wrongs (Don't Make It Right) (Bonus Beats)",
+        "Two Wrongs (Don't Make It Right) (Club Body Mix)",
+        "Two Wrongs (Don't Make It Right) (Percapella Mix)",
         "Two Wrongs (Don't Make Right) (Club 2 Body Mix)"
+      ],
+      "videos": [
+        {
+          "id": "Ucr2AFSrHBw",
+          "label": "Two Wrongs (Don't Make It Right)"
+        }
       ]
     },
     {
@@ -1130,11 +1185,17 @@
       "image": "1989-david-peaston-we-re-all-in-this-together.jpg",
       "tracks": [
         "We're All In This Together (12\" Mix)",
-        "We're All In This Together (Club Mix Edit)",
-        "We're All In This Together (Club Mix)",
-        "We're All In This Together (Bonus Beats)",
         "We're All In This Together (7\" Remix)",
+        "We're All In This Together (Bonus Beats)",
+        "We're All In This Together (Club Mix)",
+        "We're All In This Together (Club Mix Edit)",
         "We're All In This Together (Percappella Mix)"
+      ],
+      "videos": [
+        {
+          "id": "TkEs02AyNOw",
+          "label": "We're All In This Together"
+        }
       ]
     },
     {
@@ -1191,8 +1252,8 @@
       "label": "MCA Records",
       "image": "1989-guy-i-like.jpg",
       "tracks": [
-        "I Like (Album Version)",
         "I Like (Acappella)",
+        "I Like (Album Version)",
         "I Like (Dub Version)",
         "I Like (Extended Version)",
         "I Like (Hype Mix)",
@@ -1238,8 +1299,8 @@
       "label": "Uptown Records",
       "image": "1989-heavy-d-the-boyz-we-got-our-own-thang.jpg",
       "tracks": [
-        "We Got Our Own Thang (7″ Version)",
         "We Got Our Own Thang (12″ Vocal)",
+        "We Got Our Own Thang (7″ Version)",
         "We Got Our Own Thang (A Cappella)",
         "We Got Our Own Thang (Club Version)",
         "We Got Our Own Thang (Instrumental)"
@@ -1263,14 +1324,20 @@
       "label": "Warner Bros. Records",
       "image": "1989-james-ingram-it-s-real-2.jpg",
       "tracks": [
-        "It's Real (7\" Edit)",
         "It's Real (12\" Extended Version)",
-        "It's Real (Smooth Dub Mix)",
+        "It's Real (7\" Edit)",
+        "It's Real (7″ Instrumental Smooth Dub Moaner Mix)",
         "It's Real (Album Version)",
-        "It's Real (7″ Instrumental Smooth Dub Moaner Mix)"
+        "It's Real (Smooth Dub Mix)"
       ],
       "missing": [
         "It's Real (7″ Instrumental Smooth Dub Moaner Mix)"
+      ],
+      "videos": [
+        {
+          "id": "yYacPfpHomc",
+          "label": "It's Real"
+        }
       ]
     },
     {
@@ -1281,8 +1348,8 @@
       "image": "1989-kool-moe-dee-all-night-long.jpg",
       "tracks": [
         "All Night Long (Extended Remix)",
-        "All Night Long (Single Edit)",
-        "All Night Long (Instrumental)"
+        "All Night Long (Instrumental)",
+        "All Night Long (Single Edit)"
       ]
     },
     {
@@ -1323,8 +1390,8 @@
       "image": "1989-kool-moe-dee-they-want-money.jpg",
       "tracks": [
         "They Want Money (Extended Remix)",
-        "They Want Money (Single Edit)",
-        "They Want Money (Instrumental)"
+        "They Want Money (Instrumental)",
+        "They Want Money (Single Edit)"
       ]
     },
     {
@@ -1346,11 +1413,17 @@
       "label": "10 Records",
       "image": "1989-redhead-kingpin-the-f-b-i-do-the-right-thing.jpg",
       "tracks": [
-        "Do The Right Thing (U.S. Radio Mix)",
-        "Do The Right Thing (Teddy Riley 12\" Mix)",
         "Do The Right Thing (12\" Mix)",
+        "Do The Right Thing (A Capella)",
+        "Do The Right Thing (Teddy Riley 12\" Mix)",
         "Do The Right Thing (U.S. Radio Mix)",
-        "Do The Right Thing (A Capella)"
+        "Do The Right Thing (U.S. Radio Mix)"
+      ],
+      "videos": [
+        {
+          "id": "uAV_65tiWAI",
+          "label": "Do The Right Thing"
+        }
       ]
     },
     {
@@ -1394,8 +1467,8 @@
       "image": "1989-soul-ii-soul-keep-on-movin.jpg",
       "tracks": [
         "Keep On Movin' (Teddy Riley Remix)",
-        "Keep On Movin (Teddy Riley's Rubba Dub)",
-        "Keep On Movin (Teddy Riley's Bonus Beats)"
+        "Keep On Movin (Teddy Riley's Bonus Beats)",
+        "Keep On Movin (Teddy Riley's Rubba Dub)"
       ]
     },
     {
@@ -1424,6 +1497,12 @@
         "My Fantasy (Fantasy Mix)",
         "My Fantasy (Instrumental)",
         "My Fantasy (Rap Version)"
+      ],
+      "videos": [
+        {
+          "id": "HCPcgDjlTlc",
+          "label": "My Fantasy"
+        }
       ]
     },
     {
@@ -1434,8 +1513,8 @@
       "image": "1989-the-gyrlz-jam-jam-if-you-can.jpg",
       "tracks": [
         "Jam Jam (If You Can) (7\" Radio Edit)",
-        "Jam Jam (If You Can) (Hip Hop Version)",
         "Jam Jam (If You Can) (Club Hip Hop)",
+        "Jam Jam (If You Can) (Hip Hop Version)",
         "Jam Jam (If You Can) (Instrumental)"
       ]
     },
@@ -1459,14 +1538,14 @@
       "label": "Rooftop",
       "image": "1989-troop-that-s-my-attitude.jpg",
       "tracks": [
-        "That's My Attitude (Remix Edit)",
-        "That's My Attitude (Club Remix Edit)",
-        "That's My Attitude (Remix Edit Without Rap)",
-        "That's My Attitude (Percapella)",
-        "That's My Attitude (12 Hip Hop Remix)",
         "That's My Attitude (12 Club Remix)",
+        "That's My Attitude (12 Hip Hop Remix)",
+        "That's My Attitude (Bonus Beats)",
         "That's My Attitude (Club A Dub)",
-        "That's My Attitude (Bonus Beats)"
+        "That's My Attitude (Club Remix Edit)",
+        "That's My Attitude (Percapella)",
+        "That's My Attitude (Remix Edit)",
+        "That's My Attitude (Remix Edit Without Rap)"
       ]
     },
     {
@@ -1497,6 +1576,12 @@
         "New Jack Swing (Instrumental)",
         "New Jack Swing (Percapella)",
         "New Jack Swing (Single Version)"
+      ],
+      "videos": [
+        {
+          "id": "DRr0U4k0-eM",
+          "label": "New Jack Swing"
+        }
       ]
     },
     {
@@ -1552,10 +1637,10 @@
       "image": "1990-billy-davis-i-want-you.jpg",
       "tracks": [
         "I Want You (12″ Vocal)",
-        "I Want You (Drum Mix)",
         "I Want You (7″)",
         "I Want You (Acappella)",
         "I Want You (Club Mix)",
+        "I Want You (Drum Mix)",
         "I Want You (Dub I)",
         "I Want You (Dub II)",
         "I Want You (Short Edit)"
@@ -1607,13 +1692,19 @@
       "label": "MCA Records",
       "image": "1990-guy-i-wanna-get-with-you.jpg",
       "tracks": [
-        "I Wanna Get With U (7″ Mix)",
         "I Wanna Get With U (12 Mix)",
         "I Wanna Get With U (12″ Version)",
+        "I Wanna Get With U (7″ Mix)",
         "I Wanna Get With U (Acapella)",
         "I Wanna Get With U (Club Version)",
         "I Wanna Get With U (Hip-Hop Version)",
         "I Wanna Get With U (TR's Dub)"
+      ],
+      "videos": [
+        {
+          "id": "N0ur8Sox81Y",
+          "label": "I Wanna Get With You"
+        }
       ]
     },
     {
@@ -1652,10 +1743,10 @@
       "image": "1990-james-j-t-taylor-8-days-a-week.jpg",
       "tracks": [
         "8 Days A Week (12″ Club Mix)",
-        "8 Days A Week (Sax Mix)",
-        "8 Days A Week (Radio Edit)",
+        "8 Days A Week (Bonus Beats)",
         "8 Days A Week (House Dub)",
-        "8 Days A Week (Bonus Beats)"
+        "8 Days A Week (Radio Edit)",
+        "8 Days A Week (Sax Mix)"
       ]
     },
     {
@@ -1665,13 +1756,13 @@
       "label": "Warner Bros. Records",
       "image": "1990-jane-child-don-t-wanna-fall-in-love.jpg",
       "tracks": [
-        "Don't Wanna Fall in Love (Knife Feel Good Mix)",
-        "Don't Wanna Fall in Love (T.R. Dub)",
-        "Don't Wanna Fall in Love (AccaPercaPella)",
         "Don't Wanna Fall in Love (7″ Remix Version)",
+        "Don't Wanna Fall in Love (AccaPercaPella)",
+        "Don't Wanna Fall in Love (Bonus Beats)",
+        "Don't Wanna Fall in Love (Knife Feel Good Mix)",
         "Don't Wanna Fall in Love (New Jack Swing Club)",
         "Don't Wanna Fall in Love (T.R. Club-A-Dub)",
-        "Don't Wanna Fall in Love (Bonus Beats)"
+        "Don't Wanna Fall in Love (T.R. Dub)"
       ]
     },
     {
@@ -1716,10 +1807,10 @@
       "image": "1990-quincy-jones-feat-siedah-garrett-i-don-t-go-for-that.jpg",
       "tracks": [
         "I Don't Go For That (Album Version)",
-        "I Don't Go For That (M.T. Shaniqua Mix)",
         "I Don't Go For That (Mercenary Radio Mix)",
         "I Don't Go For That (MT Dude Mix)",
         "I Don't Go For That (MT M-Rap Version)",
+        "I Don't Go For That (M.T. Shaniqua Mix)",
         "I Don't Go For That (Teddy's Extended Mix)",
         "I Don't Go For That (Teddy's Freaky Jazz Groove)",
         "I Don't Go For That (Teddy's Mix)",
@@ -1733,11 +1824,17 @@
       "label": "Virgin",
       "image": "1990-redhead-kingpin-and-the-f-b-i-we-rock-the-mic-right.jpg",
       "tracks": [
-        "We Rock The Mic Right (12″ Mix)",
-        "We Rock The Mic Right (Red's Groove)",
         "Superbad Superslick (12″ One World Mix)",
         "Superbad Superslick (Dub)",
-        "Superbad Superslick (Rough & Heavy Mix)"
+        "Superbad Superslick (Rough & Heavy Mix)",
+        "We Rock The Mic Right (12″ Mix)",
+        "We Rock The Mic Right (Red's Groove)"
+      ],
+      "videos": [
+        {
+          "id": "_cftCVPlu84",
+          "label": "We Rock The Mic Right"
+        }
       ]
     },
     {
@@ -1747,14 +1844,20 @@
       "label": "Atlantic",
       "image": "1990-samuelle-so-you-like-what-you-see.jpg",
       "tracks": [
-        "So You Like What You See (Club Remix)",
         "So You Like What You See (12″ Remix)",
         "So You Like What You See (Acappella)",
         "So You Like What You See (Bonus Beats)",
         "So You Like What You See (Club Dub)",
+        "So You Like What You See (Club Remix)",
         "So You Like What You See (Clubapella)",
         "So You Like What You See (Extended Remix)",
         "So You Like What You See (Rapapella)"
+      ],
+      "videos": [
+        {
+          "id": "C3_jozleK50",
+          "label": "So You Like What You See"
+        }
       ]
     },
     {
@@ -1780,8 +1883,8 @@
       "label": "Elektra",
       "image": "1990-starpoint-i-want-you-you-want-me.jpg",
       "tracks": [
-        "I Want You - You Want Me (Edit Version)",
         "I Want You - You Want Me (Bonus Beats)",
+        "I Want You - You Want Me (Edit Version)",
         "I Want You - You Want Me (Extended Version)",
         "I Want You - You Want Me (Hip Hop Mix)"
       ]
@@ -1793,14 +1896,14 @@
       "label": "Qwest",
       "image": "1990-the-winans-it-s-time.jpg",
       "tracks": [
-        "It's Time (Percapella)",
-        "It's Time (7″ Remix)",
         "It's Time (12″ Remix)",
+        "It's Time (7″ Remix)",
         "It's Time (Bonus Beats)",
         "It's Time (Club-A-Dub)",
         "It's Time (Edit)",
         "It's Time (LP Version)",
-        "It's Time (New Jack Swing Mix)"
+        "It's Time (New Jack Swing Mix)",
+        "It's Time (Percapella)"
       ]
     },
     {
@@ -1822,8 +1925,8 @@
       "label": "Motown",
       "image": "1991-bubba-i-like-your-style.jpg",
       "tracks": [
-        "I Like Your Style (Extended Vocal Version)",
         "I Like Your Style (Dub)",
+        "I Like Your Style (Extended Vocal Version)",
         "I Like Your Style (Instrumental)",
         "I Like Your Style (LP Version)",
         "I Like Your Style (Percapella)",
@@ -1841,8 +1944,8 @@
         "D-O-G Me Out (Dogapella)",
         "D-O-G Me Out (Mike Nice Dub Mix)",
         "D-O-G Me Out (Mike Nice Mix)",
-        "D-O-G Me Out (Single Edit With Rap)",
         "D-O-G Me Out (Single Edit)",
+        "D-O-G Me Out (Single Edit With Rap)",
         "D-O-G Me Out (Wrecks N Effect Mix)",
         "D-O-G Me Out (Wrecks N Effect Rap)",
         "D-O-G Me Out (Wrecks N Effectstrumental)"
@@ -1862,8 +1965,8 @@
         "Do Me Right (Pianopercapella)",
         "Do Me Right (Remixed Radio Edit)",
         "Do Me Right (Remixed Vocal Version)",
-        "Do Me Right (The Heavy Mix) 7:02",
-        "Do Me Right (The Heavy Mix 2) 6:45"
+        "Do Me Right (The Heavy Mix 2) 6:45",
+        "Do Me Right (The Heavy Mix) 7:02"
       ]
     },
     {
@@ -1908,7 +2011,6 @@
       "label": "MCA Records",
       "image": "1991-guy-let-s-stay-together.jpg",
       "tracks": [
-        "Let's Stay Together (T.R.'s Club Version)",
         "Let's Stay Together (Acapella)",
         "Let's Stay Together (Bonus Beats)",
         "Let's Stay Together (Club Bonus Beats)",
@@ -1918,12 +2020,19 @@
         "Let's Stay Together (Instrumental)",
         "Let's Stay Together (Instrumental 2)",
         "Let's Stay Together (Percussapella)",
+        "Let's Stay Together (Radio Edit)",
         "Let's Stay Together (Radio Edit 2)",
         "Let's Stay Together (Radio Edit With Rap)",
-        "Let's Stay Together (Radio Edit)",
-        "Let's Stay Together (Single Edit 2)",
         "Let's Stay Together (Single Edit)",
-        "Let's Stay Together (Suite)"
+        "Let's Stay Together (Single Edit 2)",
+        "Let's Stay Together (Suite)",
+        "Let's Stay Together (T.R.'s Club Version)"
+      ],
+      "videos": [
+        {
+          "id": "FkampGf0gb8",
+          "label": "Let's Stay Together"
+        }
       ]
     },
     {
@@ -1933,9 +2042,9 @@
       "label": "MCA Records",
       "image": "1991-heavy-d-the-boyz-is-it-good-to-you.jpg",
       "tracks": [
-        "Is It Good To You (Instrumental)",
+        "Is It Good To You (7″ Version)",
         "Is It Good To You (Home Mix #2)",
-        "Is It Good To You (7″ Version)"
+        "Is It Good To You (Instrumental)"
       ]
     },
     {
@@ -1948,6 +2057,12 @@
         "Now That We Found Love (7″ Radio)",
         "Now That We Found Love (Club Version)",
         "Now That We Found Love (Instrumental)"
+      ],
+      "videos": [
+        {
+          "id": "ZwUSs28BWOc",
+          "label": "Now That We Found Love"
+        }
       ]
     },
     {
@@ -2000,10 +2115,10 @@
       "label": "Elektra",
       "image": "1991-keith-sweat-your-love.jpg",
       "tracks": [
-        "Your Love (Radio Version) 4:29",
-        "Your Love (Club Mix) 8:58",
         "Your Love (Acappella) 5:10",
-        "Your Love (Instrumental) 5:52"
+        "Your Love (Club Mix) 8:58",
+        "Your Love (Instrumental) 5:52",
+        "Your Love (Radio Version) 4:29"
       ]
     },
     {
@@ -2038,8 +2153,8 @@
       "image": "1991-kool-moe-dee-how-kool-can-one-blackman-be.jpg",
       "tracks": [
         "How Kool Can One Blackman Be? (7″ Remix)",
-        "How Kool Can One Blackman Be? (LP Version)",
         "How Kool Can One Blackman Be? (Instrumental)",
+        "How Kool Can One Blackman Be? (LP Version)",
         "How Kool Can One Blackman Be? (Radio Version)"
       ]
     },
@@ -2096,12 +2211,12 @@
       "label": "MCA Records",
       "image": "1991-wrecks-n-effect-ready-or-not.jpg",
       "tracks": [
-        "Ready Or Not (Extended Vocal Version)",
-        "Ready Or Not (Wrecks-N-Effect Version)",
         "Ready Or Not (Accapella)",
-        "Ready Or Not (LP Version)",
         "Ready Or Not (Extended Instrumental Version)",
-        "Ready Or Not (Suite)"
+        "Ready Or Not (Extended Vocal Version)",
+        "Ready Or Not (LP Version)",
+        "Ready Or Not (Suite)",
+        "Ready Or Not (Wrecks-N-Effect Version)"
       ]
     },
     {
@@ -2190,8 +2305,8 @@
       "tracks": [
         "I'm So Into You (Teddy's Extended Mix with Rap)",
         "I'm So Into You (Teddy's Instrumental Bonus)",
-        "I'm So Into You (Teddy's Radio Mix with Rap)",
-        "I'm So Into You (Teddy's Radio Mix)"
+        "I'm So Into You (Teddy's Radio Mix)",
+        "I'm So Into You (Teddy's Radio Mix with Rap)"
       ]
     },
     {
@@ -2244,6 +2359,955 @@
         "Jam (Radio Edit Without Rap)",
         "Jam (Teddy's 12″ Mix)",
         "Jam (Teddy's Jam)"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Teddy Riley feat. Tammy Lucas",
+      "title": "Is It Good To You",
+      "label": "MCA Records",
+      "image": "1992-teddy-riley-feat-tammy-lucas-is-it-good-to-you.jpg",
+      "tracks": [
+        "Is It Good To You (12″ Mix)",
+        "Is It Good To You (7″ Mix)",
+        "Is It Good To You (7 Remix)",
+        "Is It Good To You (Acapella)",
+        "Is It Good To You (Acapella)2",
+        "Is It Good To You (Black Radio Mix)",
+        "Is It Good To You (Bonus Beat)",
+        "Is It Good To You (Hip Hop extended Mix)",
+        "Is It Good To You (Hip Hop Mix)",
+        "Is It Good To You (In The Clubs Mix)",
+        "Is It Good To You (Instrumental)",
+        "Is It Good To You (Lucasade Mix)",
+        "Is It Good To You (On The Radio Mix)",
+        "Is It Good To You (Percapella)"
+      ],
+      "videos": [
+        {
+          "id": "NsbIlNTYzsA",
+          "label": "Is It Good To You"
+        }
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "The Party",
+      "title": "Free",
+      "label": "Hollywood Records",
+      "image": "1992-the-party-free.jpg",
+      "tracks": [
+        "01 Free",
+        "03 All About Love",
+        "09 At All Times"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "The Party",
+      "title": "Free",
+      "label": "Hollywood Records",
+      "image": "1992-the-party-free-2.jpg",
+      "tracks": [
+        "Free (Album Version)",
+        "Free (Radio Mix With Rap)",
+        "Free (Radio Mix Without Rap)"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Various",
+      "title": "Ferngully… The Last Rainforest (Original Motion Picture Soundtrack)",
+      "label": "MCA Records",
+      "image": "1992-various-artists-ferngully-the-last-rainforest.jpg",
+      "tracks": [
+        "06. Guy – Land Of A Thousand Dances"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Wreckx-N-Effect",
+      "title": "Hard Or Smooth",
+      "label": "MCA Records",
+      "image": "1992-wrecks-n-effect-hard-or-smooth.jpg",
+      "tracks": [
+        "01. Rump Shaker",
+        "02. New Jack Swing II (Hard Version)",
+        "03. Wreckx Shop (Album Version)",
+        "04. Knock-N-Boots (Album Version)",
+        "05. Here We Come (Album Version)",
+        "06. Tell Me How You Feel (Album Version)",
+        "07. My Cutie (Album Version)",
+        "08. Wreckx-N-Effect (Album Version)",
+        "09. Ez Come Ez Go (What Goes Up Must Come Down) (Album Version)",
+        "10. Hard (Short)",
+        "11. Smooth (Short)"
+      ],
+      "videos": [
+        {
+          "id": "Iog79H0ldUM",
+          "label": "Hard Or Smooth"
+        }
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Wreckx-N-Effect",
+      "title": "Rump Shaker",
+      "label": "MCA Records",
+      "image": "1992-wreckx-n-effect-rump-shaker.jpg",
+      "tracks": [
+        "Rump Shaker (Bonus Beats)",
+        "Rump Shaker (Dub)",
+        "Rump Shaker (Percapella)",
+        "Rump Shaker (Radio Mix)",
+        "Rump Shaker (Radio Remix)",
+        "Rump Shaker (Radio Remix) (Raggaside)",
+        "Rump Shaker (Teddy 2)"
+      ]
+    },
+    {
+      "year": "1992",
+      "artist": "Wreckx-N-Effect",
+      "title": "Wreckx Shop",
+      "label": "MCA Records",
+      "image": "1992-wreckx-n-effect-wreckx-shop.jpg",
+      "tracks": [
+        "Wreckx Shop (Album Version)",
+        "Wreckx Shop (Blacka Mix)",
+        "Wreckx Shop (Club Dub)",
+        "Wreckx Shop (Jamaica Mix)",
+        "Wreckx Shop (Jazztrumental)",
+        "Wreckx Shop (Posse Deep Mix)",
+        "Wreckx Shop (Teddy's Mix With Fade)",
+        "Wreckx Shop (Vocapella)"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "BLACKstreet",
+      "title": "Baby Be Mine",
+      "label": "MCA Records",
+      "image": "1993-blackstreet-baby-be-mine.jpg",
+      "tracks": [
+        "Baby Be Mine (12″ Remix)",
+        "Baby Be Mine (Acapella)",
+        "Baby Be Mine (Acapella)2",
+        "Baby Be Mine (Album Version)",
+        "Baby Be Mine (Bonus Beats)",
+        "Baby Be Mine (Bonus Beats)2",
+        "Baby Be Mine (Club Mix)",
+        "Baby Be Mine (Dub 1)",
+        "Baby Be Mine (Hip Hop Mix)",
+        "Baby Be Mine (Instrumental)",
+        "Baby Be Mine (Instrumental Remix)",
+        "Baby Be Mine (LP Edit)",
+        "Baby Be Mine (Movie Mix)",
+        "Baby Be Mine (Percapella)",
+        "Baby Be Mine (Radio Edit)",
+        "Baby Be Mine (Radio Remix)",
+        "Baby Be Mine (Radio Remixed Version)"
+      ],
+      "videos": [
+        {
+          "id": "j81giwHsH_w",
+          "label": "Baby Be Mine"
+        }
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Bobby Brown",
+      "title": "Remixes In The Key Of B",
+      "label": "MCA Records",
+      "image": "1993-bobby-brown-remixes-in-the-key-of-b.jpg",
+      "tracks": [
+        "03. T.R.'s Get Away",
+        "05. She's My Lady"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Bobby Brown",
+      "title": "That's The Way Love Is",
+      "label": "MCA Records",
+      "image": "1993-bobby-brown-thats-the-way-love-is.jpg",
+      "tracks": [
+        "That's The Way Love Is (12″ Extended)",
+        "That's The Way Love Is (7″ Version)",
+        "That's The Way Love Is (Acapella)",
+        "That's The Way Love Is (Bonus Beats)",
+        "That's The Way Love Is (Club Version)",
+        "That's The Way Love Is (Extended Version)",
+        "That's The Way Love Is (Instrumental)",
+        "That's The Way Love Is (LP Version)",
+        "That's The Way Love Is (LP Version (No Rap))",
+        "That's The Way Love Is (Ragamuffin Dub)2",
+        "That's The Way Love Is (Raggamuffin Dub)",
+        "That's The Way Love Is (Remixed Single Version)",
+        "That's The Way Love Is (Reworked Extended Version)",
+        "That's The Way Love Is (Reworked Radio Edit)",
+        "That's The Way Love Is (Single Version)",
+        "That's The Way Love Is (Suite)"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Bobby Brown Duet With Whitney Houston",
+      "title": "Something In Common",
+      "label": "MCA Records",
+      "image": "1993-bobby-brown-duet-with-whitney-houston-something-in-common.jpg",
+      "tracks": [
+        "Something In Common (Dub)",
+        "Something In Common (Extended Vocal Version)",
+        "Something In Common (Quiet Storm Version)",
+        "Something In Common (Radio Edit)"
+      ],
+      "videos": [
+        {
+          "id": "7tYGP3MX8d0",
+          "label": "Something In Common"
+        }
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Father",
+      "title": "Sex Is Law",
+      "label": "Uptown Records",
+      "image": "1993-father-sex-is-law.jpg",
+      "tracks": [
+        "01. 69"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Father",
+      "title": "69",
+      "label": "Uptown Records",
+      "image": "1993-father-69.jpg",
+      "format": "Single",
+      "tracks": [
+        "69 (Acappella)",
+        "69 (Album Instrumental)",
+        "69 (Album Version)",
+        "69 (Clean Radio Mix)",
+        "69 (Clean Remix Basic)",
+        "69 (Clean Sixty But No Nine Remix)",
+        "69 (Radio Edit)",
+        "69 (Uptown Swing Instrumental)",
+        "69 (Uptown Swing Remix)"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Jazzy Jeff & Fresh Prince",
+      "title": "I'm Looking For The One (To Be With Me)",
+      "label": "Jive Records",
+      "image": "1993-jazzy-jeff-fresh-prince-im-looking-for-the-one-to-be-with-me.jpg",
+      "tracks": [
+        "I'm Looking For The One (To Be With Me) (12″ Mix)",
+        "I'm Looking For The One (To Be With Me) (LP Version)",
+        "I'm Looking For The One (To Be With Me) (Percapella)",
+        "I'm Looking For The One (To Be With Me) (Video Version)"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Joey Lawrence",
+      "title": "Joey Lawrence",
+      "label": "Impact Records",
+      "image": "1993-joey-lawrence-joey-lawrence.jpg",
+      "tracks": [
+        "02 Nothin' My Love Can't Fix"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "LL Cool J",
+      "title": "Stand By Your Man",
+      "label": "Def Jam Recordings",
+      "image": "1993-ll-cool-j-stand-by-your-man.jpg",
+      "tracks": [
+        "Stand By Your Man (Hip Hop Mix 1)",
+        "Stand By Your Man (Hip Hop Mix 2)",
+        "Stand By Your Man (New Jack Street Mix)",
+        "Stand By Your Man (New Jack Street Mix Instrumental)"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Mary J. Blige",
+      "title": "My Love",
+      "label": "Uptown Records",
+      "image": "1993-mary-j-blige-my-love.jpg",
+      "format": "Single",
+      "tracks": [
+        "01 My Love (Hip Hop With Rap)",
+        "01 My Love (Radio Version)",
+        "02 My Love (On Da Street)",
+        "02 My Love (Street Mix 1)",
+        "03 My Love (New Jack Jazz)",
+        "04 My Love (T.R. And Mary Mix)",
+        "05 My Love (Acappella)"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "MC Lyte",
+      "title": "I Go On",
+      "label": "First Priority Music",
+      "image": "1993-mc-lyte-i-go-on.jpg",
+      "tracks": [
+        "I Go On (Accapella)",
+        "I Go On (Gangsta Mix)",
+        "I Go On (Gangstamental)",
+        "I Go On (Midnight Mix)",
+        "I Go On (Midnightstrumental)"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Various",
+      "title": "CB4",
+      "label": "MCA Records",
+      "image": "1993-various-artists-cb4.jpg",
+      "tracks": [
+        "08. BLACKstreet – Baby Be Mine"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Wreckx-N-Effect",
+      "title": "My Cutie",
+      "label": "MCA Records",
+      "image": "1993-wreckx-n-effect-my-cutie.jpg",
+      "tracks": [
+        "My Cutie (Acappella)",
+        "My Cutie (Album Version)",
+        "My Cutie (Bonus Beats)",
+        "My Cutie (Extended Version)",
+        "My Cutie (Hard Cutie)",
+        "My Cutie (Radio)",
+        "My Cutie (Smooth Cutie)"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Wreckx-N-Effect",
+      "title": "Knock-N-Boots",
+      "label": "MCA Records",
+      "image": "1993-wreckx-n-effect-knock-n-boots.jpg",
+      "tracks": [
+        "Knock-N-Boots (Album Version)",
+        "Knock-N-Boots (Bonus Dub)",
+        "Knock-N-Boots (Chant Radio Mix)",
+        "Knock-N-Boots (Instrumental)",
+        "Knock-N-Boots (Radio Mix)",
+        "Knock-N-Boots (Radio Mix Acappella)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "BLACKstreet",
+      "title": "BLACKstreet (Promo Cassette)",
+      "label": "Interscope Records / Atlantic",
+      "image": "1994-blackstreet-blackstreet-promo-cassette.jpg",
+      "format": "LP",
+      "tracks": [
+        "A1. Intro (Interlude)",
+        "A2. Baby Be Mine",
+        "A3. U Blow My Mind (alternative version)",
+        "A4. Hey Love (Interlude)",
+        "A5. I Like The Way You Work",
+        "A6. Good Life",
+        "A7. Bootknockalization (unreleased)",
+        "A8. Physical Thing",
+        "A9. Make U Wet (alternative version)",
+        "A10. Birthday Song",
+        "A11. Givin' You All My Lovin'",
+        "A12. It's The Beat (unreleased)",
+        "A13. Booti Call",
+        "A14. I Like It (unreleased)",
+        "B1. Love's In Need",
+        "B2. Joy",
+        "B3. Before I Let You Go",
+        "B4. Confession (Interlude)",
+        "B5. Falling In Love Again",
+        "B6. Candlelight Night (Interlude)",
+        "B7. Tonight's The Night",
+        "B8. Happy Home",
+        "B9. Don't Wanna Be Alone (unreleased)",
+        "B10. Once In A Lifetime"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "BLACKstreet",
+      "title": "BLACKstreet",
+      "label": "Interscope Records / Atlantic",
+      "image": "1994-blackstreet-blackstreet.jpg",
+      "tracks": [
+        "01. Intro (Blackstreet Philosophy) (Interlude)",
+        "02. Baby Be Mine",
+        "03. U Blow My Mind",
+        "04. Hey Love (Keep It Real) (Interlude)",
+        "05. I Like The Way You Work",
+        "06. Good Life",
+        "07. Physical Thing",
+        "08. Make U Wet",
+        "09. Booti Call",
+        "10. Love's In Need",
+        "11. Joy",
+        "12. Before I Let You Go",
+        "13. Confession (Interlude)",
+        "14. Falling In Love Again",
+        "15. Candlelight Night (Interlude)",
+        "16. Tonight's The Night",
+        "17. Happy Home",
+        "18. Once In A Lifetime (Interlude)",
+        "19. Wanna Make Love",
+        "20. Givin' You All My Lovin'"
+      ],
+      "videos": [
+        {
+          "id": "ELojIEPvqE0",
+          "label": "BLACKstreet"
+        }
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "9*1*1",
+      "title": "The Pressure",
+      "label": "P-Vine Records",
+      "image": "1994-9-1-1-the-pressure.jpg",
+      "tracks": [
+        "01. Radio Interlude",
+        "02. Cutie",
+        "03. Higher",
+        "04. Spend Some Time",
+        "05. Recognize",
+        "06. My Heart Belongs to You",
+        "07. Catchin Feelins",
+        "08. The Ride",
+        "09. Do You Right",
+        "10. Misery",
+        "11. Space Interlude",
+        "12. Something About the Way",
+        "13. Make Me Say",
+        "14. The Pressure",
+        "15. Rescue Me",
+        "16. End of the Earth",
+        "17. Can't Get Enough (featuring Chance)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "9*1*1",
+      "title": "Cutie",
+      "label": "Rip-It Records",
+      "image": "1994-9-1-1-cutie.jpg",
+      "tracks": [
+        "Cutie (Acapella)",
+        "Cutie (Accapella)",
+        "Cutie (\"Baby Fingers\" Mix)",
+        "Cutie (Funk Mix With Rap)",
+        "Cutie (Funk Mix Without Rap)",
+        "Cutie (Instrumental)",
+        "Cutie (Instrumental Funk Remix)",
+        "Cutie (Instrumental LP)",
+        "Cutie (LP Mix)",
+        "Cutie (Perca-Pella)",
+        "Cutie (Pianopella)",
+        "Cutie (Pops Remix)",
+        "Cutie (Silent Storm Mix W/ Bass)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Blackgirl",
+      "title": "90's Girl",
+      "label": "Kaper Records / RCA",
+      "image": "1994-blackgirl-90s-girl.jpg",
+      "tracks": [
+        "90's Girl (Encore A Cappella)",
+        "90's Girl (Encore Alt. Remix feat. Menton \"Peanut\" Smith) (Radio Edit)",
+        "90's Girl (Encore Extended Alt. Remix)",
+        "90's Girl (Encore Extended Alt. Remix feat. Menton \"Peanut\" Smith)",
+        "90's Girl (Encore Extended Club Mix)",
+        "90's Girl (Encore Instrumental)",
+        "90's Girl (Encore Remix W/Out Rap)",
+        "90's Girl (In The 90's Extended Mix)",
+        "90's Girl (In The 90's Radio Edit)",
+        "90's Girl (In The 90's Radio Edit W/Out Rap)",
+        "90's Girl (Video Edit feat. Antwone Dickey)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "BLACKstreet",
+      "title": "Before I Let You Go",
+      "label": "Interscope Records",
+      "image": "1994-blackstreet-before-i-let-you-go.jpg",
+      "tracks": [
+        "Before I Let You Go (Acapella Mix)",
+        "Before I Let You Go (Blackstreet Live Version)",
+        "Before I Let You Go (Instrumental)",
+        "Before I Let You Go (LP Version)",
+        "Before I Let You Go (Main Mix One)",
+        "Before I Let You Go (Main Mix Two)",
+        "Before I Let You Go (Radio Edit)",
+        "Before I Let You Go (Reggae Dub Mix)",
+        "Before I Let You Go (Short Outro)",
+        "Before I Let You Go (T.R. Mix)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "BLACKstreet",
+      "title": "Booti Call / I Like The Way You Work",
+      "label": "Interscope Records",
+      "image": "1994-blackstreet-booti-call-i-like-the-way-you-work.jpg",
+      "tracks": [
+        "Booti Call (Clubadub Mix - K.C. Miami Mix)",
+        "Booti Call (Doggie Dub Mix)",
+        "Booti Call (Gotta Get U Home With Me Mix feat. T-Pirate)",
+        "Booti Call (K.C. Miami Mix feat. T-Pirate)",
+        "Booti Call (LP Version)",
+        "Booti Call (No Booti - No Rap)",
+        "Booti Call (No Booti - Radio Edit feat. T-Pirate)",
+        "Booti Call (No Rap Radio Mix)",
+        "Booti Call (T.R. Doggie Mix feat. T-Pirate)",
+        "Booti Call (T.R. Pop Mix feat. T-Pirate)",
+        "I Like The Way You Work (Ballad Mix)",
+        "I Like The Way You Work (Papa Lee Mix feat. Nutta Butta)",
+        "I Like The Way You Work (T.R. Blackstreet Mix)",
+        "I Like The Way You Work (T.R. Uptown Mix feat. Nutta Butta)"
+      ],
+      "videos": [
+        {
+          "id": "NkAkcV2ZlvE",
+          "label": "Booti Call"
+        }
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "BLACKstreet",
+      "title": "U Blow My Mind",
+      "label": "Interscope Records",
+      "image": "1994-blackstreet-u-blow-my-mind.jpg",
+      "tracks": [
+        "U Blow My Mind (Basic 3)",
+        "U Blow My Mind (Club Basic 1)",
+        "U Blow My Mind (Club Basic 2)",
+        "U Blow My Mind (Craig Mack 2)",
+        "U Blow My Mind (Craig Mack Basic 4)",
+        "U Blow My Mind (Craig Mack Radio Mix)",
+        "U Blow My Mind (LP Version)",
+        "U Blow My Mind (Radio Mix)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Eternal",
+      "title": "Stay",
+      "label": "EMI Records",
+      "image": "1994-eternal-stay.jpg",
+      "tracks": [
+        "Stay (Club Mix)",
+        "Stay (Eternal Mix)",
+        "Stay (Extended Mix)",
+        "Stay (Extended Mix - Radio Edit)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Hammer",
+      "title": "Pumps And A Bump",
+      "label": "RCA",
+      "image": "1994-hammer-pumps-and-a-bump.jpg",
+      "tracks": [
+        "Pumps And A Bump (Bump Teddy Bump Edit)",
+        "Pumps And A Bump (Bump Teddy Bump Mix)",
+        "Pumps And A Bump (Radio Edit)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Heavy D. & The Boyz",
+      "title": "Nuttin' But Love",
+      "label": "MCA Records",
+      "image": "1994-heavy-d-the-boyz-nuttin-but-love.jpg",
+      "tracks": [
+        "06. This Is Your Night"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Hammer",
+      "title": "The Funky Headhunter",
+      "label": "Giant Records",
+      "image": "1994-hammer-the-funky-headhunter.jpg",
+      "tracks": [
+        "04. Somethin' For The O.G.'s",
+        "05. Don't Stop",
+        "06. Pumps And A Bump",
+        "15. Pumps And A Bump Reprise (Bump Teddy Bump)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Patti LaBelle",
+      "title": "Gems",
+      "label": "MCA Records",
+      "image": "1994-patti-labelle-gems.jpg",
+      "tracks": [
+        "02. All This Love",
+        "04. This Word Is All"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Queen Latifah",
+      "title": "Just Another Day",
+      "label": "Motown",
+      "image": "1994-queen-latifah-just-another-day.jpg",
+      "tracks": [
+        "Just Another Day (New Jack Extended Remix)",
+        "Just Another Day (New Jack Percapella)",
+        "Just Another Day (New Jack Remix)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Quo",
+      "title": "Quo",
+      "label": "MJJ Music",
+      "image": "1994-quo-quo.jpg",
+      "tracks": [
+        "05. Blowin' Up (Don't Stop The Music) (Teddy Riley Mix)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "R. Kelly",
+      "title": "Summer Bunnies",
+      "label": "Jive",
+      "image": "1994-r-kelly-summer-bunnies.jpg",
+      "tracks": [
+        "Summer Bunnies (Loverman's Picnic Dub Mix)",
+        "Summer Bunnies (Loverman's Picnic Extended Mix)",
+        "Summer Bunnies (Loverman's Picnic Mix 1)",
+        "Summer Bunnies (Loverman's Picnic Mix 2)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Teddy Riley",
+      "title": "Nickel Bag Of Swing / Nickel Bag Of Tracks",
+      "label": "Tuff City",
+      "image": "1994-teddy-riley-nickel-bag-of-swing.jpg",
+      "format": "EP",
+      "tracks": [
+        "01. Spoonie Gee – (I'm) All Shook Up",
+        "02. Spoonie Gee – Hit Man",
+        "03. Spoonie Gee – My Girl",
+        "04. Spoonie Gee – Didja Come To Party",
+        "05. Spoonie Gee – Didja Dub To Party"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "The Rolling Stones",
+      "title": "Love Is Strong",
+      "label": "Virgin",
+      "image": "1994-the-rolling-stones-love-is-strong.jpg",
+      "tracks": [
+        "Love Is Strong (Teddy Riley Extended Dub Remix)",
+        "Love Is Strong (Teddy Riley Extended Remix)",
+        "Love Is Strong (Teddy Riley Extended Rock Remix)",
+        "Love Is Strong (Teddy Riley Instrumental)",
+        "Love Is Strong (Teddy Riley Radio Remix)"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Tom Jones",
+      "title": "The Lead And How To Swing It",
+      "label": "Interscope Records",
+      "image": "1994-tom-jones-the-lead-and-how-to-swing-it.jpg",
+      "tracks": [
+        "05. Something For Your Head",
+        "06. Fly Away"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Various",
+      "title": "Blankman (Music From The Motion Picture)",
+      "label": "Epic Soundtrax",
+      "image": "1994-various-artists-blankman.jpg",
+      "tracks": [
+        "08. Keith \"K.B.\" Ball – Live Into The Future"
+      ]
+    },
+    {
+      "year": "1994",
+      "artist": "Wreckx-N-Effect",
+      "title": "Rim Shaker",
+      "label": "MCA Records",
+      "image": "1994-wreckx-n-effect-rim-shaker.jpg",
+      "tracks": [
+        "Rim Shaker (Radio Version)",
+        "Rim Shaker (Underground Version)",
+        "Rim Shaker (Zoom Zoom Version)"
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "BLACKstreet",
+      "title": "Joy",
+      "label": "Interscope Records",
+      "image": "1995-blackstreet-joy.jpg",
+      "tracks": [
+        "Joy (Cool Joy)",
+        "Joy (Latin Combo)",
+        "Joy (LP Version - No Rap)",
+        "Joy (New Carnegie Mix)",
+        "Joy (Quiet Storm)",
+        "Joy (Uptown Joy)",
+        "Joy (Uptown Joy Long)"
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "BLACKstreet",
+      "title": "Tonight's The Night",
+      "label": "Interscope Records",
+      "image": "1995-blackstreet-tonight-s-the-night.jpg",
+      "tracks": [
+        "Tonight's The Night (Album Mix feat. SWV)",
+        "Tonight's The Night (Brand New Remix B2 feat. SWV, Craig Mack & Screwface)",
+        "Tonight's The Night (Brand New Remix B3 feat. SWV & Craig Mack)",
+        "Tonight's The Night (Brand New Remix B3 feat. SWV / No Rap)",
+        "Tonight's The Night (Rain Remix Radio Edit feat. SWV & Craig Mack)",
+        "Tonight's The Night (Reggae Remix feat. Screwface)"
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "Cheryl Lynn",
+      "title": "Good Times",
+      "label": "Avex UK",
+      "image": "1995-cheryl-lynn-good-times.jpg",
+      "tracks": [
+        "Good Times (Riley's Radio Edit)",
+        "Good Times (Teddy Riley's Full Vocal Mix)"
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "D.J. Hollywood",
+      "title": "Rarities",
+      "label": "Ol' Skool Flava",
+      "image": "1995-dj-hollywood-rarities.jpg",
+      "format": "LP",
+      "tracks": [
+        "Love In The Afternoon",
+        "Love In The Afternoon (Instrumental)",
+        "Check Out the Avenue",
+        "Hollywood's Instrumental",
+        "Hollywood Rap",
+        "Hollywood Rap (Dub Pieces)"
+      ],
+      "missing": [
+        "Hollywood Rap (Dub Pieces)"
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "Prince feat. Nona Gaye",
+      "title": "The Love Sign EP",
+      "label": "NPG Records",
+      "image": "1995-prince-feat-nona-gaye-the-love-sign-ep.jpg",
+      "tracks": [
+        "Love Sign (Ted's Double Trouble Mix)",
+        "Love Sign (Ted's Funky Chariot Mix)",
+        "Love Sign (Ted's Get 'Em Up Mix)",
+        "Love Sign (Ted's Love Sign Radio Mix)"
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "Pure Soul",
+      "title": "Pure Soul",
+      "label": "Interscope Records",
+      "image": "1995-pure-soul-pure-soul.jpg",
+      "tracks": [
+        "02 Something About the Way That You Do",
+        "03 I Want You Back"
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "Tony Thompson",
+      "title": "I Wanna Love Like That",
+      "label": "Giant Records",
+      "image": "1995-tony-thompson-i-wanna-love-like-that.jpg",
+      "tracks": [
+        "I Wanna Love Like That (Bonus Beat Vocal Mix)",
+        "I Wanna Love Like That (Rap Mix)",
+        "I Wanna Love Like That (S. Doogie Mix - No Rap)",
+        "I Wanna Love Like That (S. Doogie Rap Mix)",
+        "I Wanna Love Like That (Single Mix - No Rap)",
+        "I Wanna Love Like That (Uptown Mix)"
+      ],
+      "videos": [
+        {
+          "id": "os7YEz5x7oA",
+          "label": "I Wanna Love Like That"
+        }
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "Various",
+      "title": "New York Undercover",
+      "label": "MCA Records",
+      "image": "1995-various-artists-new-york-undercover.jpg",
+      "tracks": [
+        "02. Guy – Tell Me What You Like"
+      ]
+    },
+    {
+      "year": "1995",
+      "artist": "Various",
+      "title": "Panther (The Original Motion Picture Soundtrack)",
+      "label": "Mercury",
+      "image": "1995-various-artists-panther.jpg",
+      "tracks": [
+        "03. BLACKstreet – We'll Meet Again"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "BLACKstreet",
+      "title": "Another Level (Expanded Edition)",
+      "label": "Interscope Records",
+      "image": "1996-blackstreet-another-level-expanded-edition.jpg",
+      "tracks": [
+        "01. Black & Street Intro",
+        "02. This Is How We Roll",
+        "03. No Diggity",
+        "04. Fix",
+        "05. Good Lovin'",
+        "06. Let's Stay In Love",
+        "07. We Gonna Take U Back (Lude) / Don't Leave Me",
+        "08. Never Gonna Let You Go",
+        "09. I Wanna Be Your Man",
+        "10. Taja's Lude (Interlude)",
+        "11. My Paradise (Interlude)",
+        "12. Deja's Poem",
+        "13. (Money Can't) Buy Me Love",
+        "14. Blackstreet (On The Radio)",
+        "15. I Can't Get You (Out Of My Mind)",
+        "16. I'll Give It To You",
+        "17. Happy Song (Tonite)",
+        "18. Motherlude",
+        "19. The Lord Is Real (Time Will Reveal)",
+        "20. This Is Your Night",
+        "21. No Diggity (Instrumental)",
+        "22. No Diggity (Das Diggity Mix)",
+        "23. No Diggity (Billie Jean Remix)",
+        "24. No Diggity (All Star Remix)",
+        "25. No Diggity (Will Remix)",
+        "26. No Diggity (Teddy Riley Jungle Remix)",
+        "27. Happy Song (Tonite) (Full Crew Remix)",
+        "28. Don't Leave Me (D Remix)",
+        "29. Don't Leave Me (Goodbye Remix)",
+        "30. Don't Leave Me (Hip Hop Remix)"
+      ],
+      "videos": [
+        {
+          "id": "YKEUPT9GrNI",
+          "label": "Fix"
+        },
+        {
+          "id": "Vd2OfxOVR1c",
+          "label": "Don't Leave Me"
+        },
+        {
+          "id": "QIvc_UEKMOA",
+          "label": "Money Can't Buy Me Love"
+        },
+        {
+          "id": "2g0teugg-VM",
+          "label": "Never Gonna Let You Go"
+        }
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "BLACKstreet",
+      "title": "No Diggity",
+      "label": "Interscope Records",
+      "image": "1996-blackstreet-no-diggity.jpg",
+      "tracks": [
+        "No Diggity (Acapella)",
+        "No Diggity (Album Version)",
+        "No Diggity (All Star Remix Instrumental)",
+        "No Diggity (All-Star Remix)",
+        "No Diggity (Billie Jean Instrumental)",
+        "No Diggity (Billie Jean Remix)",
+        "No Diggity (BJ Das Extended)",
+        "No Diggity (BJ Das Instrumental)",
+        "No Diggity (Das Diggity Extended)",
+        "No Diggity (Das Diggity Instrumental)",
+        "No Diggity (Das Diggity Radio)",
+        "No Diggity (LP Instrumental)",
+        "No Diggity (LP Version)",
+        "No Diggity (Radio Version)",
+        "No Diggity (Will Remix)"
+      ]
+    }
+  ],
+  "new-jack-swing-productions": [
+    {
+      "year": "1993",
+      "artist": "MC Lyte",
+      "title": "Ain't No Other",
+      "label": "First Priority Music",
+      "image": "1993-mc-lyte-aint-no-other.jpg",
+      "tracks": [
+        "02. Brooklyn",
+        "03. Ruffneck",
+        "10. I Go On"
+      ]
+    },
+    {
+      "year": "1993",
+      "artist": "Riff",
+      "title": "Judy Had A Boyfriend",
+      "label": "EMI Records",
+      "image": "1993-riff-judy-had-a-boyfriend.jpg",
+      "tracks": [
+        "Judy Had A Boyfriend (12″ Raggae & Rap)",
+        "Judy Had A Boyfriend (12″ Raggae Bass)",
+        "Judy Had A Boyfriend (12″ Raggae Bass Radio)",
+        "Judy Had A Boyfriend (12″ Raggae Instrumental)",
+        "Judy Had A Boyfriend (Accapella)",
+        "Judy Had A Boyfriend (Full 12″ Radio No Rap)",
+        "Judy Had A Boyfriend (Mucho Edits 12″ W+Rap)",
+        "Judy Had A Boyfriend (Mucho Radio W/Rap)",
+        "Judy Had A Boyfriend (Percapella)"
+      ],
+      "videos": [
+        {
+          "id": "DdZ8DSH9b-I",
+          "label": "Judy Had A Boyfriend"
+        }
       ]
     }
   ]

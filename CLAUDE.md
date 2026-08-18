@@ -44,6 +44,11 @@ a `<div class="card">` — the next build overwrites it.
   collection. They render red and give that card a legend. It comes from the
   red `<mark>` spans on the source site.
 - `format` is optional and usually unnecessary — see below.
+- `note` is optional: a sentence or two of pressing-specific context (deleted
+  tracks, alternate mixes, promo-only status) that doesn't fit the tracklist
+  itself. Renders as a small italic line on the card back, between the
+  tracklist and the flip-back button. Used for e.g. distinguishing a promo
+  cassette from its retail release.
 - `image` is a filename inside `imgs/`. Download the cover, name it
   `<year>-<artist>-<title>` kebab-cased, and drop it there.
 - No cover available? Use `"image": "placeholder-sleeve.svg"` — a neutral
@@ -72,8 +77,13 @@ both.
 Where the tracklist can't tell — one unnumbered track lifted off an album, a
 soundtrack — add `"format": "LP"` (or `"Single"`) to that release and it wins.
 Two entries need it today: Big Daddy Kane's *It's A Big Daddy Thing* and the
-*Do The Right Thing* soundtrack. `build.py` prints the LP/single split per page,
-which is the quickest way to spot a new release landing on the wrong side.
+*Do The Right Thing* soundtrack. `build.py` prints the LP/single/EP split per
+page, which is the quickest way to spot a new release landing on the wrong side.
+
+`format` isn't actually limited to LP or Single — `fmt()` prints whatever
+string is there verbatim, so it doubles as a free-text override for the rare
+sleeve that says something else. Teddy Riley's *Nickel Bag Of Swing* EP is the
+one case of this today.
 
 The mark itself is the same frosted paper plate as `.flip-hint` in the opposite
 corner, minus the border — the two corners read as a pair. A third of these

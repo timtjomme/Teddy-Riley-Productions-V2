@@ -17,6 +17,8 @@ FLIP_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
             'stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 '
             '12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>')
 
+PLAY_SVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'
+
 # An album tracklist is numbered — "01. Her", "05 — Sleaze", "3. Can We Try Again".
 # A single lists versions of one song, never numbered. That is the only tell the
 # source site gives us, so it is what decides LP vs Single. A bare digit followed
@@ -38,6 +40,21 @@ def fmt(r):
     return "LP" if any(NUMBERED.match(t) for t in r["tracks"]) else "Single"
 
 
+def video_btn_html(r):
+    """A release can carry one or more YouTube clips. data-videos is a JSON
+    array of {id, label} read by the delegated handler in script.js — one
+    button either plays straight or, with more than one clip, opens a small
+    chooser. HTML-attribute-escaped (not esc(), which is for text nodes)
+    since label text can carry an apostrophe into a single-quoted attribute."""
+    videos = r.get("videos")
+    if not videos:
+        return ""
+    attr = json.dumps(videos, ensure_ascii=False).replace("&", "&amp;").replace("'", "&#39;")
+    return (f'\n          <button type="button" class="video-btn" data-videos=\'{attr}\' aria-label="Watch video">\n'
+            f'            {PLAY_SVG}\n'
+            f'          </button>')
+
+
 def card_html(r):
     artist, title = esc(r["artist"]), esc(r["title"])
     missing = set(r.get("missing", []))
@@ -48,8 +65,10 @@ def card_html(r):
     )
     legend = ('\n            <span class="legend"><span></span>missing from collection</span>'
               if missing else "")
+    note = (f'\n          <p class="note">{esc(r["note"])}</p>' if r.get("note") else "")
+    video_btn = video_btn_html(r)
     return f'''    <div class="card">
-      <div class="card-inner" role="button" tabindex="0" aria-pressed="false">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false" style="--cover-img:url('imgs/{r["image"]}')">
         <div class="face front">
           <img src="imgs/{r["image"]}" alt="{artist} – {title} sleeve" loading="lazy">
           <span class="format">{fmt(r)}</span>
@@ -63,12 +82,14 @@ def card_html(r):
         </div>
         <div class="face back">
           <div class="back-head">
-            <p class="artist">{artist} — {title}</p>
-            <p class="label-name">{esc(r["label"])}</p>
+            <div class="back-head-text">
+              <p class="artist">{artist} — {title}</p>
+              <p class="label-name">{esc(r["label"])}</p>
+            </div>{video_btn}
           </div>
           <ul class="tracks">
 {lis}
-          </ul>
+          </ul>{note}
           <div class="back-foot">{legend}
             <button type="button">Flip back</button>
           </div>
@@ -118,8 +139,11 @@ def main():
         changed = splice(page, grids_html(releases))
         n_missing = sum(len(r.get("missing", [])) for r in releases)
         n_lp = sum(1 for r in releases if fmt(r) == "LP")
+        n_ep = sum(1 for r in releases if fmt(r) == "EP")
+        n_single = len(releases) - n_lp - n_ep
+        other = f", {n_ep} EP" if n_ep else ""
         print(f"  {page}.html: {len(releases)} releases "
-              f"({n_lp} LP, {len(releases) - n_lp} single), "
+              f"({n_lp} LP, {n_single} single{other}), "
               f"{sum(len(r['tracks']) for r in releases)} tracks, {n_missing} flagged"
               f"{'  (updated)' if changed else '  (no change)'}")
         jump = jump_html(releases)
