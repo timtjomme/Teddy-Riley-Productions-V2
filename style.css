@@ -744,6 +744,30 @@
   .panel-2010s{ background-image: url('imgs/panel-2010s.jpg'); }
   .panel-2020s{ background-image: url('imgs/panel-2020s.jpg'); --panel-pos: 28%; }
 
+  /* Two tiles per row instead of one full-bleed panel per row — six panels
+     land exactly on three even rows. Below this, a tile would be too narrow
+     for the label at any reasonable size, so it stays one full-width column. */
+  @media (min-width: 560px){
+    .panels{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .panel{
+      min-height: 0;
+      aspect-ratio: 1 / 1;
+    }
+    .panel-label .decade{
+      font-size: clamp(32px, 6vw, 64px);
+    }
+    .panel-label .decade.is-long{
+      font-size: clamp(20px, 3.4vw, 38px);
+    }
+    .njs-logo{
+      width: 72px;
+      margin-bottom: 16px;
+    }
+  }
+
   .home-foot{
     max-width: 1040px;
     margin: 0 auto;
@@ -1187,8 +1211,10 @@
     pointer-events: none;
   }
   .yep:hover .yep-bubble,
-  .yep-btn:focus-visible + .yep-bubble{ opacity: 1; transform: translateY(0); }
-  /* once the panel is open the bubble would sit on top of it */
+  .yep-btn:focus-visible + .yep-bubble,
+  .yep.is-nudging .yep-bubble{ opacity: 1; transform: translateY(0); }
+  /* once the panel is open the bubble would sit on top of it — this must
+     stay after the rule above so it wins at equal specificity */
   .yep.is-open .yep-bubble{ opacity: 0; }
 
   .yep-panel{

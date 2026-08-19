@@ -199,6 +199,19 @@ function buildYepWidget(){
     if(e.key === 'Escape' && !panel.hidden) shut(true);
   });
 
+  // Every so often, pop the "YEP YEP!" bubble on its own — so a visitor who
+  // never hovers or focuses the button still notices it's there. Skipped
+  // under reduced motion; checks is-visible/is-open at fire time rather than
+  // pausing and resuming the timer, so it stays in step with the widget's
+  // own show/hide and the open panel without extra wiring.
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    setInterval(function(){
+      if(!w.classList.contains('is-visible') || w.classList.contains('is-open')) return;
+      w.classList.add('is-nudging');
+      setTimeout(function(){ w.classList.remove('is-nudging'); }, 2400);
+    }, 14000);
+  }
+
   // Stay out of the way until the header has scrolled past.
   var header = document.querySelector('.hero-video, .hero');
   if(!header || !('IntersectionObserver' in window)){
