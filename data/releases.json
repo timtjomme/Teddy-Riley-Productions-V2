@@ -443,6 +443,19 @@
     },
     {
       "year": "1987",
+      "artist": "Spoonie Gee",
+      "title": "The Godfather of Rap",
+      "label": "Tuff City",
+      "image": "1987-spoonie-gee-the-godfather-of-rap.jpg",
+      "tracks": [
+        "06. Hit Man",
+        "07. I'm All Shook Up",
+        "08. My Girl (Hey-Hey-Hey)",
+        "09. Did You Come To Party"
+      ]
+    },
+    {
+      "year": "1987",
       "artist": "The Classical Two",
       "title": "New Generation",
       "label": "Rooftop Records",
@@ -3271,6 +3284,214 @@
         "No Diggity (Radio Version)",
         "No Diggity (Will Remix)"
       ]
+    },
+    {
+      "year": "1995",
+      "artist": "Cheryl Lynn",
+      "title": "Good Time",
+      "label": "Avex Trax",
+      "image": "1995-cheryl-lynn-good-time.jpg",
+      "tracks": [
+        "01 Don't Wanna Be Mistreated",
+        "02 Good Time",
+        "04 If You Feel",
+        "06 Guarantee For My Heart",
+        "07 All My Loving"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Case",
+      "title": "More To Love",
+      "label": "Def Jam Recordings",
+      "image": "1996-case-more-to-love.jpg",
+      "tracks": [
+        "More To Love (Teddy Riley Remix (with Rap)",
+        "More To Love (Teddy Riley Remix (Without Rap)",
+        "More To Love (Teddy Riley & JB Remix)",
+        "More To Love (Teddy Riley Remix (A Capella)"
+      ],
+      "missing": [
+        "More To Love (Teddy Riley Remix (Without Rap)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Foxy Brown feat. BLACKstreet",
+      "title": "Get Me Home",
+      "label": "Def Jam Recordings",
+      "image": "1996-foxy-brown-feat-blackstreet-get-me-home.jpg",
+      "tracks": [
+        "Get Me Home (Main)",
+        "Get Me Home (Instrumental)",
+        "Get Me Home (Edit)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Guy",
+      "title": "Tell Me What You Like",
+      "label": "MCA Records",
+      "image": "1996-guy-tell-me-what-you-like.jpg",
+      "tracks": [
+        "Tell Me What You Like (Linslee Remix)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Men Of Vizion",
+      "title": "Do Thangz",
+      "label": "MJJ Music",
+      "image": "1996-men-of-vizion-do-thangz.jpg",
+      "tracks": [
+        "Do Thangz (Instrumental)",
+        "Do Thangz (LP Version) (feat. Nutta Butta)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Men Of Vizion",
+      "title": "House Keeper",
+      "label": "MJJ Music",
+      "image": "1996-men-of-vizion-house-keeper.jpg",
+      "tracks": [
+        "House Keeper (Radio Edit)",
+        "House Keeper (LP Version)",
+        "House Keeper (Instrumental)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Men Of Vizion",
+      "title": "Personal",
+      "label": "MJJ Music",
+      "image": "1996-men-of-vizion-personal.jpg",
+      "tracks": [
+        "01. That's Alright",
+        "02. Instant Love",
+        "03. House Keeper",
+        "04. When You Need Someone",
+        "05. Forgive Me",
+        "06. Personal",
+        "07. Joyride (Featuring Tasha Scott)",
+        "08. You Told Me You Loved Me",
+        "09. Do Thangz",
+        "10. Show You The Way To Go",
+        "11. It's Only Just A Dream",
+        "12. Night And Day"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Montell Jordan",
+      "title": "Falling",
+      "label": "Def Jam Recordings",
+      "image": "1996-montell-jordan-falling.jpg",
+      "tracks": [
+        "Falling (Teddy Riley Remix) feat. Shuanta",
+        "Falling (Teddy Riley Remix Instrumental)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Positive K",
+      "title": "Black Cinderella",
+      "label": "PosK Records",
+      "image": "1996-positive-k-black-cinderella.jpg",
+      "tracks": [
+        "Black Cinderella (Radio Mix)",
+        "Black Cinderella (LP Mix)",
+        "Black Cinderella (Instrumental)",
+        "Black Cinderella (Accapella)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Whitney Houston",
+      "title": "Step By Step",
+      "label": "Arista",
+      "image": "1996-whitney-houston-step-by-step.jpg",
+      "tracks": [
+        "Step By Step (Teddy Riley Remix)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Wreckx-N-Effect",
+      "title": "Raps New Generation",
+      "label": "MCA Records",
+      "image": "1996-wreckx-n-effect-raps-new-generation.jpg",
+      "tracks": [
+        "Intro： New Generation",
+        "Tha Show",
+        "Top Billin",
+        "Criminal Minded",
+        "Harlem (Interlude)",
+        "Planet Rock",
+        "Move Da Crowd",
+        "Funky (Interlude)",
+        "Funk Box",
+        "Somethin For Da Radio",
+        "Da Vapors",
+        "Rap Acting School (Interlude)",
+        "Boomin System",
+        "Grandma (Interlude)",
+        "Sucka Mc's",
+        "It's Yours (Play On Playa)",
+        "Outro"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Shawn",
+      "title": "O.G",
+      "label": "RCA",
+      "image": "1996-shawn-o-g.jpg",
+      "tracks": [
+        "O.G. (Radio Version)",
+        "O.G. (Instrumental)",
+        "O.G. (A Cappella)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Teddy Riley",
+      "title": "The Harlem Sessions",
+      "label": "Ol' Skool Flava",
+      "image": "1996-teddy-riley-the-harlem-sessions.jpg",
+      "tracks": [
+        "01 - Al B. Just Two Mc's - Wong (Vocal)",
+        "02 - B-Fats - The B.Fats (Vocal)",
+        "03 - Al B. Just Two Mc's - Just Rap (Vocal)",
+        "04 - Al Jones - Cheating Girl (Vocal)",
+        "05 - Al B. Just Two Mc's - Wong (Instrumental)",
+        "06 - B-Fats - The B.Fats (Instrumental)",
+        "07 - Al B. Just Two Mc's - Just Rap ((Instrumental)",
+        "08 - Al Jones - Cheating Girl (Instrumental)"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Various",
+      "title": "Get On The Bus (Music From And Inspired By The Motion Picture)",
+      "label": "Interscope Records",
+      "image": "1996-various-artists-get-on-the-bus.jpg",
+      "tracks": [
+        "13 Blackstreet - Coming Home to You"
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Wreckx-N-Effect",
+      "title": "Top Billin",
+      "label": "MCA Records",
+      "image": "1996-wreckx-n-effect-top-billin.jpg",
+      "tracks": [
+        "01 Top Billin (Radio Version)",
+        "02 Top Billin (LP Version)",
+        "03 Wreckx Shop (Remix)",
+        "04 Top Billin (Instrumental)"
+      ]
     }
   ],
   "new-jack-swing-productions": [
@@ -3308,6 +3529,17 @@
           "id": "DdZ8DSH9b-I",
           "label": "Judy Had A Boyfriend"
         }
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "DG",
+      "title": "Hush (Don't Say A Word) (Remix)",
+      "label": "HCIBD Records",
+      "image": "1996-dg-hush-don-t-say-a-word-remix.jpg",
+      "tracks": [
+        "Hush (Don't Say A Word) (Remix Radio Edit)",
+        "Hush (Don't Say A Word) (R&B Mix Radio Edit)"
       ]
     }
   ]
