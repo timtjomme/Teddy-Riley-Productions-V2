@@ -106,7 +106,14 @@
      past the full-height hero first. Only used on the three full hero pages
      (1980s/1990s/new-jack-swing-productions); contact and privacy-policy
      keep .decade-nav in .page-head below their compact hero, where this
-     light-on-photo treatment isn't needed. */
+     treatment isn't needed.
+
+     Color is per-page, not a shadow or a backing plate: white reads fine on
+     most of these photos, but hero-1980s.jpg averages rgb(199,193,193) in
+     the top-left corner where the nav sits (measured by sampling the actual
+     photo) — light enough that white text needs to flip to dark instead.
+     Add "is-light-corner" to that page's .hero if a future photo needs the
+     same flip. */
   .hero-nav{
     position: absolute;
     z-index: 1;
@@ -133,6 +140,23 @@
     border-bottom-color: #fff;
   }
   .hero-nav .decade-nav span{ color: rgba(255,255,255,0.45); }
+
+  .hero.is-light-corner .hero-nav .eyebrow{
+    color: var(--accent);
+    text-shadow: 0 2px 16px rgba(255,255,255,0.6);
+  }
+  .hero.is-light-corner .hero-nav .eyebrow::before{ background: var(--accent-soft); }
+  .hero.is-light-corner .hero-nav .decade-nav a{
+    color: var(--accent-soft);
+    text-shadow: 0 2px 12px rgba(255,255,255,0.6);
+  }
+  .hero.is-light-corner .hero-nav .decade-nav a:hover{ color: var(--accent); }
+  .hero.is-light-corner .hero-nav .decade-nav a[aria-current="page"]{
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .hero.is-light-corner .hero-nav .decade-nav span{ color: var(--muted); opacity: 0.6; }
+
   @media (max-width: 560px){
     .hero-nav{ top: 20px; left: 20px; }
     .hero-nav .decade-nav{ font-size: 13px; gap: 16px; }
