@@ -489,3 +489,26 @@ function initLostPage(){
 }
 
 initLostPage();
+
+// ---- UPDATE BANNER -----------------------------------------------------
+// Content and the data-update marker are baked in by tools/build.py; this
+// only wires the dismiss button and remembers it in localStorage, keyed to
+// the update's own date — a later entry in data/updates.json carries a new
+// date, so it reappears even if an older one was dismissed. Runs last so a
+// thrown localStorage access (old Safari private browsing) can't stop
+// anything earlier in the file from wiring up.
+function initUpdateBanner(){
+  var banner = document.querySelector('.update-banner');
+  if(!banner) return;
+  var KEY = 'trp-dismissed-update';
+  var id = banner.getAttribute('data-update');
+  if(localStorage.getItem(KEY) === id){
+    banner.remove();
+    return;
+  }
+  banner.querySelector('.dismiss').addEventListener('click', function(){
+    localStorage.setItem(KEY, id);
+    banner.remove();
+  });
+}
+initUpdateBanner();
