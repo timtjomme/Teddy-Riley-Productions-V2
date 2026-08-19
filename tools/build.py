@@ -22,9 +22,9 @@ FLIP_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
 
 PLAY_SVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'
 
-FOLD_SVG = ('<svg class="fold-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
-            'stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
-            '<path d="M6 9l6 6 6-6"/></svg>')
+FOLD_SVG = ('<svg class="fold-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" '
+            'stroke="currentColor" stroke-width="2.4" stroke-linecap="round" '
+            'stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>')
 
 # An album tracklist is numbered — "01. Her", "05 — Sleaze", "3. Can We Try Again".
 # A single lists versions of one song, never numbered. That is the only tell the

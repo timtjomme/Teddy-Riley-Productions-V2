@@ -101,6 +101,43 @@
     text-shadow: 0 2px 30px rgba(0,0,0,0.45);
   }
 
+  /* The eyebrow + decade nav, pinned over the photo instead of sitting below
+     it in .page-head — a visitor sees where they can go without scrolling
+     past the full-height hero first. Only used on the three full hero pages
+     (1980s/1990s/new-jack-swing-productions); contact and privacy-policy
+     keep .decade-nav in .page-head below their compact hero, where this
+     light-on-photo treatment isn't needed. */
+  .hero-nav{
+    position: absolute;
+    z-index: 1;
+    top: 32px;
+    left: 32px;
+    max-width: calc(100% - 64px);
+  }
+  .hero-nav .eyebrow{
+    color: #fff;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+  }
+  .hero-nav .eyebrow::before{ background: rgba(255,255,255,0.6); }
+  .hero-nav .decade-nav{
+    font-size: 15px;
+    gap: 22px;
+  }
+  .hero-nav .decade-nav a{
+    color: rgba(255,255,255,0.75);
+    text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+  }
+  .hero-nav .decade-nav a:hover{ color: #fff; }
+  .hero-nav .decade-nav a[aria-current="page"]{
+    color: #fff;
+    border-bottom-color: #fff;
+  }
+  .hero-nav .decade-nav span{ color: rgba(255,255,255,0.45); }
+  @media (max-width: 560px){
+    .hero-nav{ top: 20px; left: 20px; }
+    .hero-nav .decade-nav{ font-size: 13px; gap: 16px; }
+  }
+
   /* background-attachment:fixed is unreliable on touch browsers (iOS Safari
      scales it to document height); fall back to a static cover there */
   @media (hover: none){

@@ -3279,6 +3279,7 @@
         "No Diggity (Das Diggity Extended)",
         "No Diggity (Das Diggity Instrumental)",
         "No Diggity (Das Diggity Radio)",
+        "No Diggity (Das Diggy Radio Mix)",
         "No Diggity (LP Instrumental)",
         "No Diggity (LP Version)",
         "No Diggity (Radio Version)",
@@ -3491,6 +3492,118 @@
         "02 Top Billin (LP Version)",
         "03 Wreckx Shop (Remix)",
         "04 Top Billin (Instrumental)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Big Bub",
+      "title": "Need Your Love (Remix)",
+      "label": "Kedar",
+      "image": "1997-big-bub-need-your-love-remix.jpg",
+      "tracks": [
+        "Need Your Love (Remix) (Radio)",
+        "Need Your Love (Remix) (Acappella)",
+        "Need Your Love (Remix) (Instrumental)",
+        "Need Your Love (Remix) (Main Mix)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Big Bub",
+      "title": "Timeless",
+      "label": "Kedar",
+      "image": "1997-big-bub-timeless.jpg",
+      "tracks": [
+        "03 Call Me",
+        "04 Bring It On",
+        "05 My Way",
+        "06 Zoom",
+        "07 Settle Down",
+        "08 No One",
+        "09 Strung",
+        "10 Take It Off",
+        "11 Need Your Love (Remix)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "BLACKstreet",
+      "title": "(Money Can't) Buy Me Love",
+      "label": "Interscope Records",
+      "image": "1997-blackstreet-money-cant-buy-me-love.jpg",
+      "tracks": [
+        "(Money Can't) Buy Me Love (Album Version)",
+        "Kofi's Real Live Turntable Mix",
+        "Happy Song (Tonite) (Full Crew Remix",
+        "Happy Song (Tonite) (Full Crew Remix Edit)",
+        "Happy Song (Tonite) (Album Version"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "BLACKstreet",
+      "title": "Don't Leave Me",
+      "label": "Interscope Records",
+      "image": "1997-blackstreet-dont-leave-me.jpg",
+      "tracks": [
+        "Don't Leave Me (Radio Edit)",
+        "Don't Leave Me (A Capella)",
+        "Don't Leave Me (D Remix - Main)",
+        "Don't Leave Me (D Remix - Radio Fade)",
+        "Don't Leave Me (Goodbye Remix - Main)",
+        "Don't Leave Me (Goodbye Remix - Radio Fade)",
+        "Don't Leave Me (Hip-Hop Extended Instrumental)",
+        "Don't Leave Me (Hip-Hop Mix - Radio Fade)",
+        "Don't Leave Me (Hip-Hop Remix - Extended)",
+        "Don't Leave Me (Instrumental)",
+        "Don't Leave Me (Kooly High Acapella)",
+        "Don't Leave Me (Kooly High Mix)",
+        "Don't Leave Me (LP Version)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "BLACKstreet",
+      "title": "Fix",
+      "label": "Interscope Records",
+      "image": "1997-blackstreet-fix.jpg",
+      "tracks": [
+        "Fix (Album Version)",
+        "Fix (Call Me Dezo R&B Mix Version)",
+        "Fix (main mix 2)",
+        "Fix (Main Mix A Capella)",
+        "Fix (Main Mix Featuring Slash And Ol' Dirty Bastard)",
+        "Fix (Main Mix Instrumental Version)",
+        "Fix (Main Mix Version)",
+        "Fix (main mix) (no rap version)",
+        "Fix (main mix)",
+        "Fix (Smooth Shomari mix)",
+        "Call Me (Dezo R&B Mix Instrumental)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "BLACKstreet",
+      "title": "Never Gonna Let You Go",
+      "label": "Interscope Records",
+      "image": "1997-blackstreet-never-gonna-let-you-go.jpg",
+      "tracks": [
+        "Never Gonna Let You Go (Radio Edit)",
+        "Never Gonna Let You Go (LP Version)",
+        "Never Gonna Let You Go (Instrumental)",
+        "Never Gonna Let You Go (A Capella)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "BLACKstreet Featuring Jay-Z",
+      "title": "Call Me",
+      "label": "LaFace Records",
+      "image": "1997-blackstreet-featuring-jay-z-call-me.png",
+      "tracks": [
+        "Call Me (Album Version)",
+        "Call Me (Album Instrumental)",
+        "Call Me (Acapella Version)"
       ]
     }
   ],
