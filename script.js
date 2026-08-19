@@ -34,6 +34,23 @@ function wireCard(card){
 
 document.querySelectorAll('.card-inner').forEach(wireCard);
 
+// ---- NAV DROPDOWN ---------------------------------------------------
+// The dropdown itself is a plain <details> — opening and closing it
+// needs no JS. This only adds what <details> doesn't do on its own:
+// closing when you click elsewhere or press Escape, so it doesn't sit
+// open over the page after you've moved on.
+document.addEventListener('click', function(e){
+  document.querySelectorAll('.nav-dropdown[open]').forEach(function(d){
+    if(!d.contains(e.target)) d.removeAttribute('open');
+  });
+});
+document.addEventListener('keydown', function(e){
+  if(e.key !== 'Escape') return;
+  document.querySelectorAll('.nav-dropdown[open]').forEach(function(d){
+    d.removeAttribute('open');
+  });
+});
+
 // LP or Single for a release straight out of releases.json — the decade pages
 // get this stamped in by tools/build.py, but the 404 builds its card at runtime.
 // Same rule as NUMBERED there: a numbered tracklist is an album. Keep in step.
@@ -525,3 +542,113 @@ function initUpdateBanner(){
   });
 }
 initUpdateBanner();
+
+// ---- TIMELINE SNAKE LINES -----------------------------------------------
+// The connector on the biography timeline (timeline.html) isn't a fixed
+// image or a hand-authored path — it's measured from the real, rendered
+// centre of each .node-dot and redrawn whenever that can move: on load,
+// on resize, and when a node opens and pushes the rows below it down.
+// Column count is entirely .snake's own call in CSS; this just finds
+// wherever the dots actually landed and connects them in order.
+function debounce(fn, ms){
+  var t;
+  return function(){
+    clearTimeout(t);
+    t = setTimeout(fn, ms);
+  };
+}
+
+function initSnakeLines(){
+  var snakes = document.querySelectorAll('.snake');
+  if(!snakes.length) return;
+
+  // Straight segments with the sharp corners rounded off: pull back `r`
+  // along each side of a corner and swap the corner itself for a
+  // quadratic curve through it. A segment shorter than 2r just gets all
+  // the room it has, so tight turns still round rather than overshoot.
+  function roundedPath(points, r){
+    if(points.length < 2) return '';
+    var d = 'M' + points[0].x.toFixed(1) + ',' + points[0].y.toFixed(1);
+    for(var i = 1; i < points.length - 1; i++){
+      var p0 = points[i - 1], p1 = points[i], p2 = points[i + 1];
+      var v1x = p1.x - p0.x, v1y = p1.y - p0.y, len1 = Math.hypot(v1x, v1y) || 1;
+      var v2x = p2.x - p1.x, v2y = p2.y - p1.y, len2 = Math.hypot(v2x, v2y) || 1;
+      var rr = Math.min(r, len1 / 2, len2 / 2);
+      var ax = p1.x - (v1x / len1) * rr, ay = p1.y - (v1y / len1) * rr;
+      var bx = p1.x + (v2x / len2) * rr, by = p1.y + (v2y / len2) * rr;
+      d += ' L' + ax.toFixed(1) + ',' + ay.toFixed(1);
+      d += ' Q' + p1.x.toFixed(1) + ',' + p1.y.toFixed(1) + ' ' + bx.toFixed(1) + ',' + by.toFixed(1);
+    }
+    var last = points[points.length - 1];
+    d += ' L' + last.x.toFixed(1) + ',' + last.y.toFixed(1);
+    return d;
+  }
+
+  snakes.forEach(function(snake){
+    var svg = snake.querySelector('.snake-line');
+    var path = svg && svg.querySelector('path');
+    var nodes = Array.prototype.slice.call(snake.querySelectorAll('.node'));
+    if(!svg || !path || nodes.length < 2) return;
+
+    function draw(){
+      // hidden below the grid breakpoint (one column, nothing to snake
+      // through yet) — skip the measuring work, not just the drawing
+      if(getComputedStyle(svg).display === 'none') return;
+
+      var box = snake.getBoundingClientRect();
+      svg.setAttribute('viewBox', '0 0 ' + box.width + ' ' + box.height);
+
+      // group nodes into visual rows by comparing each one's top edge —
+      // simpler and more robust than trusting a hardcoded column count
+      var rows = [];
+      nodes.forEach(function(n){
+        var r = n.getBoundingClientRect();
+        var row = rows[rows.length - 1];
+        if(row && Math.abs(r.top - row.top) < 4){
+          row.nodes.push(n);
+          row.bottom = Math.max(row.bottom, r.bottom);
+        } else {
+          rows.push({ top: r.top, bottom: r.bottom, nodes: [n] });
+        }
+      });
+
+      var pts = [];
+      rows.forEach(function(row, ri){
+        row.nodes.forEach(function(n){
+          var d = n.querySelector('.node-dot').getBoundingClientRect();
+          pts.push({ x: d.left + d.width / 2 - box.left, y: d.top + d.height / 2 - box.top });
+        });
+        var next = rows[ri + 1];
+        if(next){
+          // The turn: past the end of the row first, THEN down — never
+          // straight down from the last dot itself, because that column
+          // keeps going for another 100-odd px of this same node's own
+          // year and title underneath it. Sideways at the dot's own
+          // height is safe regardless (text starts below the dot, not
+          // beside it), and grid auto-flow guarantees a row only gets a
+          // "next" row when it's full — a partial row is always the last
+          // one — so the departing dot is always in the final column and
+          // "just past the grid's right edge" is always clear of every
+          // column's text, not just this row's.
+          var last = pts[pts.length - 1];
+          var channelX = box.width + 16;
+          var midY = (row.bottom + next.top) / 2 - box.top;
+          var nd = next.nodes[0].querySelector('.node-dot').getBoundingClientRect();
+          var nextX = nd.left + nd.width / 2 - box.left;
+          pts.push({ x: channelX, y: last.y });
+          pts.push({ x: channelX, y: midY });
+          pts.push({ x: nextX, y: midY });
+        }
+      });
+
+      path.setAttribute('d', roundedPath(pts, 24));
+    }
+
+    draw();
+    // a node opening pushes every row below it down, which is exactly
+    // the kind of position change this needs to follow
+    snake.addEventListener('toggle', function(){ requestAnimationFrame(draw); }, true);
+    window.addEventListener('resize', debounce(draw, 150));
+  });
+}
+initSnakeLines();

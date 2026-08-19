@@ -140,6 +140,12 @@
     border-bottom-color: #fff;
   }
   .hero-nav .decade-nav span{ color: rgba(255,255,255,0.45); }
+  .hero-nav .nav-dropdown summary{
+    color: rgba(255,255,255,0.75);
+    text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+  }
+  .hero-nav .nav-dropdown summary:hover{ color: #fff; }
+  .hero-nav .nav-dropdown.is-current summary{ color: #fff; border-bottom-color: #fff; }
 
   .hero.is-light-corner .hero-nav .eyebrow{
     color: var(--accent);
@@ -156,6 +162,12 @@
     border-bottom-color: var(--accent);
   }
   .hero.is-light-corner .hero-nav .decade-nav span{ color: var(--muted); opacity: 0.6; }
+  .hero.is-light-corner .hero-nav .nav-dropdown summary{
+    color: var(--accent-soft);
+    text-shadow: 0 2px 12px rgba(255,255,255,0.6);
+  }
+  .hero.is-light-corner .hero-nav .nav-dropdown summary:hover{ color: var(--accent); }
+  .hero.is-light-corner .hero-nav .nav-dropdown.is-current summary{ color: var(--accent); border-bottom-color: var(--accent); }
 
   @media (max-width: 560px){
     .hero-nav{ top: 20px; left: 20px; }
@@ -288,6 +300,136 @@
     transition: transform 0.3s ease;
   }
   details[open] > .year-rule .fold-icon{ transform: rotate(180deg); }
+
+  /* ---- TIMELINE (biography) ----
+     era-head reuses .eyebrow + .year-rule verbatim as a plain heading —
+     .year-rule already doubles as one elsewhere (404's "Meanwhile, in the
+     crates"). The moments themselves are a .snake: a CSS grid of numbered
+     .node stops read left-to-right, row by row, with an SVG connector
+     (script.js, initSnakeLines) drawn through the actual rendered centre
+     of each .node-dot. .story is a plain wrapper distinct from .timeline
+     on purpose — .timeline/.timeline::before belong to the decade pages'
+     vertical rail and this page doesn't use that shape at all. */
+  .story{ counter-reset: moment; }
+
+  .era-head{ margin: 72px 0 28px; }
+  .era-head:first-child{ margin-top: 0; }
+  .era-head .eyebrow{ margin-bottom: 14px; }
+  .era-head .year-rule{ margin: 0; }
+
+  /* mobile-first: one column, no connector — the line only earns its
+     keep once there's an actual row to turn a corner into. Matches
+     .panels' own mobile-first 1-column default below. */
+  .snake{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    padding: 4px 0 48px;
+  }
+  .snake-line{
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+  .snake-line path{
+    fill: none;
+    stroke: var(--accent-soft);
+    stroke-width: 1.5;
+    opacity: 0.6;
+  }
+  @media (min-width: 640px){
+    .snake{ grid-template-columns: repeat(2, 1fr); column-gap: 28px; row-gap: 64px; }
+    .snake-line{ display: block; }
+  }
+  @media (min-width: 960px){
+    .snake{ grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .node{ position: relative; z-index: 1; counter-increment: moment; }
+  .node summary{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .node summary::-webkit-details-marker{ display:none; }
+  .node summary:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 6px;
+    border-radius: 8px;
+  }
+
+  /* the grid's one connector target — plain numbered ring by default,
+     counting up via CSS so the sequence never has to be hand-kept in
+     sync with the HTML; a matching archive photo takes over the same
+     circle instead of the number where one exists. */
+  .node-dot{
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    border: 1.5px solid var(--rule);
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font: 600 11px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+  .node-dot::before{ content: counter(moment, decimal-leading-zero); }
+  .node summary:hover .node-dot{ transform: scale(1.08); border-color: var(--accent-soft); }
+  .node.has-photo .node-dot{ border-color: transparent; box-shadow: 0 6px 16px -6px rgba(0,0,0,0.35); }
+  .node.has-photo .node-dot::before{ content: none; }
+  .node-dot img{ width:100%; height:100%; object-fit: cover; display:block; }
+
+  .node-year{
+    font: 300 26px/1.2 'Open Sans', sans-serif;
+    color: var(--accent);
+  }
+  /* title and the +/- share a row so the toggle reads as part of the
+     title ("Born in Harlem +"), not a corner badge floating over the
+     connector line's height */
+  .node-head{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    width: 100%;
+  }
+  .node-title{
+    flex: 1;
+    min-width: 0;
+    font: 600 15px/1.4 'Open Sans', sans-serif;
+    color: var(--label);
+  }
+  .node-plus{
+    flex: none;
+    font: 300 22px/1 'Open Sans', sans-serif;
+    color: var(--muted);
+  }
+  .node-plus .i-minus{ display:none; }
+  .node[open] .node-plus .i-plus{ display:none; }
+  .node[open] .node-plus .i-minus{ display:inline; }
+
+  .node-body{ padding: 2px 0 0; }
+  .node-body p{
+    font: 400 14px/1.6 'Open Sans', sans-serif;
+    color: var(--muted);
+    margin: 0;
+    text-wrap: pretty;
+  }
+  @media (prefers-reduced-motion: reduce){
+    .node-dot{ transition: none; }
+  }
 
   .grid{
     display:grid;
@@ -633,6 +775,69 @@
     padding-bottom: 3px;
   }
 
+  /* ---- NAV DROPDOWN ----
+     Native <details>/<summary> — same idiom as the year-groups and the
+     timeline's .node, so opening and closing it needs no JS at all;
+     script.js only adds the closes-on-outside-click polish. The trigger
+     sits inline in whichever nav bar it's on and is themed like the a's
+     around it (see the hero-nav variants below), but the menu itself
+     always gets its own solid backing, so its links stay one plain
+     dark-on-light style no matter which hero photo is behind the trigger. */
+  .nav-dropdown{ position: relative; }
+  /* plain inline flow, deliberately not flex — this sits in the same row
+     as the a's either side of it, and a flex <summary> lays its text out
+     on its own terms (cross-axis centring, an anonymous flex-wrapped text
+     run) instead of the ordinary text baseline the a's use, which is what
+     made it sit off from the rest of the line. Text + icon as normal
+     inline content, exactly like an a with an icon in it, keeps it on the
+     same baseline as every other word in the nav. */
+  .nav-dropdown summary{
+    cursor: pointer;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+    color: var(--accent-soft);
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    font: inherit;
+    letter-spacing: inherit;
+    white-space: nowrap;
+  }
+  .nav-dropdown summary::-webkit-details-marker{ display:none; }
+  .nav-dropdown summary:hover{ color: var(--accent); }
+  .nav-dropdown.is-current summary{
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .nav-caret{
+    width: 11px; height: 11px;
+    margin-left: 5px;
+    vertical-align: middle;
+    transition: transform 0.25s ease;
+  }
+  .nav-dropdown[open] summary .nav-caret{ transform: rotate(180deg); }
+
+  /* No card, no background of its own on purpose — it's positioned, full
+     stop, and just sits over whatever's already behind the nav (photo,
+     plain page, dark 404 ground). Its a's and spans carry no colour
+     rules here at all: .decade-nav a / .decade-nav span (and the
+     .hero-nav, is-light-corner and .lost-nav variants) already reach
+     these through the cascade, since a nested a is still a descendant of
+     the same .decade-nav — so the dropdown's five items pick up exactly
+     the same colour, hover and aria-current treatment as the a's beside
+     the trigger, with nothing dropdown-specific to keep in step. */
+  .nav-dropdown-menu{
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  @media (prefers-reduced-motion: reduce){
+    .nav-caret{ transition: none; }
+  }
+
   /* ---- FRONT PAGE ---- */
   .hero-video{
     position:relative;
@@ -799,6 +1004,7 @@
   .panel.is-soon .panel-label{ opacity: 0.82; }
   .panel.is-soon::after{ background: rgba(10,10,12,0.52); }
 
+  .panel-timeline{ background-image: url('imgs/story/ins20.jpg'); --panel-pos: 24%; }
   .panel-1980s{ background-image: url('imgs/hero-1980s.jpg'); --panel-pos: 14%; }
   .panel-1990s{ background-image: url('imgs/panel-1990s.jpg'); --panel-pos: 8%; }
   .panel-2000s{ background-image: url('imgs/panel-2000s.jpg'); }
@@ -817,6 +1023,13 @@
       min-height: 0;
       aspect-ratio: 1 / 1;
     }
+    /* the one tile that isn't a decade — full width, wide instead of
+       square, so it reads as the entry point sitting above the grid
+       rather than a seventh square breaking the six-tile/three-row math */
+    .panel.is-timeline{
+      grid-column: 1 / -1;
+      aspect-ratio: 21 / 9;
+    }
     .panel-label .decade{
       font-size: clamp(32px, 6vw, 64px);
     }
@@ -834,7 +1047,6 @@
     margin: 0 auto;
     padding: 28px 20px 70px;
   }
-  .home-foot img{ width: 84px; height:auto; display:block; margin-bottom: 18px; opacity:0.75; }
   .home-foot p{
     font: 400 12px/1.6 'Open Sans', sans-serif;
     color: var(--muted);
@@ -893,8 +1105,6 @@
     font-size: clamp(40px, 7vw, 84px);
   }
 
-  /* same white logo on the light footer needs inverting to stay visible */
-  .home-foot img{ filter: invert(1); }
 
   .decade-nav .home-link{
     color: var(--muted);
@@ -1394,6 +1604,14 @@
   }
   .lost-nav a:hover{ color:#fff; border-bottom-color: rgba(255,255,255,0.8); }
   .lost-nav a:focus-visible{ outline: 2px solid #fff; outline-offset: 3px; }
+  .lost-nav .nav-dropdown summary{
+    font: 600 12px/1 'Open Sans', sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.72);
+  }
+  .lost-nav .nav-dropdown summary:hover{ color:#fff; }
+  .lost-nav .nav-dropdown summary:focus-visible{ outline: 2px solid #fff; outline-offset: 3px; }
 
   .lost-inner{
     position: relative;

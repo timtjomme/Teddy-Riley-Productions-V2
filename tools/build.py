@@ -139,6 +139,18 @@ def jump_html(releases):
             f'{links}    </nav>')
 
 
+def banner_bullet(p):
+    """Most entries are a release count against a page; a few are a plain
+    feature announcement (a new page, a redesign) that doesn't have a count
+    to report. "label" opts an entry into the second form: the whole bullet
+    becomes that text, linked."""
+    if "label" in p:
+        return f'      <li><a href="{esc(p["href"])}">{esc(p["label"])}</a></li>'
+    plural = "" if p["count"] == 1 else "s"
+    return (f'      <li>{p["count"]} release{plural} added to '
+            f'<a href="{esc(p["href"])}">{esc(p["name"])}</a></li>')
+
+
 def banner_html(update):
     """The homepage's dismissible "recently added" sticker, pinned crooked at
     the top of the hero, sourced from the last entry in data/updates.json.
@@ -149,11 +161,7 @@ def banner_html(update):
     if not update:
         return ""
     date = datetime.strptime(update["date"], "%Y-%m-%d").strftime("%b %-d")
-    items = "\n".join(
-        f'      <li>{p["count"]} release{"" if p["count"] == 1 else "s"} added to '
-        f'<a href="{esc(p["href"])}">{esc(p["name"])}</a></li>'
-        for p in update.get("pages", [])
-    )
+    items = "\n".join(banner_bullet(p) for p in update.get("pages", []))
     return (f'  <div class="update-banner" data-update="{esc(update["date"])}">\n'
             f'    <button class="dismiss" type="button" aria-label="Dismiss">&times;</button>\n'
             f'    <p class="date"><span class="tag">New</span> {date}</p>\n'
