@@ -93,9 +93,25 @@ disappears.
 
 ### A new year
 
-Just add releases with that year. The build creates the heading and anchor
-(`id="y1991"`). The **year-jump nav is hand-written** in the page — add the link
-yourself; `build.py` prints a warning when it looks out of date.
+Just add releases with that year. The build wraps it in a `<details>` — the
+year heading is the `<summary>`, closed by default, so the page opens short
+and a visitor expands the year they want. The **year-jump nav is hand-written**
+in the page — add the link yourself; `build.py` prints a warning when it
+looks out of date.
+
+The anchor id (`id="y1991"`) lives on the `.grid` inside the `<details>`, not
+on the summary or the details element itself. That's deliberate: a browser
+only auto-opens a closed `<details>` when the URL fragment's target is one of
+its *hidden* descendants. Put the id on the summary instead and a jump-to-year
+link would scroll there but leave the section collapsed.
+
+All the years sit inside one `.timeline` wrapper (also from `build.py`), which
+draws the connecting rail down the left side — one line for the whole list,
+not a segment per year, so it never needs to be re-measured as sections open
+and close; it's just the wrapper's own content height. Below 560px it steps
+aside entirely (`.timeline{ padding-left: 0 }`, rail hidden) rather than
+taking 30px away from `.grid`'s `minmax(300px, 1fr)`, which is already tight
+against `.wrap`'s padding on a phone.
 
 ### A new decade page
 
@@ -178,6 +194,27 @@ which is why it needs no per-page opt-out.
 
 Sits bottom-right specifically so it never collides with the YEP YEP widget
 (bottom-left) or the footer prompt.
+
+## Content protection
+
+`user-select:none` on `body` (style.css) plus a `contextmenu` blocker and an
+`img`/`video` `dragstart` blocker (script.js, top of the file) — site-wide,
+every page.
+
+This is a deterrent, not real protection. View-source, devtools, and a
+screenshot all still get past every part of it; nothing client-side can stop
+someone who actually wants the file. It only removes the casual, one-click
+paths (drag-save an image, right-click > Save/Copy, select-and-copy text),
+which is what most casual lifting actually is.
+
+Deliberately not here: blocking keyboard shortcuts (Ctrl+C, Ctrl+U) or trying
+to detect/block devtools. Both are trivially bypassed — the browser's own
+menu still has View Page Source — and mainly succeed at breaking things for
+the site owner too the next time something needs debugging.
+
+Form fields are exempted from both rules (`input, textarea` in the CSS; an
+`e.target` check in the JS) — a visitor has to be able to select, copy, and
+right-click-paste into the contact form for it to work at all.
 
 ## 404
 

@@ -35,6 +35,26 @@
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
 
+  /* ---- CONTENT PROTECTION ----
+     A deterrent, not real protection — view-source, devtools and a
+     screenshot all still work regardless. This just removes the casual,
+     one-click paths: drag-saving an image, selecting and copying text.
+     Right-click is blocked separately in script.js. Form fields are
+     re-enabled below since a visitor must be able to select and copy
+     what they type (their email, a message) to use the contact form. */
+  body{
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  input, textarea{
+    -webkit-user-select: text;
+    user-select: text;
+  }
+  img, video{
+    -webkit-user-drag: none;
+    user-drag: none;
+  }
+
   body{
     /* background-color is the safety net: the gradient alone leaves the canvas
        unpainted once you scroll past it on a page this tall */
@@ -132,6 +152,31 @@
     text-wrap: pretty;
   }
 
+  /* One rail for the whole list, not per-year segments — its height is
+     just the wrapper's content height, so it tracks years opening and
+     closing automatically instead of needing to be recalculated. */
+  .timeline{
+    position:relative;
+    padding-left: 30px;
+  }
+  .timeline::before{
+    content:"";
+    position:absolute;
+    left:0; top:0; bottom:0;
+    width:2px;
+    /* --rule (a 16%-opacity hairline) all but disappears at this width —
+       matches the horizontal rule's own solid --accent instead, so the two
+       read as one continuous mark rather than the dots floating unconnected */
+    background: var(--accent);
+  }
+  /* the rail's 30px costs width .grid doesn't have to spare on a phone —
+     minmax(300px, 1fr) is already tight against .wrap's own padding below
+     ~560px, so the decoration steps aside rather than forcing overflow */
+  @media (max-width: 560px){
+    .timeline{ padding-left: 0; }
+    .timeline::before, summary.year-rule::before{ display:none; }
+  }
+
   .year-rule{
     display:flex;
     align-items:center;
@@ -147,11 +192,49 @@
     height:2px;
     background: var(--accent);
   }
+  /* .year-rule doubles as a plain heading (404's "Meanwhile, in the crates")
+     and, on the decade pages, a <summary> — reset the marker only where the
+     tag actually has one. */
+  summary.year-rule{
+    position:relative;
+    cursor:pointer;
+    list-style:none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  summary.year-rule::-webkit-details-marker{ display:none; }
+  summary.year-rule:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+  }
+  /* the node marking this year on the .timeline rail — centred on it,
+     regardless of .timeline's own padding-left (see the maths note in
+     tools/build.py's grids_html if this ever needs to move) */
+  summary.year-rule::before{
+    content:"";
+    position:absolute;
+    left: -37px;
+    top: 50%;
+    margin-top: -6px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+  }
+  .fold-icon{
+    order: 2;
+    flex-shrink:0;
+    width: 24px; height: 24px;
+    transition: transform 0.3s ease;
+  }
+  details[open] > .year-rule .fold-icon{ transform: rotate(180deg); }
 
   .grid{
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
+    /* the anchor id lives here, below the summary — enough headroom that a
+       jumped-to year's heading isn't jammed against the viewport top */
+    scroll-margin-top: 110px;
   }
 
   .card{
@@ -880,7 +963,7 @@
   }
 
   .decade-intro{
-    max-width: 660px;
+    max-width: 1140px;
     margin: 0 0 52px;
   }
   .decade-intro h2{
@@ -997,7 +1080,7 @@
 
   .yep-btn{
     display:block;
-    height: 64px;
+    height: 128px;
     padding: 0;
     border: 0;
     background: none;
@@ -1014,7 +1097,7 @@
 
   .yep-bubble{
     position:absolute;
-    bottom: 72px; left: 0;
+    bottom: 136px; left: 0;
     background: var(--label);
     color: var(--ink);
     font: 600 11px/1 'Open Sans', sans-serif;
@@ -1099,7 +1182,7 @@
   /* on a narrow screen the widget would sit on top of the footer prompt */
   @media (max-width: 560px){
     .yep{ bottom: 16px; left: 16px; }
-    .yep-btn{ height: 54px; }
+    .yep-btn{ height: 108px; }
   }
 
   /* the widget waits until the header has scrolled past */

@@ -19,6 +19,10 @@ FLIP_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
 
 PLAY_SVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>'
 
+FOLD_SVG = ('<svg class="fold-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+            'stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+            '<path d="M6 9l6 6 6-6"/></svg>')
+
 # An album tracklist is numbered — "01. Her", "05 — Sleaze", "3. Can We Try Again".
 # A single lists versions of one song, never numbered. That is the only tell the
 # source site gives us, so it is what decides LP vs Single. A bare digit followed
@@ -100,13 +104,25 @@ def card_html(r):
 
 
 def grids_html(releases):
-    """Year headings, each followed by its grid. Years keep first-seen order."""
+    """Year headings, each a <details> that folds its grid open — years keep
+    first-seen order. The anchor id lives on .grid, not the summary: a
+    browser only auto-opens a closed <details> when the fragment target is
+    one of its hidden descendants, not the summary or the details itself.
+
+    All of it sits inside one .timeline wrapper so the connecting rail
+    (style.css) can be a single element spanning edge to edge, rather than
+    per-year segments that would need to line up across the gap between
+    them — its height is just the wrapper's content height, so it grows
+    and shrinks automatically as years open and close."""
     years = list(dict.fromkeys(r["year"] for r in releases))
-    out = []
+    out = ['  <div class="timeline">\n']
     for y in years:
         cards = "\n".join(card_html(r) for r in releases if r["year"] == y)
-        out.append(f'  <div class="year-rule" id="y{y}">{y}</div>\n'
-                   f'  <div class="grid">\n\n{cards}\n  </div>\n')
+        out.append(f'  <details class="year-group">\n'
+                   f'    <summary class="year-rule">{y}{FOLD_SVG}</summary>\n'
+                   f'    <div class="grid" id="y{y}">\n\n{cards}\n    </div>\n'
+                   f'  </details>\n')
+    out.append('  </div>\n')
     return "\n".join(out)
 
 

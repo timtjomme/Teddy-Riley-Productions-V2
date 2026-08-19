@@ -1,3 +1,19 @@
+// ---- CONTENT PROTECTION -----------------------------------------------
+// A deterrent, not real protection — view-source, devtools and a
+// screenshot all still work regardless of any of this. It only removes
+// the casual, one-click paths: right-click > Save/Copy, and dragging an
+// image or the hero video out of the page. Form fields are exempted — a
+// visitor needs their browser's normal right-click (paste, spell-check)
+// to actually use the contact form.
+document.addEventListener('contextmenu', function(e){
+  var t = e.target;
+  if(t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable) return;
+  e.preventDefault();
+});
+document.addEventListener('dragstart', function(e){
+  if(e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') e.preventDefault();
+});
+
 // Named so cards created later (the 404's random pick) can reuse it.
 function wireCard(card){
   function toggle(){
@@ -124,7 +140,7 @@ function buildYepWidget(){
     '<div class="yep-bubble" aria-hidden="true">YEP YEP!</div>' +
     '<button class="yep-btn" type="button" aria-expanded="false" ' +
       'aria-controls="yep-panel">' +
-      '<img src="imgs/yep-avatar.png" alt="" height="64">' +
+      '<img src="imgs/yep-avatar.png" alt="" height="128">' +
       '<span class="sr-only">Add something to the archive</span>' +
     '</button>' +
     '<div class="yep-panel" id="yep-panel" role="dialog" aria-modal="false" ' +
