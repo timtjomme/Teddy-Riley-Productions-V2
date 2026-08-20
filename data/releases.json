@@ -332,6 +332,18 @@
     },
     {
       "year": "1987",
+      "artist": "Keith Sweat",
+      "title": "Something Just Ain't Right",
+      "label": "Vintertainment",
+      "image": "1987-keith-sweat-something-just-aint-right.jpg",
+      "tracks": [
+        "Something Just Ain't Right (Extended Version)",
+        "Something Just Ain't Right (Beat Version)",
+        "Something Just Ain't Right (Instrumental)"
+      ]
+    },
+    {
+      "year": "1987",
       "artist": "Kool Moe Dee",
       "title": "Do You Know What Time It Is? / I'm Kool Moe Dee",
       "label": "Jive",
@@ -869,10 +881,12 @@
         "Wishing You Were Here (Gyrlz Meet Boyz 12\" Mix)",
         "Wishing You Were Here (Instrumental)",
         "Wishing You Were Here (Percappella Mix)",
-        "Wishing You Were Here (Uptown Instrumental)"
+        "Wishing You Were Here (Uptown Instrumental)",
+        "Wishing You Were Here (12\" Vocal)"
       ],
       "missing": [
-        "Wishing You Were Here (Instrumental)"
+        "Wishing You Were Here (Instrumental)",
+        "Wishing You Were Here (12\" Vocal)"
       ]
     },
     {
@@ -3604,6 +3618,163 @@
         "Call Me (Album Version)",
         "Call Me (Album Instrumental)",
         "Call Me (Acapella Version)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Hanson",
+      "title": "Mmm Bop (Remixes)",
+      "label": "Mercury",
+      "image": "1997-hanson-mmm-bop-remixes.jpg",
+      "tracks": [
+        "Mmm Bop (Old School Remix)",
+        "Mmm Bop (New Jack Remix-Main Pass)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Michael Jackson",
+      "title": "Blood On The Dance Floor / HIStory In The Mix",
+      "label": "Epic",
+      "image": "1997-michael-jackson-blood-on-the-dance-floor-history-in-the-mix.jpg",
+      "tracks": [
+        "01. Blood on the Dance Floor",
+        "04. Ghosts"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Omar Chandler",
+      "title": "Pieces Of My Heart",
+      "label": "Expansion",
+      "image": "1997-omar-chandler-pieces-of-my-heart.jpg",
+      "tracks": [
+        "09 Omar Chandler feat. Teddy Riley - Guess Who's Back"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Queen Pen",
+      "title": "All My Love",
+      "label": "Lil' Man Records / Interscope",
+      "image": "1997-queen-pen-all-my-love.jpg",
+      "tracks": [
+        "All My Love (Album Version)",
+        "All My Love (Radio Edit)",
+        "All My Love (Clean Radio Mix)",
+        "All My Love (Hook First)",
+        "All My Love (Hook First Acapella)",
+        "All My Love (Hook First Short Version)",
+        "All My Love (Instrumental)",
+        "All My Love (Acapella)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Queen Pen",
+      "title": "Man Behind The Music",
+      "label": "Lil' Man Records / Interscope",
+      "image": "1997-queen-pen-man-behind-the-music.jpg",
+      "tracks": [
+        "Man Behind The Music (Main Mix, 4:11)",
+        "Man Behind The Music (Main Mix, 2:20)",
+        "Man Behind The Music (Instrumental, 4:10)",
+        "Man Behind The Music (Instrumental, 2:20)",
+        "Man Behind The Music (Acapella, 4:01)",
+        "Man Behind The Music (Acapella, 2:20)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Queen Pen",
+      "title": "My Melody",
+      "label": "Lil' Man Records / Interscope",
+      "image": "1997-queen-pen-my-melody.jpg",
+      "tracks": [
+        "01. Queen Pen - Intro",
+        "02. Queen Of The Click",
+        "03. Man Behind The Music",
+        "04. All My Love",
+        "05. My Melody",
+        "06. Party Ain't A Party",
+        "07. It's True",
+        "08. The Set Up",
+        "09. Get Away",
+        "10. I'm Gon Blow Up",
+        "11. Girlfriend",
+        "12. No Hooks",
+        "13. So Many Ways"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Rampage",
+      "title": "We Getz Down",
+      "label": "Elektra",
+      "image": "1997-rampage-we-getz-down.jpg",
+      "tracks": [
+        "We Getz Down (Album Version)",
+        "We Getz Down (Album Version-Instrumental)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Taral",
+      "title": "Distant Lover",
+      "label": "Motown",
+      "image": "1997-taral-distant-lover.jpg",
+      "tracks": [
+        "Distant Lover (Drumpella)",
+        "Distant Lover (Radio Edit)",
+        "Distant Lover (LP Version)",
+        "Distant Lover (Teddy Riley Extended Mix)",
+        "Distant Lover (Instrumental)",
+        "Distant Lover (A Cappella)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Taral",
+      "title": "This Time",
+      "label": "Motown",
+      "image": "1997-taral-this-time.jpg",
+      "tracks": [
+        "01 - Anyway",
+        "02 - Distant Lover",
+        "03 - How Can I Get Over You"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Taral feat. LL Cool J",
+      "title": "How Can I Get Over You (Remix)",
+      "label": "Motown",
+      "image": "1997-taral-how-can-i-get-over-you-remix.jpg",
+      "format": "Single",
+      "tracks": [
+        "01 - How Can I Get Over You (Radio Edit)",
+        "06 - How Can I Get Over You (Acapella)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Usher",
+      "title": "My Way",
+      "label": "LaFace",
+      "image": "1997-usher-my-way.jpg",
+      "tracks": [
+        "07. - I Will"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Various",
+      "title": "Nothing To Lose - Music From And Inspired By The Motion Picture",
+      "label": "Tommy Boy",
+      "image": "1997-various-nothing-to-lose.jpg",
+      "format": "LP",
+      "tracks": [
+        "911 (US) feat. Queen Pen - In A Magazine"
       ]
     }
   ],
