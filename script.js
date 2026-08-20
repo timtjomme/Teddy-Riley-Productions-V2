@@ -620,31 +620,33 @@ function debounce(fn, ms){
   };
 }
 
+// Straight segments with the sharp corners rounded off: pull back `r`
+// along each side of a corner and swap the corner itself for a
+// quadratic curve through it. A segment shorter than 2r just gets all
+// the room it has, so tight turns still round rather than overshoot.
+// Shared by initSnakeLines (within one era) and initEraLinks (between
+// eras), so both draw the exact same kind of line.
+function roundedPath(points, r){
+  if(points.length < 2) return '';
+  var d = 'M' + points[0].x.toFixed(1) + ',' + points[0].y.toFixed(1);
+  for(var i = 1; i < points.length - 1; i++){
+    var p0 = points[i - 1], p1 = points[i], p2 = points[i + 1];
+    var v1x = p1.x - p0.x, v1y = p1.y - p0.y, len1 = Math.hypot(v1x, v1y) || 1;
+    var v2x = p2.x - p1.x, v2y = p2.y - p1.y, len2 = Math.hypot(v2x, v2y) || 1;
+    var rr = Math.min(r, len1 / 2, len2 / 2);
+    var ax = p1.x - (v1x / len1) * rr, ay = p1.y - (v1y / len1) * rr;
+    var bx = p1.x + (v2x / len2) * rr, by = p1.y + (v2y / len2) * rr;
+    d += ' L' + ax.toFixed(1) + ',' + ay.toFixed(1);
+    d += ' Q' + p1.x.toFixed(1) + ',' + p1.y.toFixed(1) + ' ' + bx.toFixed(1) + ',' + by.toFixed(1);
+  }
+  var last = points[points.length - 1];
+  d += ' L' + last.x.toFixed(1) + ',' + last.y.toFixed(1);
+  return d;
+}
+
 function initSnakeLines(){
   var snakes = document.querySelectorAll('.snake');
   if(!snakes.length) return;
-
-  // Straight segments with the sharp corners rounded off: pull back `r`
-  // along each side of a corner and swap the corner itself for a
-  // quadratic curve through it. A segment shorter than 2r just gets all
-  // the room it has, so tight turns still round rather than overshoot.
-  function roundedPath(points, r){
-    if(points.length < 2) return '';
-    var d = 'M' + points[0].x.toFixed(1) + ',' + points[0].y.toFixed(1);
-    for(var i = 1; i < points.length - 1; i++){
-      var p0 = points[i - 1], p1 = points[i], p2 = points[i + 1];
-      var v1x = p1.x - p0.x, v1y = p1.y - p0.y, len1 = Math.hypot(v1x, v1y) || 1;
-      var v2x = p2.x - p1.x, v2y = p2.y - p1.y, len2 = Math.hypot(v2x, v2y) || 1;
-      var rr = Math.min(r, len1 / 2, len2 / 2);
-      var ax = p1.x - (v1x / len1) * rr, ay = p1.y - (v1y / len1) * rr;
-      var bx = p1.x + (v2x / len2) * rr, by = p1.y + (v2y / len2) * rr;
-      d += ' L' + ax.toFixed(1) + ',' + ay.toFixed(1);
-      d += ' Q' + p1.x.toFixed(1) + ',' + p1.y.toFixed(1) + ' ' + bx.toFixed(1) + ',' + by.toFixed(1);
-    }
-    var last = points[points.length - 1];
-    d += ' L' + last.x.toFixed(1) + ',' + last.y.toFixed(1);
-    return d;
-  }
 
   snakes.forEach(function(snake){
     var svg = snake.querySelector('.snake-line');
@@ -653,10 +655,6 @@ function initSnakeLines(){
     if(!svg || !path || nodes.length < 2) return;
 
     function draw(){
-      // hidden below the grid breakpoint (one column, nothing to snake
-      // through yet) — skip the measuring work, not just the drawing
-      if(getComputedStyle(svg).display === 'none') return;
-
       var box = snake.getBoundingClientRect();
       svg.setAttribute('viewBox', '0 0 ' + box.width + ' ' + box.height);
 
@@ -714,3 +712,58 @@ function initSnakeLines(){
   });
 }
 initSnakeLines();
+
+// ---- TIMELINE ERA LINKS --------------------------------------------------
+// One more connector, same recipe as the snake lines above, joining the
+// last dot of one era to the first dot of the next now that .story lays
+// eras out side by side instead of stacking them — so the seam between
+// eras reads as the same line, not a different, one-off treatment. Drawn
+// into a single overlay SVG (.era-link-line) sized in JS to .story's full
+// scrollable area: inset:0 alone would only ever cover the visible,
+// clipped slice of a scroll container, not the content scrolled to.
+function initEraLinks(){
+  var story = document.querySelector('.story');
+  var svg = story && story.querySelector('.era-link-line');
+  var path = svg && svg.querySelector('path');
+  var eras = story ? Array.prototype.slice.call(story.querySelectorAll('.era')) : [];
+  if(!story || !svg || !path || eras.length < 2) return;
+
+  function dotCenter(era, which){
+    var nodes = era.querySelectorAll('.node');
+    var node = nodes[which === 'first' ? 0 : nodes.length - 1];
+    var d = node.querySelector('.node-dot').getBoundingClientRect();
+    return { x: d.left + d.width / 2, y: d.top + d.height / 2 };
+  }
+
+  function draw(){
+    var w = story.scrollWidth, h = story.scrollHeight;
+    svg.style.width = w + 'px';
+    svg.style.height = h + 'px';
+    svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+    var origin = svg.getBoundingClientRect();
+
+    var segments = [];
+    for(var i = 0; i < eras.length - 1; i++){
+      var eraA = eras[i], eraB = eras[i + 1];
+      var a = dotCenter(eraA, 'last');
+      var b = dotCenter(eraB, 'first');
+      var eraARect = eraA.getBoundingClientRect();
+      var eraBRect = eraB.getBoundingClientRect();
+      // the gap between two .era panels is empty on purpose (see the
+      // wide .story gap in style.css) — the join rises straight through
+      // the middle of it to the next era's own row height and meets its
+      // first dot as one level approach into the left side, the same way
+      // every other join in this recipe meets a node
+      var riseX = (eraARect.right + eraBRect.left) / 2 - origin.left;
+      a = { x: a.x - origin.left, y: a.y - origin.top };
+      b = { x: b.x - origin.left, y: b.y - origin.top };
+      segments.push(roundedPath([a, { x: riseX, y: a.y }, { x: riseX, y: b.y }, b], 24));
+    }
+    path.setAttribute('d', segments.join(' '));
+  }
+
+  draw();
+  story.addEventListener('toggle', function(){ requestAnimationFrame(draw); }, true);
+  window.addEventListener('resize', debounce(draw, 150));
+}
+initEraLinks();

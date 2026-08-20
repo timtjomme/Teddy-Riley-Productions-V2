@@ -304,31 +304,86 @@
   /* ---- TIMELINE (biography) ----
      era-head reuses .eyebrow + .year-rule verbatim as a plain heading —
      .year-rule already doubles as one elsewhere (404's "Meanwhile, in the
-     crates"). The moments themselves are a .snake: a CSS grid of numbered
-     .node stops read left-to-right, row by row, with an SVG connector
+     crates"). .story is a horizontal filmstrip: each .era (its heading
+     plus its own .snake grid) is a fixed-width panel, laid out in a row
+     and scrolled on the x axis rather than stacked down the page. Within
+     an .era, the moments are still a .snake: a CSS grid of numbered .node
+     stops read left-to-right, row by row, with an SVG connector
      (script.js, initSnakeLines) drawn through the actual rendered centre
-     of each .node-dot. .story is a plain wrapper distinct from .timeline
-     on purpose — .timeline/.timeline::before belong to the decade pages'
-     vertical rail and this page doesn't use that shape at all. */
-  .story{ counter-reset: moment; }
+     of each .node-dot. initEraLinks draws one more connector of the exact
+     same path/stroke recipe from the last dot of one .era to the first
+     dot of the next, into a single overlay SVG (.era-link-line) sized in
+     JS to .story's full scrollable area — inset:0 alone only ever covers
+     the clipped, visible box, not the scrollable one. .story is a plain
+     wrapper distinct from .timeline on purpose — .timeline/.timeline::before
+     belong to the decade pages' vertical rail and this page doesn't use
+     that shape at all. */
+  .story{
+    counter-reset: moment;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 130px;
+    /* break out of .wrap's centred 1140px column, but only on the
+       right — a centred, capped box made the scroll end look like it
+       hit a wall in the middle of empty page. Left edge instead lines
+       up with .wrap's own text column (padding-left mirrors .wrap's
+       max-width/auto-margin math) so the first era sits where the
+       heading above it does, while the right side is genuinely open
+       all the way to the viewport edge — content scrolls off-screen
+       there instead of into a boxed-in stop. width:100vw + this
+       margin is the standard full-bleed trick and works regardless of
+       .wrap's own max-width/padding */
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-top: 4px;
+    padding-right: 20px;
+    padding-bottom: 28px;
+    padding-left: max(20px, calc((100vw - 1140px) / 2 + 20px));
+    /* no scroll-snap here: snap-align:start on .era fights the padding
+       above by scrolling until the first era is flush with the
+       scrollport edge, eating the padding-left it's meant to preserve */
+    scrollbar-width: none;
+  }
+  .story::-webkit-scrollbar{ display: none; }
 
-  .era-head{ margin: 72px 0 28px; }
-  .era-head:first-child{ margin-top: 0; }
+  /* sized and positioned entirely in JS (initEraLinks) — this is the
+     shared canvas the era-to-era joins are drawn into, so they read as
+     the same line as .snake-line rather than a one-off treatment */
+  .era-link-line{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: visible;
+    pointer-events: none;
+  }
+  .era-link-line path{
+    fill: none;
+    stroke: var(--accent-soft);
+    stroke-width: 1.5;
+    opacity: 0.6;
+  }
+
+  /* fixed widths, not fluid — each panel keeps a comfortable column count
+     at every size and .story's own horizontal scroll is what handles any
+     viewport narrower than that, phones included */
+  .era{ flex: 0 0 auto; width: 360px; }
+
+  .era-head{ margin: 0 0 28px; }
   .era-head .eyebrow{ margin-bottom: 14px; }
   .era-head .year-rule{ margin: 0; }
 
-  /* mobile-first: one column, no connector — the line only earns its
-     keep once there's an actual row to turn a corner into. Matches
-     .panels' own mobile-first 1-column default below. */
   .snake{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 48px;
-    padding: 4px 0 48px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 56px;
+    padding: 4px 0 4px;
   }
   .snake-line{
-    display: none;
     position: absolute;
     inset: 0;
     width: 100%;
@@ -343,11 +398,14 @@
     opacity: 0.6;
   }
   @media (min-width: 640px){
-    .snake{ grid-template-columns: repeat(2, 1fr); column-gap: 36px; row-gap: 76px; }
-    .snake-line{ display: block; }
+    .story{ gap: 180px; }
+    .era{ width: 640px; }
+    .snake{ grid-template-columns: repeat(3, 1fr); column-gap: 36px; row-gap: 76px; }
   }
   @media (min-width: 960px){
-    .snake{ grid-template-columns: repeat(3, 1fr); }
+    .story{ gap: 220px; }
+    .era{ width: 860px; }
+    .snake{ grid-template-columns: repeat(4, 1fr); }
   }
 
   .node{ position: relative; z-index: 1; counter-increment: moment; }
