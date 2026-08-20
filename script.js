@@ -360,6 +360,68 @@ function videoModal(){
 
 videoModal();
 
+// ---- PHOTO MODAL ---------------------------------------------------
+// Same shape as videoModal above: one lazily-created overlay, reused for
+// every node photo on the timeline. A node's photo sits inside its
+// <summary> — the whole point of that element is that a click toggles
+// the parent <details> — so the trigger listener runs in the capture
+// phase and calls preventDefault/stopPropagation before that native
+// toggle ever fires, the same trick videoModal uses against the card's
+// own click-to-flip.
+function photoModal(){
+  var modal, img, lastFocus;
+
+  function ensure(){
+    if(modal) return;
+    modal = document.createElement('div');
+    modal.className = 'photo-modal';
+    modal.hidden = true;
+    modal.innerHTML =
+      '<div class="photo-modal-backdrop"></div>' +
+      '<div class="photo-modal-box" role="dialog" aria-modal="true" aria-label="Photo">' +
+        '<button type="button" class="photo-modal-close" aria-label="Close">&times;</button>' +
+        '<img src="" alt="">' +
+      '</div>';
+    document.body.appendChild(modal);
+    img = modal.querySelector('img');
+    modal.querySelector('.photo-modal-backdrop').addEventListener('click', close);
+    modal.querySelector('.photo-modal-close').addEventListener('click', close);
+  }
+
+  function open(src, alt){
+    ensure();
+    lastFocus = document.activeElement;
+    img.src = src;
+    img.alt = alt || '';
+    modal.hidden = false;
+    requestAnimationFrame(function(){ modal.classList.add('is-open'); });
+    modal.querySelector('.photo-modal-close').focus();
+  }
+
+  function close(){
+    if(!modal || modal.hidden) return;
+    modal.classList.remove('is-open');
+    modal.hidden = true;
+    if(lastFocus) lastFocus.focus();
+  }
+
+  document.addEventListener('click', function(e){
+    var dot = e.target.closest('.node.has-photo .node-dot');
+    if(!dot) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var thumb = dot.querySelector('img');
+    // A tightly-cropped thumbnail can point at the real, uncropped photo
+    // via data-full — the circle shows the crop, the zoom shows everything.
+    // No data-full just means the thumbnail already is the full photo.
+    open(thumb.getAttribute('data-full') || thumb.src, thumb.alt);
+  }, true);
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') close();
+  });
+}
+photoModal();
+
 initToTop();
 document.querySelectorAll('.contact-form').forEach(function(f){
   if(!f.closest('.ask') && !f.closest('.yep')) wireContactForm(f);
