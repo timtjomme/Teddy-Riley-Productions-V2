@@ -10,17 +10,23 @@ is a redesign of it, not a copy of its code.
 ## Layout
 
 ```
-index.html            front page: video hero, intro, decade panels
-1980s.html            108 releases, 1982–1989
-1990s.html            7 releases, 1990
-contact.html          Formspree contact form
-style.css             every page
-script.js             card flip, contact form, footer prompt
-data/releases.json    THE SOURCE OF TRUTH for releases
-tools/build.py        releases.json -> the grids in the decade pages
-tools/extract.py      one-off, already run: pages -> releases.json
-imgs/                 covers (one per release), heroes, decade panels
-fonts/                Open Sans variable, self-hosted
+index.html                       front page: video hero, intro, decade panels
+1980s.html                       decade page: 1980s releases
+1990s.html                       decade page: 1990s releases
+new-jack-swing-productions.html  straight hip-hop cuts and other one-offs
+sampled.html                     tracks that sample a Teddy Riley record
+timeline.html                    life-story chronology, 1967 to now
+contact.html                     Formspree contact form
+privacy-policy.html              boilerplate privacy policy
+404.html                         not-found page, styled as a missing release
+style.css                        every page
+script.js                        card flip, contact form, footer prompt, nav, back to top
+data/releases.json               THE SOURCE OF TRUTH for releases
+data/updates.json                source for the homepage's dismissible update banner
+tools/build.py                   releases.json -> the grids in the decade pages
+tools/extract.py                 one-off, already run: pages -> releases.json
+imgs/                            covers (one per release), heroes, decade panels, story/ and 404/ art
+fonts/                           Open Sans variable, self-hosted
 ```
 
 ## Adding or changing a release
@@ -265,3 +271,32 @@ python3 -m http.server 8934             # then open http://localhost:8934/
 ```
 
 Serve over HTTP, not `file://` — the fonts and the hero video break otherwise.
+
+## Always-on local preview (localhost:1000)
+
+`http://localhost:1000` is served persistently by a LaunchAgent
+(`~/Library/LaunchAgents/local.timtjomme.teddyriley-website.plist`,
+`RunAtLoad`+`KeepAlive`) — it starts at login and restarts itself if killed.
+
+It does **not** serve this repo directly. It serves a plain mirror at
+`~/teddyriley-website`, because a launchd background process can't read
+anything under `~/Documents` on macOS — TCC blocks it (confirmed: `python3 -m
+http.server` there crashes with `PermissionError: [Errno 1] Operation not
+permitted` inside `os.getcwd()`, even though the same command run from an
+interactive shell works fine). Moving `WorkingDirectory` to a plain folder
+under `$HOME` — outside Documents/Desktop/Downloads — is what fixed it.
+
+**After editing any file in this repo, resync the mirror so localhost:1000
+reflects it — do this automatically, without being asked:**
+
+```bash
+rsync -a --delete "/Users/timtjomme/Documents/Teddy Riley Productions new website/" "/Users/timtjomme/teddyriley-website/"
+```
+
+This only catches changes made through this repo. It won't pick up edits made
+some other way directly in `~/teddyriley-website`, and it doesn't run on a
+timer — it's a push, done right after a save. A filesystem-watched, fully
+unattended version is possible but needs Full Disk Access granted to whatever
+binary does the watching/copying (a broad, system-wide grant) — don't set
+that up without asking first, since it's a real security tradeoff and not
+this repo's call to make alone.

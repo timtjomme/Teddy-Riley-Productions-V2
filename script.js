@@ -459,7 +459,7 @@ function initLostPage(){
   // --- 2. dig through the crates, then reveal ------------------------------
   var LABELS = ["Lil' Man Records", "Funky Mamma", "G.R. Productions",
                 "New Jack Swing", "Future Records", "LOR Records",
-                "Sound Of New York", "Rooftop Records", "QDT"];
+                "Sound Of New York", "Rooftop Records", "QDT", "Donril Music"];
 
   var dig     = document.querySelector('[data-lost-dig]');
   var digName = document.querySelector('[data-lost-dig-name]');
@@ -658,6 +658,20 @@ function initSnakeLines(){
       var box = snake.getBoundingClientRect();
       svg.setAttribute('viewBox', '0 0 ' + box.width + ' ' + box.height);
 
+      // below 640px .snake is a single column (style.css) — every node is
+      // its own "row", so the row-to-row jog further down would zig out
+      // past the edge and back for each one. A straight line through the
+      // dots reads as the same rail without that.
+      var singleColumn = getComputedStyle(snake).gridTemplateColumns.trim().split(' ').length === 1;
+      if(singleColumn){
+        var linePts = nodes.map(function(n){
+          var d = n.querySelector('.node-dot').getBoundingClientRect();
+          return { x: d.left + d.width / 2 - box.left, y: d.top + d.height / 2 - box.top };
+        });
+        path.setAttribute('d', roundedPath(linePts, 24));
+        return;
+      }
+
       // group nodes into visual rows by comparing each one's top edge —
       // simpler and more robust than trusting a hardcoded column count
       var rows = [];
@@ -741,12 +755,22 @@ function initEraLinks(){
     svg.style.height = h + 'px';
     svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
     var origin = svg.getBoundingClientRect();
+    // below 640px .story stacks eras instead of laying them out side by
+    // side (style.css) — the join between them is a straight vertical
+    // drop, not a rise through a horizontal gap
+    var vertical = getComputedStyle(story).flexDirection === 'column';
 
     var segments = [];
     for(var i = 0; i < eras.length - 1; i++){
       var eraA = eras[i], eraB = eras[i + 1];
       var a = dotCenter(eraA, 'last');
       var b = dotCenter(eraB, 'first');
+      a = { x: a.x - origin.left, y: a.y - origin.top };
+      b = { x: b.x - origin.left, y: b.y - origin.top };
+      if(vertical){
+        segments.push(roundedPath([a, b], 24));
+        continue;
+      }
       var eraARect = eraA.getBoundingClientRect();
       var eraBRect = eraB.getBoundingClientRect();
       // the gap between two .era panels is empty on purpose (see the
@@ -755,8 +779,6 @@ function initEraLinks(){
       // first dot as one level approach into the left side, the same way
       // every other join in this recipe meets a node
       var riseX = (eraARect.right + eraBRect.left) / 2 - origin.left;
-      a = { x: a.x - origin.left, y: a.y - origin.top };
-      b = { x: b.x - origin.left, y: b.y - origin.top };
       segments.push(roundedPath([a, { x: riseX, y: a.y }, { x: riseX, y: b.y }, b], 24));
     }
     path.setAttribute('d', segments.join(' '));

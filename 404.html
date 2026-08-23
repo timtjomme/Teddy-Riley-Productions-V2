@@ -35,7 +35,10 @@
         <p class="lost-eyebrow">Error 404</p>
         <h1>Never pressed.</h1>
         <p class="lost-lede">This record doesn't exist. Not on Lil' Man Records,
-          not on Funky Mamma, not on G.R. Productions — nobody ever cut it.</p>
+          not on Funky Mamma, not on G.R. Productions, not on New Jack Swing,
+          not on Future Records, not on LOR Records, not on Sound Of New York,
+          not on Rooftop Records, not on QDT, not on Donril Music — nobody
+          ever cut it.</p>
         <p class="lost-path" data-lost-path></p>
         <p class="lost-hint" data-lost-hint hidden></p>
         <a class="lost-cta" href="index.html">Get me back to the crates</a>
@@ -46,23 +49,18 @@
     <div class="lost-art" aria-hidden="true">
       <svg viewBox="-40 -30 1010 900" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <linearGradient id="sleeve" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#2a2a31"/><stop offset="1" stop-color="#131317"/>
-          </linearGradient>
-          <linearGradient id="disc" x1="0.2" y1="0" x2="0.8" y2="1">
-            <stop offset="0" stop-color="#26262c"/><stop offset="0.5" stop-color="#0e0e11"/>
-            <stop offset="1" stop-color="#242429"/>
-          </linearGradient>
-          <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stop-color="#dcdce1"/><stop offset="1" stop-color="#b9b9c1"/>
-          </linearGradient>
+          <clipPath id="clipSleeve"><rect x="30" y="70" width="300" height="300" rx="4"/></clipPath>
+          <clipPath id="clipPaper"><rect x="250" y="250" width="262" height="262" rx="3"/></clipPath>
+          <clipPath id="clipDisc"><circle cx="560" cy="430" r="176"/></clipPath>
+          <clipPath id="clipLabel"><circle cx="662" cy="596" r="104"/></clipPath>
         </defs>
 
-        <!-- outer sleeve: a promo jacket carrying the Lil' Man mark -->
+        <!-- outer sleeve: a real die-cut jacket photo carrying the Lil' Man mark -->
         <g class="pc pc-1">
           <g transform="rotate(-13 180 220)">
-            <rect x="30" y="70" width="300" height="300" rx="4" fill="url(#sleeve)"/>
-            <rect x="30" y="70" width="300" height="300" rx="4"
+            <image href="imgs/404/sleeve.jpg" x="30" y="70" width="300" height="300"
+                   preserveAspectRatio="xMidYMid slice" clip-path="url(#clipSleeve)"/>
+            <rect x="30" y="70" width="300" height="300" rx="4" fill="none"
                   stroke="#3d3d45" stroke-width="1.5"/>
             <image href="imgs/logo.png" x="126" y="118" width="108" height="200"
                    opacity="0.92"/>
@@ -77,35 +75,28 @@
                 stroke="#9a9aa4" stroke-width="1.4" stroke-dasharray="10 8" opacity="0.75"/>
         </g>
 
-        <!-- inner paper sleeve -->
+        <!-- inner paper sleeve: a real die-cut paper sleeve photo, hole and all -->
         <g class="pc pc-3">
-          <rect x="250" y="250" width="262" height="262" rx="3" transform="rotate(9 381 381)"
-                fill="url(#paper)"/>
-          <circle cx="381" cy="381" r="62" transform="rotate(9 381 381)"
-                  fill="#c9c9d0" stroke="#a6a6ae" stroke-width="1.2"/>
-        </g>
-
-        <!-- the disc -->
-        <g class="pc pc-4">
-          <circle cx="560" cy="430" r="176" fill="url(#disc)"/>
-          <g stroke="#3a3a42" fill="none" opacity="0.85">
-            <circle cx="560" cy="430" r="168" stroke-width="0.8"/>
-            <circle cx="560" cy="430" r="156" stroke-width="0.8"/>
-            <circle cx="560" cy="430" r="144" stroke-width="0.8"/>
-            <circle cx="560" cy="430" r="132" stroke-width="0.8"/>
-            <circle cx="560" cy="430" r="120" stroke-width="0.8"/>
-            <circle cx="560" cy="430" r="108" stroke-width="0.8"/>
-            <circle cx="560" cy="430" r="96"  stroke-width="0.8"/>
-            <circle cx="560" cy="430" r="84"  stroke-width="0.8"/>
+          <g transform="rotate(9 381 381)">
+            <image href="imgs/404/paper-sleeve.jpg" x="250" y="250" width="262" height="262"
+                   preserveAspectRatio="xMidYMid slice" clip-path="url(#clipPaper)"/>
+            <rect x="250" y="250" width="262" height="262" rx="3" fill="none"
+                  stroke="#00000018" stroke-width="1"/>
           </g>
-          <circle cx="560" cy="430" r="72" fill="#17171b" stroke="#33333b" stroke-width="1"/>
-          <circle cx="560" cy="430" r="7"  fill="#f4f4f6"/>
         </g>
 
-        <!-- the label, drawn the way a pressing actually looks -->
+        <!-- the disc: a real pressed-vinyl photo, grooves and all -->
+        <g class="pc pc-4">
+          <image href="imgs/404/disc.jpg" x="384" y="254" width="352" height="352"
+                 preserveAspectRatio="xMidYMid slice" clip-path="url(#clipDisc)"/>
+          <circle cx="560" cy="430" r="176" stroke="#00000030" stroke-width="1"/>
+        </g>
+
+        <!-- the label: a real blank pressing, printed here with this one's own text -->
         <g class="pc pc-5">
-          <circle cx="662" cy="596" r="104" fill="#efe9dc" stroke="#cfc7b6" stroke-width="1.4"/>
-          <circle cx="662" cy="596" r="94"  fill="none" stroke="#d8d1c2" stroke-width="0.8"/>
+          <image href="imgs/404/label.jpg" x="558" y="492" width="208" height="208"
+                 preserveAspectRatio="xMidYMid slice" clip-path="url(#clipLabel)"/>
+          <circle cx="662" cy="596" r="104" stroke="#cfc7b6" stroke-width="1.4"/>
           <path id="lblArc" d="M 662 596 m -74 0 a 74 74 0 1 1 148 0" fill="none"/>
           <text class="lbl lbl-arc">
             <textPath href="#lblArc" startOffset="50%" text-anchor="middle">

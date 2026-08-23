@@ -3388,7 +3388,7 @@
         "04. When You Need Someone",
         "05. Forgive Me",
         "06. Personal",
-        "07. Joyride (Featuring Tasha Scott)",
+        "07. Joyride (feat. Tasha Scott)",
         "08. You Told Me You Loved Me",
         "09. Do Thangz",
         "10. Show You The Way To Go",
@@ -3524,6 +3524,19 @@
     {
       "year": "1997",
       "artist": "Big Bub",
+      "title": "Settle Down",
+      "label": "Kedar",
+      "image": "1997-big-bub-settle-down.jpg",
+      "tracks": [
+        "Settle Down (Album Version)",
+        "Settle Down (Radio Edit)",
+        "Settle Down (Instrumental)",
+        "Settle Down (Acapella)"
+      ]
+    },
+    {
+      "year": "1997",
+      "artist": "Big Bub",
       "title": "Timeless",
       "label": "Kedar",
       "image": "1997-big-bub-timeless.jpg",
@@ -3586,7 +3599,7 @@
         "Fix (Call Me Dezo R&B Mix Version)",
         "Fix (main mix 2)",
         "Fix (Main Mix A Capella)",
-        "Fix (Main Mix Featuring Slash And Ol' Dirty Bastard)",
+        "Fix (Main Mix feat. Slash And Ol' Dirty Bastard)",
         "Fix (Main Mix Instrumental Version)",
         "Fix (Main Mix Version)",
         "Fix (main mix) (no rap version)",
@@ -3610,7 +3623,7 @@
     },
     {
       "year": "1997",
-      "artist": "BLACKstreet Featuring Jay-Z",
+      "artist": "BLACKstreet feat. Jay-Z",
       "title": "Call Me",
       "label": "LaFace Records",
       "image": "1997-blackstreet-featuring-jay-z-call-me.png",
@@ -3776,6 +3789,217 @@
       "tracks": [
         "911 (US) feat. Queen Pen - In A Magazine"
       ]
+    },
+    {
+      "year": "1998",
+      "artist": "BLACKstreet & Mya feat. Ma$e & Blinky Blink",
+      "title": "Take Me There",
+      "label": "Interscope",
+      "image": "1998-blackstreet-mya-take-me-there.jpg",
+      "tracks": [
+        "Take Me There (Radio Version)",
+        "Take Me There (Radio Version Without Intro)",
+        "Take Me There (Album Version)",
+        "Take Me There (Instrumental)",
+        "Take Me There (Want U Back Mix)",
+        "Take Me There (Want U Back Mix – Short Edit)",
+        "Take Me There (Want U Back Instrumental Mix)",
+        "Take Me There (Want U Back Mix – No Rap Version)",
+        "Take Me There (Want U Back Mix – Short No Rap Version)"
+      ],
+      "missing": [
+        "Take Me There (Radio Version Without Intro)",
+        "Take Me There (Want U Back Mix – Short Edit)",
+        "Take Me There (Want U Back Instrumental Mix)",
+        "Take Me There (Want U Back Mix – No Rap Version)",
+        "Take Me There (Want U Back Mix – Short No Rap Version)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "BLACKstreet feat. LaMenga Kafi & Beverly Crowder",
+      "title": "I Can't Get You (Out Of My Mind) Remix",
+      "label": "Interscope",
+      "image": "1998-blackstreet-i-cant-get-you-out-of-my-mind-remix.jpg",
+      "tracks": [
+        "I Can't Get You (Out Of My Mind) Remix (Instrumental)",
+        "I Can't Get You (Out Of My Mind) Remix (Radio Edit)",
+        "I Can't Get You (Out Of My Mind) Remix"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "David Miller feat. Teddy Riley & Nutta Butta",
+      "title": "Hard To Handle",
+      "label": "Lil' Man Records/Interscope",
+      "image": "1998-david-miller-hard-to-handle.jpg",
+      "tracks": [
+        "Hard To Handle (LP Version)",
+        "Hard To Handle (Instrumental)",
+        "Hard To Handle (Acappella)",
+        "Hard To Handle (TV Track)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Janet Jackson",
+      "title": "Go Deep",
+      "label": "Virgin",
+      "image": "1998-janet-jackson-go-deep.jpg",
+      "tracks": [
+        "Go Deep (Teddy Riley Funk Remix)",
+        "Go Deep (Teddy Riley Funk Remix # 2)",
+        "Go Deep (Teddy Riley Nation Mix)",
+        "Go Deep (Teddy Riley RDMC Main Mix)",
+        "Go Deep (Teddy Riley Funk Remix)",
+        "Go Deep (Teddy Riley Nation Remix - Clean Version)",
+        "Go Deep (T.R. Funk Mix)",
+        "Go Deep (Call Out Hook - Teddy Riley Nation Remix)",
+        "Go Deep (Teddy Riley Remix) #2"
+      ],
+      "missing": [
+        "Go Deep (Teddy Riley Remix) #2"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Janet Jackson feat. BLACKstreet",
+      "title": "I Get Lonely",
+      "label": "Virgin",
+      "image": "1998-janet-jackson-i-get-lonely.jpg",
+      "tracks": [
+        "I Get Lonely (TNT Bonus Beat Remix)",
+        "I Get Lonely (TNT Remix)",
+        "I Get Lonely (TNT Remix Edit)",
+        "I Get Lonely (TNT Bonus Beats)",
+        "I Get Lonely (Extended Street Remix)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Jay-Z feat. BLACKstreet",
+      "title": "The City Is Mine",
+      "label": "Roc-A-Fella Records",
+      "image": "1998-jay-z-the-city-is-mine.jpg",
+      "tracks": [
+        "The City Is Mine (Radio Edit)",
+        "The City Is Mine (Dirty Version)",
+        "The City Is Mine (TV Track)",
+        "The City Is Mine (Instrumental)",
+        "The City Is Mine (Accapella)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Lord Tariq, Peter Gunz",
+      "title": "Make It Reign",
+      "label": "Columbia",
+      "image": "1998-lord-tariq-peter-gunz-make-it-reign.jpg",
+      "tracks": [
+        "07 Then & Now Interlude",
+        "08 Startin' Somethin' (Feat. Chauncey Black)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Lord Tariq & Peter Gunz",
+      "title": "Startin' Somethin'",
+      "label": "Columbia",
+      "image": "1998-lord-tariq-peter-gunz-startin-somethin.jpg",
+      "tracks": [
+        "Startin' Somethin' (Clean Version)",
+        "Startin' Somethin' (Instrumental)",
+        "Startin' Somethin' (Callout Hook #1)",
+        "Startin' Somethin' (Acappella)",
+        "Startin' Somethin' (Callout Hook #2)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Men Of Vizion",
+      "title": "Do You Feel Me (...Freak You)",
+      "label": "MJJ Music",
+      "image": "1998-men-of-vizion-do-you-feel-me.jpg",
+      "tracks": [
+        "Do You Feel Me? (...Freak You) (Single Edit)",
+        "01 - Do You Feel Me (...Freak You) (Extended Version) (Clean With Rap)",
+        "02 - Do You Feel Me (...Freak You) (Extended Version) (Dirty With Rap)",
+        "03 - Do You Feel Me (...Freak You) (Instrumental)",
+        "04 - Do You Feel Me (...Freak You) (A Cappella)",
+        "Do You Feel Me? (...Freak You) (Uptempo Remix with Rap)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Nate Dogg",
+      "title": "G-Funk Classics Vol. 1 & 2 / Ghetto Preacher & The Prodigal Son",
+      "label": "Breakaway Entertainment",
+      "image": "1998-nate-dogg-g-funk-classics.jpg",
+      "tracks": [
+        "Hardest Man in Town (Explicit)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Nutta Butta",
+      "title": "Freak Out",
+      "label": "Lil' Man Records",
+      "image": "1998-nutta-butta-freak-out.jpg",
+      "tracks": [
+        "feat. Teddy Riley & Anonymous - Freak Out (Clean)",
+        "feat. Teddy Riley & Anonymous - Freak Out (Dirty)",
+        "feat. Teddy Riley & Anonymous - Freak Out (Instrumental)",
+        "feat. Teddy Riley & Anonymous - Freak Out (Main Mix)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Remix) (Main Vocal Mix)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Remix) (Acapella Mix)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Remix) (Instrumental)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Remix) (Main Clean)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Remix) (Main Vocal)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Main Mix)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Remix) (Alternate Clean)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Acapella Mix)",
+        "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Remix) (Alternate Vocal)",
+        "Freak Out (Instrumental Main Mix)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Queen Pen",
+      "title": "Party Ain't A Party",
+      "label": "Lil' Man Records",
+      "image": "1998-queen-pen-party-aint-a-party.jpg",
+      "tracks": [
+        "feat. Markell, Mr. Cheeks & Teddy Riley - Party Ain't A Party (Radio Edit) (Clean)",
+        "feat. Markell, Mr. Cheeks & Teddy Riley - Party Ain't A Party (LP Version)",
+        "feat. Markell, Mr. Cheeks & Teddy Riley - Party Ain't A Party (Instrumental)",
+        "feat. Markell, Mr. Cheeks & Teddy Riley - Party Ain't A Party (Acapella)",
+        "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix) (Acappella)",
+        "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix) (Radio Edit (Clean))",
+        "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix Clean)",
+        "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix) (Main Version (Dirty))",
+        "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix Dirty)",
+        "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix) (Instrumental)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Various",
+      "title": "Hav Plenty (Music From The Motion Picture)",
+      "label": "Yay Yum / 550 Music",
+      "image": "1998-various-hav-plenty.jpg",
+      "tracks": [
+        "05 Blackstreet feat. Beverly Crowder & Lamenga Kafi - I Can't Get You (Out Of My Mind) (Remix)"
+      ]
+    },
+    {
+      "year": "1998",
+      "artist": "Various",
+      "title": "Music From The Motion Picture The Rugrats Movie",
+      "label": "Interscope",
+      "image": "1998-various-rugrats-movie.jpg",
+      "tracks": [
+        "01 Blackstreet & Mya feat. Ma$e & Blinky Blink - Take Me There"
+      ]
     }
   ],
   "new-jack-swing-productions": [
@@ -3826,5 +4050,6 @@
         "Hush (Don't Say A Word) (R&B Mix Radio Edit)"
       ]
     }
-  ]
+  ],
+  "sampled": []
 }

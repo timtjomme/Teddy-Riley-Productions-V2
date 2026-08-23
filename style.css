@@ -408,6 +408,30 @@
     .snake{ grid-template-columns: repeat(4, 1fr); }
   }
 
+  /* Below 640px the filmstrip stops paying for itself — too little width
+     per era to see more than a sliver of the next one, and swiping
+     sideways through 7 eras trades away the overview a normal vertical
+     scroll gives for free. Here .story drops the full-bleed horizontal
+     scroller and stacks eras in the page's own flow instead, and .snake
+     collapses to a single column so nodes read top to bottom. Both
+     initSnakeLines and initEraLinks in script.js detect this (one grid
+     track / .story's flex-direction) and draw a straight rail through the
+     dot centres rather than the desktop zig-zag, which only makes sense
+     when there's a next column to snake into. */
+  @media (max-width: 639px){
+    .story{
+      flex-direction: column;
+      align-items: stretch;
+      width: auto;
+      margin-left: 0;
+      overflow: visible;
+      gap: 56px;
+      padding: 4px 0 0;
+    }
+    .era{ width: auto; }
+    .snake{ grid-template-columns: 1fr; row-gap: 48px; }
+  }
+
   .node{ position: relative; z-index: 1; counter-increment: moment; }
   .node summary{
     position: relative;
@@ -958,7 +982,7 @@
      rules here at all: .decade-nav a / .decade-nav span (and the
      .hero-nav, is-light-corner and .lost-nav variants) already reach
      these through the cascade, since a nested a is still a descendant of
-     the same .decade-nav — so the dropdown's five items pick up exactly
+     the same .decade-nav — so the dropdown's items pick up exactly
      the same colour, hover and aria-current treatment as the a's beside
      the trigger, with nothing dropdown-specific to keep in step. */
   .nav-dropdown-menu{
