@@ -129,14 +129,26 @@ def grids_html(releases):
     return "\n".join(out)
 
 
-def jump_html(releases):
-    years = list(dict.fromkeys(r["year"] for r in releases))
+def jump_html(all_releases):
+    """The nav entry a correctly hand-maintained page should have for each
+    year that's ever carried a release, in first-seen order: a link for a
+    year with something visible, a "coming soon" span — same wording CLAUDE.md
+    prescribes, same pattern as the nav dropdown's unpublished decades — for
+    a year emptied entirely by hiding. Takes the *unfiltered* release list so
+    it knows about emptied years; only used to check the hand-written nav for
+    drift, never spliced in (see CLAUDE.md's "A new year")."""
+    years = list(dict.fromkeys(r["year"] for r in all_releases))
     if len(years) < 2:
         return None  # a one-button jump row is pointless
-    links = "".join(f'      <a href="#y{y}">{y}</a>\n' for y in years)
+    visible_years = {r["year"] for r in all_releases if not r.get("hidden")}
+    entries = "".join(
+        f'      <a href="#y{y}">{y}</a>\n' if y in visible_years
+        else f'      <span title="coming soon">{y}</span>\n'
+        for y in years
+    )
     return ('    <nav class="year-jump" aria-label="Jump to year">\n'
             '      <span class="year-jump-label">Jump to</span>\n'
-            f'{links}    </nav>')
+            f'{entries}    </nav>')
 
 
 def banner_bullet(p):
@@ -152,8 +164,9 @@ def banner_bullet(p):
 
 
 def banner_html(update):
-    """The homepage's dismissible "recently added" sticker, pinned crooked at
-    the top of the hero, sourced from the last entry in data/updates.json.
+    """The homepage's dismissible "recently added" strip, a lower third along
+    the bottom of the hero video, sourced from the last entry in
+    data/updates.json.
     Dismissal in script.js is keyed to data-update (the update's date), so a
     later entry reappears even if an older one was dismissed. Empty when
     there's no update yet, leaving the markers in index.html with nothing
@@ -198,7 +211,7 @@ def main():
               f"({n_lp} LP, {n_single} single{other}), "
               f"{sum(len(r['tracks']) for r in releases)} tracks, {n_missing} flagged{hidden}"
               f"{'  (updated)' if changed else '  (no change)'}")
-        jump = jump_html(releases)
+        jump = jump_html(all_releases)
         if jump and jump not in path.read_text(encoding="utf-8"):
             print(f"    note: the year-jump nav in {page}.html is out of date — "
                   f"years changed. Update it by hand or ask Claude.")
