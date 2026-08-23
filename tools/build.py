@@ -183,17 +183,20 @@ def splice(path, start, end, body):
 
 def main():
     data = json.loads((ROOT / "data" / "releases.json").read_text(encoding="utf-8"))
-    for page, releases in data.items():
+    for page, all_releases in data.items():
         path = ROOT / f"{page}.html"
+        n_hidden = sum(1 for r in all_releases if r.get("hidden"))
+        releases = [r for r in all_releases if not r.get("hidden")]
         changed = splice(path, START, END, grids_html(releases))
         n_missing = sum(len(r.get("missing", [])) for r in releases)
         n_lp = sum(1 for r in releases if fmt(r) == "LP")
         n_ep = sum(1 for r in releases if fmt(r) == "EP")
         n_single = len(releases) - n_lp - n_ep
         other = f", {n_ep} EP" if n_ep else ""
+        hidden = f", {n_hidden} hidden" if n_hidden else ""
         print(f"  {page}.html: {len(releases)} releases "
               f"({n_lp} LP, {n_single} single{other}), "
-              f"{sum(len(r['tracks']) for r in releases)} tracks, {n_missing} flagged"
+              f"{sum(len(r['tracks']) for r in releases)} tracks, {n_missing} flagged{hidden}"
               f"{'  (updated)' if changed else '  (no change)'}")
         jump = jump_html(releases)
         if jump and jump not in path.read_text(encoding="utf-8"):

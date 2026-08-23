@@ -59,6 +59,13 @@ a `<div class="card">` — the next build overwrites it.
   `<year>-<artist>-<title>` kebab-cased, and drop it there.
 - No cover available? Use `"image": "placeholder-sleeve.svg"` — a neutral
   sleeve reading NO COVER YET. Swap it for the real file when one turns up.
+- `hidden` is optional: `"hidden": true` pulls a release out of the built
+  grid entirely (and out of `build.py`'s counts) without deleting it from
+  the JSON — for something pending a rewrite, a correction, or a "coming
+  soon" year. If it empties a year, remove that year's `<a href="#yXXXX">`
+  from the page's hand-written year-jump nav yourself (build.py won't) —
+  turn it into a `<span title="coming soon">` the way the nav dropdown
+  marks an unpublished decade.
 - Order matters: releases appear in JSON order, grouped by year, and years
   appear in first-seen order. Keep each year's block together.
 - Write plain text — `&` and `″` are escaped by the build script. Don't put
