@@ -116,12 +116,17 @@ def grids_html(releases):
     (style.css) can be a single element spanning edge to edge, rather than
     per-year segments that would need to line up across the gap between
     them — its height is just the wrapper's content height, so it grows
-    and shrinks automatically as years open and close."""
+    and shrinks automatically as years open and close.
+
+    The first year-group starts open — otherwise a page's first visit
+    shows nothing but collapsed headings above the fold. Every later
+    year still opens closed, same as before."""
     years = list(dict.fromkeys(r["year"] for r in releases))
     out = ['  <div class="timeline">\n']
-    for y in years:
+    for i, y in enumerate(years):
         cards = "\n".join(card_html(r) for r in releases if r["year"] == y)
-        out.append(f'  <details class="year-group">\n'
+        open_attr = " open" if i == 0 else ""
+        out.append(f'  <details class="year-group"{open_attr}>\n'
                    f'    <summary class="year-rule">{y}{FOLD_SVG}</summary>\n'
                    f'    <div class="grid" id="y{y}">\n\n{cards}\n    </div>\n'
                    f'  </details>\n')
