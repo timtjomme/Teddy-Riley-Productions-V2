@@ -8,5 +8,13 @@
       { "name": "1980's", "href": "1980s.html", "count": 1 },
       { "name": "New Jack Swing", "href": "new-jack-swing-productions.html", "count": 1 }
     ]
+  },
+  {
+    "date": "2026-08-25",
+    "count": 18,
+    "pages": [
+      { "label": "Filled in dozens of photos across the life-story timeline", "href": "timeline.html" },
+      { "name": "1990's", "href": "1990s.html", "count": 18 }
+    ]
   }
 ]
