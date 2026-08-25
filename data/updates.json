@@ -14,7 +14,9 @@
     "count": 18,
     "pages": [
       { "label": "Filled in dozens of photos across the life-story timeline", "href": "timeline.html" },
-      { "name": "1990's", "href": "1990s.html", "count": 18 }
+      { "name": "1990's", "href": "1990s.html", "count": 18 },
+      { "label": "Sampled page now has its own hero photo", "href": "sampled.html" },
+      { "label": "Added a 2026 chapter to the timeline: Teddy's first book", "href": "timeline.html" }
     ]
   }
 ]
