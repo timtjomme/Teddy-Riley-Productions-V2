@@ -1106,14 +1106,20 @@
     padding-left: 16px;
   }
 
-  .panels{ margin-top: 40px; }
+  .panels{
+    margin-top: 40px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
 
   .panel{
     position:relative;
     display:flex;
     align-items:center;
     justify-content:center;
-    min-height: 58vh;
+    min-height: 42vh;
     background-size: cover;
     /* lower --panel-pos pushes the photo down, showing more of the top of the
        frame — these portraits sit high, so a centred crop loses the face */
@@ -1121,14 +1127,16 @@
     background-repeat: no-repeat;
     text-decoration:none;
     overflow:hidden;
+    border-radius: 16px;
+    margin-bottom: 14px;
   }
   .panel::after{
     content:"";
     position:absolute; inset:0;
-    background: rgba(10,10,12,0.30);
+    background: rgba(10,10,12,0.18);
     transition: background 0.45s ease;
   }
-  a.panel:hover::after{ background: rgba(10,10,12,0.10); }
+  a.panel:hover::after{ background: rgba(10,10,12,0.06); }
   a.panel:focus-visible{ outline: 3px solid var(--accent); outline-offset: -6px; }
 
   .panel-label{
@@ -1158,7 +1166,7 @@
   }
   /* unpublished decades sit back visually */
   .panel.is-soon .panel-label{ opacity: 0.82; }
-  .panel.is-soon::after{ background: rgba(10,10,12,0.52); }
+  .panel.is-soon::after{ background: rgba(10,10,12,0.40); }
 
   .panel-timeline{ background-image: url('imgs/story/ins20.jpg'); --panel-pos: 24%; }
   .panel-1980s{ background-image: url('imgs/hero-1980s.jpg'); --panel-pos: 14%; }
@@ -1174,10 +1182,12 @@
     .panels{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      gap: 14px;
     }
     .panel{
       min-height: 0;
-      aspect-ratio: 1 / 1;
+      aspect-ratio: 4 / 3;
+      margin-bottom: 0;
     }
     /* the one tile that isn't a decade — full width, wide instead of
        square, so it reads as the entry point sitting above the grid
