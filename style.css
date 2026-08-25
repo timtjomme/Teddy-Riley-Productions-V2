@@ -1450,8 +1450,12 @@
   /* ---- FOOTER PROMPT ---- */
   .ask{
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 56px auto 0;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .ask-line{
     display:inline-block;
@@ -1468,11 +1472,48 @@
   .ask.is-open .ask-line,
   .ask-line:focus-visible{ border-bottom-color: var(--accent); }
 
+  /* the Dropbox drop-off, offered as a quieter second action under the
+     main ask-line rather than a competing headline of its own */
+  .ask-upload{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    margin-top: 22px;
+    font: 600 15px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.01em;
+    color: var(--label);
+    background: #fff;
+    text-decoration:none;
+    white-space: nowrap;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 8px 28px 8px 8px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .ask-upload-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--label);
+    color: #fff;
+    flex-shrink:0;
+  }
+  .ask-upload:hover,
+  .ask-upload:focus-visible{ transform: translateY(-2px); box-shadow: 0 24px 56px -16px rgba(0,0,0,0.24); border-color: var(--accent-soft); }
+  @media (prefers-reduced-motion: reduce){
+    .ask-upload{ transition: none; }
+  }
+
   /* 0fr -> 1fr animates the reveal without pinning a max-height */
   .ask-panel{
     display: grid;
     grid-template-rows: 0fr;
     opacity: 0;
+    align-self: stretch;
     transition: grid-template-rows 0.45s ease, opacity 0.3s ease;
   }
   .ask-panel-inner{ overflow: hidden; }
@@ -1482,7 +1523,7 @@
     grid-template-rows: 1fr;
     opacity: 1;
   }
-  .ask .contact-form{ margin: 26px 0 0; }
+  .ask .contact-form{ margin: 26px auto 0; }
   .ask .field{ margin-bottom: 16px; }
 
   /* hover-to-reveal is meaningless on touch: leave it open there */
@@ -1645,8 +1686,9 @@
   .yep-bubble{
     position:absolute;
     bottom: 136px; left: 0;
-    background: var(--label);
-    color: var(--ink);
+    background: #fff;
+    color: var(--label);
+    border: 1px solid var(--rule);
     font: 600 11px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 0.1em;
     padding: 7px 10px;
@@ -1654,6 +1696,7 @@
     white-space: nowrap;
     opacity: 0;
     transform: translateY(4px);
+    box-shadow: 0 8px 20px -8px rgba(0,0,0,0.22);
     transition: opacity 0.22s ease, transform 0.22s ease;
     pointer-events: none;
   }
@@ -1668,11 +1711,12 @@
     position:absolute;
     bottom: 80px; left: 0;
     width: min(320px, calc(100vw - 48px));
-    background: var(--label);
-    color: var(--ink);
+    background: #fff;
+    color: var(--label);
+    border: 1px solid var(--rule);
     border-radius: 12px;
     padding: 18px;
-    box-shadow: 0 20px 48px -14px rgba(0,0,0,0.32);
+    box-shadow: var(--shadow);
   }
   .yep-head{
     display:flex; align-items:center; justify-content:space-between;
@@ -1685,44 +1729,28 @@
   }
   .yep-close{
     background:none; border:none; cursor:pointer;
-    color: var(--ink-soft);
+    color: var(--muted);
     font-size: 22px; line-height:1;
     padding: 0 2px;
   }
-  .yep-close:hover{ color: var(--ink); }
-  .yep-close:focus-visible{ outline: 2px solid var(--ink); outline-offset: 2px; }
+  .yep-close:hover{ color: var(--label); }
+  .yep-close:focus-visible{ outline: 2px solid var(--label); outline-offset: 2px; }
 
   .yep-sub{
     font: 400 13px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: var(--ink-soft);
+    color: var(--muted);
     margin: 0 0 14px;
   }
 
-  /* the shared .contact-form styles are built for the light page — restate the
-     few that need to flip on this dark panel */
+  /* the shared .contact-form/.field styles already suit this light panel —
+     only the tighter spacing needs restating here */
   .yep-form{ margin: 0; max-width: none; }
   .yep-form .field{ margin-bottom: 12px; }
   .yep-form label{ font-size: 11px; }
-  .yep-form label .opt{ color: var(--ink-soft); }
+  .yep-form label .opt{ color: var(--muted); }
   .yep-form input,
-  .yep-form textarea{
-    background: rgba(255,255,255,0.06);
-    border-color: rgba(255,255,255,0.22);
-    color: var(--ink);
-    font-size: 13px;
-  }
-  .yep-form input:focus,
-  .yep-form textarea:focus{
-    border-color: var(--ink);
-    box-shadow: 0 0 0 3px rgba(255,255,255,0.12);
-  }
-  .yep-form button[type="submit"]{
-    background: var(--ink);
-    color: var(--label);
-    padding: 11px 18px;
-  }
-  .yep-form .form-status{ color: var(--ink-soft); }
-  .yep-form .form-status.is-ok{ color: var(--ink); }
+  .yep-form textarea{ font-size: 13px; }
+  .yep-form button[type="submit"]{ padding: 11px 18px; }
   .yep-form .form-status.is-error{ color: var(--missing); }
 
   @media (prefers-reduced-motion: reduce){

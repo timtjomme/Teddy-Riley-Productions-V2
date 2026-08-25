@@ -168,6 +168,9 @@ function buildYepWidget(){
       '</div>' +
       '<p class="yep-sub">Have more info in a release; see something missing; ' +
         'saw a fault; or just want to connect? Hit my inbox!</p>' +
+      '<a class="ask-upload" href="https://www.dropbox.com/request/grc5mo0e10xu1hvgebyw" target="_blank" rel="noopener noreferrer">' +
+        '<span class="ask-upload-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M12 4l-5 5M12 4l5 5M4 20h16"/></svg></span>' +
+        'Upload photos or lossless files</a>' +
       '<form class="contact-form yep-form" action="' + FORM_ENDPOINT + '" method="POST">' +
         '<div class="field"><label for="yep-name">Your name ' +
           '<span class="opt">optional</span></label>' +
