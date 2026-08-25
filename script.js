@@ -528,7 +528,6 @@ function initLostPage(){
         '<div class="face front">' +
           '<img src="imgs/' + r.image + '" alt="">' +
           '<span class="format"></span>' +
-          '<div class="scrim"><p class="artist"></p><p class="title"></p></div>' +
         '</div>' +
         '<div class="face back">' +
           '<div class="back-head"><div class="back-head-text"><p class="artist"></p>' +
@@ -539,8 +538,6 @@ function initLostPage(){
       '</div>';
     // textContent throughout: release data must never be parsed as markup
     card.querySelector('.format').textContent = releaseFormat(r);
-    card.querySelector('.front .artist').textContent = r.artist;
-    card.querySelector('.front .title').textContent  = r.title;
     card.querySelector('.back .artist').textContent  = r.artist + ' — ' + r.title;
     card.querySelector('.label-name').textContent    = r.label;
     card.querySelector('img').alt = r.artist + ' – ' + r.title + ' sleeve';

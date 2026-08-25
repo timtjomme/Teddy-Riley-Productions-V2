@@ -82,10 +82,6 @@ def card_html(r):
           <span class="flip-hint" aria-hidden="true">
             {FLIP_SVG}
           </span>
-          <div class="scrim">
-            <p class="artist">{artist}</p>
-            <p class="title">{title}</p>
-          </div>
         </div>
         <div class="face back">
           <div class="back-head">
