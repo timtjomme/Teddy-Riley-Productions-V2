@@ -29,7 +29,7 @@
     --accent-soft:#55555d;
     --muted:#63636b;
     --rule: rgba(0,0,0,0.16);
-    --shadow: 0 30px 60px -20px rgba(0,0,0,0.30);
+    --shadow: 0 24px 56px -20px rgba(0,0,0,0.18);
   }
 
   *{box-sizing:border-box;}
@@ -447,7 +447,7 @@
   .node summary:focus-visible{
     outline: 2px solid var(--accent);
     outline-offset: 6px;
-    border-radius: 8px;
+    border-radius: 16px;
   }
 
   /* the grid's one connector target — plain numbered ring by default,
@@ -470,7 +470,7 @@
   }
   .node-dot::before{ content: counter(moment, decimal-leading-zero); }
   .node summary:hover .node-dot{ transform: scale(1.08); border-color: var(--accent-soft); }
-  .node.has-photo .node-dot{ border-color: transparent; box-shadow: 0 6px 16px -6px rgba(0,0,0,0.35); cursor: zoom-in; }
+  .node.has-photo .node-dot{ border-color: transparent; box-shadow: 0 6px 18px -4px rgba(0,0,0,0.22); cursor: zoom-in; }
   .node.has-photo .node-dot::before{ content: none; }
   .node-dot img{ width:100%; height:100%; object-fit: cover; display:block; }
   /* for the rare photo that's an actual record label — spins in place
@@ -557,7 +557,7 @@
     cursor:pointer;
     transform-style: preserve-3d;
     transition: transform 0.7s cubic-bezier(.2,.85,.35,1);
-    border-radius: 3px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
   }
   .card-inner.flipped{ transform: rotateY(180deg); }
@@ -570,7 +570,7 @@
   .face{
     position:absolute; inset:0;
     backface-visibility: hidden;
-    border-radius: 3px;
+    border-radius: 12px;
     overflow:hidden;
   }
 
@@ -598,7 +598,7 @@
     font: 600 10px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 0.16em;
     text-transform: uppercase;
-    border-radius: 2px;
+    border-radius: 6px;
   }
   .flip-hint{
     position:absolute; top:10px; right:10px;
@@ -659,7 +659,7 @@
     color: rgba(255,255,255,0.75);
     padding: 7px 11px;
     border: 1px solid rgba(255,255,255,0.32);
-    border-radius: 2px;
+    border-radius: 6px;
   }
   .video-modal-tabs button[aria-current]{
     color:#0a0a0c;
@@ -725,7 +725,7 @@
     width:100%;
     max-height: calc(100vh - 120px);
     object-fit: contain;
-    border-radius: 4px;
+    border-radius: 12px;
     box-shadow: var(--shadow);
   }
   @media (prefers-reduced-motion: reduce){
@@ -873,7 +873,7 @@
     color: var(--label);
     padding: 6px 10px;
     border: 1px solid rgba(0,0,0,0.28);
-    border-radius: 2px;
+    border-radius: 6px;
   }
   .back-foot button:hover{ background: rgba(0,0,0,0.06); }
 
@@ -1317,7 +1317,7 @@
     color: var(--label);
     background: rgba(255,255,255,0.7);
     border: 1px solid var(--rule);
-    border-radius: 3px;
+    border-radius: 12px;
     padding: 11px 13px;
   }
   .field textarea{ resize: vertical; }
@@ -1353,7 +1353,7 @@
     color: #fff;
     background: var(--label);
     border: none;
-    border-radius: 3px;
+    border-radius: 12px;
     padding: 14px 26px;
     cursor: pointer;
     transition: opacity 0.2s ease;
@@ -1556,7 +1556,7 @@
     text-decoration: none;
     padding: 7px 12px;
     border: 1px solid var(--rule);
-    border-radius: 3px;
+    border-radius: 12px;
     transition: background 0.2s ease, border-color 0.2s ease;
   }
   .year-jump a:hover{
@@ -1576,7 +1576,7 @@
     opacity: 0.45;
     padding: 7px 12px;
     border: 1px solid var(--rule);
-    border-radius: 3px;
+    border-radius: 12px;
   }
   /* so a jumped-to year isn't jammed against the top of the viewport */
   .year-rule{ scroll-margin-top: 28px; }
@@ -1650,7 +1650,7 @@
     font: 600 11px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 0.1em;
     padding: 7px 10px;
-    border-radius: 3px;
+    border-radius: 12px;
     white-space: nowrap;
     opacity: 0;
     transform: translateY(4px);
@@ -1670,9 +1670,9 @@
     width: min(320px, calc(100vw - 48px));
     background: var(--label);
     color: var(--ink);
-    border-radius: 4px;
+    border-radius: 12px;
     padding: 18px;
-    box-shadow: 0 20px 44px -12px rgba(0,0,0,0.55);
+    box-shadow: 0 20px 48px -14px rgba(0,0,0,0.32);
   }
   .yep-head{
     display:flex; align-items:center; justify-content:space-between;
@@ -1863,7 +1863,7 @@
     font-size: 0.9em;
     background: rgba(0,0,0,0.22);
     border: 1px solid rgba(255,255,255,0.22);
-    border-radius: 3px;
+    border-radius: 6px;
     padding: 2px 6px;
     word-break: break-all;
   }
@@ -1886,9 +1886,9 @@
     padding: 17px 30px;
     border-radius: 999px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 6px 20px -6px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 22px -6px rgba(0,0,0,0.22);
   }
-  .lost-cta:hover{ transform: translateY(-2px); box-shadow: 0 10px 26px -6px rgba(0,0,0,0.5); }
+  .lost-cta:hover{ transform: translateY(-2px); box-shadow: 0 12px 28px -6px rgba(0,0,0,0.3); }
   .lost-cta:focus-visible{ outline: 3px solid #fff; outline-offset: 4px; }
 
   .lost-art{ justify-self: center; width: 100%; max-width: 860px; }
@@ -1983,7 +1983,7 @@
     justify-content: center;
     background: var(--label);
     color: var(--ink);
-    box-shadow: 0 6px 18px -6px rgba(0,0,0,0.35);
+    box-shadow: 0 8px 20px -6px rgba(0,0,0,0.22);
     opacity: 0;
     visibility: hidden;
     transform: translateY(8px);
