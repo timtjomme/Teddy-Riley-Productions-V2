@@ -34,6 +34,14 @@ FOLD_SVG = ('<svg class="fold-icon" width="24" height="24" viewBox="0 0 24 24" f
 # Mirrored in releaseFormat() in script.js, for the card the 404 page builds.
 NUMBERED = re.compile(r'^\s*(?:\d{1,2}\s*[–—.)]|\d{2}\s)')
 
+# A single's "01 - ", "04. " etc. is just pressing order, not a meaningful
+# sequence — once something has classified as a Single, that prefix is only
+# noise on the back of the card, so it's stripped for display and the list
+# is alphabetized instead of kept in pressing order. Broader than NUMBERED
+# (also catches the plain hyphen a single uses specifically to dodge that
+# regex, e.g. "01 - Fool Around"). Mirrored in stripTrackNumber() in script.js.
+TRACK_NUM_PREFIX = re.compile(r'^\s*\d{1,2}\s*[-–—.)]\s*')
+
 
 def esc(s):
     """& first, then the inch mark. Matches the entities already in the pages."""
@@ -62,13 +70,26 @@ def video_btn_html(r):
             f'          </button>')
 
 
+def display_tracks(r):
+    """(display_text, original_text) pairs — original is what "missing"
+    matches against; display is what's shown. A Single's tracks are
+    stripped of their pressing-order number and alphabetized; an LP or
+    EP keeps its real sequence untouched."""
+    tracks = r["tracks"]
+    if fmt(r) != "Single":
+        return [(t, t) for t in tracks]
+    pairs = [(TRACK_NUM_PREFIX.sub("", t), t) for t in tracks]
+    pairs.sort(key=lambda p: p[0].lower())
+    return pairs
+
+
 def card_html(r):
     artist, title = esc(r["artist"]), esc(r["title"])
     missing = set(r.get("missing", []))
     lis = "\n".join(
-        f'            <li class="missing">{esc(t)}</li>' if t in missing
-        else f'            <li>{esc(t)}</li>'
-        for t in r["tracks"]
+        f'            <li class="missing">{esc(display)}</li>' if orig in missing
+        else f'            <li>{esc(display)}</li>'
+        for display, orig in display_tracks(r)
     )
     legend = ('\n            <span class="legend"><span></span>missing from collection</span>'
               if missing else "")

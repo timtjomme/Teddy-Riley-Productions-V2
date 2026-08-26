@@ -60,6 +60,15 @@ function releaseFormat(r){
   return r.tracks.some(function(t){ return NUMBERED.test(t); }) ? 'LP' : 'Single';
 }
 
+// Mirrors TRACK_NUM_PREFIX in tools/build.py — see the comment there.
+var TRACK_NUM_PREFIX = /^\s*\d{1,2}\s*[-–—.)]\s*/;
+function displayTracks(r){
+  if(releaseFormat(r) !== 'Single') return r.tracks.map(function(t){ return [t, t]; });
+  var pairs = r.tracks.map(function(t){ return [t.replace(TRACK_NUM_PREFIX, ''), t]; });
+  pairs.sort(function(a, b){ return a[0].toLowerCase().localeCompare(b[0].toLowerCase()); });
+  return pairs;
+}
+
 var FORM_ENDPOINT = 'https://formspree.io/f/moeawjre';
 
 // Wire a contact form to submit in place. Every form still works as a plain
@@ -555,10 +564,10 @@ function initLostPage(){
     }
     var ul = card.querySelector('.tracks');
     var missing = r.missing || [];
-    r.tracks.forEach(function(t){
+    displayTracks(r).forEach(function(pair){
       var li = document.createElement('li');
-      li.textContent = t;
-      if(missing.indexOf(t) !== -1) li.className = 'missing';
+      li.textContent = pair[0];
+      if(missing.indexOf(pair[1]) !== -1) li.className = 'missing';
       ul.appendChild(li);
     });
     if(missing.length){
