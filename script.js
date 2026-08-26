@@ -789,3 +789,59 @@ function initEraLinks(){
   window.addEventListener('resize', debounce(draw, 150));
 }
 initEraLinks();
+
+// ---- VISIT TRACKING -------------------------------------------------
+// Self-hosted: every beacon goes to our own analytics/track.php, never to a
+// third party. No cookies — the session id is a random string kept in
+// sessionStorage, so it resets once the tab/browser session ends rather
+// than following a visitor across days.
+(function(){
+  function sid(){
+    try {
+      var v = sessionStorage.getItem('trp_sid');
+      if(!v){
+        v = Math.random().toString(36).slice(2) + Date.now().toString(36);
+        sessionStorage.setItem('trp_sid', v);
+      }
+      return v;
+    } catch(e){ return ''; }
+  }
+
+  function send(payload){
+    var body = JSON.stringify(payload);
+    if(navigator.sendBeacon){
+      navigator.sendBeacon('analytics/track.php', new Blob([body], {type: 'application/json'}));
+    } else {
+      fetch('analytics/track.php', {method: 'POST', body: body, keepalive: true}).catch(function(){});
+    }
+  }
+
+  var page = location.pathname.replace(/^.*\//, '') || 'index.html';
+  var started = Date.now();
+  var visitorId = sid();
+
+  send({ type: 'pageview', page: page, ref: document.referrer || null, sid: visitorId,
+         vw: window.innerWidth, vh: window.innerHeight });
+
+  function sendDuration(){
+    var dur = Math.round((Date.now() - started) / 1000);
+    if(dur < 1) return;
+    send({ type: 'duration', page: page, sid: visitorId, dur: dur });
+  }
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'hidden') sendDuration();
+  });
+  window.addEventListener('pagehide', sendDuration);
+
+  // A light touch on behaviour, not full click-tracking: the interactions
+  // that actually say something (browsing sleeves, using the two CTAs).
+  document.addEventListener('click', function(e){
+    if(e.target.closest('.card-inner')){
+      send({ type: 'event', name: 'card_flip', page: page, sid: visitorId });
+    } else if(e.target.closest('.ask-upload')){
+      send({ type: 'event', name: 'upload_click', page: page, sid: visitorId });
+    } else if(e.target.closest('.yep-btn')){
+      send({ type: 'event', name: 'yep_open', page: page, sid: visitorId });
+    }
+  });
+})();
