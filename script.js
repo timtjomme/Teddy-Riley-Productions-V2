@@ -796,6 +796,10 @@ initEraLinks();
 // sessionStorage, so it resets once the tab/browser session ends rather
 // than following a visitor across days.
 (function(){
+  // Honour the browser's own opt-out before anything else happens.
+  if(navigator.doNotTrack === '1' || window.doNotTrack === '1' ||
+     navigator.globalPrivacyControl === true) return;
+
   function sid(){
     try {
       var v = sessionStorage.getItem('trp_sid');
@@ -819,14 +823,36 @@ initEraLinks();
   var page = location.pathname.replace(/^.*\//, '') || 'index.html';
   var started = Date.now();
   var visitorId = sid();
+  var maxScroll = 0;
+  var sentDuration = false;
 
-  send({ type: 'pageview', page: page, ref: document.referrer || null, sid: visitorId,
-         vw: window.innerWidth, vh: window.innerHeight });
+  send({
+    type: 'pageview', page: page, ref: document.referrer || null, sid: visitorId,
+    vw: window.innerWidth, vh: window.innerHeight,
+    // coarse location fallback for when the IP lookup can't resolve
+    tz: (function(){
+      try { return Intl.DateTimeFormat().resolvedOptions().timeZone || null; }
+      catch(e){ return null; }
+    })(),
+    lang: (navigator.language || '').slice(0, 16) || null
+  });
+
+  // Most of this site's content lives in long flip-open sections — how far
+  // someone actually scrolls says more than a raw time-on-page number.
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    var pc = h > 0 ? Math.round((window.scrollY / h) * 100) : 100;
+    if(pc > maxScroll) maxScroll = Math.max(0, Math.min(100, pc));
+  }
+  window.addEventListener('scroll', onScroll, {passive: true});
+  onScroll();
 
   function sendDuration(){
+    if(sentDuration) return;
     var dur = Math.round((Date.now() - started) / 1000);
     if(dur < 1) return;
-    send({ type: 'duration', page: page, sid: visitorId, dur: dur });
+    sentDuration = true;
+    send({ type: 'duration', page: page, sid: visitorId, dur: dur, scroll: maxScroll });
   }
   document.addEventListener('visibilitychange', function(){
     if(document.visibilityState === 'hidden') sendDuration();

@@ -30,7 +30,8 @@ function client_ip(): string {
 
 function geolocate(string $ip): array {
     $none = ['country' => null, 'city' => null];
-    if ($ip === '' || $ip === '127.0.0.1' || str_starts_with($ip, '192.168.') || str_starts_with($ip, '10.')) {
+    if ($ip === '' || $ip === '127.0.0.1' || $ip === '::1'
+        || str_starts_with($ip, '192.168.') || str_starts_with($ip, '10.')) {
         return $none;
     }
 
@@ -76,8 +77,12 @@ $entry = [
     'ref'     => isset($data['ref']) ? substr((string) $data['ref'], 0, 300) : null,
     'sid'     => substr((string) ($data['sid'] ?? ''), 0, 40),
     'dur'     => isset($data['dur']) ? (int) $data['dur'] : null,
+    // how far down a page someone actually read
+    'scroll'  => isset($data['scroll']) ? max(0, min(100, (int) $data['scroll'])) : null,
     'vw'      => isset($data['vw']) ? (int) $data['vw'] : null,
     'vh'      => isset($data['vh']) ? (int) $data['vh'] : null,
+    'tz'      => isset($data['tz']) ? substr((string) $data['tz'], 0, 64) : null,
+    'lang'    => isset($data['lang']) ? substr((string) $data['lang'], 0, 16) : null,
     'ua'      => substr($_SERVER['HTTP_USER_AGENT'] ?? '', 0, 200),
     'country' => $geo['country'],
     'city'    => $geo['city'],
