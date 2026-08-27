@@ -14,6 +14,36 @@ document.addEventListener('dragstart', function(e){
   if(e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO') e.preventDefault();
 });
 
+// ---- HERO VIDEO ROTATION ------------------------------------------------
+// Three title-reveal cuts. One is picked at random and looped for the
+// whole visit, rather than cycling through all three in one sitting — the
+// choice is kept in sessionStorage so it stays the same across reloads
+// within a visit, and only re-rolls for a fresh session.
+(function(){
+  var video = document.querySelector('.hero-video video');
+  if(!video) return;
+  var playlist = [
+    {src: 'imgs/archives-title.mp4',   poster: 'imgs/archives-title-poster.jpg'},
+    {src: 'imgs/archives-title-2.mp4', poster: 'imgs/archives-title-2-poster.jpg'},
+    {src: 'imgs/archives-title-3.mp4', poster: 'imgs/archives-title-3-poster.jpg'}
+  ];
+  var idx = NaN;
+  try {
+    var stored = sessionStorage.getItem('trp_hero_video');
+    if(stored !== null) idx = parseInt(stored, 10);
+  } catch(e){}
+  if(isNaN(idx) || idx < 0 || idx >= playlist.length){
+    idx = Math.floor(Math.random() * playlist.length);
+    try { sessionStorage.setItem('trp_hero_video', idx); } catch(e){}
+  }
+  if(idx === 0) return; // already the video baked into the markup
+  var pick = playlist[idx];
+  video.poster = pick.poster;
+  video.querySelector('source').src = pick.src;
+  video.load();
+  video.play().catch(function(){});
+})();
+
 // Named so cards created later (the 404's random pick) can reuse it.
 function wireCard(card){
   function toggle(){
