@@ -4911,6 +4911,174 @@
         "15. Pressure",
         "16. Jabaz Pray"
       ]
+    },
+    {
+      "year": "2002",
+      "artist": "Benzino",
+      "title": "The Benzino Remix Project",
+      "label": "Surrender Records",
+      "image": "2002-benzino-the-benzino-remix-project.jpg",
+      "tracks": [
+        "07. Figadoh (Remix)",
+        "16. Boottee (Remix)"
+      ]
+    },
+    {
+      "year": "2002",
+      "artist": "Benzino",
+      "title": "Figadoh (Remix)",
+      "label": "Surrender Records",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "Figadoh East Coast (Clean) (feat. Busta Rhymes & M.O.P.)",
+        "Figadoh East Coast (Dirty) (feat. Busta Rhymes & M.O.P.)",
+        "Figadoh East Coast (Instrumental) (feat. Busta Rhymes & M.O.P.)",
+        "Figadoh East West (Clean) (feat. Scarface & Snoop Dogg)",
+        "Figadoh East West (Dirty) (feat. Scarface & Snoop Dogg)",
+        "Figadoh East West (Instrumental) (feat. Scarface & Snoop Dogg)"
+      ],
+      "format": "Single"
+    },
+    {
+      "year": "2002",
+      "artist": "Blackstreet feat. Beverly Crowder, Natural Blend",
+      "title": "Deep",
+      "label": "DreamWorks Records",
+      "image": "2002-blackstreet-deep.jpg",
+      "tracks": [
+        "Deep (Radio Edit)",
+        "Deep (Album Version)",
+        "Deep (Instrumental)",
+        "Deep (Call-out Hook)",
+        "Deep (Bounce Remix) (Main)",
+        "Deep (Bounce Remix) (Alternate)",
+        "Deep (Bounce Remix) (Instrumental)",
+        "Deep (Bounce Remix) (A Cappella)",
+        "Deep (Get Higher Remix)",
+        "Deep (50 Cent Remix)"
+      ],
+      "missing": [
+        "Deep (Bounce Remix) (Main)",
+        "Deep (Bounce Remix) (Alternate)",
+        "Deep (Bounce Remix) (Instrumental)",
+        "Deep (Bounce Remix) (A Cappella)",
+        "Deep (Get Higher Remix)",
+        "Deep (50 Cent Remix)"
+      ]
+    },
+    {
+      "year": "2002",
+      "artist": "Blackstreet feat. Mystikal",
+      "title": "Wizzy Wow",
+      "label": "",
+      "image": "2002-blackstreet-wizzy-wow.jpg",
+      "tracks": [
+        "Wizzy Wow (Radio Edit)",
+        "Wizzy Wow (Album Version)",
+        "Wizzy Wow (Instrumental)",
+        "Wizzy Wow (A Cappella)",
+        "Wizzy Wow (Call-Out Hook)",
+        "Fly (LP Version)"
+      ]
+    },
+    {
+      "year": "2002",
+      "artist": "Brandy",
+      "title": "Full Moon",
+      "label": "Atlantic",
+      "image": "2002-brandy-full-moon.jpg",
+      "tracks": [
+        "04. When You Touch Me"
+      ]
+    },
+    {
+      "year": "2000",
+      "artist": "Various",
+      "title": "Dr. Seuss' How The Grinch Stole Christmas (Original Motion Picture Soundtrack)",
+      "label": "Interscope",
+      "image": "2000-various-grinch-stole-christmas-soundtrack.jpg",
+      "tracks": [
+        "02. Grinch 2000 (Busta Rhymes feat. Jim Carrey)"
+      ]
+    },
+    {
+      "year": "2003",
+      "artist": "Namie Amuro",
+      "title": "Style",
+      "label": "S.M. Entertainment",
+      "image": "2003-namie-amuro-style.jpg",
+      "tracks": [
+        "02. Indy Lady (feat. Zeebra)"
+      ]
+    },
+    {
+      "year": "2003",
+      "artist": "Blackstreet",
+      "title": "Greatest Remixes + 1",
+      "label": "",
+      "image": "placeholder-sleeve.svg",
+      "tracks": [
+        "I Like It",
+        "Deep In The Club (Remix)"
+      ]
+    },
+    {
+      "year": "2003",
+      "artist": "Blackstreet",
+      "title": "Level II",
+      "label": "DreamWorks Records",
+      "image": "2003-blackstreet-level-ii.jpg",
+      "tracks": [
+        "01. Ticket To Ride (Intro)",
+        "02. Don't Touch (feat. Mr. Cheeks)",
+        "03. She's Hot",
+        "04. Deep",
+        "05. Ooh Girl",
+        "06. Friend Of Mine",
+        "07. Interlude: What's The Fuss?",
+        "08. You Made Me",
+        "09. It's So Hard To Say Goodbye",
+        "10. Why, Why",
+        "11. Look In The Water",
+        "12. Baby You're All I Want",
+        "13. How We Do",
+        "14. Bygones",
+        "15. Interlude: Still Feelin' You",
+        "16. Brown Eyes",
+        "17. Wizzy Wow (feat. Mystikal)",
+        "18. Fly"
+      ]
+    },
+    {
+      "year": "2004",
+      "artist": "Kool & The Gang",
+      "title": "The Hits: Reloaded",
+      "label": "Edel",
+      "image": "2004-kool-and-the-gang-the-hits-reloaded.jpg",
+      "tracks": [
+        "07. No Show (feat. Blackstreet) (CD 2)"
+      ]
+    },
+    {
+      "year": "2004",
+      "artist": "LL COOL J",
+      "title": "THE DEFinition",
+      "label": "Def Jam",
+      "image": "2004-ll-cool-j-the-definition.jpg",
+      "tracks": [
+        "03. I'm About To Get Her"
+      ]
+    },
+    {
+      "year": "2004",
+      "artist": "Pitch Black",
+      "title": "Pitch Black",
+      "label": "Universal Records",
+      "image": "2004-pitch-black-pitch-black.jpg",
+      "tracks": [
+        "05. Geechy",
+        "07. My Life"
+      ]
     }
   ]
 }
