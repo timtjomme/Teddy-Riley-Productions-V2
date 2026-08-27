@@ -1016,6 +1016,22 @@
     padding: 10px 20px 18px;
     border-top: 2px solid var(--label);
   }
+  /* The hero video rotates through a light cut and a dark one. Dark text
+     on nothing at all — the original design — only ever worked against
+     the light one; script.js marks .hero-video is-dark when the dark cut
+     is playing so this can flip to match, the same way .is-light-corner
+     flips the decade-page nav for a light photo corner. */
+  .hero-video.is-dark .update-banner{ border-top-color: #fff; }
+  .hero-video.is-dark .update-banner .dismiss{ color: rgba(255,255,255,0.6); }
+  .hero-video.is-dark .update-banner .dismiss:hover,
+  .hero-video.is-dark .update-banner .dismiss:focus-visible{ color: #fff; }
+  .hero-video.is-dark .update-banner .date{ color: #fff; text-shadow: 0 2px 16px rgba(0,0,0,0.5); }
+  .hero-video.is-dark .update-banner .date .tag{ color: var(--ink-soft); }
+  .hero-video.is-dark .update-banner .breakdown li{ color: #fff; text-shadow: 0 2px 16px rgba(0,0,0,0.5); }
+  .hero-video.is-dark .update-banner .breakdown li + li::before{ color: var(--ink-soft); }
+  .hero-video.is-dark .update-banner .breakdown a{ color: #fff; border-bottom-color: var(--ink-soft); }
+  .hero-video.is-dark .update-banner .breakdown a:hover,
+  .hero-video.is-dark .update-banner .breakdown a:focus-visible{ border-color: #fff; }
   .update-banner .dismiss{
     position: absolute;
     top: 8px; right: 20px;

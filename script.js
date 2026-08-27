@@ -20,12 +20,13 @@ document.addEventListener('dragstart', function(e){
 // choice is kept in sessionStorage so it stays the same across reloads
 // within a visit, and only re-rolls for a fresh session.
 (function(){
-  var video = document.querySelector('.hero-video video');
+  var wrap = document.querySelector('.hero-video');
+  var video = wrap && wrap.querySelector('video');
   if(!video) return;
   var playlist = [
-    {src: 'imgs/archives-title.mp4',   poster: 'imgs/archives-title-poster.jpg'},
-    {src: 'imgs/archives-title-2.mp4', poster: 'imgs/archives-title-2-poster.jpg'},
-    {src: 'imgs/archives-title-3.mp4', poster: 'imgs/archives-title-3-poster.jpg'}
+    {src: 'imgs/archives-title.mp4',   poster: 'imgs/archives-title-poster.jpg',   dark: false},
+    {src: 'imgs/archives-title-2.mp4', poster: 'imgs/archives-title-2-poster.jpg', dark: false},
+    {src: 'imgs/archives-title-3.mp4', poster: 'imgs/archives-title-3-poster.jpg', dark: true}
   ];
   var idx = NaN;
   try {
@@ -36,8 +37,9 @@ document.addEventListener('dragstart', function(e){
     idx = Math.floor(Math.random() * playlist.length);
     try { sessionStorage.setItem('trp_hero_video', idx); } catch(e){}
   }
-  if(idx === 0) return; // already the video baked into the markup
   var pick = playlist[idx];
+  wrap.classList.toggle('is-dark', !!pick.dark);
+  if(idx === 0) return; // already the video baked into the markup
   video.poster = pick.poster;
   video.querySelector('source').src = pick.src;
   video.load();
