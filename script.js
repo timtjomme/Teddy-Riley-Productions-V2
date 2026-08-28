@@ -469,6 +469,40 @@ photoModal();
 
 initToTop();
 
+// ---- SITE STATS COUNT-UP ----------------------------------------------
+// The two numbers under the Timeline panel count up from zero once
+// scrolled into view — a little flourish, not information the page
+// depends on (the real totals from tools/build.py are already sitting in
+// the markup), so it's skipped outright under reduced motion rather than
+// jumping straight to the final numbers.
+function initSiteStats(){
+  var nums = document.querySelectorAll('.stat-num');
+  if(!nums.length || !('IntersectionObserver' in window)) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var targets = Array.prototype.map.call(nums, function(el){
+    return parseInt(el.textContent.replace(/,/g, ''), 10) || 0;
+  });
+  var DURATION = 1200;
+  function animate(el, target){
+    var start = null;
+    function step(ts){
+      if(start === null) start = ts;
+      var progress = Math.min((ts - start) / DURATION, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target).toLocaleString('en-US');
+      if(progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var obs = new IntersectionObserver(function(entries){
+    if(!entries[entries.length - 1].isIntersecting) return;
+    nums.forEach(function(el, i){ animate(el, targets[i]); });
+    obs.disconnect();
+  }, { threshold: 0.6 });
+  obs.observe(document.querySelector('.site-stats'));
+}
+initSiteStats();
+
 // ---- YEAR-GROUP HINT --------------------------------------------------------
 // The first collapsed year gets a one-time "click me" (style.css) — timed to
 // when it actually scrolls into view rather than page load. A reader who
@@ -646,11 +680,13 @@ initLostPage();
 
 // ---- UPDATE BANNER -----------------------------------------------------
 // Content and the data-update marker are baked in by tools/build.py; this
-// only wires the dismiss button and remembers it in localStorage, keyed to
-// the update's own date — a later entry in data/updates.json carries a new
-// date, so it reappears even if an older one was dismissed. Runs last so a
-// thrown localStorage access (old Safari private browsing) can't stop
-// anything earlier in the file from wiring up.
+// wires the dismiss button (remembered in localStorage, keyed to the
+// update's own date — a later entry in data/updates.json carries a new
+// date, so it reappears even if an older one was dismissed) and reveals
+// the banner once the visitor has scrolled a little way down, rather than
+// showing it the instant the page loads. Runs last so a thrown
+// localStorage access (old Safari private browsing) can't stop anything
+// earlier in the file from wiring up.
 function initUpdateBanner(){
   var banner = document.querySelector('.update-banner');
   if(!banner) return;
@@ -664,6 +700,13 @@ function initUpdateBanner(){
     localStorage.setItem(KEY, id);
     banner.remove();
   });
+  // Hidden until scrolled a little way down — appearing the instant the
+  // page loads competed with the hero title for attention.
+  var onScroll = function(){
+    banner.classList.toggle('is-visible', window.scrollY > 40);
+  };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 }
 initUpdateBanner();
 
