@@ -26,5 +26,12 @@
       { "label": "The 2000's are here", "href": "2000s.html" },
       { "name": "2000's", "href": "2000s.html", "count": 47 }
     ]
+  },
+  {
+    "date": "2026-08-28",
+    "count": 23,
+    "pages": [
+      { "name": "2000's", "href": "2000s.html", "count": 23 }
+    ]
   }
 ]

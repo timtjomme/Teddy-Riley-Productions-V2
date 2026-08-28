@@ -274,6 +274,10 @@
     list-style:none;
     -webkit-tap-highlight-color: transparent;
   }
+  /* the trailing rule reads fine on a plain heading, but on the flip-card
+     pages' <summary> it competes with the fold icon right after it — drop
+     it there only. */
+  summary.year-rule::after{ content:none; }
   summary.year-rule::-webkit-details-marker{ display:none; }
   summary.year-rule:focus-visible{
     outline: 2px solid var(--accent);
@@ -293,13 +297,58 @@
     background: var(--accent);
     border: 2px solid var(--bg);
   }
+  /* plain glyph, not a button — same restraint as .node-plus on the
+     timeline page ("Born in Harlem +"): the toggle reads as part of the
+     heading's typography, not a corner badge sitting on top of it. */
   .fold-icon{
     order: 2;
     flex-shrink:0;
-    width: 24px; height: 24px;
-    transition: transform 0.3s ease;
+    width: 22px; height: 22px;
+    color: var(--muted);
+    transition: transform 0.25s ease, color 0.2s ease;
+  }
+  summary.year-rule:hover .fold-icon,
+  summary.year-rule:focus-visible .fold-icon{
+    color: var(--accent);
   }
   details[open] > .year-rule .fold-icon{ transform: rotate(180deg); }
+
+  /* a one-time nudge on the first closed year — the open one right above
+     it already shows what expanding looks like, so only this one needs
+     the hint. Structural, not markup: always the year-group right after
+     the auto-open first one, so it survives a rebuild untouched. Stays at
+     opacity:0 until script.js's initYearHint adds .show-hint once this
+     heading actually scrolls into view — see that function for why it's
+     keyed off visibility rather than page load. order:3 puts it after the
+     icon (order:2), captioning it, rather than wedged between the year
+     and the icon it's pointing at. */
+  details.year-group[open] + details.year-group:not([open]) > summary.year-rule::after{
+    content: "Click me";
+    order: 3;
+    flex: none;
+    height: auto;
+    background: none;
+    font: 600 10px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  details.year-group[open] + details.year-group:not([open]) > summary.year-rule.show-hint::after{
+    animation: year-hint 2.2s ease-in-out 0.2s 3 forwards;
+  }
+  @keyframes year-hint{
+    0%, 100% { opacity: 0; transform: scale(0.85); }
+    50% { opacity: 1; transform: scale(1); color: var(--accent); }
+  }
+  @media (prefers-reduced-motion: reduce){
+    details.year-group[open] + details.year-group:not([open]) > summary.year-rule.show-hint::after{
+      animation: none;
+    }
+  }
 
   /* ---- TIMELINE (biography) ----
      era-head reuses .eyebrow + .year-rule verbatim as a plain heading —
@@ -1768,6 +1817,35 @@
   .yep-form textarea{ font-size: 13px; }
   .yep-form button[type="submit"]{ padding: 11px 18px; }
   .yep-form .form-status.is-error{ color: var(--missing); }
+
+  /* .ask-upload is sized for the roomy .ask panels it's shared with — full
+     pill, big shadow, nowrap text. At the yep panel's 320px it overflowed
+     the popup's edge. Sits next to the submit button now, so it needs to
+     read as a quiet secondary link, not a second competing CTA. */
+  .yep-form .ask-upload{
+    margin-top: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    gap: 6px;
+    font: 600 12px/1.3 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.02em;
+    white-space: normal;
+    color: var(--muted);
+  }
+  .yep-form .ask-upload-icon{
+    width: 18px; height: 18px;
+    background: none;
+    color: var(--muted);
+  }
+  .yep-form .ask-upload:hover,
+  .yep-form .ask-upload:focus-visible{
+    transform: none;
+    box-shadow: none;
+    color: var(--label);
+  }
 
   @media (prefers-reduced-motion: reduce){
     .yep-btn, .yep-bubble{ transition: none; }

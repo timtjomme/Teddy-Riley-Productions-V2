@@ -1681,8 +1681,8 @@
       "label": "Jive",
       "image": "1990-glenn-jones-all-of-you.jpg",
       "tracks": [
-        "3. Can We Try Again",
-        "6. Interlude Can We Try Again"
+        "03. Can We Try Again",
+        "06. Interlude Can We Try Again"
       ]
     },
     {
@@ -1739,8 +1739,8 @@
       "label": "Jive Records",
       "image": "1990-hi-five-hi-five.jpg",
       "tracks": [
-        "1. I Just Can't Handle It",
-        "3. I Like The Way (The Kissing Game)"
+        "01. I Just Can't Handle It",
+        "03. I Like The Way (The Kissing Game)"
       ]
     },
     {
@@ -5078,6 +5078,275 @@
       "tracks": [
         "05. Geechy",
         "07. My Life"
+      ]
+    },
+    {
+      "year": "2005",
+      "artist": "Tyra feat. Penelope*",
+      "title": "Get No Ooh Wee",
+      "label": "Universal",
+      "image": "2005-tyra-get-no-ooh-wee.jpg",
+      "tracks": [
+        "Get No Ooh Wee (Main)",
+        "Get No Ooh Wee (Vocals Up)",
+        "Get No Ooh Wee (Instrumental)",
+        "Get No Ooh Wee (Acapella)"
+      ]
+    },
+    {
+      "year": "2007",
+      "artist": "Bishop Lamont",
+      "title": "Pope Mobile",
+      "label": "",
+      "image": "2007-bishop-lamont-pope-mobile.jpg",
+      "tracks": [
+        "04 feat. Indef - It's Funny"
+      ],
+      "missing": [
+        "04 feat. Indef - It's Funny"
+      ]
+    },
+    {
+      "year": "2007",
+      "artist": "Full Of Harmony",
+      "title": "W",
+      "label": "Victor",
+      "image": "2007-full-of-harmony-w.jpg",
+      "tracks": [
+        "02 Full Of Harmony - Rock Ya Body",
+        "03 Full Of Harmony - Interlude ~Pre\"T\"Good Times~",
+        "04 Full Of Harmony feat. Teddy Riley - G.O.O.D Times"
+      ]
+    },
+    {
+      "year": "2008",
+      "artist": "4Love",
+      "title": "Christmas With 4Love & Friends",
+      "label": "SkyCity Records",
+      "image": "2008-4love-christmas-with-4love-friends.jpg",
+      "tracks": [
+        "07. 4Love - Merry Christmas"
+      ]
+    },
+    {
+      "year": "2008",
+      "artist": "Chauncey Black",
+      "title": "Everyday Is Your Birthday",
+      "label": "Flipmode Entertainment",
+      "image": "2008-chauncey-black-everyday-is-your-birthday.jpg",
+      "tracks": [
+        "Everyday Is Your Birthday (LP)",
+        "Everyday Is Your Birthday (Instrumental)",
+        "Everyday Is Your Birthday (Acapella)"
+      ],
+      "missing": [
+        "Everyday Is Your Birthday (Instrumental)",
+        "Everyday Is Your Birthday (Acapella)"
+      ]
+    },
+    {
+      "year": "2008",
+      "artist": "De La Ghetto",
+      "title": "Masacre Musical",
+      "label": "Fight Klub Nation",
+      "image": "2008-de-la-ghetto-masacre-musical.jpg",
+      "tracks": [
+        "14 Serial Lover"
+      ]
+    },
+    {
+      "year": "2008",
+      "artist": "EPMD",
+      "title": "We Mean Business",
+      "label": "EP Records",
+      "image": "2008-epmd-we-mean-business.jpg",
+      "tracks": [
+        "07 Listen Up"
+      ],
+      "format": "LP"
+    },
+    {
+      "year": "2008",
+      "artist": "Full Of Harmony",
+      "title": "Energy",
+      "label": "Victor",
+      "image": "2008-full-of-harmony-energy.jpg",
+      "tracks": [
+        "02 Full Of Harmony - AROMA"
+      ]
+    },
+    {
+      "year": "2008",
+      "artist": "Good Charlotte",
+      "title": "Greatest Remixes",
+      "label": "Epic",
+      "image": "2008-good-charlotte-greatest-remixes.jpg",
+      "tracks": [
+        "06 I Just Wanna Live (Teddy Riley Remix)"
+      ],
+      "format": "LP"
+    },
+    {
+      "year": "2008",
+      "artist": "John Legend",
+      "title": "Evolver",
+      "label": "Getting Out Our Dreams / Columbia",
+      "image": "2008-john-legend-evolver.jpg",
+      "tracks": [
+        "15. feat. Kanye West — It's Over (Teddy Riley Remix)"
+      ]
+    },
+    {
+      "year": "2008",
+      "artist": "Keith Sweat",
+      "title": "Just Me",
+      "label": "ATCO Records",
+      "image": "2008-keith-sweat-just-me.jpg",
+      "tracks": [
+        "02 The Floor"
+      ],
+      "format": "LP"
+    },
+    {
+      "year": "2008",
+      "artist": "Mike Walla",
+      "title": "Odd Passion",
+      "label": "724REAL",
+      "image": "2008-mike-walla-odd-passion.jpg",
+      "tracks": [
+        "19: Prayer of Jabez With Teddy Riley"
+      ],
+      "format": "LP"
+    },
+    {
+      "year": "2008",
+      "artist": "New Kids On The Block",
+      "title": "The Block",
+      "label": "Polydor",
+      "image": "2008-new-kids-on-the-block-the-block.jpg",
+      "tracks": [
+        "06 Grown Man feat. The Pussycat Dolls"
+      ],
+      "format": "LP"
+    },
+    {
+      "year": "2008",
+      "artist": "Dubb Union",
+      "title": "Snoop Dogg Presents: Dubb Union",
+      "label": "Koch Records",
+      "image": "2008-dubb-union-snoop-dogg-presents-dubb-union.jpg",
+      "tracks": [
+        "08. Snoop Dog Presents Dubb Union - Turn It Up"
+      ]
+    },
+    {
+      "year": "2008",
+      "artist": "Snoop Dogg",
+      "title": "Ego Trippin'",
+      "label": "Geffen Records",
+      "image": "2008-snoop-dogg-ego-trippin.jpg",
+      "tracks": [
+        "03. Snoop Dogg - SD Is Out (Album Version (Explicit)) (Explicit)",
+        "04. Snoop Dogg - Gangsta Like Me (Album Version (Explicit)) (Explicit)",
+        "05. Snoop Dogg - Neva Have 2 Worry (Album Version (Explicit)) (Explicit)",
+        "09. Snoop Dogg - Cool (Album Version) (Explicit)",
+        "15. Snoop Dogg - Let It Out (Album Version (Explicit)) (Explicit)",
+        "18. Snoop Dogg - Those Gurlz (Album Version (Explicit)) (Explicit)",
+        "21. Snoop Dogg - Can't Say Goodbye (Album Version (Explicit)) (Explicit)"
+      ]
+    },
+    {
+      "year": "2008",
+      "artist": "Teddy Riley",
+      "title": "Lonely",
+      "label": "Manhattan Records",
+      "image": "2008-teddy-riley-lonely.jpg",
+      "tracks": [
+        "01 - Main",
+        "02 - Instrumental",
+        "03 - Acappella"
+      ],
+      "missing": [
+        "01 - Main",
+        "02 - Instrumental",
+        "03 - Acappella"
+      ],
+      "format": "Single"
+    },
+    {
+      "year": "2009",
+      "artist": "Amerie",
+      "title": "In Love & War",
+      "label": "Def Jam Recordings",
+      "image": "2009-amerie-in-love-war.jpg",
+      "tracks": [
+        "01 Tell Me You Love Me"
+      ]
+    },
+    {
+      "year": "2009",
+      "artist": "Damion Hall feat. Guy",
+      "title": "You're the One",
+      "label": "Hall of Fame",
+      "image": "2009-damion-hall-youre-the-one.jpg",
+      "tracks": [
+        "You're The One (Remix) (feat. Aaron Hall & Teddy Riley & Guy)",
+        "You're The One (Radio Edit) (feat. Aaron Hall & Teddy Riley & Guy)",
+        "You're The One (Instrumental) (feat. Aaron Hall & Teddy Riley & Guy)",
+        "You're The One (Acapella) (feat. Aaron Hall & Teddy Riley & Guy)"
+      ]
+    },
+    {
+      "year": "2009",
+      "artist": "Lady Gaga",
+      "title": "The Fame Monster",
+      "label": "Streamline Records",
+      "image": "2009-lady-gaga-the-fame-monster.jpg",
+      "tracks": [
+        "08 Teeth"
+      ],
+      "format": "LP"
+    },
+    {
+      "year": "2009",
+      "artist": "Mihiro",
+      "title": "My Way",
+      "label": "Rhythm Zone",
+      "image": "2009-mihiro-my-way.jpg",
+      "tracks": [
+        "Mihiro feat. Blackstreet - Ooh Girl"
+      ],
+      "format": "LP"
+    },
+    {
+      "year": "2009",
+      "artist": "Robin Thicke",
+      "title": "Sex Therapy: The Experience",
+      "label": "Interscope",
+      "image": "2009-robin-thicke-sex-therapy-the-experience.jpg",
+      "tracks": [
+        "05 It's In The Mornin"
+      ]
+    },
+    {
+      "year": "2009",
+      "artist": "Ruben Studdard",
+      "title": "Love Is",
+      "label": "Hickory Records",
+      "image": "2009-ruben-studdard-love-is.jpg",
+      "tracks": [
+        "06 I Can't Help It"
+      ],
+      "format": "LP"
+    },
+    {
+      "year": "2009",
+      "artist": "Snoop Dogg",
+      "title": "Malice 'N Wonderland",
+      "label": "Capitol",
+      "image": "2009-snoop-dogg-malice-n-wonderland.jpg",
+      "tracks": [
+        "05. Snoop Dogg - Different Languages (Explicit)"
       ]
     }
   ]
