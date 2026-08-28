@@ -29,9 +29,12 @@
   },
   {
     "date": "2026-08-28",
-    "count": 24,
+    "count": 66,
     "pages": [
-      { "name": "2000's", "href": "2000s.html", "count": 24 }
+      { "name": "2000's", "href": "2000s.html", "count": 24 },
+      { "label": "The 2010's are here", "href": "2010s.html" },
+      { "name": "2010's", "href": "2010s.html", "count": 42 },
+      { "label": "Four more chapters added to the life-story timeline", "href": "timeline.html" }
     ]
   }
 ]

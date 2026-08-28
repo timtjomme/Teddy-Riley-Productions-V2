@@ -20,7 +20,7 @@ STATS_END = "<!-- SITE-STATS:END -->"
 
 # The actual decades — not new-jack-swing-productions or sampled, which
 # aren't decade pages — each get their own scoped stats block too.
-DECADE_PAGES = {"1980s", "1990s", "2000s"}
+DECADE_PAGES = {"1980s", "1990s", "2000s", "2010s"}
 
 FLIP_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
             'stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 '

@@ -326,7 +326,379 @@
         "06 — In The Rain",
         "07 — How Deep Is Your Love",
         "08 — Don't Stop Your Love"
-      ]
+      ],
+      "discogs": {
+        "id": 2838278,
+        "url": "https://www.discogs.com/release/2838278-Keith-Sweat-Make-It-Last-Forever",
+        "credits": [
+          {
+            "role": "Art Direction",
+            "name": "Carol Bobolts"
+          },
+          {
+            "role": "Executive-Producer",
+            "name": "Vincent Davis (2)"
+          },
+          {
+            "role": "Mastered By",
+            "name": "Herb Powers Jr."
+          },
+          {
+            "role": "Mixed By",
+            "name": "Keith Sweat"
+          },
+          {
+            "role": "Mixed By",
+            "name": "Vincent Davis (2)"
+          },
+          {
+            "role": "Photography By",
+            "name": "Richard Bailey (8)"
+          },
+          {
+            "role": "Producer",
+            "name": "Keith Sweat"
+          },
+          {
+            "role": "Product Manager [Project Assistant]",
+            "name": "Felicia Davis"
+          }
+        ],
+        "track_credits": {
+          "01 — Something Just Ain't Right": [
+            {
+              "role": "Backing Vocals",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Co-producer",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Drum Programming, Keyboards",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Engineer [Mixing]",
+              "name": "Chris Floberg"
+            },
+            {
+              "role": "Engineer [Mixing] [Assistant]",
+              "name": "Frank Cardello"
+            },
+            {
+              "role": "Engineer [Recording]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Engineer [Recording] [Assistant]",
+              "name": "Dan Sheehan"
+            },
+            {
+              "role": "Written-By",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Written-By",
+              "name": "Teddy Riley"
+            }
+          ],
+          "02 — Right And A Wrong Way": [
+            {
+              "role": "Backing Vocals",
+              "name": "Cliff Branch"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "Emanuel \"Rahiem\" LeBlanc"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "George Heylinger"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "Jacci McGhee"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "Vivian Sessoms"
+            },
+            {
+              "role": "Drum Programming",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Engineer [Mixing]",
+              "name": "David Dachinger"
+            },
+            {
+              "role": "Engineer [Mixing] [Assistant]",
+              "name": "Tom Vercillo"
+            },
+            {
+              "role": "Engineer [Recording]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Engineer [Recording] [Assistant]",
+              "name": "Dan Sheehan"
+            },
+            {
+              "role": "Keyboards",
+              "name": "Fred McFarlane"
+            },
+            {
+              "role": "Keyboards",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Written-By",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Written-By",
+              "name": "Teddy Riley"
+            }
+          ],
+          "03 — Tell Me It's Me You Want": [
+            {
+              "role": "Backing Vocals",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Drum Programming, Keyboards",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Engineer [Mixing]",
+              "name": "David Dachinger"
+            },
+            {
+              "role": "Engineer [Mixing] [Assistant]",
+              "name": "Chris Floberg"
+            },
+            {
+              "role": "Engineer [Recording]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Engineer [Recording] [Assistant]",
+              "name": "Dan Sheehan"
+            },
+            {
+              "role": "Written-By",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Written-By",
+              "name": "Teddy Riley"
+            }
+          ],
+          "04 — I Want Her": [
+            {
+              "role": "Co-producer, Drum Programming, Keyboards",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Engineer [Mixing]",
+              "name": "Chris Floberg"
+            },
+            {
+              "role": "Engineer [Mixing] [Assistant]",
+              "name": "Frank Cardello"
+            },
+            {
+              "role": "Engineer [Recording]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Engineer [Recording] [Assistant]",
+              "name": "Dan Sheehan"
+            },
+            {
+              "role": "Keyboards [Additional]",
+              "name": "Cliff Branch"
+            },
+            {
+              "role": "Written-By, Backing Vocals",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Written-By, Backing Vocals",
+              "name": "Teddy Riley"
+            }
+          ],
+          "05 — Make It Last Forever": [
+            {
+              "role": "Backing Vocals",
+              "name": "Jacci McGhee"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Co-producer, Drum Programming, Keyboards",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Engineer [Mixing]",
+              "name": "David Dachinger"
+            },
+            {
+              "role": "Engineer [Mixing] [[Assistant]",
+              "name": "Tom Vercillo"
+            },
+            {
+              "role": "Engineer [Recording]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Engineer [Recording] [Assistant]",
+              "name": "Dan Sheehan"
+            },
+            {
+              "role": "Lead Vocals [Duet With]",
+              "name": "Jacci McGhee"
+            },
+            {
+              "role": "Written-By",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Written-By",
+              "name": "Teddy Riley"
+            }
+          ],
+          "06 — In The Rain": [
+            {
+              "role": "Backing Vocals",
+              "name": "Emanuel \"Rahiem\" LeBlanc"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Drum Programming, Keyboards",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Engineer [Mixing]",
+              "name": "Chris Floberg"
+            },
+            {
+              "role": "Engineer [Mixing] [[Assistant]",
+              "name": "Frank Cardello"
+            },
+            {
+              "role": "Engineer [Recording]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Engineer [Recording] [Assistant]",
+              "name": "Dan Sheehan"
+            },
+            {
+              "role": "Programmed By [Percussion]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Written-By",
+              "name": "Tony Hester"
+            }
+          ],
+          "07 — How Deep Is Your Love": [
+            {
+              "role": "Co-producer, Drum Programming, Keyboards",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Engineer [Mixing]",
+              "name": "David Dachinger"
+            },
+            {
+              "role": "Engineer [Mixing] [[Assistant]",
+              "name": "Chris Floberg"
+            },
+            {
+              "role": "Engineer [Recording]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Engineer [Recording] [Assistant]",
+              "name": "Dan Sheehan"
+            },
+            {
+              "role": "Written-By, Backing Vocals",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Written-By, Backing Vocals",
+              "name": "Teddy Riley"
+            }
+          ],
+          "08 — Don't Stop Your Love": [
+            {
+              "role": "Backing Vocals",
+              "name": "George Heylinger"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "Jacci McGhee"
+            },
+            {
+              "role": "Backing Vocals",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Drum Programming",
+              "name": "Fred McFarlane"
+            },
+            {
+              "role": "Drum Programming",
+              "name": "Keith Sweat"
+            },
+            {
+              "role": "Engineer [Mixing]",
+              "name": "Patrick Adams"
+            },
+            {
+              "role": "Engineer [Mixing] [[Assistant]",
+              "name": "Frantz Verna"
+            },
+            {
+              "role": "Engineer [Recording] [Assistant] [I N S Recording]",
+              "name": "Dan Sheehan"
+            },
+            {
+              "role": "Engineer [Recording] [I N S Recording]",
+              "name": "Jeff Neiblum"
+            },
+            {
+              "role": "Engineer [Recording] [Power Play Studios]",
+              "name": "Frankie \"Blades\" D'Amato"
+            },
+            {
+              "role": "Keyboards",
+              "name": "Fred McFarlane"
+            },
+            {
+              "role": "Keyboards [Additional]",
+              "name": "Teddy Riley"
+            },
+            {
+              "role": "Written-By",
+              "name": "Keith Sweat"
+            }
+          ]
+        }
+      }
     },
     {
       "year": "1987",
@@ -694,7 +1066,26 @@
         "08 — Spend The Night",
         "09 — Goodbye Love",
         "10 — My Business"
-      ]
+      ],
+      "discogs": {
+        "id": 516002,
+        "url": "https://www.discogs.com/release/516002-Guy-Guy",
+        "credits": [
+          {
+            "role": "Executive-Producer",
+            "name": "Guy"
+          },
+          {
+            "role": "Producer",
+            "name": "Gene Griffin"
+          },
+          {
+            "role": "Producer",
+            "name": "Teddy Riley"
+          }
+        ],
+        "track_credits": {}
+      }
     },
     {
       "year": "1988",
@@ -2799,7 +3190,18 @@
           "id": "ELojIEPvqE0",
           "label": "BLACKstreet"
         }
-      ]
+      ],
+      "discogs": {
+        "id": 2745546,
+        "url": "https://www.discogs.com/release/2745546-Blackstreet-Blackstreet",
+        "credits": [
+          {
+            "role": "Producer",
+            "name": "Teddy Riley"
+          }
+        ],
+        "track_credits": {}
+      }
     },
     {
       "year": "1994",
@@ -5366,6 +5768,470 @@
       "image": "2009-snoop-dogg-malice-n-wonderland.jpg",
       "tracks": [
         "05. Snoop Dogg - Different Languages (Explicit)"
+      ]
+    }
+  ],
+  "2010s": [
+    {
+      "year": "2010",
+      "artist": "Mike Posner",
+      "title": "31 Minutes To Takeoff",
+      "label": "J Records",
+      "image": "2010-mike-posner-31-minutes-to-takeoff.jpg",
+      "tracks": [
+        "05 Déjà V"
+      ]
+    },
+    {
+      "year": "2010",
+      "artist": "B. Howard",
+      "title": "Genesis",
+      "label": "Six Point Entertainment",
+      "image": "2010-b-howard-genesis.jpg",
+      "tracks": [
+        "02. Super Model",
+        "03. Addict",
+        "05. Finally",
+        "13 Killah"
+      ]
+    },
+    {
+      "year": "2010",
+      "artist": "Michael Jackson",
+      "title": "Michael",
+      "label": "Epic / MJJ Music",
+      "image": "2010-michael-jackson-michael.jpg",
+      "tracks": [
+        "02 - Hollywood Tonight",
+        "05 - Monster (Featuring 50 Cent)",
+        "07 - Breaking News",
+        "10 - Much Too Soon"
+      ],
+      "note": "Breaking News and Monster (plus a third track not collected here) came from vocals supplied by Eddie Cascio and James Porte; fans and members of the Jackson family publicly disputed that the voice is Michael Jackson's, while Sony and the estate maintained the tracks were genuine. A 2014 fraud lawsuit over the dispute ended with all three pulled from streaming and reissues of this album in 2022."
+    },
+    {
+      "year": "2011",
+      "artist": "Kirk Franklin",
+      "title": "Hello Fear",
+      "label": "Fo Yo Soul Entertainment",
+      "image": "2011-kirk-franklin-hello-fear.jpg",
+      "tracks": [
+        "15 A God Like You"
+      ]
+    },
+    {
+      "year": "2011",
+      "artist": "Jay Park",
+      "title": "Demon",
+      "label": "Not On Label",
+      "image": "2011-jay-park-demon.jpg",
+      "format": "Single",
+      "tracks": [
+        "01. Jay Park - Demon"
+      ]
+    },
+    {
+      "year": "2011",
+      "artist": "Jacob Latimore feat. Issa",
+      "title": "Like 'Em All",
+      "label": "RCA Records",
+      "image": "2011-jacob-latimore-feat-issa-like-em-all.jpg",
+      "tracks": [
+        "Like 'Em All (Radio Version)"
+      ]
+    },
+    {
+      "year": "2011",
+      "artist": "Boyz II Men",
+      "title": "Twenty",
+      "label": "Universal Music",
+      "image": "2011-boyz-ii-men-twenty.jpg",
+      "format": "LP",
+      "tracks": [
+        "1 Believe"
+      ]
+    },
+    {
+      "year": "2012",
+      "artist": "NVS / theArtistBones",
+      "title": "Between My Thighs (Remix)",
+      "label": "Not On Label",
+      "image": "2012-nvs-theartistbones-between-my-thighs-remix.jpg",
+      "tracks": [
+        "Between My Thighs (Remix)",
+        "Between My Thighs (T.R Dub Mix)"
+      ],
+      "missing": [
+        "Between My Thighs (T.R Dub Mix)"
+      ]
+    },
+    {
+      "year": "2012",
+      "artist": "EXO-K",
+      "title": "MAMA",
+      "label": "SM Entertainment",
+      "image": "2012-exo-k-mama.jpg",
+      "format": "LP",
+      "tracks": [
+        "1-02 What Is Love"
+      ]
+    },
+    {
+      "year": "2012",
+      "artist": "Ty$ & Joe Mo$e$ Produced By DJ Mustard",
+      "title": "Whoop!",
+      "label": "Not On Label",
+      "image": "2012-ty-joe-mo-e-produced-by-dj-mustard-whoop.jpg",
+      "tracks": [
+        "15 - Not It! feat Jazza'e, Teddy Riley"
+      ],
+      "missing": [
+        "15 - Not It! feat Jazza'e, Teddy Riley"
+      ]
+    },
+    {
+      "year": "2013",
+      "artist": "Bad Rabbits feat. Teddy Riley & Clinton Sparks",
+      "title": "Dance With You",
+      "label": "Not On Label",
+      "image": "2013-bad-rabbits-feat-teddy-riley-clinton-sparks-dance-with-you.jpg",
+      "format": "Single",
+      "tracks": [
+        "01. Dance With You"
+      ]
+    },
+    {
+      "year": "2013",
+      "artist": "SHINee",
+      "title": "SHINee The 3rd Album Chapter 2. 'Why So Serious? - The Misconceptions Of Me'",
+      "label": "SM Entertainment",
+      "image": "2013-shinee-shinee-the-3rd-album-chapter-2-why-so-serious-the-misconceptions-of-me.jpg",
+      "tracks": [
+        "03 SHINee - SHINe (Medusa Ⅰ)"
+      ]
+    },
+    {
+      "year": "2013",
+      "artist": "SHINee",
+      "title": "SHINee The 3rd Album Chapter 1. 'Dream Girl - The Misconceptions Of You'",
+      "label": "SM Entertainment",
+      "image": "2013-shinee-shinee-the-3rd-album-chapter-1-dream-girl-the-misconceptions-of-you.jpg",
+      "tracks": [
+        "07. SHINee - 아름다워 Beautiful"
+      ]
+    },
+    {
+      "year": "2013",
+      "artist": "Tyga",
+      "title": "Hotel California",
+      "label": "Cash Money Records",
+      "image": "2013-tyga-hotel-california.jpg",
+      "format": "LP",
+      "tracks": [
+        "Tyga - It Neva Rains (Album Version)"
+      ]
+    },
+    {
+      "year": "2014",
+      "artist": "Super Junior",
+      "title": "The 7th Album 'Mamacita'",
+      "label": "SM Entertainment",
+      "image": "2014-super-junior-the-7th-album-mamacita.jpg",
+      "tracks": [
+        "01. SUPER JUNIOR - 아야야 Mamacita",
+        "02 Hit Me Up",
+        "03 백일몽 (Evanesce)",
+        "04 사랑이 멎지 않게 (Raining Spell for Love)"
+      ]
+    },
+    {
+      "year": "2014",
+      "artist": "Super Junior",
+      "title": "Star",
+      "label": "SM Entertainment",
+      "image": "2014-super-junior-star.jpg",
+      "format": "LP",
+      "tracks": [
+        "1-01 MAMACITA(아야야) (Japanese Ver.)"
+      ]
+    },
+    {
+      "year": "2014",
+      "artist": "f(x)",
+      "title": "Red Light",
+      "label": "SM Entertainment",
+      "image": "2014-f-x-red-light.jpg",
+      "format": "LP",
+      "tracks": [
+        "1-02 MILK",
+        "1-05 All Night"
+      ]
+    },
+    {
+      "year": "2014",
+      "artist": "Taemin",
+      "title": "Ace",
+      "label": "SM Entertainment",
+      "image": "2014-taemin-ace.jpg",
+      "format": "EP",
+      "tracks": [
+        "1-05 거절할게 (Wicked)"
+      ]
+    },
+    {
+      "year": "2014",
+      "artist": "Dave Hollister",
+      "title": "Chicago Winds...The Saga Continues",
+      "label": "Entertainment One",
+      "image": "2014-dave-hollister-chicago-winds-the-saga-continues.jpg",
+      "tracks": [
+        "11. Spend The Night (Teddy Riley Remix)"
+      ]
+    },
+    {
+      "year": "2015",
+      "artist": "Red Velvet",
+      "title": "Ice Cream Cake",
+      "label": "SM Entertainment",
+      "image": "2015-red-velvet-ice-cream-cake.jpg",
+      "format": "EP",
+      "tracks": [
+        "Somethin Kinda Crazy"
+      ]
+    },
+    {
+      "year": "2015",
+      "artist": "Girls' Generation",
+      "title": "Lion Heart",
+      "label": "SM Entertainment",
+      "image": "2015-girls-generation-lion-heart.jpg",
+      "tracks": [
+        "10 Check"
+      ]
+    },
+    {
+      "year": "2015",
+      "artist": "Mack Wilds",
+      "title": "Love in the 90z",
+      "label": "Epic",
+      "image": "2015-mack-wilds-love-in-the-90z.jpg",
+      "tracks": [
+        "Love In The 90z"
+      ]
+    },
+    {
+      "year": "2015",
+      "artist": "TVXQ!",
+      "title": "Rise As God - TVXQ! Special Album",
+      "label": "SM Entertainment",
+      "image": "2015-tvxq-rise-as-god-tvxq-special-album.jpg",
+      "format": "EP",
+      "tracks": [
+        "5 Smile/웨딩드레스"
+      ]
+    },
+    {
+      "year": "2015",
+      "artist": "EXO",
+      "title": "EXODUS (Korean version)",
+      "label": "SM Entertainment",
+      "image": "2015-exo-exodus-korean-version.jpg",
+      "format": "LP",
+      "tracks": [
+        "1-01 CALL ME BABY",
+        "1-10 BEAUTIFUL"
+      ]
+    },
+    {
+      "year": "2015",
+      "artist": "EXO",
+      "title": "EXODUS (Chinese version)",
+      "label": "SM Entertainment",
+      "image": "2015-exo-exodus-chinese-version.jpg",
+      "format": "LP",
+      "tracks": [
+        "2-01 CALL ME BABY (叫我)",
+        "2-10 BEAUTIFUL (美)"
+      ]
+    },
+    {
+      "year": "2016",
+      "artist": "Bad Rabbits",
+      "title": "How High",
+      "label": "Coco Bvtter",
+      "image": "2016-bad-rabbits-how-high.jpg",
+      "format": "Single",
+      "tracks": [
+        "01. How High"
+      ]
+    },
+    {
+      "year": "2016",
+      "artist": "Brother Bones",
+      "title": "Sweet Georgia Brown (Teddy Riley Remix)",
+      "label": "Not On Label",
+      "image": "2016-brother-bones-sweet-georgia-brown-teddy-riley-remix.jpg",
+      "format": "Single",
+      "tracks": [
+        "01. Brother Bones - Sweet Georgia Brown (Teddy Riley Remix)"
+      ],
+      "note": "Brother Bones' 1949 recording of Sweet Georgia Brown has been the Harlem Globetrotters' entrance anthem since the 1950s; this is a Teddy Riley remix of it."
+    },
+    {
+      "year": "2016",
+      "artist": "EXO",
+      "title": "For Life - Winter Special",
+      "label": "SM Entertainment",
+      "image": "2016-exo-for-life-winter-special.jpg",
+      "format": "Single",
+      "tracks": [
+        "Falling For You (Chinese Version)",
+        "Falling For You (Korean Version)"
+      ]
+    },
+    {
+      "year": "2016",
+      "artist": "Taemin",
+      "title": "Press It",
+      "label": "SM Entertainment",
+      "image": "2016-taemin-press-it.jpg",
+      "format": "EP",
+      "tracks": [
+        "4 벌써 (Already)"
+      ]
+    },
+    {
+      "year": "2016",
+      "artist": "Tim Bowman Jr.",
+      "title": "Listen",
+      "label": "Motown Gospel",
+      "image": "2016-tim-bowman-jr-listen.jpg",
+      "tracks": [
+        "08 Your Love"
+      ]
+    },
+    {
+      "year": "2017",
+      "artist": "Charlie Wilson",
+      "title": "In It To Win It",
+      "label": "RCA",
+      "image": "2017-charlie-wilson-in-it-to-win-it.jpg",
+      "tracks": [
+        "3. Good Time"
+      ]
+    },
+    {
+      "year": "2017",
+      "artist": "Lalah Hathaway",
+      "title": "Honestly",
+      "label": "Hathaway Entertainment",
+      "image": "2017-lalah-hathaway-honestly.jpg",
+      "tracks": [
+        "10 I Can't Wait (Teddy Riley Remix)"
+      ]
+    },
+    {
+      "year": "2017",
+      "artist": "Mary J. Blige",
+      "title": "Strength Of A Woman",
+      "label": "Capitol Records",
+      "image": "2017-mary-j-blige-strength-of-a-woman.jpg",
+      "tracks": [
+        "13. Mary J. Blige - Strength Of A Woman"
+      ]
+    },
+    {
+      "year": "2018",
+      "artist": "Red Velvet",
+      "title": "Summer Magic",
+      "label": "SM Entertainment",
+      "image": "2018-red-velvet-summer-magic.jpg",
+      "format": "EP",
+      "tracks": [
+        "4 Mosquito"
+      ]
+    },
+    {
+      "year": "2018",
+      "artist": "Bobby Brown",
+      "title": "Like Bobby",
+      "label": "Interscope Records",
+      "image": "2018-bobby-brown-like-bobby.jpg",
+      "tracks": [
+        "01. Bobby Brown - Like Bobby (Explicit)"
+      ]
+    },
+    {
+      "year": "2018",
+      "artist": "Case",
+      "title": "Therapy",
+      "label": "X-Ray Entertainment",
+      "image": "2018-case-therapy.jpg",
+      "tracks": [
+        "01. Case feat. Teddy Riley & Tank - Make Love"
+      ]
+    },
+    {
+      "year": "2018",
+      "artist": "Deep",
+      "title": "THE SINGER",
+      "label": "Sony Music",
+      "image": "2018-deep-the-singer.jpg",
+      "tracks": [
+        "10. DWTS"
+      ]
+    },
+    {
+      "year": "2018",
+      "artist": "Keith Sweat",
+      "title": "Playing For Keeps",
+      "label": "KDS Entertainment",
+      "image": "2018-keith-sweat-playing-for-keeps.jpg",
+      "tracks": [
+        "01 - Eenie Meenie Miney Mo (feat. RayFade)",
+        "09 - Who's Ya Daddy (feat. Teddy Riley & Tank)"
+      ]
+    },
+    {
+      "year": "2018",
+      "artist": "Nile Rodgers & Chic",
+      "title": "It's About Time",
+      "label": "Virgin EMI",
+      "image": "2018-nile-rodgers-chic-it-s-about-time.jpg",
+      "tracks": [
+        "10. feat. Craig David & Stefflon Don - \"New Jack\" Sober (Teddy Riley Version)"
+      ]
+    },
+    {
+      "year": "2018",
+      "artist": "Trey Songz",
+      "title": "11",
+      "label": "Atlantic Records",
+      "image": "2018-trey-songz-11.jpg",
+      "format": "LP",
+      "tracks": [
+        "Trey Songz - Keep It Right There (feat. Teddy Riley)"
+      ]
+    },
+    {
+      "year": "2019",
+      "artist": "Skales",
+      "title": "Oliver Twist",
+      "label": "OHK Entertainment",
+      "image": "2019-skales-oliver-twist.jpg",
+      "format": "Single",
+      "tracks": [
+        "01 Oliver Twist"
+      ]
+    },
+    {
+      "year": "2019",
+      "artist": "The Apx",
+      "title": "Amplified Experiment",
+      "label": "The Sleepers Recordz",
+      "image": "2019-the-apx-amplified-experiment.jpg",
+      "tracks": [
+        "08. The Apx - Message from Jody Watley and Teddy Riley (Interlude)"
       ]
     }
   ]
