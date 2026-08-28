@@ -1169,6 +1169,14 @@
   .intro .fun-fact{
     border-left: 2px solid var(--rule);
     padding-left: 16px;
+    /* the root --missing (#ff6f6b) is brightened for dark backgrounds —
+       too washed out against this page's light --bg, so it's darkened
+       back down here the same way .front does for the card sleeves. */
+    --missing: #b3261e;
+  }
+  .intro .fun-fact strong{
+    color: var(--missing);
+    font-weight: 600;
   }
 
   .panels{
