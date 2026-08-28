@@ -470,11 +470,12 @@ photoModal();
 initToTop();
 
 // ---- SITE STATS COUNT-UP ----------------------------------------------
-// The two numbers under the Timeline panel count up from zero once
-// scrolled into view — a little flourish, not information the page
-// depends on (the real totals from tools/build.py are already sitting in
-// the markup), so it's skipped outright under reduced motion rather than
-// jumping straight to the final numbers.
+// The homepage's site-wide numbers, and each decade page's own scoped
+// ones, count up from zero once scrolled into view — a little flourish,
+// not information the page depends on (the real totals from
+// tools/build.py are already sitting in the markup), so it's skipped
+// outright under reduced motion rather than jumping straight to the
+// final numbers.
 function initSiteStats(){
   var nums = document.querySelectorAll('.stat-num');
   if(!nums.length || !('IntersectionObserver' in window)) return;

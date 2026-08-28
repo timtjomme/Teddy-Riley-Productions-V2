@@ -1228,9 +1228,21 @@
      year headers on the decade pages. */
   .site-stats{
     display:flex;
+    flex-wrap:wrap;
     justify-content:center;
     gap: 48px;
-    margin: 0 0 28px;
+    margin: 36px 0;
+  }
+  /* pulled up close to the numbers it's captioning (36px site-stats
+     bottom margin collapsed against this -28px top one leaves 8px), then
+     its own 36px bottom keeps the whole stats+note unit evenly spaced
+     from what's above and below, not just padded underneath. */
+  .stats-note{
+    margin: -28px 0 36px;
+    text-align: center;
+    font: 400 12px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--muted);
+    font-style: italic;
   }
   .stat{
     display:flex;
@@ -1574,16 +1586,17 @@
   .back-foot{ justify-content: space-between; }
   .back-foot button{ margin-left: auto; }
 
-  /* The prominent version at the top of every release-listing page — see
-     .fun-fact on the homepage for the same explanation in the intro copy.
-     Light-background context, same reasoning as there: the root --missing
-     (#ff6f6b) is tuned for the dark card back and washes out here. */
+  /* Sits in .list-head, between the page description and the year-jump
+     nav — see .fun-fact on the homepage for the same explanation in the
+     intro copy. Light-background context, same reasoning as there: the
+     root --missing (#ff6f6b) is tuned for the dark card back and washes
+     out here. */
   .missing-callout{
     display:flex;
     align-items:center;
     gap: 10px;
     padding: 14px 18px;
-    margin: 0 0 28px;
+    margin: 20px 0;
     font: 400 15px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--label);
     background: rgba(179,38,30,0.06);
@@ -1696,12 +1709,17 @@
   }
 
   .list-head{
-    max-width: 660px;
     margin: 0 0 40px;
     padding-top: 30px;
     border-top: 1px solid var(--rule);
   }
-  .list-head p{
+  /* max-width sits on the description text alone, not .list-head itself —
+     .missing-callout and .year-jump are also direct children here (the
+     callout's also a <p>, hence :not()), and both are meant to run the
+     full width of the releases grid below rather than the narrower
+     reading column the description keeps for its own sake. */
+  .list-head p:not(.missing-callout){
+    max-width: 660px;
     font: 400 15px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--muted);
     margin: 0;
