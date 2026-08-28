@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /analytics/
+Allow: /
+
+Sitemap: https://teddyrileyproductions.com/sitemap.xml
