@@ -1,0 +1,282 @@
+"""Backend enrichment: pull full per-track credits from the Discogs API into
+data/releases.json, as data only — build.py does not read this field and
+nothing on the site renders it. It's here for later use, not for the cards.
+
+Run:      python3 tools/fetch_credits.py [--decade 2010s] [--limit N] [--token TOKEN]
+
+Resumable — a release already carrying a "credits" key is skipped, so a killed
+or interrupted run just picks back up. Progress is written to releases.json
+after every release, not batched at the end.
+
+Two ways a release gets matched to a Discogs release id:
+  1. KNOWN_IDS — decoded straight out of the i.discogs.com cover URLs used
+     when the release was added (see decode_release_id below). Exact, no
+     guessing.
+  2. Discogs search (/database/search) — for everything else (Apple Music /
+     local-file covers). The top result is only accepted if it clears a
+     similarity threshold against our own artist+title; otherwise the release
+     is left unmatched and logged, rather than risk attaching another
+     pressing's credits to the wrong release.
+
+Rate limits: unauthenticated Discogs API is ~25 req/min. Pass --token (a
+personal access token from discogs.com/settings/developers) to run at the
+authenticated 60/min instead — meaningful at ~400 releases x up to 2 calls
+each. The client also backs off on 429s and reads the
+X-Discogs-Ratelimit-Remaining header to slow down before it gets throttled.
+"""
+import argparse, base64, json, re, sys, time, urllib.error, urllib.parse, urllib.request
+from difflib import SequenceMatcher
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+RELEASES_PATH = ROOT / "data" / "releases.json"
+UA = "TeddyRileyProductionsBot/1.0 +https://teddyrileyproductions.com"
+
+MATCH_THRESHOLD = 0.55  # below this, a search result is treated as no-match
+
+
+def decode_release_id(cover_url):
+    """i.discogs.com URLs base64-encode the S3 key, e.g.
+    .../czM6Ly9kaXNjb2dz/.../R-9677483-....jpeg -> s3://discogs-database-images/R-9677483-...
+    Returns the int release id, or None if this isn't a decodable Discogs cover URL."""
+    if "i.discogs.com" not in cover_url:
+        return None
+    parts = cover_url.split("/")
+    try:
+        idx = next(i for i, p in enumerate(parts) if p.startswith("w:")) + 1
+    except StopIteration:
+        return None
+    b64 = "".join(parts[idx:])
+    b64 = b64.rsplit(".", 1)[0]  # drop the trailing extension
+    b64 += "=" * (-len(b64) % 4)
+    try:
+        decoded = base64.urlsafe_b64decode(b64).decode()
+    except Exception:
+        return None
+    m = re.search(r"/R-(\d+)-", decoded)
+    return int(m.group(1)) if m else None
+
+
+# Seeded from the original i.discogs.com URLs used when the 2010s releases
+# were added this session (already-downloaded local covers no longer carry
+# the source URL, so this is the one place that history is preserved).
+KNOWN_IDS = {
+    ("Mike Posner", "31 Minutes To Takeoff"): 9677483,
+    ("B. Howard", "Genesis"): 7027941,
+    ("Michael Jackson", "Michael"): 2589933,
+    ("Boyz II Men", "Twenty"): 4338098,
+    ("Ty$ & Joe Mo$e$ Produced By DJ Mustard", "Whoop!"): 7872764,
+    ("Tyga", "Hotel California"): 32527359,
+    ("f(x)", "Red Light"): 7720260,
+    ("Taemin", "Ace"): 7962108,
+    ("Dave Hollister", "Chicago Winds...The Saga Continues"): 6280014,
+    ("Red Velvet", "Ice Cream Cake"): 6974296,
+    ("Girls' Generation", "Lion Heart"): 8605594,
+    ("Mack Wilds", "Love in the 90z"): 32440953,
+    ("EXO", "For Life - Winter Special"): 27294513,
+    ("Taemin", "Press It"): 8161212,
+    ("Tim Bowman Jr.", "Listen"): 15081561,
+    ("Charlie Wilson", "In It To Win It"): 9836803,
+    ("Lalah Hathaway", "Honestly"): 15354605,
+    ("Red Velvet", "Summer Magic"): 13520226,
+    ("Keith Sweat", "Playing For Keeps"): 16073045,
+    ("Nile Rodgers & Chic", "It's About Time"): 12607788,
+}
+
+
+class RateLimiter:
+    def __init__(self, authenticated):
+        self.min_interval = 1.05 if authenticated else 2.5
+        self.last = 0.0
+
+    def wait(self):
+        elapsed = time.time() - self.last
+        if elapsed < self.min_interval:
+            time.sleep(self.min_interval - elapsed)
+        self.last = time.time()
+
+    def note_headers(self, headers):
+        remaining = headers.get("X-Discogs-Ratelimit-Remaining")
+        if remaining is not None and int(remaining) <= 2:
+            time.sleep(5)
+
+
+def discogs_get(path, params, token, limiter):
+    url = "https://api.discogs.com" + path
+    if params:
+        url += "?" + urllib.parse.urlencode(params)
+    headers = {"User-Agent": UA}
+    if token:
+        headers["Authorization"] = f"Discogs token={token}"
+    for attempt in range(6):
+        limiter.wait()
+        req = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=20) as r:
+                limiter.note_headers(r.headers)
+                return json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                time.sleep(10 * (attempt + 1))
+                continue
+            if e.code == 404:
+                return None
+            if attempt == 5:
+                raise
+            time.sleep(5 * (attempt + 1))
+        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError) as e:
+            # transient network blip (timeout, DNS hiccup, reset) — retry
+            # with backoff instead of taking the whole run down with it
+            if attempt == 5:
+                raise
+            time.sleep(5 * (attempt + 1))
+    return None
+
+
+def norm(s):
+    s = s.lower()
+    s = re.sub(r"feat\.?.*$", "", s)
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def similarity(a, b):
+    return SequenceMatcher(None, norm(a), norm(b)).ratio()
+
+
+def resolve_release_id(release, token, limiter):
+    key = (release["artist"], release["title"])
+    if key in KNOWN_IDS:
+        return KNOWN_IDS[key], "known"
+
+    query = f"{release['artist']} {release['title']}"
+    data = discogs_get("/database/search", {"q": query, "type": "release"}, token, limiter)
+    if not data or not data.get("results"):
+        return None, "no-results"
+
+    target = f"{release['artist']} {release['title']}"
+    best, best_score = None, 0.0
+    for r in data["results"][:10]:
+        score = similarity(target, r.get("title", ""))
+        if score > best_score:
+            best, best_score = r, score
+    if best and best_score >= MATCH_THRESHOLD:
+        return best["id"], f"search({best_score:.2f})"
+    return None, f"low-confidence(best={best_score:.2f})"
+
+
+TRACK_PREFIX = re.compile(r"^\s*(?:cd\d+\s*)?\d{0,2}[\-.)]?\s*")
+
+
+def track_key(t):
+    t = re.sub(r"\.(flac|mp3)$", "", t, flags=re.I)
+    t = re.sub(r"\(feat[^)]*\)", "", t, flags=re.I)
+    t = TRACK_PREFIX.sub("", t)
+    return norm(t)
+
+
+def group_credits(extraartists):
+    by_role = {}
+    for a in extraartists:
+        role = a.get("role", "").strip()
+        name = re.sub(r"\s*\(\d+\)\s*$", "", a.get("name", "")).strip()  # "Luis Navarro (2)" -> "Luis Navarro"
+        if not role or not name:
+            continue
+        by_role.setdefault(role, [])
+        if name not in by_role[role]:
+            by_role[role].append(name)
+    return [f"{role}: {', '.join(names)}" for role, names in by_role.items()]
+
+
+def fetch_credits_for_release(release, token, limiter, log):
+    rid, how = resolve_release_id(release, token, limiter)
+    if rid is None:
+        log(f"  UNMATCHED  {release['year']} {release['artist']} - {release['title']}  ({how})")
+        return None
+
+    data = discogs_get(f"/releases/{rid}", None, token, limiter)
+    if not data:
+        log(f"  FETCH-FAIL {release['year']} {release['artist']} - {release['title']}  (id {rid})")
+        return None
+
+    tracklist = data.get("tracklist", [])
+    by_key = {track_key(t.get("title", "")): t for t in tracklist if t.get("title")}
+
+    credits = []
+    hits = 0
+    for our_track in release["tracks"]:
+        tk = track_key(our_track)
+        entry = by_key.get(tk)
+        if not entry:
+            # fall back to best fuzzy match within this release's tracklist
+            best_t, best_score = None, 0.0
+            for cand_key, cand in by_key.items():
+                s = SequenceMatcher(None, tk, cand_key).ratio()
+                if s > best_score:
+                    best_t, best_score = cand, s
+            entry = best_t if best_score >= 0.75 else None
+        track_credits = group_credits(entry.get("extraartists", [])) if entry else []
+        if track_credits:
+            hits += 1
+        credits.append(track_credits)
+
+    log(f"  ok ({how:>14})  {release['year']} {release['artist']} - {release['title']}  "
+        f"[{hits}/{len(release['tracks'])} tracks credited]  discogs.com/release/{rid}")
+    return credits
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--decade", help="only this decade key, e.g. 2010s")
+    ap.add_argument("--limit", type=int, help="stop after N releases (this run)")
+    ap.add_argument("--token", help="Discogs personal access token (optional; speeds up + raises rate limit)")
+    args = ap.parse_args()
+
+    data = json.loads(RELEASES_PATH.read_text(encoding="utf-8"))
+    limiter = RateLimiter(authenticated=bool(args.token))
+
+    def log(msg):
+        print(msg, flush=True)
+
+    def save():
+        RELEASES_PATH.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    decades = [args.decade] if args.decade else list(data.keys())
+    processed = 0
+    stats = {"matched": 0, "unmatched": 0, "skipped": 0}
+
+    for decade in decades:
+        if decade not in data:
+            log(f"unknown decade key: {decade}")
+            continue
+        log(f"=== {decade} ({len(data[decade])} releases) ===")
+        for release in data[decade]:
+            if "credits" in release:
+                stats["skipped"] += 1
+                continue
+            if args.limit and processed >= args.limit:
+                log(f"--limit {args.limit} reached, stopping")
+                save()
+                print_summary(stats)
+                return
+
+            credits = fetch_credits_for_release(release, args.token, limiter, log)
+            processed += 1
+            if credits is not None:
+                release["credits"] = credits
+                stats["matched"] += 1
+            else:
+                release["credits"] = []  # mark as attempted so we don't retry every run
+                stats["unmatched"] += 1
+            save()
+
+    print_summary(stats)
+
+
+def print_summary(stats):
+    print(f"\nmatched: {stats['matched']}  unmatched: {stats['unmatched']}  "
+          f"already had credits (skipped): {stats['skipped']}")
+
+
+if __name__ == "__main__":
+    main()

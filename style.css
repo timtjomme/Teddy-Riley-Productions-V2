@@ -479,6 +479,10 @@
     }
     .era{ width: auto; }
     .snake{ grid-template-columns: 1fr; row-gap: 48px; }
+    /* the rail (initSnakeLines/initEraLinks, script.js) runs through each
+       dot's left edge here — nudge the text right of it rather than the
+       rail right of the text, so the dot itself still sits right on the line */
+    .node-year, .node-head{ margin-left: 20px; }
   }
 
   .node{ position: relative; z-index: 1; counter-increment: moment; }

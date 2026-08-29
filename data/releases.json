@@ -2,6 +2,18 @@
   "1980s": [
     {
       "year": "1982",
+      "artist": "Total Climax / Atlantis",
+      "title": "Demo",
+      "label": "Unreleased",
+      "image": "1982-total-climax-atlantis-demo.jpg",
+      "tracks": [
+        "Candy Kisses (Your My Sugar Baby)",
+        "Just a Straight ahead Jam"
+      ],
+      "note": "A demo recording from the band's Total Climax days, before the Atlantis name — no formal pressing exists."
+    },
+    {
+      "year": "1982",
       "artist": "Atlantis / Total Climax",
       "title": "Keep On Movin' And Groovin'",
       "label": "Barclay",
@@ -13,7 +25,7 @@
         "Keep On Movin' And Groovin' (Vocal)"
       ],
       "note": "Teddy Riley played keyboards in this group as a teenager, mentored and produced by Royal Bayyan — the band was originally known as Total Climax before taking the Atlantis name.",
-      "hidden": true
+      "credits": []
     },
     {
       "year": "1984",
@@ -26,6 +38,12 @@
         "Sugar Baby (Disco Version) (7″ Edit)",
         "Sugar Baby (Vocal Version)",
         "Sugar Baby (Vocal Version) (7″ Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -42,6 +60,99 @@
         "05 – All-N-All",
         "06 – Sugar Baby",
         "07 – She's My Baby (Dub Version)"
+      ],
+      "credits": [
+        [
+          "Arranged By: Gene Griffin, Kids At Work",
+          "Backing Vocals: Kids At Work",
+          "Bass: Teddy Riley",
+          "Co-producer: Auvil Gilchrist",
+          "Coordinator: Bill Scarborough",
+          "Drum Machine: Teddy Riley",
+          "Engineer: Chris Lord-Alge, Roey Shamir, Tom Lord-Alge",
+          "Guitar: Paul Pesco",
+          "Horn: Funki, Marvin Dannels",
+          "Horns: Chops",
+          "Keyboards: Bobby Douglas, Teddy Riley",
+          "Percussion: Doug Cole, Teddy Riley",
+          "Producer: Gene Griffin",
+          "Synthesizer: Bobby Douglas, Teddy Riley",
+          "Vocals: Kids At Work",
+          "Written By: Clurel, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Kids At Work",
+          "Backing Vocals: Kids At Work",
+          "Bass: Daniel Terry",
+          "Co-producer: Auvil Gilchrist",
+          "Coordinator: Bill Scarborough",
+          "Drums: Robert Corey",
+          "Engineer: Craig Johnson, Jamie Chaleff, Tim Hatfield",
+          "Guitar: Eric Salder",
+          "Percussion: Doug Cole, Teddy Riley",
+          "Piano: Teddy Riley",
+          "Producer: Gene Griffin",
+          "Synthesizer: Chris Kelleo, Dan Howard, Teddy Riley",
+          "Written By: Clurel, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Kids At Work",
+          "Backing Vocals: Danny Stevenson, Daryl Craft, Kervin Stevenson, Kids At Work",
+          "Bass: Teddy Riley",
+          "Co-producer: Auvil Gilchrist",
+          "Coordinator: Bill Scarborough",
+          "Drum Machine: Teddy Riley",
+          "Engineer: Craig Johnson, Jamie Chaleff, Tim Hatfield",
+          "Guitar: Eric Salder",
+          "Percussion: Doug Cole, Teddy Riley",
+          "Producer: Gene Griffin",
+          "Synthesizer: Teddy Riley",
+          "Written By: Clurel, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Kids At Work",
+          "Backing Vocals: Debra Hospie, Kids At Work",
+          "Co-producer: Auvil Gilchrist",
+          "Coordinator: Bill Scarborough",
+          "Drums: Kervin Harrington",
+          "Engineer: Craig Johnson, Jamie Chaleff, Tim Hatfield",
+          "Guitar: Eric Salder",
+          "Horn: Funki, Marvin Dannels",
+          "Horns: Chops",
+          "Piano: Teddy Riley",
+          "Producer: Gene Griffin",
+          "Synthesizer: Doug Cole, Teddy Riley",
+          "Written By: Gene Griffin, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Kids At Work",
+          "Backing Vocals: Kids At Work",
+          "Bass: Daniel Terry",
+          "Co-producer: Auvil Gilchrist",
+          "Coordinator: Bill Scarborough",
+          "Drums: Robert Corey",
+          "Engineer: Craig Johnson, Jamie Chaleff, Tim Hatfield",
+          "Guitar: Ronald Nimbhard",
+          "Percussion: Doug Cole",
+          "Producer: Gene Griffin",
+          "Synthesizer: Dan Howard, Teddy Riley",
+          "Written By: Clurel, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Kids At Work",
+          "Backing Vocals: Debra Hospie, Kids At Work, Vaneese Thomas",
+          "Bass: Daniel Terrry",
+          "Co-producer: Auvil Gilchrist",
+          "Coordinator: Bill Scarborough",
+          "Drums: Robert Corey",
+          "Engineer: Craig Johnson, Jamie Chaleff, Tim Hatfield",
+          "Guitar: Fred Mutz",
+          "Percussion: Doug Cole, Teddy Riley",
+          "Producer: Gene Griffin",
+          "Synthesizer: Dan Howard, Floyd Fisher, Teddy Riley",
+          "Written By: Clurel, Teddy Riley, Timmy Gatling"
+        ],
+        []
       ]
     },
     {
@@ -54,6 +165,11 @@
         "Reggae Kids (7″ Edit)",
         "Singing Hey Yea",
         "Singing Hey Yea (7″ Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -67,6 +183,12 @@
         "The Show",
         "The Show (Instrumental)",
         "The Show (Vocal)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -77,6 +199,9 @@
       "image": "1985-la-va-ba-that-girl.jpg",
       "tracks": [
         "La-Di-Da-Di"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -89,6 +214,11 @@
         "Crime (Dub Version)",
         "Crime (Instrumental)",
         "Crime (Vocal)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -100,7 +230,8 @@
       "tracks": [
         "Wong",
         "Wong (Instrumental)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1986",
@@ -112,6 +243,11 @@
         "Monster Beat",
         "Monster Beat (Dub)",
         "Monster Beat (Short Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -123,6 +259,10 @@
       "tracks": [
         "Woppit",
         "Woppit (Dub Version)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -137,6 +277,13 @@
         "My Body And Soul (Main)",
         "My Body And Soul (Radio Version)",
         "My Body And Soul (Short)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -151,6 +298,13 @@
         "Get Busy (Radio Edit)",
         "Stomp, Stomp, Clap (Instrumental)",
         "Stomp, Stomp, Clap (Vocal)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -165,6 +319,13 @@
         "Go See The Doctor (Uncensored)",
         "Monster Crack (Radio Edit)",
         "Monster Crack (Street Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -177,6 +338,17 @@
         "She's So Bad",
         "So Bad Mix",
         "Togetherness"
+      ],
+      "credits": [
+        [
+          "Mixed By: Teddy Riley"
+        ],
+        [
+          "Mixed By: Teddy Riley"
+        ],
+        [
+          "Mixed By: LaVaba Mallison"
+        ]
       ]
     },
     {
@@ -192,6 +364,14 @@
         "Rayrock Kick It (Dub)",
         "Rayrock Kick It (Short Version)",
         "Rayrock Kick It (Vocal Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -204,6 +384,11 @@
         "The B-Fats",
         "The B-Fats (Dub)",
         "The B-Fats (Radio Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -215,6 +400,10 @@
       "tracks": [
         "Love In The Afternoon",
         "Love In The Afternoon (Dub Mix)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -226,6 +415,10 @@
       "tracks": [
         "My Phone",
         "My Phone (Instrumental)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -237,6 +430,10 @@
       "tracks": [
         "Stop Playing (Club Version)",
         "Stop Playing (Radio Version)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -251,6 +448,13 @@
         "T.V. Guide (Vocal)",
         "We Came Here… (Dub)",
         "We Came Here… (Vocal)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -271,6 +475,25 @@
         "10 — I'm Getting Paid",
         "11 — Rock The Bass",
         "12 — Mr. Big Stuff (Remix)"
+      ],
+      "credits": [
+        [
+          "Producer: Marley Marl"
+        ],
+        [],
+        [
+          "Remix: DJ Eddie F, Steve Ett"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Remix: Marley Marl"
+        ]
       ]
     },
     {
@@ -288,7 +511,8 @@
         "Money Ernin' Mt. Vernon (12″)",
         "Money Ernin' Mt. Vernon (Instrumental)",
         "Money Ernin' Mt. Vernon (Bonus Beats)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1987",
@@ -309,6 +533,14 @@
           "id": "ECnOEfQipiE",
           "label": "I Want Her"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -698,7 +930,87 @@
             }
           ]
         }
-      }
+      },
+      "credits": [
+        [
+          "Backing Vocals: Keith Sweat",
+          "Co-producer: Teddy Riley",
+          "Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: Chris Floberg",
+          "Engineer [Mixing] [Assistant]: Frank Cardello",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Cliff Branch, Emanuel \"Rahiem\" LeBlanc, George Heylinger, Jacci McGhee, Vivian Sessoms",
+          "Drum Programming: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [Assistant]: Tom Vercillo",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Keyboards: Fred McFarlane, Teddy Riley",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Keith Sweat",
+          "Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [Assistant]: Chris Floberg",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Co-producer, Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: Chris Floberg",
+          "Engineer [Mixing] [Assistant]: Frank Cardello",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Keyboards [Additional]: Cliff Branch",
+          "Written-By, Backing Vocals: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Jacci McGhee, Jeff Neiblum, Keith Sweat",
+          "Co-producer, Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [[Assistant]: Tom Vercillo",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Lead Vocals [Duet With]: Jacci McGhee",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Emanuel \"Rahiem\" LeBlanc, Keith Sweat",
+          "Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: Chris Floberg",
+          "Engineer [Mixing] [[Assistant]: Frank Cardello",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Programmed By [Percussion]: Jeff Neiblum",
+          "Written-By: Tony Hester"
+        ],
+        [
+          "Co-producer, Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [[Assistant]: Chris Floberg",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Written-By, Backing Vocals: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: George Heylinger, Jacci McGhee, Keith Sweat",
+          "Drum Programming: Fred McFarlane, Keith Sweat",
+          "Engineer [Mixing]: Patrick Adams",
+          "Engineer [Mixing] [[Assistant]: Frantz Verna",
+          "Engineer [Recording] [Assistant] [I N S Recording]: Dan Sheehan",
+          "Engineer [Recording] [I N S Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Power Play Studios]: Frankie \"Blades\" D'Amato",
+          "Keyboards: Fred McFarlane",
+          "Keyboards [Additional]: Teddy Riley",
+          "Written-By: Keith Sweat"
+        ]
+      ]
     },
     {
       "year": "1987",
@@ -710,6 +1022,11 @@
         "Something Just Ain't Right (Extended Version)",
         "Something Just Ain't Right (Beat Version)",
         "Something Just Ain't Right (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -722,6 +1039,13 @@
         "Do You Know What Time It Is? (12″ Remix)",
         "Do You Know What Time It Is? (Instrumental Version)",
         "I'm Kool Moe Dee (Instrumental Version)"
+      ],
+      "credits": [
+        [
+          "Remix: Bryan \"Chuck\" New"
+        ],
+        [],
+        []
       ]
     },
     {
@@ -734,6 +1058,11 @@
         "Dumb Dick (Extended Version)",
         "Dumb Dick (Instrumental)",
         "Dumb Dick (Single Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -746,6 +1075,13 @@
         "How Ya Like Me Now (Extended Mix)",
         "How Ya Like Me Now (Instrumental)",
         "How Ya Like Me Now (Single Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [
+          "Written-By: Moe Dewese, Teddy Riley"
+        ]
       ]
     },
     {
@@ -766,6 +1102,39 @@
         "09 — Stupid",
         "10 — Rock You",
         "11 — Get Paid"
+      ],
+      "credits": [
+        [
+          "Written-By: Moe Dewese, Teddy Riley"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [],
+        [
+          "Written-By: Moe Dewese, Teddy Riley"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese, Teddy Riley"
+        ],
+        [
+          "Written-By: Moe Dewese, Teddy Riley"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ]
       ]
     },
     {
@@ -784,6 +1153,17 @@
         "07 — Monster Crack",
         "08 — The Best",
         "09 —I'm Kool Moe Dee"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -796,6 +1176,13 @@
         "Wild, Wild West (Instrumental)",
         "Wild, Wild West (Single Edit)",
         "Wild, Wild West (Special Extended Re-mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [
+          "Engineer, Remix: Bryan \"Chuck\" New"
+        ]
       ]
     },
     {
@@ -808,6 +1195,11 @@
         "Caught Out There",
         "Caught Out There (Instrumental)",
         "Hechomance Records"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -821,6 +1213,12 @@
         "I'm All Shook Up (Bonus Beats)",
         "I'm All Shook Up (Instrumental)",
         "Spoonie's Rap (Live)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -834,6 +1232,12 @@
         "07. I'm All Shook Up",
         "08. My Girl (Hey-Hey-Hey)",
         "09. Did You Come To Party"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -846,6 +1250,13 @@
         "New Generation",
         "Next Generation Dub",
         "(She's A) Freak Dog"
+      ],
+      "credits": [
+        [],
+        [
+          "Mixed By: Buck de Acosta, Tony Reyes"
+        ],
+        []
       ]
     },
     {
@@ -858,6 +1269,11 @@
         "Back From Vacation",
         "Crash Crew Is Back (Vocal)",
         "Crash Crew's Back (Dub)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -870,6 +1286,11 @@
         "Expressing My Thoughts",
         "Expressing My Thoughts (Dub)",
         "Rap Is Music"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -887,6 +1308,12 @@
       "missing": [
         "I Introduce The Beat (Extended)",
         "I Introduce The Beat (Hip Hop Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -897,6 +1324,16 @@
       "image": "1988-al-b-sure-in-effect-mode.jpg",
       "tracks": [
         "07 — If I'm Not Your Lover"
+      ],
+      "credits": [
+        [
+          "Arranged By: Teddy Riley",
+          "Engineer, Mixed By: Al B. Sure!, Ken Collins",
+          "Keyboards, Programmed By [Keyboards]: Rodney Grant",
+          "Producer, Lead Vocals, Backing Vocals, Drum Programming: Al B. Sure!",
+          "Recorded By: Ken Collins",
+          "Written-By: Al B. Sure!, Timmy Gatling"
+        ]
       ]
     },
     {
@@ -911,7 +1348,8 @@
         "If I'm Not Your Lover (CHR Mix)",
         "If I'm Not Your Lover (LP Version)",
         "If I'm Not Your Lover (R&B Remix)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1988",
@@ -921,6 +1359,11 @@
       "image": "1988-billy-ocean-tear-down-these-walls.jpg",
       "tracks": [
         "01 — Tear Down These Walls"
+      ],
+      "credits": [
+        [
+          "Arranged By: Robert John Lange, Teddy Riley"
+        ]
       ]
     },
     {
@@ -933,6 +1376,23 @@
         "Rapture (Dub Version)",
         "Rapture (The Teddy Riley 7″ Remix)",
         "Rapture (The Teddy Riley Remix)"
+      ],
+      "credits": [
+        [
+          "Engineer: Dennis Mitchell",
+          "Producer: Mike Chapman",
+          "Remix, Producer [Additional Production]: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Engineer: Dennis Mitchell",
+          "Producer: Mike Chapman",
+          "Remix, Producer [Additional Production]: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Engineer: Dennis Mitchell",
+          "Producer: Mike Chapman",
+          "Remix, Producer [Additional Production]: Gene Griffin, Teddy Riley"
+        ]
       ]
     },
     {
@@ -944,6 +1404,26 @@
       "tracks": [
         "03 — My Prerogative",
         "07 — I'll Be Good To You"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Aaron Hall, Bernard Bill, Lee Drakeford",
+          "Backing Vocals, Keyboards, Mixed By: Teddy Riley",
+          "Drum Programming: Markell Riley",
+          "Engineer [Assistant], Mixed By, Recorded By: Jim Hanneman",
+          "Engineer, Mixed By, Recorded By: Dennis Mitchell",
+          "Mixed By, Producer, Written-By: Gene Griffin",
+          "Written-By: Bobby Brown"
+        ],
+        [
+          "Backing Vocals: Aaron Hall, Bernard Bill, Lee Drakeford",
+          "Backing Vocals, Keyboards, Mixed By: Teddy Riley",
+          "Drum Programming: Markell Riley",
+          "Engineer [Assistant], Mixed By, Recorded By: Jim Hanneman",
+          "Engineer, Mixed By, Recorded By: Dennis Mitchell",
+          "Mixed By, Producer, Written-By: Gene Griffin",
+          "Written-By: Bobby Brown"
+        ]
       ]
     },
     {
@@ -969,6 +1449,15 @@
           "id": "XHxHlkf7ePc",
           "label": "My Prerogative"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -981,6 +1470,11 @@
         "Hurtown (Dub Version)",
         "Hurtown (Radio Version)",
         "Hurtown (T.V. Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -999,6 +1493,14 @@
       ],
       "missing": [
         "Goin' Crazy (Bonus Beats)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1024,6 +1526,24 @@
           "id": "JbWXUegSMUs",
           "label": "Made To Be Together"
         }
+      ],
+      "credits": [
+        [
+          "Written-By: Curt Jones, Gene Griffin"
+        ],
+        [
+          "Written-By: Curt Jones, Gene Griffin"
+        ],
+        [
+          "Written-By: Curt Jones, Gene Griffin"
+        ],
+        [
+          "Written-By: Curt Jones, Gene Griffin"
+        ],
+        [],
+        [
+          "Written-By: Curt Jones, Gene Griffin"
+        ]
       ]
     },
     {
@@ -1047,6 +1567,16 @@
           "id": "N00HuG0QM7o",
           "label": "Groove Me"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1085,7 +1615,23 @@
           }
         ],
         "track_credits": {}
-      }
+      },
+      "credits": [
+        [
+          "Mixed By: Timmy Regisford"
+        ],
+        [],
+        [
+          "Mixed By: Timmy Regisford"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "1988",
@@ -1101,6 +1647,15 @@
         "'Round And 'Round (Merry Go 'Round Of Love) (House Mix)",
         "'Round And 'Round (Merry Go 'Round Of Love) (Instrumental)",
         "'Round And 'Round (Merry Go 'Round Of Love) (Radio Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1117,6 +1672,15 @@
         "Teddy's Jam (Hype Mix)",
         "Teddy's Jam (Radio Edit)",
         "Teddy's Jazz"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1130,6 +1694,12 @@
         "Moneyearnin' Mount Vernon (Bonus Beats)",
         "Moneyearnin' Mount Vernon (Instrumental)",
         "Moneyearnin' Mount Vernon (Instrumental 02)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1140,6 +1710,16 @@
       "image": "1988-johnny-kemp-secrets-of-flying.jpg",
       "tracks": [
         "01 — Just Got Paid"
+      ],
+      "credits": [
+        [
+          "Backing Vocals [Additional Backing Vocals]: Aaron Hall, Teddy Riley",
+          "Lead Vocals, Backing Vocals: Johnny Kemp",
+          "Producer, Arranged By: Johnny Kemp, Teddy Riley",
+          "Recorded By, Mixed By: Johnny Kemp, Teddy Riley",
+          "Synthesizer [Synthesizers], Drum Programming, Programmed By [Synthesizer Programming], Synthesizer [Bass Synthesizer], Percussion: Teddy Riley",
+          "Written-By: Gene Griffin, Johnny Kemp"
+        ]
       ]
     },
     {
@@ -1154,6 +1734,13 @@
         "Just Got Paid (Album Instrumental)",
         "Just Got Paid (Dub Mix)",
         "Just Got Paid (LP Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1164,6 +1751,15 @@
       "image": "1988-jonathan-butler-more-than-friends.jpg",
       "tracks": [
         "07 — She's Hot (Burning Up)"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Aaron Hall, Lee Drakeford",
+          "Keyboards, Drum Programming: Teddy Riley",
+          "Mixed By: Bryan \"Chuck\" New",
+          "Producer [Produced By]: Teddy Riley",
+          "Written-By: Jolyon Skinner, Jonathan Butler"
+        ]
       ]
     },
     {
@@ -1183,6 +1779,59 @@
       "missing": [
         "Make It Last Forever (Edit Of LP Version) / (Edited Version) / (LP Edit)",
         "Make It Last Forever (Edit)"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Jacci McGhee, Jeff Neiblum, Keith Sweat",
+          "Co-producer, Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [[Assistant]: Tom Vercillo",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Lead Vocals [Duet With]: Jacci McGhee",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ],
+        [],
+        [
+          "Backing Vocals: Jacci McGhee, Jeff Neiblum, Keith Sweat",
+          "Co-producer, Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [[Assistant]: Tom Vercillo",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Lead Vocals [Duet With]: Jacci McGhee",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Jacci McGhee, Jeff Neiblum, Keith Sweat",
+          "Co-producer, Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [[Assistant]: Tom Vercillo",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Lead Vocals [Duet With]: Jacci McGhee",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Jacci McGhee, Jeff Neiblum, Keith Sweat",
+          "Co-producer, Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [[Assistant]: Tom Vercillo",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Lead Vocals [Duet With]: Jacci McGhee",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Jacci McGhee, Jeff Neiblum, Keith Sweat",
+          "Co-producer, Drum Programming, Keyboards: Teddy Riley",
+          "Engineer [Mixing]: David Dachinger",
+          "Engineer [Mixing] [[Assistant]: Tom Vercillo",
+          "Engineer [Recording]: Jeff Neiblum",
+          "Engineer [Recording] [Assistant]: Dan Sheehan",
+          "Lead Vocals [Duet With]: Jacci McGhee",
+          "Written-By: Keith Sweat, Teddy Riley"
+        ]
       ]
     },
     {
@@ -1195,6 +1844,20 @@
         "No Respect (Extended Version)",
         "No Respect (Instrumental)",
         "No Respect (Single Edit)"
+      ],
+      "credits": [
+        [
+          "Producer: Bryan \"Chuck\" New, LaVaba Mallison, Moe Dewese, Pete Q. Harris, Teddy Riley",
+          "Remix [Specially Remixed By]: Bryan \"Chuck\" New"
+        ],
+        [
+          "Producer: Bryan \"Chuck\" New, LaVaba Mallison, Moe Dewese, Pete Q. Harris, Teddy Riley",
+          "Remix [Specially Remixed By, Uncredited]: Bryan \"Chuck\" New"
+        ],
+        [
+          "Producer: Bryan \"Chuck\" New, LaVaba Mallison, Moe Dewese, Pete Q. Harris, Teddy Riley",
+          "Remix [Specially Remixed By]: Bryan \"Chuck\" New"
+        ]
       ]
     },
     {
@@ -1205,6 +1868,12 @@
       "image": "1988-levert-just-coolin.jpg",
       "tracks": [
         "02 — Just Coolin' feat. Heavy D"
+      ],
+      "credits": [
+        [
+          "Co-producer: Teddy Riley",
+          "Featuring, Rap: Heavy D"
+        ]
       ]
     },
     {
@@ -1223,6 +1892,17 @@
         "My Eyes Don't Cry (Extended Version)",
         "My Eyes Don't Cry (Instrumental)",
         "My Eyes Don't Cry (Radio Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1238,6 +1918,14 @@
         "The Classical Two Is Back (Dub)",
         "The Classical Two Is Back (Instrumental)",
         "The Classical Two Is Back (Vocal)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1256,6 +1944,22 @@
         "07 — It's All Because Of You",
         "08 — Love Stories",
         "09 — Love Me Or Leave Me"
+      ],
+      "credits": [
+        [],
+        [],
+        [
+          "Backing Vocals: Teddy Riley",
+          "Producer: Teddy Riley"
+        ],
+        [],
+        [],
+        [
+          "Co-producer: Al B. Sure!"
+        ],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1276,6 +1980,15 @@
       "missing": [
         "Wishing You Were Here (Instrumental)",
         "Wishing You Were Here (12\" Vocal)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1288,6 +2001,20 @@
         "Faith (Extended Version)",
         "Faith (Instrumental Version)",
         "Faith (Single Version)"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley",
+          "Remix: Bryan \"Chuck\" New"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Remix: Bryan \"Chuck\" New"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Remix: Bryan \"Chuck\" New"
+        ]
       ]
     },
     {
@@ -1299,6 +2026,16 @@
       "tracks": [
         "02 — Faith",
         "09 — You've Got the Beat"
+      ],
+      "credits": [
+        [
+          "Mixed By: Bryan \"Chuck\" New",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Mixed By: Bryan \"Chuck\" New",
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -1323,6 +2060,37 @@
           "id": "J5ZQdTsIS2c",
           "label": "Take It Off"
         }
+      ],
+      "credits": [
+        [
+          "Engineer [Remix]: Alan Gregorie",
+          "Remix: Timmy Regisford",
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [
+          "Written-By: Bernard Belle, Gene Griffin"
+        ],
+        [
+          "Written-By: Damion Adams, Larry Singletary"
+        ],
+        [
+          "Written-By: Bernard Belle, Gene Griffin"
+        ]
       ]
     },
     {
@@ -1337,6 +2105,13 @@
         "Him Or Me (Dub)",
         "Him Or Me (Instrumental)",
         "Him Or Me (Radio Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1350,6 +2125,20 @@
         "Baby Doll (Teddy's 7\")",
         "Baby Doll (Teddy's Beats)",
         "Baby Doll (Teddy's Dub)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -1365,6 +2154,14 @@
         "04 — I Need Money",
         "05 — Let's Do It Again",
         "06 — Wrecks-N-Effect (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1377,6 +2174,11 @@
         "Go For What U Know (Instrumental)",
         "Go For What U Know (Vocal + Extended 12\" Remix)",
         "Go For What U Know (Vocal + Radio Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1389,6 +2191,11 @@
         "Let's Do It Again (Edited Version)",
         "Let's Do It Again (Instrumental)",
         "Let's Do It Again (LP Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1409,6 +2216,19 @@
         "09 — Peanut Butter",
         "10 — Friends To The End",
         "11 — Rock Steady"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1428,6 +2248,20 @@
         "08 Buggin' Over You",
         "09 You're My Kind Of Guy",
         "10 You Are The Party (I Am The Fun)"
+      ],
+      "credits": [
+        [],
+        [
+          "Featuring: Bernard Belle"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1450,6 +2284,15 @@
           "id": "xhDnSi6ab_c",
           "label": "Right And Hype"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1468,6 +2311,37 @@
       ],
       "missing": [
         "It Isn't, It Wasn't, It Ain't Never Gonna Be (Teddy Riley Mix)"
+      ],
+      "credits": [
+        [
+          "Producer: Narada Michael Walden",
+          "Remix: Gene Griffin, Teddy Riley",
+          "Written-By: Albert Hammond, Diane Warren"
+        ],
+        [
+          "Producer: Narada Michael Walden",
+          "Written-By: Albert Hammond, Diane Warren"
+        ],
+        [
+          "Producer: Narada Michael Walden",
+          "Remix: David Cole",
+          "Written-By: Albert Hammond, Diane Warren"
+        ],
+        [
+          "Producer: Narada Michael Walden",
+          "Remix: Gene Griffin, Teddy Riley",
+          "Written-By: Albert Hammond, Diane Warren"
+        ],
+        [
+          "Producer: Narada Michael Walden",
+          "Remix: David Cole",
+          "Written-By: Albert Hammond, Diane Warren"
+        ],
+        [
+          "Producer: Narada Michael Walden",
+          "Remix: Gene Griffin, Teddy Riley",
+          "Written-By: Albert Hammond, Diane Warren"
+        ]
       ]
     },
     {
@@ -1486,6 +2360,11 @@
           "id": "LzY-NpUqJgc",
           "label": "I Get The Job Done"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1497,6 +2376,9 @@
       "format": "LP",
       "tracks": [
         "I Get the Job Done (Album Version)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -1507,6 +2389,11 @@
       "image": "1989-bobby-brown-i-ll-be-good-to-you.jpg",
       "tracks": [
         "I'll Be Good To You (7″ Mix)"
+      ],
+      "credits": [
+        [
+          "Producer: Gene Griffin"
+        ]
       ]
     },
     {
@@ -1530,6 +2417,23 @@
           "id": "zFzHNVHoTtg",
           "label": "Don't Take My Mind On A Trip"
         }
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Boris Granich, Christer Modig"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -1543,7 +2447,8 @@
         "03. Whether They Like It Or Not",
         "04. You Found Another Guy",
         "06. I'm Not Sleeping Anymore"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1989",
@@ -1560,6 +2465,16 @@
         "No Friend Of Mine (Instrumental)",
         "No Friend Of Mine (Percapella)",
         "No Friend Of Mine (Street Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1570,6 +2485,14 @@
       "image": "1989-david-peaston-introducing-david-peaston.jpg",
       "tracks": [
         "01.Two Wrongs (Don't Make It Right) (Album Version)"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Gerald Lyles, Herschel Boone, Patrina Boone, Valerie Pinkston",
+          "Co-producer, Programmed By, Keyboards, Arranged By, Written-By: David Allen Jones, Ralph Hawkins, Jr.",
+          "Guitar: Donnie Lyle, Michael J. Powell",
+          "Mixed By: Gene Griffin, Teddy Riley"
+        ]
       ]
     },
     {
@@ -1591,6 +2514,14 @@
           "id": "Ucr2AFSrHBw",
           "label": "Two Wrongs (Don't Make It Right)"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1612,6 +2543,26 @@
           "id": "TkEs02AyNOw",
           "label": "We're All In This Together"
         }
+      ],
+      "credits": [
+        [
+          "Mixed By: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Mixed By: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Remix: David Morales, Frankie Knuckles"
+        ],
+        [
+          "Mixed By: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Mixed By: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Mixed By: Gene Griffin, Teddy Riley"
+        ]
       ]
     },
     {
@@ -1631,6 +2582,38 @@
         "08. Going Crazy",
         "09. Patience And Time",
         "10. Sexy DancerTracks"
+      ],
+      "credits": [
+        [
+          "Written-By: Curt Jones, Gene Griffin"
+        ],
+        [
+          "Written-By: Curt Jones"
+        ],
+        [
+          "Written-By: Gene Griffin, Lee Drakeford"
+        ],
+        [
+          "Written-By: Curt Jones, Gene Griffin"
+        ],
+        [
+          "Written-By: Gene Griffin, Lee Drakeford"
+        ],
+        [
+          "Written-By: Gene Griffin, Lee Drakeford"
+        ],
+        [
+          "Written-By: Curt Jones"
+        ],
+        [
+          "Written-By: Gene Griffin, Lee Drakeford"
+        ],
+        [
+          "Written-By: Gene Griffin, Lee Drakeford"
+        ],
+        [
+          "Written-By: Curt Jones"
+        ]
       ]
     },
     {
@@ -1645,6 +2628,12 @@
         "2001 Re-Release Bonus Tracks",
         "Teddy Riley feat. Guy – My Fantasy (Extended Version)",
         "Teddy Riley feat. Guy – My Fantasy (Rap Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1659,6 +2648,13 @@
         "Don't Clap… Just Dance (Drum Beats)",
         "Don't Clap… Just Dance (Dub)",
         "Don't Clap… Just Dance (Radio Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1676,7 +2672,8 @@
         "I Like (Hype Version)",
         "I Like (Instrumental)",
         "I Like (Radio Edit)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1989",
@@ -1692,6 +2689,15 @@
         "Spend The Night (Instrumental)",
         "Spend The Night (Radio Edit)",
         "Spend The Night (Teddy's Rap)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1706,6 +2712,21 @@
         "14. We Got Our Own Thang (Club Version)",
         "15. We Got Our Own Thang (7″ Version)",
         "16. We Got Our Own Thang (A Cappella)"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ],
+        [],
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -1720,6 +2741,13 @@
         "We Got Our Own Thang (A Cappella)",
         "We Got Our Own Thang (Club Version)",
         "We Got Our Own Thang (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1731,6 +2759,10 @@
       "tracks": [
         "01 It's Real",
         "05 Love Come Down"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -1754,6 +2786,23 @@
           "id": "yYacPfpHomc",
           "label": "It's Real"
         }
+      ],
+      "credits": [
+        [
+          "Edited By: Greg Royal",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Edited By: Greg Royal",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -1766,6 +2815,13 @@
         "All Night Long (Extended Remix)",
         "All Night Long (Instrumental)",
         "All Night Long (Single Edit)"
+      ],
+      "credits": [
+        [
+          "Remix: Geoff Hunt"
+        ],
+        [],
+        []
       ]
     },
     {
@@ -1777,6 +2833,12 @@
       "tracks": [
         "I Go to Work (Extended Remix)",
         "I Go to Work (Single Edit)"
+      ],
+      "credits": [
+        [
+          "Remix: Bryan \"Chuck\" New"
+        ],
+        []
       ]
     },
     {
@@ -1796,6 +2858,38 @@
         "08. I'm Blowin' Up",
         "09. The Don",
         "10. Pump Your Fist"
+      ],
+      "credits": [
+        [
+          "Written-By: Moe Dewese, Teddy Riley"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese, Pete Q. Harris"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: LaVaba Mallison, Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ],
+        [
+          "Written-By: Moe Dewese"
+        ]
       ]
     },
     {
@@ -1808,6 +2902,17 @@
         "They Want Money (Extended Remix)",
         "They Want Money (Instrumental)",
         "They Want Money (Single Edit)"
+      ],
+      "credits": [
+        [
+          "Remix: George Karras, George Tashiro, LaVaba Mallison",
+          "Written-By: Teddy Riley"
+        ],
+        [
+          "Remix: George Karras, George Tashiro, LaVaba Mallison",
+          "Written-By: Teddy Riley"
+        ],
+        []
       ]
     },
     {
@@ -1820,6 +2925,11 @@
         "01 Just Coolin' (Edit Pop)",
         "02 Just Coolin' (Edited Version)",
         "03 Just Coolin' (LP Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1840,6 +2950,13 @@
           "id": "uAV_65tiWAI",
           "label": "Do The Right Thing"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1854,6 +2971,15 @@
         "Pump It Hottie (LP Version)",
         "Pump It Hottie (Street Mix)",
         "Pump It Hottie (Teddy's A Cappella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [
+          "Remix: Joe \"The Butcher\" Nicolo"
+        ],
+        []
       ]
     },
     {
@@ -1873,6 +2999,18 @@
         "08. Do That Dance",
         "09. Speaking On Everything",
         "10. A Shade Of Red"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1885,6 +3023,11 @@
         "Keep On Movin' (Teddy Riley Remix)",
         "Keep On Movin (Teddy Riley's Bonus Beats)",
         "Keep On Movin (Teddy Riley's Rubba Dub)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1898,6 +3041,26 @@
         "09. Fast Talk",
         "02 Real Love (Extended Vocal Version)",
         "02 Real Love (Single Version)"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Stephanie Mills",
+          "Engineer: Dennis Mitchell",
+          "Instruments [All]: Teddy Riley",
+          "Producer: Gene Griffin",
+          "Written-By: Tammy Lucas, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Stephanie Mills",
+          "Engineer: Dennis Mitchell",
+          "Engineer [Remix]: Jeff Lorenzen",
+          "Instruments [All]: Teddy Riley",
+          "Producer: Gene Griffin",
+          "Remix: Louil Silas Jr.",
+          "Written-By: Gene Griffin, Stephanie Mills"
+        ],
+        [],
+        []
       ]
     },
     {
@@ -1919,7 +3082,8 @@
           "id": "HCPcgDjlTlc",
           "label": "My Fantasy"
         }
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1989",
@@ -1932,6 +3096,12 @@
         "Jam Jam (If You Can) (Club Hip Hop)",
         "Jam Jam (If You Can) (Hip Hop Version)",
         "Jam Jam (If You Can) (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1945,6 +3115,16 @@
         "07 She",
         "18. 2300 Jackson Street (Short Version)",
         "21. 2300 Jackson Street (Instrumental)"
+      ],
+      "credits": [
+        [
+          "Producer: Gene Griffin, Teddy Riley, The Jacksons"
+        ],
+        [
+          "Producer: Gene Griffin, Teddy Riley"
+        ],
+        [],
+        []
       ]
     },
     {
@@ -1962,6 +3142,31 @@
         "That's My Attitude (Percapella)",
         "That's My Attitude (Remix Edit)",
         "That's My Attitude (Remix Edit Without Rap)"
+      ],
+      "credits": [
+        [
+          "Engineer: Dave Way",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Engineer: Dave Way",
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [
+          "Engineer: Dave Way",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Engineer: Dave Way",
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [
+          "Engineer: Dave Way",
+          "Remix: Teddy Riley"
+        ],
+        []
       ]
     },
     {
@@ -1976,6 +3181,13 @@
         "Juicy (Love Juicy)",
         "Juicy (Percapella)",
         "Juicy (Single Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -1998,6 +3210,19 @@
           "id": "DRr0U4k0-eM",
           "label": "New Jack Swing"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [
+          "Written-By: Aqil Davidson, Brandon Mitchell, Markell Riley"
+        ],
+        [
+          "Written-By: Aqil Davidson, Brandon Mitchell, Markell Riley"
+        ],
+        [],
+        []
       ]
     },
     {
@@ -2012,6 +3237,13 @@
         "House You (House Mix)",
         "House You (Instrumental Phaze)",
         "House You (RawCapella Fade)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2031,6 +3263,18 @@
         "08. Why Don't You Call",
         "09. Heat Of The Moment",
         "10. Love Juicy"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     }
   ],
@@ -2043,6 +3287,14 @@
       "image": "1990-basic-black-basic-black.jpg",
       "tracks": [
         "05. Special Kind of Fool"
+      ],
+      "credits": [
+        [
+          "Arranged By [Vocals & Percussion]: Gene Griffin",
+          "Backing Vocals: Darryl \"Dezo\" Adams, Timmy Arthur, William Aquart",
+          "Programmed By, Arranged By [Vocals & Percussion]: William Aquart",
+          "Written-By: Gene Griffin, William Aquart"
+        ]
       ]
     },
     {
@@ -2063,6 +3315,16 @@
       ],
       "missing": [
         "I Want You (Short Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2074,6 +3336,10 @@
       "tracks": [
         "03. Can We Try Again",
         "06. Interlude Can We Try Again"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -2099,6 +3365,91 @@
         "14. Smile",
         "15. Long Gone",
         "16. Wanna Get With U (Club Version)"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Aqil Davidson, Brandon Mitchell, Guy, Markell Riley",
+          "Co-producer: Guy",
+          "Lead Vocals: Aaron Hall, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Aqil Davidson, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Guy",
+          "Co-producer: Guy",
+          "Lead Vocals: Aaron Hall, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Aqil Davidson, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Guy",
+          "Co-producer: Guy",
+          "Lead Vocals: Aaron Hall",
+          "Producer: Teddy Riley",
+          "Rap, Featuring: Heavy D",
+          "Written-By: Dave Way, Heavy D, Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Vocals: Aaron Hall",
+          "Written-By: Aaron Hall, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Bernard Belle, Guy",
+          "Co-producer: Bernard Belle, Guy",
+          "Lead Vocals: Aaron Hall",
+          "Producer: Teddy Riley",
+          "Written-By: Bernard Belle, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Teddy Riley",
+          "Co-producer: Guy",
+          "Lead Vocals, Keyboards: Aaron Hall",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Guy, Mary Brown, Tammy Lucas",
+          "Co-producer: Guy",
+          "Lead Vocals: Aaron Hall, Damion Hall, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Dave Way, Teddy Riley"
+        ],
+        [
+          "Lead Vocals: Aqil Davidson",
+          "Producer, Written-By: Aqil Davidson, Teddy Riley"
+        ],
+        [
+          "Co-producer: Guy",
+          "Lead Vocals: Aaron Hall, Aqil Davidson, Brandon Mitchell, Damion Hall, Markell Riley, Teddy Riley",
+          "Producer: Aqil Davidson, Brandon Mitchell, Markell Riley, Teddy Riley",
+          "Written-By: Aqil Davidson, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Guy",
+          "Co-producer: Guy",
+          "Lead Vocals: Aaron Hall",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Damion Hall, Dave Way, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Guy, Tammy Lucas",
+          "Co-producer: Guy",
+          "Lead Vocals: Aaron Hall",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Teddy Riley"
+        ],
+        [],
+        [],
+        [],
+        [
+          "Backing Vocals: Bernard Belle, Guy, Marsha McClurkin, Mary Brown, Tammy Lucas",
+          "Co-producer: Guy",
+          "Lead Vocals: Aaron Hall, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Bernard Belle, Teddy Riley"
+        ],
+        []
       ]
     },
     {
@@ -2121,6 +3472,15 @@
           "id": "N0ur8Sox81Y",
           "label": "I Wanna Get With You"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2132,6 +3492,16 @@
       "tracks": [
         "01. I Just Can't Handle It",
         "03. I Like The Way (The Kissing Game)"
+      ],
+      "credits": [
+        [
+          "Co-producer: Bernard Belle",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Co-producer: Bernard Belle",
+          "Producer: Dave Way, Teddy Riley"
+        ]
       ]
     },
     {
@@ -2149,6 +3519,22 @@
         "I Just Can't Handle It (Instrumental)",
         "I Just Can't Handle It (Percapella)",
         "I Just Can't Handle It (Teddy's 7 Edit)"
+      ],
+      "credits": [
+        [
+          "Tracking By [Additional Overdubs]: Devante Swing"
+        ],
+        [],
+        [],
+        [
+          "Tracking By [Additional Overdubs]: Devante Swing"
+        ],
+        [],
+        [],
+        [],
+        [
+          "Tracking By [Additional Overdubs]: Devante Swing"
+        ]
       ]
     },
     {
@@ -2163,6 +3549,13 @@
         "8 Days A Week (House Dub)",
         "8 Days A Week (Radio Edit)",
         "8 Days A Week (Sax Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2179,6 +3572,29 @@
         "Don't Wanna Fall in Love (New Jack Swing Club)",
         "Don't Wanna Fall in Love (T.R. Club-A-Dub)",
         "Don't Wanna Fall in Love (T.R. Dub)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -2190,6 +3606,34 @@
       "tracks": [
         "02. Make You Sweat",
         "06. Your Love, Pt. 2"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Alton Wokie Stewart, Keith Sweat",
+          "Drum Programming: Charles \"Poogie\" Bell, Teddy Riley",
+          "Engineer [Mixing]: Jonnie \"Most\" Davis",
+          "Engineer [Mixing] [Assistant]: Tom Fritze",
+          "Keyboards: Bobby Wooten, John F. Adams, Teddy Riley",
+          "Mixed By: Keith Sweat, Vincent Davis",
+          "Producer: Keith Sweat",
+          "Recorded By [Chameleon Sound]: Bobby Wooten",
+          "Recorded By, Edited By [I N S Recording]: Dan Sheehan",
+          "Vocoder: Alex Bugnon",
+          "Written-By: Bobby Wooten, Keith Sweat, Timmy Gatling"
+        ],
+        [
+          "Backing Vocals: Eric McCaine, Keith Sweat, Teddy Riley",
+          "Co-producer: Teddy Riley",
+          "Drum Programming: Bobby Wooten, Teddy Riley, Thor Baldursson",
+          "Edited By [Audiofile Editing]: Paul Logus",
+          "Engineer [Mixing]: Dave Way",
+          "Engineer [Mixing] [Assistant]: Kevin Kelly",
+          "Keyboards: Bobby Wooten, Keith Sweat, Teddy Riley",
+          "Mixed By: Keith Sweat, Teddy Riley, Vincent Davis",
+          "Producer, Written-By: Keith Sweat",
+          "Recorded By [Chameleon Sound]: Bobby Wooten",
+          "Recorded By [I N S Recording]: Dan Sheehan, Hugh French"
+        ]
       ]
     },
     {
@@ -2201,6 +3645,15 @@
       "tracks": [
         "I'll Be Around (Extended Mix)",
         "I'll Be Around (Single Edit Version)"
+      ],
+      "credits": [
+        [
+          "Keyboards [Additional], Programmed By [Additional Programming]: Neal Howard",
+          "Remix [Additional]: Mike \"Hitman\" Wilson"
+        ],
+        [
+          "Engineer [Mix]: Chris Shepard"
+        ]
       ]
     },
     {
@@ -2213,6 +3666,26 @@
         "01. I Love The Way You Love Me",
         "02. I'll Be Around",
         "03. Can't Let Go"
+      ],
+      "credits": [
+        [
+          "Mixed By: Dave Way, Teddy Riley",
+          "Producer, Instruments [All]: Teddy Riley",
+          "Recorded By: Dave Way",
+          "Written-By: Tammy Lucas, Teddy Riley"
+        ],
+        [
+          "Mixed By: Dave Way, Teddy Riley",
+          "Producer, Instruments [All]: Teddy Riley",
+          "Recorded By: Dave Way",
+          "Written-By: Phil Hurtt, Thom Bell"
+        ],
+        [
+          "Mixed By: Dave Way, Teddy Riley",
+          "Producer, Instruments [All]: Teddy Riley",
+          "Recorded By: Dave Way",
+          "Written-By: Tammy Lucas, Teddy Riley"
+        ]
       ]
     },
     {
@@ -2231,7 +3704,8 @@
         "I Don't Go For That (Teddy's Freaky Jazz Groove)",
         "I Don't Go For That (Teddy's Mix)",
         "I Don't Go For That (Teddy's Sax Mix)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1990",
@@ -2251,6 +3725,13 @@
           "id": "_cftCVPlu84",
           "label": "We Rock The Mic Right"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2274,6 +3755,16 @@
           "id": "C3_jozleK50",
           "label": "So You Like What You See"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2290,6 +3781,67 @@
         "07. Step By Step",
         "08. True Love",
         "09. I Want You - You Want Me (Teddy's House Mix)"
+      ],
+      "credits": [
+        [
+          "Engineer [Assistant]: Kevin Kelly",
+          "Engineer [Recording, Mixing]: Dave Way",
+          "Keyboards, Programmed By: Teddy Riley",
+          "Mixed By: Gene Griffin",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Written-By: Tammy Lucas, Teddy Riley"
+        ],
+        [
+          "Engineer [Assistant]: Kevin Kelly",
+          "Engineer [Recording, Mixing]: Dave Way",
+          "Keyboards, Programmed By: Teddy Riley",
+          "Mixed By: Gene Griffin",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Written-By: Tammy Lucas, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Tammy Lucas",
+          "Engineer [Assistant]: Kevin Kelly",
+          "Engineer [Recording, Mixing]: Dave Way",
+          "Keyboards, Programmed By: Teddy Riley",
+          "Mixed By: Gene Griffin",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Written-By: Tammy Lucas, Teddy Riley"
+        ],
+        [
+          "Engineer [Assistant]: Kevin Kelly",
+          "Engineer [Recording, Mixing]: Dave Way",
+          "Keyboards, Programmed By: Teddy Riley",
+          "Mixed By: Gene Griffin",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Written-By: Tammy Lucas, Teddy Riley"
+        ],
+        [
+          "Engineer [Assistant] [Mixing]: Kevin Kelly",
+          "Engineer [Mixing]: Dave Way",
+          "Engineer [Recording]: Iris Cohen, Ray Bardani",
+          "Keyboards: Thor Baldursson",
+          "Lead Vocals: Ernesto Phillips",
+          "Mixed By: Dave Way, Lionel Job",
+          "Producer: Lionel Job",
+          "Programmed By: Lionel Job, Thor Baldursson",
+          "Written-By: Claytoven Richardson, Jonathan Bendich, Lionel Job, Thor Baldursson"
+        ],
+        [
+          "Backing Vocals: Diane Phillips-Leguerre, Lisa Phillips",
+          "Engineer [Assistant] [Mixing]: Kevin Kelly",
+          "Engineer [Mixing]: Dave Way",
+          "Engineer [Recording]: Jon Tlusty, Michael Neal",
+          "Guitar, Programmed By: Bill Pettaway",
+          "Lead Vocals: George Phillips",
+          "Mixed By: Dave Way, George Phillips, Ky Adeyemo, Lionel Job",
+          "Producer: George Phillips, Ky Adeyemo, Starpoint",
+          "Producer [Associate Producer]: Bill Pettaway",
+          "Programmed By: George Phillips",
+          "Rap: Ky Adeyemo",
+          "Written-By: Bill Pettaway, George Phillips, Ky Adeyemo"
+        ],
+        []
       ]
     },
     {
@@ -2303,6 +3855,21 @@
         "I Want You - You Want Me (Edit Version)",
         "I Want You - You Want Me (Extended Version)",
         "I Want You - You Want Me (Hip Hop Mix)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Edited By: Dave Way",
+          "Mixed By: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -2320,6 +3887,16 @@
         "It's Time (LP Version)",
         "It's Time (New Jack Swing Mix)",
         "It's Time (Percapella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2332,6 +3909,23 @@
         "01. It's Time",
         "03. Don't Leave Me",
         "04. A Friend"
+      ],
+      "credits": [
+        [
+          "Co-producer: The Winans",
+          "Producer: Bernard Belle, Teddy Riley",
+          "Written-By: Bernard Belle, Carvin Winans, Marvin Winans, Teddy Riley"
+        ],
+        [
+          "Co-producer: The Winans",
+          "Producer: Teddy Riley",
+          "Written-By: Marvin Winans"
+        ],
+        [
+          "Co-producer: The Winans",
+          "Producer: Bernard Belle, Teddy Riley",
+          "Written-By: Bernard Belle, Tammy Lucas, Teddy Riley"
+        ]
       ]
     },
     {
@@ -2347,6 +3941,14 @@
         "I Like Your Style (LP Version)",
         "I Like Your Style (Percapella)",
         "I Like Your Style (Radio Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2365,6 +3967,17 @@
         "D-O-G Me Out (Wrecks N Effect Mix)",
         "D-O-G Me Out (Wrecks N Effect Rap)",
         "D-O-G Me Out (Wrecks N Effectstrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2383,6 +3996,17 @@
         "Do Me Right (Remixed Vocal Version)",
         "Do Me Right (The Heavy Mix 2) 6:45",
         "Do Me Right (The Heavy Mix) 7:02"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2399,6 +4023,23 @@
         "Her (House Mix)",
         "Her (Original Edit)",
         "Her (Original Mix)"
+      ],
+      "credits": [
+        [],
+        [
+          "Edited By: Yoyo",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Edited By: Greg Royal",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Edited By: Greg Royal, Yoyo"
+        ],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2418,6 +4059,26 @@
         "Let's Chill (Radio Edit)",
         "Let's Chill (Suite)",
         "Let's Chill (The Seduction Soliloquy)"
+      ],
+      "credits": [
+        [
+          "Vocals [Additional Vocals]: Aaron Hall"
+        ],
+        [
+          "Vocals [Additional Vocals]: Aaron Hall"
+        ],
+        [],
+        [],
+        [],
+        [
+          "Vocals [Additional Vocals]: Aaron Hall"
+        ],
+        [
+          "Vocals [Additional Vocals]: Aaron Hall"
+        ],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2449,6 +4110,24 @@
           "id": "FkampGf0gb8",
           "label": "Let's Stay Together"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2461,6 +4140,15 @@
         "Is It Good To You (7″ Version)",
         "Is It Good To You (Home Mix #2)",
         "Is It Good To You (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [
+          "Remix: Pete Rock"
+        ],
+        [
+          "Remix: DJ Eddie F, Dave \"Jam\" Hall"
+        ]
       ]
     },
     {
@@ -2479,6 +4167,11 @@
           "id": "ZwUSs28BWOc",
           "label": "Now That We Found Love"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2490,6 +4183,16 @@
       "tracks": [
         "01. Now That We Found Love",
         "09. Is It Good To You"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Aaron Hall",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Tammy Lucas",
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -2501,6 +4204,10 @@
       "tracks": [
         "I Like The Way (The Kissing Game) (Album Version)",
         "I Like The Way (The Kissing Game) (Instrumental)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -2511,6 +4218,9 @@
       "image": "1991-keith-sweat-keep-it-comin.jpg",
       "tracks": [
         "03. Why Me Baby"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -2522,6 +4232,10 @@
       "tracks": [
         "Why Me Baby? (Edit Of LP Version) 3:59",
         "Why Me Baby? (LP Version) 5:28"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -2535,6 +4249,12 @@
         "Your Love (Club Mix) 8:58",
         "Your Love (Instrumental) 5:52",
         "Your Love (Radio Version) 4:29"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2546,6 +4266,12 @@
       "tracks": [
         "Death Blow (Instrumental)",
         "Death Blow (LP Version)"
+      ],
+      "credits": [
+        [
+          "Remix: Jay Lean, Moe Dewese"
+        ],
+        []
       ]
     },
     {
@@ -2559,6 +4285,18 @@
         "04. To The Beat Y'all",
         "05. How Kool Can One Blackman Be",
         "10. Death Blow"
+      ],
+      "credits": [
+        [],
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Co-producer: Teddy Riley"
+        ],
+        [
+          "Co-producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -2572,6 +4310,14 @@
         "How Kool Can One Blackman Be? (Instrumental)",
         "How Kool Can One Blackman Be? (LP Version)",
         "How Kool Can One Blackman Be? (Radio Version)"
+      ],
+      "credits": [
+        [
+          "Remix: Dwayne Sumal"
+        ],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2588,6 +4334,67 @@
         "05. Remember The Time",
         "06. Can't Let Her Get Away",
         "14. Dangerous"
+      ],
+      "credits": [
+        [
+          "Drums: Bruce Swedien, Teddy Riley",
+          "Guitar: Teddy Riley",
+          "Keyboards: Brad Buxer, Bruce Swedien, René Moore, Teddy Riley",
+          "Music By, Arranged By: Bruce Swedien, Michael Jackson, René Moore, Teddy Riley",
+          "Producer: Bruce Swedien, Michael Jackson, Teddy Riley",
+          "Rap: Heavy D",
+          "Recorded By, Mixed By: Bruce Swedien, Teddy Riley",
+          "Solo Vocal, Backing Vocals, Arranged By [Vocal]: Michael Jackson",
+          "Songwriter, Lyrics By: Michael Jackson",
+          "Synthesizer: Brad Buxer, Michael Boddicker, Rhett Lawrence, Teddy Riley"
+        ],
+        [
+          "Arranged By [Rhythm], Keyboards, Synthesizer, Guitar: Teddy Riley",
+          "Guitar [Intro]: Paul Jackson Jr.",
+          "Producer: Michael Jackson, Teddy Riley",
+          "Recorded By, Mixed By: Bruce Swedien, Teddy Riley",
+          "Solo Vocal, Backing Vocals: Michael Jackson",
+          "Written-By, Composed By: Bernard Belle, Teddy Riley"
+        ],
+        [
+          "Arranged By [Rhythm], Arranged By [Synthesizer], Keyboards, Synthesizer: Teddy Riley",
+          "Arranged By [Vocal], Backing Vocals: Michael Jackson",
+          "Producer: Michael Jackson, Teddy Riley",
+          "Recorded By, Mixed By: Bruce Swedien, Teddy Riley",
+          "Vocals: Michael Jackson, Mystery Girl",
+          "Written-By, Composed By: Michael Jackson, Teddy Riley"
+        ],
+        [
+          "Arranged By [Rhythm], Arranged By [Synthesizer], Keyboards, Synthesizer: Teddy Riley",
+          "Producer: Michael Jackson, Teddy Riley",
+          "Recorded By, Mixed By: Bruce Swedien, Teddy Riley",
+          "Solo Vocal, Backing Vocals, Arranged By [Vocal]: Michael Jackson",
+          "Written-By, Composed By: Michael Jackson, Teddy Riley"
+        ],
+        [
+          "Arranged By [Rhythm], Arranged By [Synthesizer], Keyboards, Synthesizer: Teddy Riley",
+          "Producer: Michael Jackson, Teddy Riley",
+          "Recorded By, Mixed By: Bruce Swedien, Teddy Riley",
+          "Solo Vocal, Backing Vocals, Arranged By [Vocal]: Michael Jackson",
+          "Written-By, Composed By: Bernard Belle, Michael Jackson, Teddy Riley"
+        ],
+        [
+          "Arranged By [Rhythm], Arranged By [Synthesizer], Keyboards, Synthesizer: Teddy Riley",
+          "Producer: Michael Jackson, Teddy Riley",
+          "Recorded By, Mixed By: Bruce Swedien, Teddy Riley",
+          "Solo Vocal, Backing Vocals, Arranged By [Vocal]: Michael Jackson",
+          "Written By, Composed By: Teddy Riley",
+          "Written-By, Composed By: Michael Jackson"
+        ],
+        [
+          "Arranged By [Rhythm], Arranged By [Sythesizer]: Teddy Riley",
+          "Mixed By: Bruce Swedien, Teddy Riley",
+          "Producer: Michael Jackson, Teddy Riley",
+          "Recorded By: Bruce Swedien, Jean-Marie Horvat, Teddy Riley, Thom Russo",
+          "Solo Vocal, Backing Vocals, Arranged By [Vocal]: Michael Jackson",
+          "Synthesizer: Brad Buxer, Rhett Lawrence, Teddy Riley",
+          "Written-By, Composed By: Bill Bottrell, Michael Jackson, Teddy Riley"
+        ]
       ]
     },
     {
@@ -2598,6 +4405,9 @@
       "image": "1991-various-artists-new-jack-city.jpg",
       "tracks": [
         "03. Guy – New Jack City (Explicit)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -2608,6 +4418,9 @@
       "image": "1991-various-artists-juice.jpg",
       "tracks": [
         "03. Teddy Riley feat. Tammy Lucas – Is It Good To You"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -2618,6 +4431,17 @@
       "image": "1991-various-artists-house-party-2.jpg",
       "tracks": [
         "04. Wrecks-N-Effect – Ready Or Not (House Party II New Jack Theme)"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Bubba, Teddy Riley",
+          "Engineer: Jean-Marie Horvat, Teddy Riley",
+          "Instruments [All Instruments]: Teddy Riley",
+          "Lead Vocals: Bubba",
+          "Performer: Wrecks-N-Effect",
+          "Producer: Teddy Riley",
+          "Written-By: Aqil Davidson, Markell Riley, Teddy Riley"
+        ]
       ]
     },
     {
@@ -2633,6 +4457,14 @@
         "Ready Or Not (LP Version)",
         "Ready Or Not (Suite)",
         "Ready Or Not (Wrecks-N-Effect Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2649,6 +4481,75 @@
         "09. One More Night",
         "10. Something In Common feat. Whitney Houston",
         "11. That's The Way Love Is"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Bernard Belle, Chauncey Hannibal, Joseph Stonestreet, Levon Little, Marsha McClurkin, Mary Brown, Omar Chandler, Teddy Riley",
+          "Engineer: Jean-Marie Horvat",
+          "Engineer [Assistant, Mix]: Earl Thomas, Franklyn Grant, Keston Wright",
+          "Instruments: Teddy Riley",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Bernard Belle, Bobby Brown, David 'Redhead' Guppy, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Bernard Belle, Chauncey Hannibal, Joseph Stonestreet, Levon Little, Marsha McClurkin, Mary Brown, Omar Chandler, Teddy Riley",
+          "Engineer: Jean-Marie Horvat",
+          "Engineer [Assistant, Mix]: Earl Thomas, Franklyn Grant, Keston Wright",
+          "Instruments: Teddy Riley",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Bernard Belle, Bobby Brown, Louil Silas Jr., Teddy Riley, Tony Haynes"
+        ],
+        [
+          "Backing Vocals: Bernard Belle, Chauncey Hannibal, Joseph Stonestreet, Levon Little, Marsha McClurkin, Mary Brown, Omar Chandler, Teddy Riley",
+          "Co-producer: Demetrius Shipp",
+          "Engineer: Jean-Marie Horvat",
+          "Engineer [Assistant, Mix]: Earl Thomas, Franklyn Grant, Keston Wright",
+          "Instruments: Teddy Riley",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Demetrius Shipp, Rakim, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Bernard Belle, Chauncey Hannibal, Joseph Stonestreet, Levon Little, Marsha McClurkin, Mary Brown, Omar Chandler, Teddy Riley",
+          "Co-producer: Thomas Taliaferro",
+          "Engineer: Jean-Marie Horvat",
+          "Engineer [Assistant, Mix]: Earl Thomas, Franklyn Grant, Keston Wright",
+          "Instruments: Teddy Riley",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Teddy Riley, Thomas Taliaferro"
+        ],
+        [
+          "Backing Vocals: Bernard Belle, Chauncey Hannibal, Joseph Stonestreet, Levon Little, Marsha McClurkin, Mary Brown, Omar Chandler, Teddy Riley",
+          "Engineer: Jean-Marie Horvat",
+          "Engineer [Assistant, Mix]: Earl Thomas, Franklyn Grant, Keston Wright",
+          "Instruments: Teddy Riley",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Bernard Belle, Herb Middleton, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Bernard Belle, Chauncey Hannibal, Joseph Stonestreet, Levon Little, Marsha McClurkin, Mary Brown, Omar Chandler, Teddy Riley",
+          "Engineer: Jean-Marie Horvat",
+          "Engineer [Assistant, Mix]: Earl Thomas, Franklyn Grant, Keston Wright",
+          "Instruments: Teddy Riley",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Bernard Belle, Bobby Brown, Teddy Riley, Whitney Houston"
+        ],
+        [
+          "Backing Vocals: Bernard Belle, Chauncey Hannibal, Joseph Stonestreet, Levon Little, Marsha McClurkin, Mary Brown, Omar Chandler, Teddy Riley",
+          "Co-producer: Demetrius Shipp",
+          "Engineer: Jean-Marie Horvat",
+          "Engineer [Assistant, Mix]: Earl Thomas, Franklyn Grant",
+          "Instruments: Teddy Riley",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Rap: Aqil Davidson",
+          "Written-By: Aqil Davidson, Bobby Brown, Demetrius Shipp, Teddy Riley"
+        ]
       ]
     },
     {
@@ -2674,6 +4575,44 @@
         "Get Away (Teddy's Dub)",
         "Get Away (Teddy's Radio Edit)",
         "Get Away (Teddy's Tribal Club Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Engineer [Assistant]: Keston Wright",
+          "Engineer [Remix]: Franklyn Grant",
+          "Remix: Teddy Riley",
+          "Remix [Remixed By]: NJS Crew"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Engineer [Assistant]: Keston Wright",
+          "Engineer [Remix]: Franklyn Grant",
+          "Remix: Teddy Riley",
+          "Remix [Remixed By]: NJS Crew"
+        ],
+        [
+          "Engineer [Assistant]: Keston Wright",
+          "Engineer [Remix]: Franklyn Grant",
+          "Remix: Teddy Riley",
+          "Remix [Remixed By]: NJS Crew"
+        ],
+        [],
+        [
+          "Engineer [Assistant]: Keston Wright",
+          "Engineer [Remix]: Franklyn Grant",
+          "Remix: Teddy Riley",
+          "Remix [Remixed By]: NJS Crew"
+        ]
       ]
     },
     {
@@ -2684,6 +4623,11 @@
       "image": "1992-glenn-jones-the-best-of-glenn-jones.jpg",
       "tracks": [
         "09. Different"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -2699,6 +4643,14 @@
         "Teddy's Jam 2 (Jammin' Beats)",
         "Teddy's Jam 2 (Radio Jam)",
         "Teddy's Jam 2 (Single Jam)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2710,6 +4662,14 @@
       "tracks": [
         "03. My Love (Remix)",
         "11. Changes I've Been Going Through (Teddy Riley Remix)"
+      ],
+      "credits": [
+        [],
+        [
+          "Featuring: Billy Lawrence",
+          "Producer: Mark C. Rooney, Mark Morales, Sean Combs",
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -2723,6 +4683,12 @@
         "I'm So Into You (Teddy's Instrumental Bonus)",
         "I'm So Into You (Teddy's Radio Mix)",
         "I'm So Into You (Teddy's Radio Mix with Rap)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2733,6 +4699,9 @@
       "image": "1992-swv-it-s-about-time.jpg",
       "tracks": [
         "15. Right Here (Human Nature Radio Mix)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -2746,6 +4715,12 @@
         "Right Here (Human Nature Bonus Beats)",
         "Right Here (Human Nature Radio Mix)",
         "Right Here (Quiet Storm Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2761,6 +4736,20 @@
         "Remember The Time (New Jack Jazz Mix)",
         "Remember the Time (New Jack main mix)",
         "Remember The Time (New Jack Radio Mix)"
+      ],
+      "credits": [
+        [
+          "Instruments [All Additional]: Teddy Riley",
+          "Remix: Jean-Marie Horvat, Teddy Riley"
+        ],
+        [],
+        [],
+        [],
+        [
+          "Instruments [All Additional]: Teddy Riley",
+          "Remix: Jean-Marie Horvat, Teddy Riley"
+        ],
+        []
       ]
     },
     {
@@ -2775,6 +4764,17 @@
         "Jam (Radio Edit Without Rap)",
         "Jam (Teddy's 12″ Mix)",
         "Jam (Teddy's Jam)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [
+          "Remix: Future Entertainment"
+        ],
+        [
+          "Remix: Future Entertainment"
+        ]
       ]
     },
     {
@@ -2804,7 +4804,8 @@
           "id": "NsbIlNTYzsA",
           "label": "Is It Good To You"
         }
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1992",
@@ -2816,6 +4817,11 @@
         "01 Free",
         "03 All About Love",
         "09 At All Times"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2828,6 +4834,11 @@
         "Free (Album Version)",
         "Free (Radio Mix With Rap)",
         "Free (Radio Mix Without Rap)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2838,6 +4849,11 @@
       "image": "1992-various-artists-ferngully-the-last-rainforest.jpg",
       "tracks": [
         "06. Guy – Land Of A Thousand Dances"
+      ],
+      "credits": [
+        [
+          "Composed By: Chris Kenner"
+        ]
       ]
     },
     {
@@ -2864,6 +4880,23 @@
           "id": "Iog79H0ldUM",
           "label": "Hard Or Smooth"
         }
+      ],
+      "credits": [
+        [
+          "Written-By: Anton Hollins"
+        ],
+        [
+          "Backing Vocals: Dante Drew, Darryl Shuler, Robert Nickerson, Tyrone Fyffe"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2880,6 +4913,15 @@
         "Rump Shaker (Radio Remix)",
         "Rump Shaker (Radio Remix) (Raggaside)",
         "Rump Shaker (Teddy 2)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2897,6 +4939,16 @@
         "Wreckx Shop (Posse Deep Mix)",
         "Wreckx Shop (Teddy's Mix With Fade)",
         "Wreckx Shop (Vocapella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2929,6 +4981,25 @@
           "id": "j81giwHsH_w",
           "label": "Baby Be Mine"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2940,6 +5011,15 @@
       "tracks": [
         "03. T.R.'s Get Away",
         "05. She's My Lady"
+      ],
+      "credits": [
+        [
+          "Remix: NJS Crew, Teddy Riley"
+        ],
+        [
+          "Mixed By: Jean-Marie Horvat",
+          "Producer: Bobby Brown, Teddy Riley"
+        ]
       ]
     },
     {
@@ -2965,6 +5045,50 @@
         "That's The Way Love Is (Reworked Radio Edit)",
         "That's The Way Love Is (Single Version)",
         "That's The Way Love Is (Suite)"
+      ],
+      "credits": [
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [],
+        [
+          "Rap: Stylz"
+        ],
+        [
+          "Rap: Stylz"
+        ],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [],
+        [
+          "Rap: Aqil Davidson"
+        ],
+        [
+          "Rap: Aqil Davidson"
+        ]
       ]
     },
     {
@@ -2984,6 +5108,12 @@
           "id": "7tYGP3MX8d0",
           "label": "Something In Common"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -2994,6 +5124,9 @@
       "image": "1993-father-sex-is-law.jpg",
       "tracks": [
         "01. 69"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -3013,6 +5146,17 @@
         "69 (Radio Edit)",
         "69 (Uptown Swing Instrumental)",
         "69 (Uptown Swing Remix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3026,6 +5170,12 @@
         "I'm Looking For The One (To Be With Me) (LP Version)",
         "I'm Looking For The One (To Be With Me) (Percapella)",
         "I'm Looking For The One (To Be With Me) (Video Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3036,6 +5186,9 @@
       "image": "1993-joey-lawrence-joey-lawrence.jpg",
       "tracks": [
         "02 Nothin' My Love Can't Fix"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -3049,6 +5202,12 @@
         "Stand By Your Man (Hip Hop Mix 2)",
         "Stand By Your Man (New Jack Street Mix)",
         "Stand By Your Man (New Jack Street Mix Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3066,6 +5225,20 @@
         "03 My Love (New Jack Jazz)",
         "04 My Love (T.R. And Mary Mix)",
         "05 My Love (Acappella)"
+      ],
+      "credits": [
+        [
+          "Featuring: Heavy D",
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Remix: Teddy Riley"
+        ],
+        []
       ]
     },
     {
@@ -3080,6 +5253,21 @@
         "I Go On (Gangstamental)",
         "I Go On (Midnight Mix)",
         "I Go On (Midnightstrumental)"
+      ],
+      "credits": [
+        [],
+        [
+          "Producer: Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Chris Smith"
+        ],
+        [
+          "Producer: Chris Smith"
+        ]
       ]
     },
     {
@@ -3090,7 +5278,8 @@
       "image": "1993-various-artists-cb4.jpg",
       "tracks": [
         "08. BLACKstreet – Baby Be Mine"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1993",
@@ -3106,6 +5295,19 @@
         "My Cutie (Hard Cutie)",
         "My Cutie (Radio)",
         "My Cutie (Smooth Cutie)"
+      ],
+      "credits": [
+        [
+          "Featuring: Tammy Lucas"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Featuring: Tammy Lucas"
+        ],
+        []
       ]
     },
     {
@@ -3121,6 +5323,14 @@
         "Knock-N-Boots (Instrumental)",
         "Knock-N-Boots (Radio Mix)",
         "Knock-N-Boots (Radio Mix Acappella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3155,6 +5365,32 @@
         "B8. Happy Home",
         "B9. Don't Wanna Be Alone (unreleased)",
         "B10. Once In A Lifetime"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3201,7 +5437,66 @@
           }
         ],
         "track_credits": {}
-      }
+      },
+      "credits": [
+        [
+          "Producer: Chris Smith"
+        ],
+        [
+          "Featuring: David Roland Williams, Richard Iverson"
+        ],
+        [
+          "Featuring: Richard Iverson",
+          "Producer: Chris Smith"
+        ],
+        [
+          "Producer: Leon Sylvers"
+        ],
+        [
+          "Featuring: Menton Smith",
+          "Producer: Markell Riley"
+        ],
+        [
+          "Producer: David Wynn"
+        ],
+        [
+          "Featuring: David Roland Williams",
+          "Producer: Markell Riley"
+        ],
+        [
+          "Featuring: Idris Davidson",
+          "Producer: Michael Barber"
+        ],
+        [
+          "Featuring: Antwone Dickey",
+          "Producer: Erick Sermon, Markell Riley"
+        ],
+        [],
+        [],
+        [],
+        [
+          "Producer: Markell Riley"
+        ],
+        [
+          "Producer: Markell Riley"
+        ],
+        [],
+        [
+          "Featuring: Tammy Lucas",
+          "Producer: Markell Riley"
+        ],
+        [
+          "Producer: Markell Riley"
+        ],
+        [
+          "Producer: Markell Riley"
+        ],
+        [],
+        [
+          "Featuring: Markell Riley",
+          "Producer: Leon Sylvers"
+        ]
+      ]
     },
     {
       "year": "1994",
@@ -3227,6 +5522,25 @@
         "15. Rescue Me",
         "16. End of the Earth",
         "17. Can't Get Enough (featuring Chance)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3249,6 +5563,25 @@
         "Cutie (Pianopella)",
         "Cutie (Pops Remix)",
         "Cutie (Silent Storm Mix W/ Bass)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [
+          "Rap: A-Plus"
+        ],
+        [
+          "Rap: A-Plus"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3269,6 +5602,39 @@
         "90's Girl (In The 90's Radio Edit)",
         "90's Girl (In The 90's Radio Edit W/Out Rap)",
         "90's Girl (Video Edit feat. Antwone Dickey)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [
+          "Edited By: Greg Royal",
+          "Featuring: Menton Smith",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Edited By: Greg Royal",
+          "Featuring: Menton Smith",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Edited By: Greg Royal",
+          "Featuring: Menton Smith",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        []
       ]
     },
     {
@@ -3288,6 +5654,24 @@
         "Before I Let You Go (Reggae Dub Mix)",
         "Before I Let You Go (Short Outro)",
         "Before I Let You Go (T.R. Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -3317,6 +5701,36 @@
           "id": "NkAkcV2ZlvE",
           "label": "Booti Call"
         }
+      ],
+      "credits": [
+        [
+          "Featuring: T-Pirate"
+        ],
+        [],
+        [
+          "Featuring: T-Pirate"
+        ],
+        [
+          "Featuring: T-Pirate"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Featuring: T-Pirate"
+        ],
+        [
+          "Featuring: T-Pirate"
+        ],
+        [],
+        [
+          "Featuring: Nutta Butta"
+        ],
+        [],
+        [
+          "Featuring: Nutta Butta"
+        ]
       ]
     },
     {
@@ -3334,6 +5748,16 @@
         "U Blow My Mind (Craig Mack Radio Mix)",
         "U Blow My Mind (LP Version)",
         "U Blow My Mind (Radio Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3347,6 +5771,20 @@
         "Stay (Eternal Mix)",
         "Stay (Extended Mix)",
         "Stay (Extended Mix - Radio Edit)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -3359,6 +5797,11 @@
         "Pumps And A Bump (Bump Teddy Bump Edit)",
         "Pumps And A Bump (Bump Teddy Bump Mix)",
         "Pumps And A Bump (Radio Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3369,6 +5812,11 @@
       "image": "1994-heavy-d-the-boyz-nuttin-but-love.jpg",
       "tracks": [
         "06. This Is Your Night"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -3382,6 +5830,14 @@
         "05. Don't Stop",
         "06. Pumps And A Bump",
         "15. Pumps And A Bump Reprise (Bump Teddy Bump)"
+      ],
+      "credits": [
+        [],
+        [
+          "Producer: Teddy Riley"
+        ],
+        [],
+        []
       ]
     },
     {
@@ -3393,6 +5849,14 @@
       "tracks": [
         "02. All This Love",
         "04. This Word Is All"
+      ],
+      "credits": [
+        [
+          "Written-By: El DeBarge"
+        ],
+        [
+          "Written-By: Carol Duboc, Sami McKinney, Teddy Riley"
+        ]
       ]
     },
     {
@@ -3405,6 +5869,17 @@
         "Just Another Day (New Jack Extended Remix)",
         "Just Another Day (New Jack Percapella)",
         "Just Another Day (New Jack Remix)"
+      ],
+      "credits": [
+        [
+          "Remix: Chris Smith, Teddy Riley"
+        ],
+        [
+          "Remix: Chris Smith, Teddy Riley"
+        ],
+        [
+          "Remix: Chris Smith, Teddy Riley"
+        ]
       ]
     },
     {
@@ -3415,6 +5890,11 @@
       "image": "1994-quo-quo.jpg",
       "tracks": [
         "05. Blowin' Up (Don't Stop The Music) (Teddy Riley Mix)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -3428,6 +5908,26 @@
         "Summer Bunnies (Loverman's Picnic Extended Mix)",
         "Summer Bunnies (Loverman's Picnic Mix 1)",
         "Summer Bunnies (Loverman's Picnic Mix 2)"
+      ],
+      "credits": [
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Remix: David Wynn, Sprague \"Doogie\" Williams, Teddy Riley"
+        ],
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Guitar: Levi Little",
+          "Remix: David Wynn, Sprague \"Doogie\" Williams",
+          "Remix, Bass: Teddy Riley"
+        ],
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Remix: David Wynn, Sprague \"Doogie\" Williams, Teddy Riley"
+        ],
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Remix: David Wynn, Sprague \"Doogie\" Williams, Teddy Riley"
+        ]
       ]
     },
     {
@@ -3443,6 +5943,13 @@
         "03. Spoonie Gee – My Girl",
         "04. Spoonie Gee – Didja Come To Party",
         "05. Spoonie Gee – Didja Dub To Party"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3457,6 +5964,28 @@
         "Love Is Strong (Teddy Riley Extended Rock Remix)",
         "Love Is Strong (Teddy Riley Instrumental)",
         "Love Is Strong (Teddy Riley Radio Remix)"
+      ],
+      "credits": [
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Remix, Producer [Additional Production]: Sprague \"Doogie\" Williams, Teddy Riley"
+        ],
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Remix, Producer [Additional Production]: Sprague \"Doogie\" Williams, Teddy Riley"
+        ],
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Remix, Producer [Additional Production]: Sprague \"Doogie\" Williams, Teddy Riley"
+        ],
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Remix, Producer [Additional Production]: Sprague \"Doogie\" Williams, Teddy Riley"
+        ],
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Remix, Producer [Additional Production]: Sprague \"Doogie\" Williams, Teddy Riley"
+        ]
       ]
     },
     {
@@ -3468,6 +5997,23 @@
       "tracks": [
         "05. Something For Your Head",
         "06. Fly Away"
+      ],
+      "credits": [
+        [
+          "Backing Band: Mic Murphy",
+          "Backing Vocals: André Cymone, Dave Hollister, Gardner Cole, Levi Little, Teddy Riley",
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Engineer [Assistant]: Carl Napper, Glen Marchese, Gus Garces",
+          "Producer [Associate]: André Cymone",
+          "Producer, Mixed By: Teddy Riley",
+          "Written-By: André Cymone, Gardner Cole, Mic Murphy"
+        ],
+        [
+          "Engineer: George Mayers, John Hanes, Serban Ghenea",
+          "Engineer [Assistant]: Carl Napper, Glen Marchese, Gus Garces",
+          "Producer, Mixed By, Backing Vocals: Teddy Riley",
+          "Written-By: Carol Duboc, Levi Little, Teddy Riley"
+        ]
       ]
     },
     {
@@ -3478,6 +6024,9 @@
       "image": "1994-various-artists-blankman.jpg",
       "tracks": [
         "08. Keith \"K.B.\" Ball – Live Into The Future"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -3490,6 +6039,11 @@
         "Rim Shaker (Radio Version)",
         "Rim Shaker (Underground Version)",
         "Rim Shaker (Zoom Zoom Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3506,6 +6060,15 @@
         "Joy (Quiet Storm)",
         "Joy (Uptown Joy)",
         "Joy (Uptown Joy Long)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3521,6 +6084,26 @@
         "Tonight's The Night (Brand New Remix B3 feat. SWV / No Rap)",
         "Tonight's The Night (Rain Remix Radio Edit feat. SWV & Craig Mack)",
         "Tonight's The Night (Reggae Remix feat. Screwface)"
+      ],
+      "credits": [
+        [
+          "Featuring: SWV"
+        ],
+        [
+          "Featuring: Craig Mack, SWV, Screwface"
+        ],
+        [
+          "Featuring: Craig Mack, SWV"
+        ],
+        [
+          "Featuring: Craig Mack, SWV"
+        ],
+        [
+          "Featuring: Craig Mack, SWV"
+        ],
+        [
+          "Featuring: Screwface"
+        ]
       ]
     },
     {
@@ -3532,6 +6115,10 @@
       "tracks": [
         "Good Times (Riley's Radio Edit)",
         "Good Times (Teddy Riley's Full Vocal Mix)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -3551,6 +6138,22 @@
       ],
       "missing": [
         "Hollywood Rap (Dub Pieces)"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Donald Dee Bowden, Teddy Riley"
+        ],
+        [
+          "Producer: Donald Dee Bowden"
+        ],
+        [],
+        []
       ]
     },
     {
@@ -3564,7 +6167,8 @@
         "Love Sign (Ted's Funky Chariot Mix)",
         "Love Sign (Ted's Get 'Em Up Mix)",
         "Love Sign (Ted's Love Sign Radio Mix)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1995",
@@ -3575,6 +6179,16 @@
       "tracks": [
         "02 Something About the Way That You Do",
         "03 I Want You Back"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley",
+          "Written-By: Rodney Jerkins, Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Written-By: Karen Anderson, Sherri Blair, Teddy Riley"
+        ]
       ]
     },
     {
@@ -3596,6 +6210,14 @@
           "id": "os7YEz5x7oA",
           "label": "I Wanna Love Like That"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3606,6 +6228,14 @@
       "image": "1995-various-artists-new-york-undercover.jpg",
       "tracks": [
         "02. Guy – Tell Me What You Like"
+      ],
+      "credits": [
+        [
+          "Producer, Written-By: Aaron Hall, Damion Hall",
+          "Producer, Written-By, Recorded By, Mixed By: Teddy Riley",
+          "Recorded By: George Mayers, John Hanes, Serban Ghenea",
+          "Written-By [Additional Lyrics]: Sherri Blair"
+        ]
       ]
     },
     {
@@ -3616,6 +6246,9 @@
       "image": "1995-various-artists-panther.jpg",
       "tracks": [
         "03. BLACKstreet – We'll Meet Again"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -3673,7 +6306,8 @@
           "id": "2g0teugg-VM",
           "label": "Never Gonna Let You Go"
         }
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1996",
@@ -3698,6 +6332,24 @@
         "No Diggity (LP Version)",
         "No Diggity (Radio Version)",
         "No Diggity (Will Remix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3712,6 +6364,46 @@
         "04 If You Feel",
         "06 Guarantee For My Heart",
         "07 All My Loving"
+      ],
+      "credits": [
+        [
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: John Hanes, Serban Ghenea, Sprague \"Doogie\" Williams, Teddy Riley",
+          "Producer: Sprague \"Doogie\" Williams, Teddy Riley",
+          "Written-By, Backing Vocals: Sherri Blair, Sprague \"Doogie\" Williams"
+        ],
+        [
+          "Backing Vocals: Cheryl Lynn",
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: John Hanes, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Cheryl Lynn, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Cheryl Lynn",
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: George Mayers, John Hanes, Serban Ghenea, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Cheryl Lynn, Sherri Blair, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Cheryl Lynn, Sharon Lynn Wallace",
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: Serban Ghenea, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Cheryl Lynn, Teddy Riley, Thurlene Johnson"
+        ],
+        [
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: Serban Ghenea, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Cheryl Lynn, Teddy Riley"
+        ]
       ]
     },
     {
@@ -3728,6 +6420,20 @@
       ],
       "missing": [
         "More To Love (Teddy Riley Remix (Without Rap)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: JB, Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -3740,7 +6446,8 @@
         "Get Me Home (Main)",
         "Get Me Home (Instrumental)",
         "Get Me Home (Edit)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1996",
@@ -3750,6 +6457,9 @@
       "image": "1996-guy-tell-me-what-you-like.jpg",
       "tracks": [
         "Tell Me What You Like (Linslee Remix)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -3761,6 +6471,10 @@
       "tracks": [
         "Do Thangz (Instrumental)",
         "Do Thangz (LP Version) (feat. Nutta Butta)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -3773,6 +6487,11 @@
         "House Keeper (Radio Edit)",
         "House Keeper (LP Version)",
         "House Keeper (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3794,6 +6513,88 @@
         "10. Show You The Way To Go",
         "11. It's Only Just A Dream",
         "12. Night And Day"
+      ],
+      "credits": [
+        [
+          "Co-producer: Teddy Riley",
+          "Co-producer, Musician: Gene Peoples",
+          "Producer, Musician, Lead Vocals: Spanky Williams",
+          "Written-By: Spanky Williams"
+        ],
+        [
+          "Lead Vocals: Corley Randolph",
+          "Musician: Rodney Williams",
+          "Producer, Musician: Rodney Jerkins, Teddy Riley",
+          "Producer, Musician, Lead Vocals: Spanky Williams",
+          "Written-By: Chauncey Hannibal, Rodney Jerkins, Spanky Williams, Teddy Riley"
+        ],
+        [
+          "Lead Vocals: Brian Deramus, Corley Randolph, George Spencer III",
+          "Producer, Lead Vocals: Spanky Williams",
+          "Producer, Musician: Teddy Riley",
+          "Written-By: George Spencer III, Sherri Blair, Teddy Riley"
+        ],
+        [
+          "Co-producer, Musician: Teddy Riley",
+          "Lead Vocals: Brian Deramus",
+          "Producer, Musician, Lead Vocals: Spanky Williams",
+          "Written-By: Spanky Williams"
+        ],
+        [
+          "Lead Vocals: Brian Deramus, Corley Randolph, Desmond Greggs, George Spencer III",
+          "Musician: Bob Kirschner, Brian Rhodes, Gene Peoples, Teddy Riley",
+          "Producer, Lead Vocals: Spanky Williams",
+          "Written-By: Spanky Williams"
+        ],
+        [
+          "Co-producer, Musician: Teddy Riley",
+          "Musician: Bob Kirschner",
+          "Producer, Musician, Lead Vocals: Spanky Williams",
+          "Written-By: Bob Kirschner, Spanky Williams, Sydney \"JR\" Joseph, Yemi Babatunde"
+        ],
+        [
+          "Co-producer: Men Of Vizion",
+          "Co-producer, Musician: Teddy Riley",
+          "Featuring, Vocals: Tasha Scott",
+          "Lead Vocals: Corley Randolph",
+          "Musician: Spanky Williams",
+          "Producer [Remix]: Gene Griffin, Sydney \"JR\" Joseph",
+          "Producer, Musician: Alex Richbourg",
+          "Written-By: Alex Richbourg"
+        ],
+        [
+          "Co-producer, Musician: Teddy Riley",
+          "Musician: Bob Kirschner",
+          "Producer, Musician, Lead Vocals: Spanky Williams",
+          "Written-By: Bob Kirschner, Spanky Williams, Yemi Babatunde"
+        ],
+        [
+          "Co-producer, Musician: Chris Smith",
+          "Lead Vocals: Corley Randolph",
+          "Producer, Lead Vocals: Spanky Williams",
+          "Producer, Musician: Teddy Riley",
+          "Rap [Guest]: Nutta Butta",
+          "Written-By: Chris Smith, Menton Smith, Sherri Blair, Teddy Riley"
+        ],
+        [
+          "Executive-Producer: Sydney \"JR\" Joseph",
+          "Musician: Chris Smith",
+          "Producer, Lead Vocals: Spanky Williams",
+          "Producer, Musician: Teddy Riley",
+          "Written-By: Gamble & Huff"
+        ],
+        [
+          "Lead Vocals: Brian Deramus",
+          "Producer, Musician: Teddy Riley",
+          "Producer, Musician, Lead Vocals: Spanky Williams",
+          "Written-By: Corley Randolph, George Spencer III, Spanky Williams, Teddy Riley"
+        ],
+        [
+          "Lead Vocals: Corley Randolph",
+          "Producer, Musician: Teddy Riley",
+          "Producer, Musician, Lead Vocals: Spanky Williams",
+          "Written-By: Abdullah Barr, Anthony Shawn Criss, Charles Kelley, Corley Randolph, Desmond Greggs, Jeffrey Ray, Kier Gist, Leon F. Sylvers IV, Lionel Richie, Ronald LaPread, Teddy Riley, Vinnie Brown"
+        ]
       ]
     },
     {
@@ -3805,6 +6606,10 @@
       "tracks": [
         "Falling (Teddy Riley Remix) feat. Shuanta",
         "Falling (Teddy Riley Remix Instrumental)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -3818,6 +6623,12 @@
         "Black Cinderella (LP Mix)",
         "Black Cinderella (Instrumental)",
         "Black Cinderella (Accapella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3828,6 +6639,9 @@
       "image": "1996-whitney-houston-step-by-step.jpg",
       "tracks": [
         "Step By Step (Teddy Riley Remix)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -3854,6 +6668,46 @@
         "Sucka Mc's",
         "It's Yours (Play On Playa)",
         "Outro"
+      ],
+      "credits": [
+        [],
+        [
+          "Producer: Aqil Davidson"
+        ],
+        [
+          "Producer: Aqil Davidson"
+        ],
+        [
+          "Featuring: Knowledge, Rugged Baztud",
+          "Producer: Aqil Davidson"
+        ],
+        [],
+        [
+          "Producer: Aqil Davidson"
+        ],
+        [],
+        [],
+        [
+          "Producer: Markell Riley, Teddy Riley"
+        ],
+        [
+          "Featuring: Badd Newz, Knowledge, Rugged Baztud",
+          "Producer: Aqil Davidson"
+        ],
+        [
+          "Chorus: Badd Newz",
+          "Featuring: Rugged Baztud",
+          "Producer: Aqil Davidson"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Featuring: Nutta Butta",
+          "Producer: Walter \"Mucho\" Scott"
+        ],
+        []
       ]
     },
     {
@@ -3866,6 +6720,11 @@
         "O.G. (Radio Version)",
         "O.G. (Instrumental)",
         "O.G. (A Cappella)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3883,6 +6742,16 @@
         "06 - B-Fats - The B.Fats (Instrumental)",
         "07 - Al B. Just Two Mc's - Just Rap ((Instrumental)",
         "08 - Al Jones - Cheating Girl (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3893,6 +6762,12 @@
       "image": "1996-various-artists-get-on-the-bus.jpg",
       "tracks": [
         "13 BLACKstreet - Coming Home to You"
+      ],
+      "credits": [
+        [
+          "Written-By: Chauncey Hannibal, Karen Anderson, Markell Riley",
+          "Written-By, Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -3906,6 +6781,12 @@
         "02 Top Billin (LP Version)",
         "03 Wreckx Shop (Remix)",
         "04 Top Billin (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3919,6 +6800,12 @@
         "Need Your Love (Remix) (Acappella)",
         "Need Your Love (Remix) (Instrumental)",
         "Need Your Love (Remix) (Main Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3932,6 +6819,12 @@
         "Settle Down (Radio Edit)",
         "Settle Down (Instrumental)",
         "Settle Down (Acapella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3950,6 +6843,17 @@
         "09 Strung",
         "10 Take It Off",
         "11 Need Your Love (Remix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -3964,6 +6868,24 @@
         "Happy Song (Tonite) (Full Crew Remix",
         "Happy Song (Tonite) (Full Crew Remix Edit)",
         "Happy Song (Tonite) (Album Version"
+      ],
+      "credits": [
+        [
+          "Co-producer: Chauncey Hannibal, Tommy Sims",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Remix: DJ Kofi"
+        ],
+        [
+          "Featuring: Rimes",
+          "Remix: Full Crew"
+        ],
+        [
+          "Featuring: Rimes",
+          "Remix: Full Crew"
+        ],
+        []
       ]
     },
     {
@@ -3986,6 +6908,25 @@
         "Don't Leave Me (Kooly High Acapella)",
         "Don't Leave Me (Kooly High Mix)",
         "Don't Leave Me (LP Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Written-By: Chauncey Hannibal, Karen Anderson",
+          "Written-By, Co-producer: Roosevelt Harrell III",
+          "Written-By, Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -4006,6 +6947,34 @@
         "Fix (main mix)",
         "Fix (Smooth Shomari mix)",
         "Call Me (Dezo R&B Mix Instrumental)"
+      ],
+      "credits": [
+        [],
+        [
+          "Remix: Darryl \"Dezo\" Adams"
+        ],
+        [
+          "Featuring: Ol' Dirty Bastard",
+          "Guitar: Slash"
+        ],
+        [
+          "Featuring: Ol' Dirty Bastard"
+        ],
+        [
+          "Featuring: Ol' Dirty Bastard",
+          "Guitar: Slash"
+        ],
+        [],
+        [],
+        [],
+        [
+          "Featuring: Ol' Dirty Bastard",
+          "Guitar: Slash"
+        ],
+        [],
+        [
+          "Remix: Darryl \"Dezo\" Adams"
+        ]
       ]
     },
     {
@@ -4019,6 +6988,21 @@
         "Never Gonna Let You Go (LP Version)",
         "Never Gonna Let You Go (Instrumental)",
         "Never Gonna Let You Go (A Capella)"
+      ],
+      "credits": [
+        [
+          "Co-producer: Chauncey Hannibal",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Co-producer: Chauncey Hannibal",
+          "Producer: Teddy Riley"
+        ],
+        [],
+        [
+          "Co-producer: Chauncey Hannibal",
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -4031,6 +7015,11 @@
         "Call Me (Album Version)",
         "Call Me (Album Instrumental)",
         "Call Me (Acapella Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4042,6 +7031,10 @@
       "tracks": [
         "Mmm Bop (Old School Remix)",
         "Mmm Bop (New Jack Remix-Main Pass)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -4053,6 +7046,30 @@
       "tracks": [
         "01. Blood on the Dance Floor",
         "04. Ghosts"
+      ],
+      "credits": [
+        [
+          "Engineer: Dave Way",
+          "Engineer [Additional]: Andrew Scheps, Eddie DeLena",
+          "Engineer [Assistant]: Jon Mooney, Rich July, Sam Curtis",
+          "Engineer, Mixed By: Mick Guzauski",
+          "Keyboards, Synthesizer: Brad Buxer",
+          "Programmed By [Digital Systems]: Matt Carpenter",
+          "Written-By, Composed By, Producer, Backing Vocals, Arranged By [Vocals]: Michael Jackson",
+          "Written-By, Composed By, Producer, Engineer, Keyboards, Synthesizer: Teddy Riley"
+        ],
+        [
+          "Drum Programming: Alex Breuer, Andrew Scheps, Matt Carpenter",
+          "Drum Programming, Engineer [Assistant]: Rob Hoffman",
+          "Engineer: Eddie DeLena",
+          "Engineer [Additional]: Albert Boekholt, Andrew Scheps, Armand Volker, Bobby Brooks, Matt Forger",
+          "Engineer [Assistant]: Andy Strange, Gerd Krenz, Greg Collins, Mike Scotella, Patrick Ulenberg, Paul Dicato, Tom Bender, Tony Black",
+          "Keyboards, Synthesizer: Brad Buxer",
+          "Keyboards, Synthesizer, Drum Programming: Doug Grigsby",
+          "Mixed By: Dave Way",
+          "Written-By, Composed By, Producer, Backing Vocals, Arranged By [Vocals]: Michael Jackson",
+          "Written-By, Composed By, Producer, Engineer, Keyboards, Synthesizer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -4063,6 +7080,9 @@
       "image": "1997-omar-chandler-pieces-of-my-heart.jpg",
       "tracks": [
         "09 Omar Chandler feat. Teddy Riley - Guess Who's Back"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4080,6 +7100,24 @@
         "All My Love (Hook First Short Version)",
         "All My Love (Instrumental)",
         "All My Love (Acapella)"
+      ],
+      "credits": [
+        [],
+        [
+          "Vocals: Eric Williams"
+        ],
+        [
+          "Vocals: Eric Williams"
+        ],
+        [],
+        [
+          "Vocals: Eric Williams"
+        ],
+        [],
+        [],
+        [
+          "Vocals: Eric Williams"
+        ]
       ]
     },
     {
@@ -4095,6 +7133,14 @@
         "Man Behind The Music (Instrumental, 2:20)",
         "Man Behind The Music (Acapella, 4:01)",
         "Man Behind The Music (Acapella, 2:20)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4117,6 +7163,55 @@
         "11. Girlfriend",
         "12. No Hooks",
         "13. So Many Ways"
+      ],
+      "credits": [
+        [],
+        [
+          "Co-producer: Mixture",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Featuring: Markell Riley, Teddy Riley",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Vocals: Eric Williams"
+        ],
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Featuring: Markell Riley, Mr. Cheeks, Nutta Butta",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Vocals: Richard Stites"
+        ],
+        [
+          "Co-producer: Teddy Riley",
+          "Producer: Knobody"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Vocals: Chauncey Hannibal, Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Vocals: Ronald Isley"
+        ],
+        [
+          "Co-producer: Mixture",
+          "Featuring: Me'Shell NdegéOcello",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: William \"Skylz\" Stewart"
+        ]
       ]
     },
     {
@@ -4128,6 +7223,10 @@
       "tracks": [
         "We Getz Down (Album Version)",
         "We Getz Down (Album Version-Instrumental)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -4143,6 +7242,14 @@
         "Distant Lover (Teddy Riley Extended Mix)",
         "Distant Lover (Instrumental)",
         "Distant Lover (A Cappella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4155,6 +7262,17 @@
         "01 - Anyway",
         "02 - Distant Lover",
         "03 - How Can I Get Over You"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Sprague \"Doogie\" Williams"
+        ],
+        [
+          "Producer: Chad Hugo"
+        ]
       ]
     },
     {
@@ -4167,7 +7285,8 @@
       "tracks": [
         "01 - How Can I Get Over You (Radio Edit)",
         "06 - How Can I Get Over You (Acapella)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1997",
@@ -4177,6 +7296,9 @@
       "image": "1997-usher-my-way.jpg",
       "tracks": [
         "07. - I Will"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4188,6 +7310,9 @@
       "format": "LP",
       "tracks": [
         "911 (US) feat. Queen Pen - In A Magazine"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4213,6 +7338,17 @@
         "Take Me There (Want U Back Instrumental Mix)",
         "Take Me There (Want U Back Mix – No Rap Version)",
         "Take Me There (Want U Back Mix – Short No Rap Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4225,6 +7361,17 @@
         "I Can't Get You (Out Of My Mind) Remix (Instrumental)",
         "I Can't Get You (Out Of My Mind) Remix (Radio Edit)",
         "I Can't Get You (Out Of My Mind) Remix"
+      ],
+      "credits": [
+        [
+          "Featuring: Beverly Crowder, Lamenga Kafi"
+        ],
+        [
+          "Featuring: Beverly Crowder, Lamenga Kafi"
+        ],
+        [
+          "Featuring: Beverly Crowder, Lamenga Kafi"
+        ]
       ]
     },
     {
@@ -4238,7 +7385,8 @@
         "Hard To Handle (Instrumental)",
         "Hard To Handle (Acappella)",
         "Hard To Handle (TV Track)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1998",
@@ -4259,6 +7407,17 @@
       ],
       "missing": [
         "Go Deep (Teddy Riley Remix) #2"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4273,6 +7432,16 @@
         "I Get Lonely (TNT Remix Edit)",
         "I Get Lonely (TNT Bonus Beats)",
         "I Get Lonely (Extended Street Remix)"
+      ],
+      "credits": [
+        [],
+        [
+          "Featuring, Vocals: Blackstreet",
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4287,6 +7456,13 @@
         "The City Is Mine (TV Track)",
         "The City Is Mine (Instrumental)",
         "The City Is Mine (Accapella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4298,6 +7474,13 @@
       "tracks": [
         "07 Then & Now Interlude",
         "08 Startin' Somethin' (Feat. Chauncey Black)"
+      ],
+      "credits": [
+        [],
+        [
+          "Producer: Peter Gunz",
+          "Vocals: Chauncey Hannibal"
+        ]
       ]
     },
     {
@@ -4312,6 +7495,17 @@
         "Startin' Somethin' (Callout Hook #1)",
         "Startin' Somethin' (Acappella)",
         "Startin' Somethin' (Callout Hook #2)"
+      ],
+      "credits": [
+        [
+          "Featuring: Chauncey Black"
+        ],
+        [],
+        [],
+        [
+          "Featuring: Chauncey Black"
+        ],
+        []
       ]
     },
     {
@@ -4327,6 +7521,14 @@
         "03 - Do You Feel Me (...Freak You) (Instrumental)",
         "04 - Do You Feel Me (...Freak You) (A Cappella)",
         "Do You Feel Me? (...Freak You) (Uptempo Remix with Rap)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4337,6 +7539,9 @@
       "image": "1998-nate-dogg-g-funk-classics.jpg",
       "tracks": [
         "Hardest Man in Town (Explicit)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4360,6 +7565,22 @@
         "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Acapella Mix)",
         "feat. B.B.O., Knowledge The Pirate & Teddy Riley - Freak Out (Remix) (Alternate Vocal)",
         "Freak Out (Instrumental Main Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4379,6 +7600,18 @@
         "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix) (Main Version (Dirty))",
         "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix Dirty)",
         "feat. Teddy Riley, Nutta Butta, Markell & Jesse West - Party Ain't A Party (Remix) (Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4389,6 +7622,9 @@
       "image": "1998-various-hav-plenty.jpg",
       "tracks": [
         "05 BLACKstreet feat. Beverly Crowder & Lamenga Kafi - I Can't Get You (Out Of My Mind) (Remix)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4399,6 +7635,9 @@
       "image": "1998-various-rugrats-movie.jpg",
       "tracks": [
         "01 BLACKstreet & Mya feat. Ma$e & Blinky Blink - Take Me There"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4425,7 +7664,33 @@
         "feat. 8th Ave. & Queen Pen - On The Floor",
         "Don't Stop"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Co-producer: Jack Knight, Screwface"
+        ],
+        [
+          "Producer: Warryn Campbell"
+        ],
+        [],
+        [
+          "Featuring: Hezekiah Walker, Love Fellowship Tabernacle"
+        ],
+        [
+          "Remix: Gerald Baillergeau, Victor Merritt"
+        ],
+        [],
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "1999",
@@ -4440,6 +7705,10 @@
       ],
       "missing": [
         "Flaunt It"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -4468,6 +7737,27 @@
         "Girlfriend / Boyfriend (Instrumental)",
         "Girlfriend / Boyfriend (Rap Version)",
         "Girlfriend / Boyfriend (The Anthem Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4480,6 +7770,17 @@
       "tracks": [
         "On The Floor",
         "Can You Feel Me"
+      ],
+      "credits": [
+        [
+          "Co-producer: Jack Knight, Screwface",
+          "Featuring: Queen Pen",
+          "Vocals [Additional]: 8th Avenue"
+        ],
+        [
+          "Arranged By [Strings]: Jeremy Lubbock",
+          "Co-producer: Kasem Coleman"
+        ]
       ]
     },
     {
@@ -4499,6 +7800,18 @@
         "Think About You (Quiet Storm)",
         "Think About You (Tunnel Clean)",
         "Think About You (Tunnel Instrumental)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4511,6 +7824,11 @@
         "Feel It (Dirty Version)",
         "Feel It (Instrumental)",
         "Feel It (Radio Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4531,6 +7849,19 @@
         "09. Home",
         "10. Good Times",
         "11. I Don't Know"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4548,6 +7879,15 @@
         "Diamonds (Background Vocal)",
         "Diamonds (Aaron Vocal)",
         "Diamonds (TR Talk)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4564,7 +7904,8 @@
         "Don't You Miss Me (Acapella)",
         "Don't You Miss Me (Background Vocals)",
         "Don't You Miss Me (Lead Vocals)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "1999",
@@ -4581,6 +7922,15 @@
         "Not A Day (Aaron Vocal)",
         "Not A Day (Damian Vocal)",
         "Not A Day (TR Vocoder)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4600,6 +7950,17 @@
         "Rescue Me (TR Talk)",
         "Rescue Me (TV With No TR Talk)",
         "Rescue Me (Telephone Talk)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4617,6 +7978,15 @@
         "Someday (Background Vocal)",
         "Someday (Lead Vocal)",
         "Someday (Vocoder Vocal)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4633,6 +8003,14 @@
         "Teddy's Jam 3 (Acapella)",
         "Teddy's Jam 3 (Main Vocal Up)",
         "Teddy's Jam 3 (Acapella Vocal Up)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4651,6 +8029,13 @@
       "missing": [
         "Video Version",
         "Call Out Research Hook"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4669,6 +8054,14 @@
         "15 Minutes (TR Bass Remix)",
         "15 Minutes (Teddy Riley Remix)",
         "15 Minutes (30 Minute Slow Jam Remix)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4681,6 +8074,10 @@
       "tracks": [
         "01. I Think About It",
         "11. I Need Love"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -4694,6 +8091,19 @@
         "01. C'mon Everybody",
         "02. Body Bumpin'",
         "10. Everything She Wants"
+      ],
+      "credits": [
+        [
+          "Written-By: Danny O'Donoghue, Mark Sheehan, Shawn Stockman, Terry Daly"
+        ],
+        [
+          "Co-producer: Jack Knight, Jimmy Singletary",
+          "Vocals [Additional]: Patricia Saunders-Nixon",
+          "Written-By: Danny O'Donoghue, Jack Knight, Jimmy Singletary, Mark Sheehan, Screwface, Teddy Riley, Terry Daly"
+        ],
+        [
+          "Written-By: George Michael"
+        ]
       ]
     },
     {
@@ -4705,6 +8115,9 @@
       "format": "LP",
       "tracks": [
         "BLACKstreet – Think About You"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4717,6 +8130,13 @@
       "tracks": [
         "BLACKstreet - Confused",
         "Guy - The Best"
+      ],
+      "credits": [
+        [],
+        [
+          "Producer: Teddy Riley",
+          "Rap: 1 Life 2 Live"
+        ]
       ]
     }
   ],
@@ -4731,6 +8151,20 @@
         "02. Brooklyn",
         "03. Ruffneck",
         "10. I Go On"
+      ],
+      "credits": [
+        [
+          "Engineer: Franklyn Grant",
+          "Producer: Franklyn Grant, Markell Riley, Tyrone Fyffe"
+        ],
+        [
+          "Engineer: Franklyn Grant, Keston Wright",
+          "Producer: Aqil Davidson, Markell Riley, Walter \"Mucho\" Scott"
+        ],
+        [
+          "Engineer: Franklyn Grant",
+          "Producer: Franklyn Grant, Markell Riley, Tyrone Fyffe, Walter \"Mucho\" Scott"
+        ]
       ]
     },
     {
@@ -4755,6 +8189,17 @@
           "id": "DdZ8DSH9b-I",
           "label": "Judy Had A Boyfriend"
         }
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4766,6 +8211,10 @@
       "tracks": [
         "Hush (Don't Say A Word) (Remix Radio Edit)",
         "Hush (Don't Say A Word) (R&B Mix Radio Edit)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     }
   ],
@@ -4783,6 +8232,13 @@
         "Bye Bye Bye (Teddy Riley's Club Remix) (Instrumental)",
         "Bye Bye Bye (Teddy Riley's Funk Remix Instrumental)",
         "Bye Bye Bye (Teddy Riley's Funk Remix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4793,6 +8249,9 @@
       "image": "2000-nsync-no-strings-attached.jpg",
       "tracks": [
         "04. Just Got Paid"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4822,6 +8281,28 @@
         "Do It (Snippet)",
         "Love Online (Snippet)",
         "Why You Wanna Keep Me From My Baby (Snippet)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4838,7 +8319,15 @@
         "05 - Fool Around (45 King Club Remix)",
         "06 - Fool Around (Instrumental)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2000",
@@ -4865,6 +8354,28 @@
         "16. Someday",
         "Diamonds (UK Promo bonus track)",
         "Good Bye Love (Remix) (Japan release bonus track)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Rap: Antwone Dickey, Markell Riley"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -4878,7 +8389,12 @@
         "Why You Wanna Keep Me From My Baby (Radio Edit)",
         "Why You Wanna Keep Me From My Baby (Instrumental)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2000",
@@ -4891,7 +8407,14 @@
         "Stutter (Instrumental)",
         "Stutter (Acapella)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [
+          "Mixed By: Chris Trevett, George Mayers, Teddy Riley"
+        ],
+        [],
+        []
+      ]
     },
     {
       "year": "2000",
@@ -4901,6 +8424,9 @@
       "image": "2000-k-ci-jojo-x.jpg",
       "tracks": [
         "02. Wanna Do You Right (Album Version)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -4917,6 +8443,16 @@
       ],
       "missing": [
         "Love Sets You Free (Call Out Research Hook)"
+      ],
+      "credits": [
+        [
+          "Featuring: Case, Dru Hill, Kandice Love, LovHer, Montell Jordan, Playa"
+        ],
+        [],
+        [],
+        [
+          "Featuring: Case, Dru Hill, Kandice Love, LovHer, Montell Jordan, Playa"
+        ]
       ]
     },
     {
@@ -4929,6 +8465,35 @@
         "07. ABC 123",
         "08. I Believe",
         "10. Pack Your Sh*t"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Karen Anderson, Melanie Brown",
+          "Drum Programming: Screwface, Teddy Riley",
+          "Engineer: Frantz Verna, George Mayers",
+          "Mixed By: Frantz Verna, George Mayers, Teddy Riley",
+          "Producer: Screwface, Teddy Riley",
+          "Rap: Screwface",
+          "Written-By: Karen Anderson, Screwface, Teddy Riley"
+        ],
+        [
+          "Co-producer: Rich Lightning",
+          "Engineer: Frantz Verna, George Mayers",
+          "Mixed By: Frantz Verna, George Mayers, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Karen Anderson, Richard Fauntleroy, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Karen Anderson, Sherri Blair",
+          "Co-producer: Jimmy Singletary",
+          "Drum Programming: Screwface, Teddy Riley",
+          "Engineer: Frantz Verna, George Mayers",
+          "Instruments: Jimmy Singletary, Teddy Riley",
+          "Mixed By: Frantz Verna, George Mayers, Teddy Riley",
+          "Producer: Screwface, Teddy Riley",
+          "Vocals [Male Vocal]: Eric Williams",
+          "Written-By: Jimmy Singletary, Jonathan Walker, Screwface, Teddy Riley, Tijuana Frampton"
+        ]
       ]
     },
     {
@@ -4945,7 +8510,23 @@
         "One More Chance (Snippet)",
         "Nubian Queen (Snippet)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        [
+          "Executive-Producer: Pharrell Williams",
+          "Executive-Producer [Co]: Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Mick Hucknall, Neil Moss, Pharrell Williams, Teddy Riley"
+        ],
+        [
+          "Producer, Executive-Producer, Executive-Producer [Co]: Teddy Riley",
+          "Written-By: Mike Etheridge, Teddy Riley"
+        ],
+        [],
+        []
+      ]
     },
     {
       "year": "2000",
@@ -4960,7 +8541,14 @@
         "One More Chance",
         "Nubian Queen"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2000",
@@ -4984,7 +8572,23 @@
         "13. One More Chance",
         "14. Circles"
       ],
-      "note": "A later lossless compilation gathering the Master Plan sessions in full."
+      "note": "A later lossless compilation gathering the Master Plan sessions in full.",
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2000",
@@ -5006,6 +8610,21 @@
         "13. Feva (Album Version)",
         "14. Na Na (From The Original Kings of Comedy Soundtrack)",
         "16. Home (Album Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5026,7 +8645,19 @@
         "Jam (Instrumental Main)",
         "Jam (Instrumental) (Remix)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2000",
@@ -5048,7 +8679,16 @@
         "Liar (TR Remix - Main)",
         "Liar (TR Remix - Rap Clean)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2000",
@@ -5059,6 +8699,10 @@
       "tracks": [
         "01. Liar (Explicit Version)",
         "03. Damn (Album Version)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -5069,6 +8713,9 @@
       "image": "2000-rpm-2000-peace-in-the-city.jpg",
       "tracks": [
         "04. Yo Love (LP Version)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5083,7 +8730,8 @@
         "Yo Love (Album Version)",
         "Yo Love (Instrumental)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": []
     },
     {
       "year": "2000",
@@ -5094,6 +8742,12 @@
       "tracks": [
         "09. The Boy (Remix)",
         "13. Gotta Tell You (Teddy Riley Remix)"
+      ],
+      "credits": [
+        [],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -5109,7 +8763,8 @@
         "Freak Freak (feat. Lil' Kim)",
         "Freak Freak (Instrumental)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": []
     },
     {
       "year": "2000",
@@ -5119,6 +8774,14 @@
       "image": "2000-toni-estes-two-eleven.jpg",
       "tracks": [
         "02. Independent Lady (feat. Lil' Zane)"
+      ],
+      "credits": [
+        [
+          "Featuring: Lil' Zane",
+          "Producer: Teddy Riley",
+          "Recorded By, Mixed By: Frantz Verna, George Mayers, Teddy Riley",
+          "Written-By: Teddy Riley, Toni Estes, Zane Copeland, Jr."
+        ]
       ]
     },
     {
@@ -5129,6 +8792,9 @@
       "image": "2000-various-the-hurricane.jpg",
       "tracks": [
         "03. Love Sets You Free (Kelly Price & Aaron Hall)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5143,7 +8809,8 @@
         "Boottee (Rumpshaker 2K1) (Instrumental)",
         "Boottee (Rumpshaker 2K1) (Acappella)",
         "Boottee (Rumpshaker 2K1) (Call Out Hook)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2001",
@@ -5157,7 +8824,8 @@
         "Boottee (Remix) (Instrumental)",
         "Boottee (Remix) (Call Out Hook)",
         "Boottee (Remix - Acappella)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2001",
@@ -5168,6 +8836,17 @@
       "tracks": [
         "07. Figadoh",
         "19. Boottee"
+      ],
+      "credits": [
+        [
+          "Featuring: Scarface, Snoop Dogg",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Featuring: Cool Gsus",
+          "Producer: Teddy Riley",
+          "Vocals: Teddy Riley"
+        ]
       ]
     },
     {
@@ -5179,6 +8858,14 @@
       "tracks": [
         "Parents Just Don't Understand (Teddy Riley Remix)",
         "Parents Just Don't Understand (Teddy Riley Remix Instrumental)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -5192,6 +8879,12 @@
         "Party & Bulls*** (Instrumental)",
         "Party & Bulls*** (LP Version)",
         "Party & Bulls*** (Radio Edit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5206,6 +8899,13 @@
         "09. 2000 Watts (Album Version)",
         "12. Don't Walk Away (Album Version)",
         "15. Whatever Happens (Album Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5217,6 +8917,19 @@
       "tracks": [
         "08. For You",
         "11. It's True"
+      ],
+      "credits": [
+        [
+          "Bass: Christopher Meredith",
+          "Guitar: Earl \"Chinna\" Smith",
+          "Keyboards: Joshua \"Peter\" Herians",
+          "Producer: The Marley Boyz",
+          "Programmed By: Damian Marley",
+          "Recorded By, Mixed By: Alrick Thompson, Rick St. Hilaire",
+          "Written-By: Bert Reid, Denroy Morgan, Lynise Walters",
+          "Written-By [I'll Do Anything For You]: Bert Reid, Ron Dean Miller"
+        ],
+        []
       ]
     },
     {
@@ -5230,7 +8943,12 @@
         "02 - I Got Cha (Dirty)",
         "03 - I Got Cha (Call Out Hook)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2001",
@@ -5243,6 +8961,12 @@
         "Trickin' (Street)",
         "Trickin' (Instrumental)",
         "Trickin' (Acapella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5256,7 +8980,8 @@
         "Formal Invite (The Knockout Remix) (Instrumental)",
         "Formal Invite (The Knockout Remix) (Explicit)",
         "Formal Invite (The Knockout Remix) (Call Out Research Hook)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2001",
@@ -5269,7 +8994,28 @@
         "02 - Can I Live (LP Version)",
         "03 - Can I Live (Instrumental)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [
+          "Rap: Cooli Hi",
+          "Recorded By, Mixed By: George Mayers",
+          "Vocals [Additional]: LovHer",
+          "Written-By: Richard \"Nikki\" Stanard",
+          "Written-By, Producer, Mixed By: Teddy Riley"
+        ],
+        [
+          "Rap: Cooli Hi",
+          "Recorded By, Mixed By: George Mayers",
+          "Vocals [Additional]: LovHer",
+          "Written-By: Richard \"Nikki\" Stanard",
+          "Written-By, Producer, Mixed By: Teddy Riley"
+        ],
+        [
+          "Recorded By, Mixed By: George Mayers",
+          "Written-By: Richard \"Nikki\" Stanard",
+          "Written-By, Producer, Mixed By: Teddy Riley"
+        ]
+      ]
     },
     {
       "year": "2001",
@@ -5312,6 +9058,32 @@
         "14. Time",
         "15. Pressure",
         "16. Jabaz Pray"
+      ],
+      "credits": [
+        [],
+        [
+          "Featuring: L.K., Styles P"
+        ],
+        [
+          "Featuring: Glory"
+        ],
+        [],
+        [],
+        [
+          "Featuring: Beenie Man"
+        ],
+        [],
+        [],
+        [
+          "Featuring: Men Of Vizion"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5335,6 +9107,14 @@
         "Brown Eyes (Album Version)",
         "Brown Eyes (Instrumental)",
         "Brown Eyes (Acappella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5346,6 +9126,16 @@
       "tracks": [
         "07. Figadoh (Remix)",
         "16. Boottee (Remix)"
+      ],
+      "credits": [
+        [
+          "Featuring: Busta Rhymes, M.O.P.",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Featuring: Fabolous, G-Dep",
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -5362,7 +9152,15 @@
         "Figadoh East West (Dirty) (feat. Scarface & Snoop Dogg)",
         "Figadoh East West (Instrumental) (feat. Scarface & Snoop Dogg)"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2002",
@@ -5389,7 +9187,8 @@
         "Deep (Bounce Remix) (A Cappella)",
         "Deep (Get Higher Remix)",
         "Deep (50 Cent Remix)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2002",
@@ -5404,6 +9203,14 @@
         "Wizzy Wow (A Cappella)",
         "Wizzy Wow (Call-Out Hook)",
         "Fly (LP Version)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5414,6 +9221,12 @@
       "image": "2002-brandy-full-moon.jpg",
       "tracks": [
         "04. When You Touch Me"
+      ],
+      "credits": [
+        [
+          "Featuring: Teddy Riley",
+          "Producer: Big Bert, Rodney Jerkins"
+        ]
       ]
     },
     {
@@ -5424,6 +9237,9 @@
       "image": "2000-various-grinch-stole-christmas-soundtrack.jpg",
       "tracks": [
         "02. Grinch 2000 (Busta Rhymes feat. Jim Carrey)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5434,6 +9250,19 @@
       "image": "2003-namie-amuro-style.jpg",
       "tracks": [
         "02. Indy Lady (feat. Zeebra)"
+      ],
+      "credits": [
+        [
+          "Featuring: Zeebra",
+          "Instruments [All Instruments Performed By], Programmed By: Teddy Riley",
+          "Lyrics By [Japanese]: Yuji Toriumi, Zeebra",
+          "Lyrics By [Rap]: Zeebra",
+          "Mixed By: Teddy Riley",
+          "Music By, Lyrics By, Arranged By: Teddy Riley",
+          "Producer: Teddy Riley",
+          "Recorded By [Rap Recording Assisted By]: Mine-Chang",
+          "Recorded By [Rap Recording]: Take-C"
+        ]
       ]
     },
     {
@@ -5445,6 +9274,12 @@
       "tracks": [
         "I Like It",
         "Deep In The Club (Remix)"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ],
+        []
       ]
     },
     {
@@ -5472,6 +9307,78 @@
         "16. Brown Eyes",
         "17. Wizzy Wow (feat. Mystikal)",
         "18. Fly"
+      ],
+      "credits": [
+        [
+          "Producer: Kenny Frazier, Kenny Qullier, Sean Washington, Shareefa Cooper"
+        ],
+        [
+          "Featuring: Mr. Cheeks",
+          "Horns: David Campbell",
+          "Producer: Leroy Burgess",
+          "Saxophone [Tenor]: Roger Rosenberg",
+          "Trumpet: Jimmy Hynes"
+        ],
+        [
+          "Featuring: Chyna Whyte"
+        ],
+        [
+          "Backing Vocals: Natural Blend",
+          "Vocals [Additional]: Beverly Crowder"
+        ],
+        [],
+        [
+          "Featuring: Chyna Whyte",
+          "Producer: Leroy Burgess, Superb"
+        ],
+        [],
+        [
+          "Backing Vocals: Natural Blend",
+          "Drums: Gerald Heyward",
+          "Producer: Leroy Burgess"
+        ],
+        [
+          "Backing Vocals: Charmelle Cofield",
+          "Bass: Bill Ellison",
+          "Cello: Alex Kadvan, Eugene Moye, Maria Kitsopoulos, Mary Wooten",
+          "Producer: Chauncey Black, Daryl Marshall",
+          "Strings: David Campbell",
+          "Viola: Eric Hammelman, Junah Chung, Nicholas Cords, Shmuel Katz",
+          "Violin: Abe Appleman, Brian Krinke, Carol Pool, Debbie Wong, Janet Sung, John Zhang, Kwan Lu, Mariya Borozina, Matt Lehmann, Ragga Petursdottir, Sophie Kessinger, Suzy Perkins",
+          "Violin [Concertmaster]: Sarah Kim"
+        ],
+        [
+          "Producer: Nate Hills, Natural Blend"
+        ],
+        [
+          "Bass: Gail Kruvand-Moye",
+          "Cello: Alan Stepansky, Elizabeth Dyson, Maria Kitsopoulos, Sarah Seiver",
+          "Strings: David Campbell",
+          "Viola: Dawn Hannay, Karen Dreyfus, Robert Rinehart, Tom Rosenthal",
+          "Violin: Ann Kim, Fiona Simon, Jean Ingraham, Laura Seaton, Lisa Kim, Myung Hi Kim, Nancy McAlhany, Sarah Kim, Sharon Yamada, Soo Hyun Kwon, Suzanne Ornstein",
+          "Violin [Concertmaster]: Sandra Park",
+          "Vocals [Additional]: Mike Etheridge"
+        ],
+        [
+          "Producer: Eric Williams"
+        ],
+        [
+          "Co-producer: Spanky Williams",
+          "Producer: Gene Peoples"
+        ],
+        [
+          "Guitar: Sherrod Barnes",
+          "Producer: Andreao Heard, Sherrod Barnes",
+          "Vocals [Additional]: Dave Hollister"
+        ],
+        [],
+        [
+          "Producer: Philosophy"
+        ],
+        [
+          "Featuring: Mystikal"
+        ],
+        []
       ]
     },
     {
@@ -5482,6 +9389,9 @@
       "image": "2004-kool-and-the-gang-the-hits-reloaded.jpg",
       "tracks": [
         "07. No Show (feat. BLACKstreet) (CD 2)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5492,6 +9402,13 @@
       "image": "2004-ll-cool-j-the-definition.jpg",
       "tracks": [
         "03. I'm About To Get Her"
+      ],
+      "credits": [
+        [
+          "Co-producer: Eric Williams, Marquinarius Holmes",
+          "Featuring: R. Kelly",
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -5503,6 +9420,15 @@
       "tracks": [
         "05. Geechy",
         "07. My Life"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley",
+          "Vocals [Additional]: Matt Forte"
+        ],
+        [
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -5516,6 +9442,12 @@
         "Get No Ooh Wee (Vocals Up)",
         "Get No Ooh Wee (Instrumental)",
         "Get No Ooh Wee (Acapella)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5529,6 +9461,9 @@
       ],
       "missing": [
         "04 feat. Indef - It's Funny"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5541,6 +9476,11 @@
         "02 Full Of Harmony - Rock Ya Body",
         "03 Full Of Harmony - Interlude ~Pre\"T\"Good Times~",
         "04 Full Of Harmony feat. Teddy Riley - G.O.O.D Times"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5551,7 +9491,8 @@
       "image": "2008-4love-christmas-with-4love-friends.jpg",
       "tracks": [
         "07. 4Love - Merry Christmas"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2008",
@@ -5563,6 +9504,11 @@
         "Everyday Is Your Birthday (LP)",
         "Everyday Is Your Birthday (Instrumental)",
         "Everyday Is Your Birthday (Acapella)"
+      ],
+      "credits": [
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5573,6 +9519,11 @@
       "image": "2008-de-la-ghetto-masacre-musical.jpg",
       "tracks": [
         "14 Serial Lover"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ]
       ]
     },
     {
@@ -5584,7 +9535,12 @@
       "tracks": [
         "07 Listen Up"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": [
+        [
+          "Featuring: Teddy Riley"
+        ]
+      ]
     },
     {
       "year": "2008",
@@ -5594,6 +9550,9 @@
       "image": "2008-full-of-harmony-energy.jpg",
       "tracks": [
         "02 Full Of Harmony - AROMA"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5605,7 +9564,13 @@
       "tracks": [
         "06 I Just Wanna Live (Teddy Riley Remix)"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": [
+        [
+          "Producer: Eric Valentine",
+          "Written-By: John Feldmann"
+        ]
+      ]
     },
     {
       "year": "2008",
@@ -5615,6 +9580,9 @@
       "image": "2008-john-legend-evolver.jpg",
       "tracks": [
         "15. feat. Kanye West — It's Over (Teddy Riley Remix)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5626,7 +9594,10 @@
       "tracks": [
         "02 The Floor"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": [
+        []
+      ]
     },
     {
       "year": "2008",
@@ -5637,7 +9608,8 @@
       "tracks": [
         "19: Prayer of Jabez With Teddy Riley"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": []
     },
     {
       "year": "2008",
@@ -5648,7 +9620,10 @@
       "tracks": [
         "06 Grown Man feat. The Pussycat Dolls"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": [
+        []
+      ]
     },
     {
       "year": "2008",
@@ -5658,6 +9633,9 @@
       "image": "2008-dubb-union-snoop-dogg-presents-dubb-union.jpg",
       "tracks": [
         "08. Snoop Dog Presents Dubb Union - Turn It Up"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5674,6 +9652,15 @@
         "15. Snoop Dogg - Let It Out (Album Version (Explicit)) (Explicit)",
         "18. Snoop Dogg - Those Gurlz (Album Version (Explicit)) (Explicit)",
         "21. Snoop Dogg - Can't Say Goodbye (Album Version (Explicit)) (Explicit)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
       ]
     },
     {
@@ -5692,7 +9679,12 @@
         "02 - Instrumental",
         "03 - Acappella"
       ],
-      "format": "Single"
+      "format": "Single",
+      "credits": [
+        [],
+        [],
+        []
+      ]
     },
     {
       "year": "2009",
@@ -5702,6 +9694,19 @@
       "image": "2009-amerie-in-love-war.jpg",
       "tracks": [
         "01 Tell Me You Love Me"
+      ],
+      "credits": [
+        [
+          "Co-producer: Amerie",
+          "Composed By: I. Freeman, J. Lowe, Teddy Riley, Walter \"Mucho\" Scott",
+          "Composed By, Written-By: Amerie Mi Marie Rogers",
+          "Mixed By: Manny Marroquin",
+          "Mixed By [Assistant]: Christian Plata, Erik Madrid",
+          "Producer: Walter \"Mucho\" Scott",
+          "Producer, Recorded By: Teddy Riley",
+          "Recorded By: Mike Houge",
+          "Written-By: Prolifix"
+        ]
       ]
     },
     {
@@ -5715,7 +9720,8 @@
         "You're The One (Radio Edit) (feat. Aaron Hall & Teddy Riley & Guy)",
         "You're The One (Instrumental) (feat. Aaron Hall & Teddy Riley & Guy)",
         "You're The One (Acapella) (feat. Aaron Hall & Teddy Riley & Guy)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2009",
@@ -5726,7 +9732,10 @@
       "tracks": [
         "08 Teeth"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": [
+        []
+      ]
     },
     {
       "year": "2009",
@@ -5737,7 +9746,10 @@
       "tracks": [
         "Mihiro feat. BLACKstreet - Ooh Girl"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": [
+        []
+      ]
     },
     {
       "year": "2009",
@@ -5747,6 +9759,16 @@
       "image": "2009-robin-thicke-sex-therapy-the-experience.jpg",
       "tracks": [
         "05 It's In The Mornin"
+      ],
+      "credits": [
+        [
+          "Co-producer: Robin Thicke",
+          "Engineer: Bill Malina, Teddy Riley",
+          "Featuring, Rap: Snoop Dogg",
+          "Mixed By: Bill Malina, Robin Thicke, Teddy Riley",
+          "Producer, Musician: Teddy Riley",
+          "Written-By: Calvin Broadus, Jay Mathis, Robin Thicke, Teddy Riley"
+        ]
       ]
     },
     {
@@ -5758,7 +9780,15 @@
       "tracks": [
         "06 I Can't Help It"
       ],
-      "format": "LP"
+      "format": "LP",
+      "credits": [
+        [
+          "Backing Vocals: Lauren Evans",
+          "Producer: Jimmy Jam & Terry Lewis, Teddy Riley",
+          "Programmed By [Additional]: Juke Box",
+          "Written-By: Stevie Wonder, Susaye Greene"
+        ]
+      ]
     },
     {
       "year": "2009",
@@ -5768,6 +9798,9 @@
       "image": "2009-snoop-dogg-malice-n-wonderland.jpg",
       "tracks": [
         "05. Snoop Dogg - Different Languages (Explicit)"
+      ],
+      "credits": [
+        []
       ]
     }
   ],
@@ -5780,6 +9813,9 @@
       "image": "2010-mike-posner-31-minutes-to-takeoff.jpg",
       "tracks": [
         "05 Déjà V"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5793,6 +9829,23 @@
         "03. Addict",
         "05. Finally",
         "13 Killah"
+      ],
+      "credits": [
+        [
+          "Guitar: Chris \"Tek\" O'Ryan",
+          "Vocals: Genevieve Jackson, Kaitlen Howard",
+          "Vocoder: Teddy Riley"
+        ],
+        [
+          "Drum Programming [Additional Programming], Vocoder: Teddy Riley",
+          "Songwriter: Chad Wilson"
+        ],
+        [
+          "Producer [Additional Production]: Teddy Riley"
+        ],
+        [
+          "Vocoder: Teddy Riley"
+        ]
       ]
     },
     {
@@ -5807,7 +9860,66 @@
         "07 - Breaking News",
         "10 - Much Too Soon"
       ],
-      "note": "Breaking News and Monster (plus a third track not collected here) came from vocals supplied by Eddie Cascio and James Porte; fans and members of the Jackson family publicly disputed that the voice is Michael Jackson's, while Sony and the estate maintained the tracks were genuine. A 2014 fraud lawsuit over the dispute ended with all three pulled from streaming and reissues of this album in 2022."
+      "note": "Breaking News and Monster (plus a third track not collected here) came from vocals supplied by Eddie Cascio and James Porte; fans and members of the Jackson family publicly disputed that the voice is Michael Jackson's, while Sony and the estate maintained the tracks were genuine. A 2014 fraud lawsuit over the dispute ended with all three pulled from streaming and reissues of this album in 2022.",
+      "credits": [
+        [
+          "Backing Vocals [Additional]: Mischke",
+          "Co-producer: Ron \"NEFF-U\" Feemstar",
+          "Engineer: James Murray, Jon Nettlesbey, Michael Durham, Scott Elgin",
+          "Engineer [Assistant]: Quentin Gilkey",
+          "Guitar: Eric Jackson, Erick Donell Walls",
+          "Horns: The Regiment Horns",
+          "Keyboards: Edward Brown, Ron \"NEFF-U\" Feemstar",
+          "Mixed By: Jean-Marie Horvat, Scott Elgin, Teddy Riley",
+          "Producer: Michael Jackson, Teddy Riley",
+          "Recorded By [Vocals]: Michael Durham, Mischke",
+          "Vocals [Spoken Bridge]: Taryll Jackson",
+          "Whistling: Danny Ray McDonald Jr., Michael Durham",
+          "Written-By: Brad Buxer, Michael Jackson",
+          "Written-By [Spoken Bridge], Programmed By, Other [Finisher]: Teddy Riley"
+        ],
+        [
+          "Backing Vocals: James Porte, Michael Jackson",
+          "Engineer [Assistant Engineer On The Rap]: Zachariah Redding",
+          "Engineer [Recording Assistant]: Quentin Gilkey",
+          "Engineer [Recording]: Drew Harris, Glen Marchese, Joe Corcoran, Khaliq Glover, Khaliq-O-Vision, Luis Navarro, Scott Elgin, Stuart Brawley",
+          "Lyrics By [Rap]: Curtis Jackson",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Musician: Cameron Stone, Eddie Cascio, Joe Corcoran, Orianthi, Rudy Bird, Sharon Jackson, Stuart Brawley",
+          "Producer: Angelikson, Michael Jackson, Teddy Riley",
+          "Programmed By, Other [Finisher]: Teddy Riley",
+          "Rap: 50 Cent",
+          "Voice [Kids Scream]: Naiden Maynard, Nigel Maynard",
+          "Written-By: Eddie Cascio, James Porte, Michael Jackson"
+        ],
+        [
+          "Arranged By [Strings], Conductor [Strings]: Benjamin Wright",
+          "Engineer [Assistant]: Quentin Gilkey",
+          "Engineer [Recording]: Drew Harris, Glen Marchese, Joe Corcoran, Khaliq Glover, Khaliq-O-Vision, Scott Elgin, Stuart Brawley",
+          "Engineer [String Session Assistant]: Brandon Datoli",
+          "Engineer [String Session Recording]: Reginald Dozier",
+          "Engineer [Voiceover]: Dave Hampton, Myron Chandler",
+          "Mixed By: Jean-Marie Horvat, Teddy Riley",
+          "Musician: Eddie Cascio, James Porte, Joe Corcoran, Stuart Brawley",
+          "Producer: Angelikson, Michael Jackson, Teddy Riley",
+          "Producer [Voiceover]: Michael LeFevre",
+          "Programmed By, Other [Finisher]: Teddy Riley",
+          "Strings: The Benjamin Wright String Orchestra",
+          "Voice [Talents]: Lisa Orkin, Michael LeFevre, Sandy Orkin, Stacey Michaels, Stuart Brawley",
+          "Written-By: Eddie Cascio, James Porte, Michael Jackson"
+        ],
+        [
+          "Accordion, Contractor: Suzie Katayama",
+          "Arranged By, Conductor: David Campbell",
+          "Concertmaster: Charlie Bisharat",
+          "Guitar: Tommy Emmanuel",
+          "Harmonica: Tommy Morgan",
+          "Kora: Dean Parks",
+          "Mixed By: Allen Sides",
+          "Producer: John McClain, Michael Jackson",
+          "Written-By: Michael Jackson"
+        ]
+      ]
     },
     {
       "year": "2011",
@@ -5817,6 +9929,9 @@
       "image": "2011-kirk-franklin-hello-fear.jpg",
       "tracks": [
         "15 A God Like You"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5828,7 +9943,8 @@
       "format": "Single",
       "tracks": [
         "01. Jay Park - Demon"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2011",
@@ -5838,7 +9954,8 @@
       "image": "2011-jacob-latimore-feat-issa-like-em-all.jpg",
       "tracks": [
         "Like 'Em All (Radio Version)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2011",
@@ -5849,6 +9966,9 @@
       "format": "LP",
       "tracks": [
         "1 Believe"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5863,7 +9983,8 @@
       ],
       "missing": [
         "Between My Thighs (T.R Dub Mix)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2012",
@@ -5874,6 +9995,13 @@
       "format": "LP",
       "tracks": [
         "1-02 What Is Love"
+      ],
+      "credits": [
+        [
+          "Arranged By, Composed By: Teddy Riley",
+          "Composed By: Dom, Richard Garcia",
+          "Lyrics By, Composed By: Yoo Young Jin"
+        ]
       ]
     },
     {
@@ -5887,6 +10015,11 @@
       ],
       "missing": [
         "15 - Not It! feat Jazza'e, Teddy Riley"
+      ],
+      "credits": [
+        [
+          "Featuring: Jazza'e, Teddy Riley"
+        ]
       ]
     },
     {
@@ -5898,7 +10031,8 @@
       "format": "Single",
       "tracks": [
         "01. Dance With You"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2013",
@@ -5908,7 +10042,8 @@
       "image": "2013-shinee-shinee-the-3rd-album-chapter-2-why-so-serious-the-misconceptions-of-me.jpg",
       "tracks": [
         "03 SHINee - SHINe (Medusa Ⅰ)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2013",
@@ -5918,7 +10053,8 @@
       "image": "2013-shinee-shinee-the-3rd-album-chapter-1-dream-girl-the-misconceptions-of-you.jpg",
       "tracks": [
         "07. SHINee - 아름다워 Beautiful"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2013",
@@ -5929,6 +10065,9 @@
       "format": "LP",
       "tracks": [
         "Tyga - It Neva Rains (Album Version)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5942,7 +10081,8 @@
         "02 Hit Me Up",
         "03 백일몽 (Evanesce)",
         "04 사랑이 멎지 않게 (Raining Spell for Love)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2014",
@@ -5953,6 +10093,9 @@
       "format": "LP",
       "tracks": [
         "1-01 MAMACITA(아야야) (Japanese Ver.)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -5965,6 +10108,10 @@
       "tracks": [
         "1-02 MILK",
         "1-05 All Night"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -5976,6 +10123,22 @@
       "format": "EP",
       "tracks": [
         "1-05 거절할게 (Wicked)"
+      ],
+      "credits": [
+        [
+          "Arranged By [Additional]: Devine Channel, Kenzie",
+          "Arranged By [Horns]: Jerry Hey",
+          "Edited By: 정은경",
+          "Engineer: Michael C. Ross, 김철순, 정은경",
+          "Guitar: Michael Landau, Ray Fuller",
+          "Lyrics By, Directed By [Vocals]: Kenzie",
+          "Mixed By: Miles Walker",
+          "Producer, Arranged By, Instruments, Programmed By: Dominic Rodriguez, Teddy Riley",
+          "Saxophone: Dan Higgins",
+          "Trombone: Bill Reichenbach",
+          "Trumpet: Gary Grant, Wayne Bergeron",
+          "Written-By: Andreas Maggiani, Dominic Rodriguez, Kenzie, Teddy Riley, 이현승"
+        ]
       ]
     },
     {
@@ -5986,6 +10149,12 @@
       "image": "2014-dave-hollister-chicago-winds-the-saga-continues.jpg",
       "tracks": [
         "11. Spend The Night (Teddy Riley Remix)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley",
+          "Written-By: Eric Dawkins, Warryn Campbell"
+        ]
       ]
     },
     {
@@ -5997,6 +10166,12 @@
       "format": "EP",
       "tracks": [
         "Somethin Kinda Crazy"
+      ],
+      "credits": [
+        [
+          "Composed By, Arranged By: 이현승",
+          "Composed By, Arranged By, Lyrics By: Kenzie"
+        ]
       ]
     },
     {
@@ -6007,6 +10182,18 @@
       "image": "2015-girls-generation-lion-heart.jpg",
       "tracks": [
         "10 Check"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Engelina Andrina Larsen",
+          "Composed By, Arranged By, Written-By [Original Writer]: Dicky Daniel Klein, Dom, Engelina Andrina Larsen, Teddy Riley, 이현승",
+          "Directed By [Vocal]: 이주형",
+          "Edited By [Additional Vocal]: 박상혁",
+          "Lyrics By: Mafly",
+          "Mixed By: 정의석",
+          "Recorded By: 정은경",
+          "Technician [Protools Operated By]: 이주형"
+        ]
       ]
     },
     {
@@ -6016,7 +10203,14 @@
       "label": "Epic",
       "image": "2015-mack-wilds-love-in-the-90z.jpg",
       "tracks": [
-        "Love In The 90z"
+        "Love In The 90z",
+        "Love In The 90z (Instrumental)"
+      ],
+      "credits": [
+        []
+      ],
+      "missing": [
+        "Love In The 90z (Instrumental)"
       ]
     },
     {
@@ -6028,7 +10222,8 @@
       "format": "EP",
       "tracks": [
         "5 Smile/웨딩드레스"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2015",
@@ -6040,7 +10235,8 @@
       "tracks": [
         "1-01 CALL ME BABY",
         "1-10 BEAUTIFUL"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2015",
@@ -6052,7 +10248,8 @@
       "tracks": [
         "2-01 CALL ME BABY (叫我)",
         "2-10 BEAUTIFUL (美)"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2016",
@@ -6063,7 +10260,8 @@
       "format": "Single",
       "tracks": [
         "01. How High"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2016",
@@ -6075,7 +10273,8 @@
       "tracks": [
         "01. Brother Bones - Sweet Georgia Brown (Teddy Riley Remix)"
       ],
-      "note": "Brother Bones' 1949 recording of Sweet Georgia Brown has been the Harlem Globetrotters' entrance anthem since the 1950s; this is a Teddy Riley remix of it."
+      "note": "Brother Bones' 1949 recording of Sweet Georgia Brown has been the Harlem Globetrotters' entrance anthem since the 1950s; this is a Teddy Riley remix of it.",
+      "credits": []
     },
     {
       "year": "2016",
@@ -6087,6 +10286,10 @@
       "tracks": [
         "Falling For You (Chinese Version)",
         "Falling For You (Korean Version)"
+      ],
+      "credits": [
+        [],
+        []
       ]
     },
     {
@@ -6098,6 +10301,12 @@
       "format": "EP",
       "tracks": [
         "4 벌써 (Already)"
+      ],
+      "credits": [
+        [
+          "Composed By, Arranged By: Dicky Daniel Klein, Dom, Teddy Riley, 이현승",
+          "Lyrics By, Composed By: Kim Jonghyun"
+        ]
       ]
     },
     {
@@ -6108,6 +10317,9 @@
       "image": "2016-tim-bowman-jr-listen.jpg",
       "tracks": [
         "08 Your Love"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -6118,6 +10330,19 @@
       "image": "2017-charlie-wilson-in-it-to-win-it.jpg",
       "tracks": [
         "3. Good Time"
+      ],
+      "credits": [
+        [
+          "A&R [Coordinator for Pitbull]: Edwin Paredes",
+          "Backing Vocals: Damon Sharpe",
+          "Featuring: Pitbull",
+          "Guitar: Ray Parker Jr.",
+          "Horns: Vincent Calloway",
+          "Percussion: Mike Bennett",
+          "Producer: Charlie Wilson, Damon Sharpe, Emile Ghantous, Keith Hetrick, Steve Daly",
+          "Talkbox, Vocoder: Teddy Riley",
+          "Written-By: Armando Perez, Charlie Wilson, Damon Sharpe, Emile Ghantous, Keith Hetrick, Mahin Wilson, Michael Paran, Steve Daly"
+        ]
       ]
     },
     {
@@ -6128,6 +10353,11 @@
       "image": "2017-lalah-hathaway-honestly.jpg",
       "tracks": [
         "10 I Can't Wait (Teddy Riley Remix)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley"
+        ]
       ]
     },
     {
@@ -6138,6 +10368,9 @@
       "image": "2017-mary-j-blige-strength-of-a-woman.jpg",
       "tracks": [
         "13. Mary J. Blige - Strength Of A Woman"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -6149,6 +10382,9 @@
       "format": "EP",
       "tracks": [
         "4 Mosquito"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -6159,6 +10395,9 @@
       "image": "2018-bobby-brown-like-bobby.jpg",
       "tracks": [
         "01. Bobby Brown - Like Bobby (Explicit)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -6169,6 +10408,9 @@
       "image": "2018-case-therapy.jpg",
       "tracks": [
         "01. Case feat. Teddy Riley & Tank - Make Love"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -6179,7 +10421,8 @@
       "image": "2018-deep-the-singer.jpg",
       "tracks": [
         "10. DWTS"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2018",
@@ -6190,6 +10433,14 @@
       "tracks": [
         "01 - Eenie Meenie Miney Mo (feat. RayFade)",
         "09 - Who's Ya Daddy (feat. Teddy Riley & Tank)"
+      ],
+      "credits": [
+        [
+          "Featuring: Rayfade"
+        ],
+        [
+          "Featuring: Tank, Teddy Riley"
+        ]
       ]
     },
     {
@@ -6200,6 +10451,9 @@
       "image": "2018-nile-rodgers-chic-it-s-about-time.jpg",
       "tracks": [
         "10. feat. Craig David & Stefflon Don - \"New Jack\" Sober (Teddy Riley Version)"
+      ],
+      "credits": [
+        []
       ]
     },
     {
@@ -6211,6 +10465,11 @@
       "format": "LP",
       "tracks": [
         "Trey Songz - Keep It Right There (feat. Teddy Riley)"
+      ],
+      "credits": [
+        [
+          "Featuring: Teddy Riley"
+        ]
       ]
     },
     {
@@ -6222,7 +10481,8 @@
       "format": "Single",
       "tracks": [
         "01 Oliver Twist"
-      ]
+      ],
+      "credits": []
     },
     {
       "year": "2019",
@@ -6232,6 +10492,387 @@
       "image": "2019-the-apx-amplified-experiment.jpg",
       "tracks": [
         "08. The Apx - Message from Jody Watley and Teddy Riley (Interlude)"
+      ],
+      "credits": [
+        [
+          "Composed By: The APX",
+          "Featuring: Jody Watley, Teddy Riley"
+        ]
+      ]
+    },
+    {
+      "year": "2019",
+      "artist": "Jazzy Amra",
+      "title": "Amra",
+      "label": "Heads Music",
+      "image": "2019-jazzy-amra-amra.jpg",
+      "tracks": [
+        "02 feat. Wyclef Jean & Teddy Riley - You Got Me"
+      ]
+    }
+  ],
+  "2020s": [
+    {
+      "year": "2020",
+      "artist": "Ray Lavender",
+      "title": "100/Q & C",
+      "label": "Ray's World Music Grp.",
+      "image": "2020-ray-lavender-100-q-c.jpg",
+      "tracks": [
+        "02 100 (feat. Teddy Riley)"
+      ]
+    },
+    {
+      "year": "2020",
+      "artist": "Kidi, Teddy Riley",
+      "title": "Say Cheese (Remix)",
+      "label": "Not On Label",
+      "image": "2020-kidi-teddy-riley-say-cheese-remix.jpg",
+      "format": "Single",
+      "tracks": [
+        "01. Kidi - Say Cheese (Remix)"
+      ]
+    },
+    {
+      "year": "2020",
+      "artist": "Lloyd",
+      "title": "Slow Wine Bass Line (feat. Teddy Riley)",
+      "label": "Not On Label",
+      "image": "2020-lloyd-slow-wine-bass-line-feat-teddy-riley.jpg",
+      "format": "Single",
+      "tracks": [
+        "01. Lloyd - Slow Wine Bass Line",
+        "02. Lloyd - Slow Wine Bass Line (Extended Version)"
+      ]
+    },
+    {
+      "year": "2020",
+      "artist": "Singing Melody",
+      "title": "The Next Chapter",
+      "label": "Your Friend In Music / Shem",
+      "image": "2020-singing-melody-the-next-chapter.jpg",
+      "tracks": [
+        "11 Never Leave"
+      ]
+    },
+    {
+      "year": "2020",
+      "artist": "Shomari",
+      "title": "Shomari",
+      "label": "Not On Label",
+      "image": "2020-shomari-shomari.jpg",
+      "tracks": [
+        "01. feat. Teddy Riley - Timeless",
+        "02. feat. Teddy Riley - Lady for Life"
+      ]
+    },
+    {
+      "year": "2020",
+      "artist": "Teddy Riley feat V. Bozeman, Donel, J. Sol & Nezi Momodu",
+      "title": "Dance 4 Glory",
+      "label": "Trmusicgroup Inc/Artistry Records",
+      "image": "2020-teddy-riley-feat-v-bozeman-donel-j-sol-nezi-momodu-dance-4-glory.jpg",
+      "format": "Single",
+      "tracks": [
+        "1. Teddy Riley - Dance 4 Glory"
+      ]
+    },
+    {
+      "year": "2020",
+      "artist": "Singltn feat. Ray Lavender",
+      "title": "The Way",
+      "label": "RB4 Entertainment",
+      "image": "2020-singltn-feat-ray-lavender-the-way.jpg",
+      "format": "Single",
+      "tracks": [
+        "01. feat. Ray Lavender - The Way"
+      ]
+    },
+    {
+      "year": "2020",
+      "artist": "Phaedra",
+      "title": "Love at Christmas",
+      "label": "Artist Live Records",
+      "image": "2020-phaedra-love-at-christmas.jpg",
+      "tracks": [
+        "6. Very Merry Christmas"
+      ]
+    },
+    {
+      "year": "2021",
+      "artist": "Hannah Monds",
+      "title": "The introduction",
+      "label": "Mondster Entertainment",
+      "image": "2021-hannah-monds-the-introduction.jpg",
+      "tracks": [
+        "04. feat. Teddy Riley - Beg For It"
+      ]
+    },
+    {
+      "year": "2021",
+      "artist": "Machel Montano",
+      "title": "The Wedding Album",
+      "label": "Monks Music",
+      "image": "2021-machel-montano-the-wedding-album.jpg",
+      "tracks": [
+        "14. Feat. Teddy Riley & J-Stylz - I Do"
+      ]
+    },
+    {
+      "year": "2021",
+      "artist": "Jay Walker",
+      "title": "She Was Sleep",
+      "label": "Jay Walker Music Group",
+      "image": "2021-jay-walker-she-was-sleep.jpg",
+      "tracks": [
+        "05. Feat. Johnny Burnett - She Was Sleep"
+      ]
+    },
+    {
+      "year": "2021",
+      "artist": "Mary J. Blige",
+      "title": "Hourglass (from the Amazon Original Documentary: Mary J. Blige's My Life)",
+      "label": "Mary Jane Productions",
+      "image": "2021-mary-j-blige-hourglass-from-the-amazon-original-documentary-mary-j-blige-s-my-life.jpg",
+      "format": "Single",
+      "tracks": [
+        "01. Mary J. Blige - Hourglass (from the Amazon Original Documentary)"
+      ]
+    },
+    {
+      "year": "2021",
+      "artist": "Super Junior",
+      "title": "The Renaissance - The 10th Album",
+      "label": "SM Entertainment",
+      "image": "2021-super-junior-the-renaissance-the-10th-album.jpg",
+      "tracks": [
+        "07 사랑이 멎지 않게 Raining Spell for Love (Remake Version)"
+      ]
+    },
+    {
+      "year": "2021",
+      "artist": "Pleasure P",
+      "title": "Yet",
+      "label": "Mr. Cooper Touring Inc.",
+      "image": "2021-pleasure-p-yet.jpg",
+      "tracks": [
+        "Yet"
+      ]
+    },
+    {
+      "year": "2022",
+      "artist": "Gogo Morrow",
+      "title": "Ready",
+      "label": "B.O.E. Records / Universal",
+      "image": "2022-gogo-morrow-ready.jpg",
+      "tracks": [
+        "02. Feat. Teddy Riley - Nu Nu"
+      ]
+    },
+    {
+      "year": "2022",
+      "artist": "Jibriel",
+      "title": "Close",
+      "label": "ArtistHaus Records",
+      "image": "2022-jibriel-close.jpg",
+      "tracks": [
+        "Feat. Teddy Riley - Close"
+      ]
+    },
+    {
+      "year": "2022",
+      "artist": "Pretty Rico Bandz",
+      "title": "Prettier",
+      "label": "Pro 192 Studio",
+      "image": "2022-pretty-rico-bandz-prettier.jpg",
+      "tracks": [
+        "11. feat. Teddy Riley - I Like"
+      ]
+    },
+    {
+      "year": "2023",
+      "artist": "The Walls Group",
+      "title": "Four Walls",
+      "label": "My Block Records",
+      "image": "2023-the-walls-group-four-walls.jpg",
+      "tracks": [
+        "01. The Walls Group - He'll Make A Way"
+      ]
+    },
+    {
+      "year": "2024",
+      "artist": "Michael Stemley feat. Teddy Riley",
+      "title": "We Should Talk (Remix)",
+      "label": "ML Productions",
+      "image": "2024-michael-stemley-feat-teddy-riley-we-should-talk-remix.jpg",
+      "tracks": [
+        "feat. Teddy Riley - We Should Talk (Remix)"
+      ]
+    },
+    {
+      "year": "2024",
+      "artist": "Rocco Lupo",
+      "title": "That Drip (Priceless)",
+      "label": "Roots Music Group",
+      "image": "2024-rocco-lupo-that-drip-priceless.jpg",
+      "tracks": [
+        "That Drip (Priceless)"
+      ]
+    },
+    {
+      "year": "2024",
+      "artist": "Tniyah",
+      "title": "Situations",
+      "label": "Benin City Ent.",
+      "image": "2024-tniyah-situations.jpg",
+      "tracks": [
+        "Grip"
+      ],
+      "missing": [
+        "Grip"
+      ]
+    },
+    {
+      "year": "2024",
+      "artist": "Pretty Rico Bandz",
+      "title": "Deep",
+      "label": "Not On Label",
+      "image": "2024-pretty-rico-bandz-deep.jpg",
+      "format": "Single",
+      "tracks": [
+        "1. Pretty Rico Bandz - Deep"
+      ]
+    },
+    {
+      "year": "2024",
+      "artist": "Rocco Lupo",
+      "title": "Leavin' With Me",
+      "label": "Not On Label",
+      "image": "2024-rocco-lupo-leavin-with-me.jpg",
+      "tracks": [
+        "Leavin' With Me (Radio Edit)"
+      ]
+    },
+    {
+      "year": "2024",
+      "artist": "Fre$h",
+      "title": "Refreshments",
+      "label": "Fresh Music",
+      "image": "2024-fre-h-refreshments.jpg",
+      "tracks": [
+        "08 feat. Wiz Khalida & Teddy Riley - Send Nudes"
+      ]
+    },
+    {
+      "year": "2025",
+      "artist": "Annabel Anderson",
+      "title": "BUM BUM",
+      "label": "Annabel A",
+      "image": "2025-annabel-anderson-bum-bum.jpg",
+      "tracks": [
+        "BUM BUM"
+      ]
+    },
+    {
+      "year": "2025",
+      "artist": "D-Nice feat. Estelle, Erick Sermon & Teddy Riley",
+      "title": "D-Nice Presents: TONIGHT (feat. Akon)",
+      "label": "Bernard Alexander Transmedia",
+      "image": "2025-d-nice-feat-estelle-erick-sermon-teddy-riley-d-nice-presents-tonight-feat-akon.jpg",
+      "tracks": [
+        "D-Nice Presents: TONIGHT (feat. Akon)"
+      ]
+    },
+    {
+      "year": "2025",
+      "artist": "Princeton Perez",
+      "title": "Often with Teddy Riley (Interlude)",
+      "label": "Princeton Perez",
+      "image": "2025-princeton-perez-often-with-teddy-riley-interlude.jpg",
+      "tracks": [
+        "Often with Teddy Riley (Interlude)"
+      ]
+    },
+    {
+      "year": "2025",
+      "artist": "Mr. Tyeskie",
+      "title": "Sex You More (Remix)",
+      "label": "TYTAINMENT",
+      "image": "2025-mr-tyeskie-sex-you-more-remix.jpg",
+      "tracks": [
+        "feat. Teddy Riley - Sex You More (Remix)"
+      ]
+    },
+    {
+      "year": "2026",
+      "artist": "Rosé Riley",
+      "title": "Rosey Season 1.5 - EP",
+      "label": "Rosé Family Entertainment",
+      "image": "2025-ros-riley-rosey-season-1-5-ep.jpg",
+      "format": "EP",
+      "tracks": [
+        "4. feat. Jazzy Amra & Teddy Riley - Bright Lights"
+      ]
+    },
+    {
+      "year": "2026",
+      "artist": "Masha Kova",
+      "title": "Bye Bye Bye",
+      "label": "JK Entertainment",
+      "image": "2025-masha-kova-bye-bye-bye.jpg",
+      "tracks": [
+        "Feat. Teddy Riley - Bye Bye Bye"
+      ]
+    },
+    {
+      "year": "2026",
+      "artist": "Sir Charles Jones",
+      "title": "Dance",
+      "label": "KG Music Group",
+      "image": "2025-sir-charles-jones-dance.jpg",
+      "tracks": [
+        "Feat Tra G & Teddy Riley - Dance"
+      ]
+    },
+    {
+      "year": "2026",
+      "artist": "Sky Monroe",
+      "title": "Papá",
+      "label": "Sky Monroe",
+      "image": "2025-sky-monroe-pap.jpg",
+      "tracks": [
+        "Papá"
+      ]
+    },
+    {
+      "year": "2026",
+      "artist": "Travis Malloy & Urban Worship Collective",
+      "title": "Favor",
+      "label": "Malloy Entertainment",
+      "image": "2026-travis-malloy-urban-worship-collective-favor.jpg",
+      "tracks": [
+        "11 feat. Teddy Riley - Sunday Service"
+      ]
+    },
+    {
+      "year": "2026",
+      "artist": "Starstruck Anthem",
+      "title": "Tailored Stars",
+      "label": "12963298 Records DK",
+      "image": "2026-starstruck-anthem-tailored-stars.jpg",
+      "tracks": [
+        "Tailored Stars"
+      ]
+    },
+    {
+      "year": "2026",
+      "artist": "Teddy Riley",
+      "title": "Remember the Times: A Memoir",
+      "label": "Simon & Schuster",
+      "image": "2026-teddy-riley-remember-the-times-a-memoir.jpg",
+      "format": "Book",
+      "tracks": [
+        "256 Pages"
       ]
     }
   ]

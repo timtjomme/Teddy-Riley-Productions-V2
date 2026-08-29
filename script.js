@@ -46,6 +46,35 @@ document.addEventListener('dragstart', function(e){
   video.play().catch(function(){});
 })();
 
+// ---- ROTATING TAB TITLE --------------------------------------------------
+// The browser-tab subtitle cycles through a run of Teddy's own ad-libs and
+// lyrics instead of sitting on one static line — homepage only (same
+// .hero-video gate as the video rotation above). Skipped under
+// prefers-reduced-motion: a title quietly changing every few seconds isn't
+// motion on the page itself, but it's still something repeatedly changing
+// out from under a visitor with no way to pause it, which is exactly what
+// that preference is asking sites to avoid.
+(function(){
+  if(!document.querySelector('.hero-video')) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var lines = [
+    'How can I make you dance some more?',
+    'Yes TR is my name',
+    'I made the New Jack Swing...',
+    'Here we go',
+    'FUNKY',
+    'Drop the ballistics HOT',
+    'Play it a little louder'
+  ];
+  var base = 'Teddy Riley Productions';
+  var i = 0;
+  document.title = base + ' — ' + lines[0];
+  setInterval(function(){
+    i = (i + 1) % lines.length;
+    document.title = base + ' — ' + lines[i];
+  }, 4000);
+})();
+
 // Named so cards created later (the 404's random pick) can reuse it.
 function wireCard(card){
   function toggle(){
@@ -499,7 +528,7 @@ function initSiteStats(){
     if(!entries[entries.length - 1].isIntersecting) return;
     nums.forEach(function(el, i){ animate(el, targets[i]); });
     obs.disconnect();
-  }, { threshold: 0.6 });
+  }, { threshold: 0 });
   obs.observe(document.querySelector('.site-stats'));
 }
 initSiteStats();
@@ -767,12 +796,18 @@ function initSnakeLines(){
       // below 640px .snake is a single column (style.css) — every node is
       // its own "row", so the row-to-row jog further down would zig out
       // past the edge and back for each one. A straight line through the
-      // dots reads as the same rail without that.
+      // dots reads as the same rail without that. Anchored to each dot's
+      // left edge, not its center: .node summary is a left-aligned flex
+      // column (dot, then year, then title, all starting at that same left
+      // edge), so a line through the dot's center sits well inside the
+      // text's own horizontal span, not beside it. style.css indents
+      // .node-year/.node-head a little further right of this same edge so
+      // the rail runs clear of the text while still meeting the dot itself.
       var singleColumn = getComputedStyle(snake).gridTemplateColumns.trim().split(' ').length === 1;
       if(singleColumn){
         var linePts = nodes.map(function(n){
           var d = n.querySelector('.node-dot').getBoundingClientRect();
-          return { x: d.left + d.width / 2 - box.left, y: d.top + d.height / 2 - box.top };
+          return { x: d.left - box.left, y: d.top + d.height / 2 - box.top };
         });
         path.setAttribute('d', roundedPath(linePts, 24));
         return;
@@ -848,11 +883,11 @@ function initEraLinks(){
   var eras = story ? Array.prototype.slice.call(story.querySelectorAll('.era')) : [];
   if(!story || !svg || !path || eras.length < 2) return;
 
-  function dotCenter(era, which){
+  function dotCenter(era, which, edge){
     var nodes = era.querySelectorAll('.node');
     var node = nodes[which === 'first' ? 0 : nodes.length - 1];
     var d = node.querySelector('.node-dot').getBoundingClientRect();
-    return { x: d.left + d.width / 2, y: d.top + d.height / 2 };
+    return { x: edge ? d.left : d.left + d.width / 2, y: d.top + d.height / 2 };
   }
 
   function draw(){
@@ -869,8 +904,12 @@ function initEraLinks(){
     var segments = [];
     for(var i = 0; i < eras.length - 1; i++){
       var eraA = eras[i], eraB = eras[i + 1];
-      var a = dotCenter(eraA, 'last');
-      var b = dotCenter(eraB, 'first');
+      // vertical (mobile): anchored to each dot's left edge, same reason
+      // as the singleColumn branch in initSnakeLines — the era heading and
+      // node text below both start at that same left edge, so a join
+      // through the center sits inside that text instead of beside it.
+      var a = dotCenter(eraA, 'last', vertical);
+      var b = dotCenter(eraB, 'first', vertical);
       a = { x: a.x - origin.left, y: a.y - origin.top };
       b = { x: b.x - origin.left, y: b.y - origin.top };
       if(vertical){

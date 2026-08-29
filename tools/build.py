@@ -20,7 +20,7 @@ STATS_END = "<!-- SITE-STATS:END -->"
 
 # The actual decades — not new-jack-swing-productions or sampled, which
 # aren't decade pages — each get their own scoped stats block too.
-DECADE_PAGES = {"1980s", "1990s", "2000s", "2010s"}
+DECADE_PAGES = {"1980s", "1990s", "2000s", "2010s", "2020s"}
 
 FLIP_SVG = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" '
             'stroke-width="2.4" stroke-linecap="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 '
@@ -269,8 +269,9 @@ def main():
         n_missing = sum(len(r.get("missing", [])) for r in releases)
         n_lp = sum(1 for r in releases if fmt(r) == "LP")
         n_ep = sum(1 for r in releases if fmt(r) == "EP")
-        n_single = len(releases) - n_lp - n_ep
-        other = f", {n_ep} EP" if n_ep else ""
+        n_book = sum(1 for r in releases if fmt(r) == "Book")
+        n_single = len(releases) - n_lp - n_ep - n_book
+        other = (f", {n_ep} EP" if n_ep else "") + (f", {n_book} Book" if n_book else "")
         hidden = f", {n_hidden} hidden" if n_hidden else ""
         page_tracks = sum(len(r["tracks"]) for r in releases)
         page_artists = {r["artist"] for r in releases}
