@@ -2,6 +2,8 @@
 declare(strict_types=1);
 session_start();
 
+const DASHBOARD_USERNAME = 'timtjomme';
+
 $configFile = __DIR__ . '/config.php';
 $hasConfig  = is_readable($configFile);
 $config     = $hasConfig ? require $configFile : ['dashboard_password' => null];
@@ -28,11 +30,13 @@ if (!$hasConfig && isset($_POST['new_password'])) {
 }
 
 if ($hasConfig && isset($_POST['password'])) {
-    if ($config['dashboard_password'] !== null
-        && hash_equals((string) $config['dashboard_password'], (string) $_POST['password'])) {
+    $userOk = hash_equals(DASHBOARD_USERNAME, (string) ($_POST['username'] ?? ''));
+    $passOk = $config['dashboard_password'] !== null
+        && hash_equals((string) $config['dashboard_password'], (string) $_POST['password']);
+    if ($userOk && $passOk) {
         $_SESSION['trp_analytics_authed'] = true;
     } else {
-        $error = 'Wrong password.';
+        $error = 'Wrong username or password.';
     }
 }
 if (isset($_GET['logout'])) unset($_SESSION['trp_analytics_authed']);
@@ -173,7 +177,8 @@ arsort($devices);
     <?php if ($setupError): ?><p class="err"><?= h($setupError) ?></p><?php endif; ?>
   <?php else: ?>
     <form method="post">
-      <input type="password" name="password" placeholder="Password" autofocus>
+      <input type="text" name="username" placeholder="Username" autofocus autocomplete="username">
+      <input type="password" name="password" placeholder="Password" autocomplete="current-password">
       <button type="submit">Log in</button>
     </form>
     <?php if ($error): ?><p class="err"><?= h($error) ?></p><?php endif; ?>
