@@ -81,6 +81,42 @@ KNOWN_IDS = {
     ("Red Velvet", "Summer Magic"): 13520226,
     ("Keith Sweat", "Playing For Keeps"): 16073045,
     ("Nile Rodgers & Chic", "It's About Time"): 12607788,
+    # Manually supplied by the user (search/similarity matching couldn't
+    # resolve these on its own — obscure 1980s 12"s not worth guessing at).
+    ("Atlantis / Total Climax", "Keep On Movin' And Groovin'"): 1739786,
+    ("Kids At Work", "Sugar Baby"): 1037572,
+    ("Kids At Work", "Singing Hey Yea"): 4982052,
+    ("Doug E. Fresh And The Get Fresh Crew", "The Show / La-Di-Da-Di"): 1139655,
+    ("La Va'ba", "That Girl"): 13400863,
+    ("The Masters Of Ceremony", "Crime"): 3079937,
+    ("Al B. Just Two Mc's", "Wrong"): 401601,
+    ("Awesome Foursome", "Monster Beat"): 1203437,
+    ("Disco Four", "Get Busy / Stomp, Stomp, Clap"): 96291,
+    ("Ray Rock & K.C.", "Minnie / Rayrock Kick It"): 313502,
+    ("B-Fats", "B-Fats"): 276655,
+    ("D.J. Hollywood", "Love In The Afternoon"): 403878,
+    ("D.J. Short & Max Zeke", "My Phone"): 54638,
+    ("Delicious", "Stop Playing"): 2187846,
+    ("Divine Force", "T.V. Guide / The Jizer / We Came Here"): 825471,
+    ("Heavy D. & The Boyz feat. Al B. Sure!", "Money Ernin' Mt. Vernon"): 4989829,
+    ("Keith Sweat", "I Want Her"): 366207,
+    ("Keith Sweat", "Something Just Ain't Right"): 341365,
+    ("Kool Moe Dee", "Dumb Dick (Richard)"): 211688,
+    ("Kool Moe Dee", "Kool Moe Dee"): 1287846,
+    ("Roof Top Crew", "Caught Out There"): 9586007,
+    ("Tony Tee The Composer", "Expressing My Thoughts"): 471449,
+    ("Woody Rock", "Bigger's Beat"): 202462,
+    ("Al B. Sure! feat. Slick Rick", "If I'm Not Your Lover"): 542616,
+    ("Clurel", "Hurtown"): 759812,
+    ("Déjà", "Going Crazy"): 879847,
+    ("Guy", "'Round And 'Round (Merry Go 'Round Of Love)"): 1415528,
+    ("Guy", "Teddy's Jam"): 326117,
+    ("Heavy D & The Boyz", "Don't You Know / Moneyearnin' Mount Vernon"): 1050960,
+    ("Johnny Kemp", "Just Got Paid"): 15437056,
+    ("Stevie Wonder", "My Eyes Don't Cry"): 342817,
+    ("The Classical Two", "The Classical Two Is Back"): 1573681,
+    ("The Gyrlz", "Wishing You Were Here"): 1620793,
+    ("Today", "Him Or Me"): 669059,
 }
 
 
@@ -201,6 +237,7 @@ def fetch_credits_for_release(release, token, limiter, log):
 
     tracklist = data.get("tracklist", [])
     by_key = {track_key(t.get("title", "")): t for t in tracklist if t.get("title")}
+    release_level = data.get("extraartists", [])
 
     credits = []
     hits = 0
@@ -215,7 +252,19 @@ def fetch_credits_for_release(release, token, limiter, log):
                 if s > best_score:
                     best_t, best_score = cand, s
             entry = best_t if best_score >= 0.75 else None
-        track_credits = group_credits(entry.get("extraartists", [])) if entry else []
+        # Older/vinyl-era Discogs entries often carry no per-track
+        # extraartists at all — everything printed on the sleeve is
+        # credited at the release level instead. That still genuinely
+        # applies to every track on a single/EP, so use it rather than
+        # report empty when real data exists just one level up — but
+        # only once a specific track has actually been identified on
+        # this release; a track we couldn't even locate on the
+        # tracklist shouldn't inherit credits it can't be confirmed to
+        # share.
+        if entry:
+            track_credits = group_credits(entry.get("extraartists") or release_level)
+        else:
+            track_credits = []
         if track_credits:
             hits += 1
         credits.append(track_credits)

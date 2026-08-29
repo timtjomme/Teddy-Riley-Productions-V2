@@ -39,12 +39,13 @@
   },
   {
     "date": "2026-08-29",
-    "count": 37,
+    "count": 38,
     "pages": [
       { "label": "The 2020's are here", "href": "2020s.html" },
       { "name": "2020's", "href": "2020s.html", "count": 35 },
       { "name": "1980's", "href": "1980s.html", "count": 1 },
-      { "name": "2010's", "href": "2010s.html", "count": 1 }
+      { "name": "2010's", "href": "2010s.html", "count": 1 },
+      { "name": "1990's", "href": "1990s.html", "count": 1 }
     ]
   }
 ]
