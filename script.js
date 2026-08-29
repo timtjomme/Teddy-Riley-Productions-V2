@@ -889,6 +889,9 @@ function initEraLinks(){
     var d = node.querySelector('.node-dot').getBoundingClientRect();
     return { x: edge ? d.left : d.left + d.width / 2, y: d.top + d.height / 2 };
   }
+  function isSingleColumn(era){
+    return getComputedStyle(era.querySelector('.snake')).gridTemplateColumns.trim().split(' ').length === 1;
+  }
 
   function draw(){
     var w = story.scrollWidth, h = story.scrollHeight;
@@ -896,35 +899,34 @@ function initEraLinks(){
     svg.style.height = h + 'px';
     svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
     var origin = svg.getBoundingClientRect();
-    // below 640px .story stacks eras instead of laying them out side by
-    // side (style.css) — the join between them is a straight vertical
-    // drop, not a rise through a horizontal gap
-    var vertical = getComputedStyle(story).flexDirection === 'column';
 
     var segments = [];
     for(var i = 0; i < eras.length - 1; i++){
       var eraA = eras[i], eraB = eras[i + 1];
-      // vertical (mobile): anchored to each dot's left edge, same reason
-      // as the singleColumn branch in initSnakeLines — the era heading and
-      // node text below both start at that same left edge, so a join
-      // through the center sits inside that text instead of beside it.
-      var a = dotCenter(eraA, 'last', vertical);
-      var b = dotCenter(eraB, 'first', vertical);
+      // single column (mobile): anchored to each dot's left edge, same
+      // reason as the singleColumn branch in initSnakeLines — the era
+      // heading and node text below both start at that same left edge,
+      // so a join through the center sits inside that text instead of
+      // beside it. A plain drop straight down is all it needs.
+      var bothSingle = isSingleColumn(eraA) && isSingleColumn(eraB);
+      var a = dotCenter(eraA, 'last', bothSingle);
+      var b = dotCenter(eraB, 'first', bothSingle);
       a = { x: a.x - origin.left, y: a.y - origin.top };
       b = { x: b.x - origin.left, y: b.y - origin.top };
-      if(vertical){
+      if(bothSingle){
         segments.push(roundedPath([a, b], 24));
         continue;
       }
-      var eraARect = eraA.getBoundingClientRect();
-      var eraBRect = eraB.getBoundingClientRect();
-      // the gap between two .era panels is empty on purpose (see the
-      // wide .story gap in style.css) — the join rises straight through
-      // the middle of it to the next era's own row height and meets its
-      // first dot as one level approach into the left side, the same way
-      // every other join in this recipe meets a node
-      var riseX = (eraARect.right + eraBRect.left) / 2 - origin.left;
-      segments.push(roundedPath([a, { x: riseX, y: a.y }, { x: riseX, y: b.y }, b], 24));
+      // multi-column: the last node of era A can land in any column, not
+      // just the last one — same channel-out/drop/channel-in shape
+      // initSnakeLines draws between rows within one era, just spanning
+      // two separate .snake grids instead of two rows of the same one.
+      // Channel past .story's own right edge (every node's text starts
+      // below its dot, never beside it, so this stays clear of every
+      // column in both eras) then down to the midpoint between them.
+      var channelX = w - origin.left + 16;
+      var midY = (eraA.getBoundingClientRect().bottom + eraB.getBoundingClientRect().top) / 2 - origin.top;
+      segments.push(roundedPath([a, { x: channelX, y: a.y }, { x: channelX, y: midY }, { x: b.x, y: midY }, b], 24));
     }
     path.setAttribute('d', segments.join(' '));
   }

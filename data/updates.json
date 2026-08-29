@@ -45,7 +45,8 @@
       { "name": "2020's", "href": "2020s.html", "count": 35 },
       { "name": "1980's", "href": "1980s.html", "count": 1 },
       { "name": "2010's", "href": "2010s.html", "count": 1 },
-      { "name": "1990's", "href": "1990s.html", "count": 1 }
+      { "name": "1990's", "href": "1990s.html", "count": 1 },
+      { "label": "New: a Missing page cataloging known-but-uncollected mixes and edits", "href": "missing.html" }
     ]
   }
 ]

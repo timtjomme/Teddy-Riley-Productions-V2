@@ -353,50 +353,30 @@
   /* ---- TIMELINE (biography) ----
      era-head reuses .eyebrow + .year-rule verbatim as a plain heading —
      .year-rule already doubles as one elsewhere (404's "Meanwhile, in the
-     crates"). .story is a horizontal filmstrip: each .era (its heading
-     plus its own .snake grid) is a fixed-width panel, laid out in a row
-     and scrolled on the x axis rather than stacked down the page. Within
-     an .era, the moments are still a .snake: a CSS grid of numbered .node
-     stops read left-to-right, row by row, with an SVG connector
-     (script.js, initSnakeLines) drawn through the actual rendered centre
-     of each .node-dot. initEraLinks draws one more connector of the exact
-     same path/stroke recipe from the last dot of one .era to the first
-     dot of the next, into a single overlay SVG (.era-link-line) sized in
-     JS to .story's full scrollable area — inset:0 alone only ever covers
-     the clipped, visible box, not the scrollable one. .story is a plain
-     wrapper distinct from .timeline on purpose — .timeline/.timeline::before
-     belong to the decade pages' vertical rail and this page doesn't use
-     that shape at all. */
+     crates"), though here it's overridden to sit flush right with no
+     trailing rule (below) rather than the left-aligned "text + line"
+     shape it has everywhere else. .story stacks each .era (its heading
+     plus its own .snake grid) straight down the page — one panel per
+     era, not side by side. Within an .era, the moments are still a
+     .snake: a CSS grid of numbered .node stops read left-to-right, row
+     by row, with an SVG connector (script.js, initSnakeLines) drawn
+     through the actual rendered centre of each .node-dot. initEraLinks
+     draws one more connector of the exact same path/stroke recipe from
+     the last dot of one .era down to the first dot of the next, into a
+     single overlay SVG (.era-link-line) sized in JS to .story's full
+     height — inset:0 alone only ever covers the viewport-clipped box,
+     not content taller than it. .story is a plain wrapper distinct from
+     .timeline on purpose — .timeline/.timeline::before belong to the
+     decade pages' vertical rail and this page doesn't use that shape at
+     all. */
   .story{
     counter-reset: moment;
     position: relative;
     display: flex;
-    align-items: flex-start;
-    gap: 130px;
-    /* break out of .wrap's centred 1140px column, but only on the
-       right — a centred, capped box made the scroll end look like it
-       hit a wall in the middle of empty page. Left edge instead lines
-       up with .wrap's own text column (padding-left mirrors .wrap's
-       max-width/auto-margin math) so the first era sits where the
-       heading above it does, while the right side is genuinely open
-       all the way to the viewport edge — content scrolls off-screen
-       there instead of into a boxed-in stop. width:100vw + this
-       margin is the standard full-bleed trick and works regardless of
-       .wrap's own max-width/padding */
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    overflow-x: auto;
-    overflow-y: hidden;
+    flex-direction: column;
+    gap: 64px;
     padding-top: 4px;
-    padding-right: 20px;
-    padding-bottom: 28px;
-    padding-left: max(20px, calc((100vw - 1140px) / 2 + 20px));
-    /* no scroll-snap here: snap-align:start on .era fights the padding
-       above by scrolling until the first era is flush with the
-       scrollport edge, eating the padding-left it's meant to preserve */
-    scrollbar-width: none;
   }
-  .story::-webkit-scrollbar{ display: none; }
 
   /* sized and positioned entirely in JS (initEraLinks) — this is the
      shared canvas the era-to-era joins are drawn into, so they read as
@@ -415,14 +395,29 @@
     opacity: 0.6;
   }
 
-  /* fixed widths, not fluid — each panel keeps a comfortable column count
-     at every size and .story's own horizontal scroll is what handles any
-     viewport narrower than that, phones included */
-  .era{ flex: 0 0 auto; width: 360px; }
-
-  .era-head{ margin: 0 0 28px; }
-  .era-head .eyebrow{ margin-bottom: 14px; }
-  .era-head .year-rule{ margin: 0; }
+  /* column-reverse rather than reordering the markup in all 7 eras: the
+     year (second in the HTML) reads as the heading, with the era's own
+     name sitting underneath it as a caption — both flush right. */
+  .era-head{
+    margin: 0 0 28px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .era-head .eyebrow{
+    margin-bottom: 0;
+    margin-top: 14px;
+    justify-content: flex-end;
+  }
+  /* flush right, no trailing rule — .year-rule's default "text + line
+     filling the row" reads fine as a left-aligned heading elsewhere, but
+     stacked between two rows of circular photos it competed with the
+     snake/era-link lines already doing that job */
+  .era-head .year-rule{
+    margin: 0;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .era-head .year-rule::after{ content: none; }
 
   .snake{
     position: relative;
@@ -447,37 +442,19 @@
     opacity: 0.6;
   }
   @media (min-width: 640px){
-    .story{ gap: 180px; }
-    .era{ width: 640px; }
     .snake{ grid-template-columns: repeat(3, 1fr); column-gap: 36px; row-gap: 76px; }
   }
   @media (min-width: 960px){
-    .story{ gap: 220px; }
-    .era{ width: 860px; }
     .snake{ grid-template-columns: repeat(4, 1fr); }
   }
 
-  /* Below 640px the filmstrip stops paying for itself — too little width
-     per era to see more than a sliver of the next one, and swiping
-     sideways through 7 eras trades away the overview a normal vertical
-     scroll gives for free. Here .story drops the full-bleed horizontal
-     scroller and stacks eras in the page's own flow instead, and .snake
-     collapses to a single column so nodes read top to bottom. Both
-     initSnakeLines and initEraLinks in script.js detect this (one grid
-     track / .story's flex-direction) and draw a straight rail through the
-     dot centres rather than the desktop zig-zag, which only makes sense
-     when there's a next column to snake into. */
+  /* Below 640px there's only room for one photo per row anyway, so
+     .snake collapses to a single column and nodes read top to bottom.
+     Both initSnakeLines and initEraLinks in script.js detect this
+     (one grid track) and draw a straight rail through the dot centres
+     rather than the multi-column zig-zag, which only makes sense when
+     there's a next column to snake into. */
   @media (max-width: 639px){
-    .story{
-      flex-direction: column;
-      align-items: stretch;
-      width: auto;
-      margin-left: 0;
-      overflow: visible;
-      gap: 56px;
-      padding: 4px 0 0;
-    }
-    .era{ width: auto; }
     .snake{ grid-template-columns: 1fr; row-gap: 48px; }
     /* the rail (initSnakeLines/initEraLinks, script.js) runs through each
        dot's left edge here — nudge the text right of it rather than the
@@ -1573,6 +1550,48 @@
   }
   .tracks li.missing{ color: var(--missing); font-weight: 600; }
   .tracks li.missing::before{ background: var(--missing); opacity: 1; }
+
+  /* ---- MISSING (page) ----
+     every line here is already a "missing" track by definition, so the
+     .tracks li.missing red above just applies outright rather than as a
+     toggled state. .gap-release reuses .year-group's own year-rule for
+     its year headings (see the decade pages) — no photo, so a plain hero
+     (.is-plain, below) stands in for the usual --hero-img. */
+  .gap-release{ margin: 0 0 30px; }
+  .gap-release-title{
+    font: 600 17px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--label);
+    margin: 0 0 10px;
+  }
+  .gap-tracks{
+    list-style:none;
+    margin:0; padding:0;
+    font: 400 14px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .gap-tracks li{
+    display:flex;
+    gap:7px;
+    padding: 2.5px 0;
+    color: var(--missing);
+    font-weight: 600;
+  }
+  .gap-tracks li::before{
+    content:"";
+    width:5px; height:5px;
+    border-radius:50%;
+    background: var(--missing);
+    margin-top:7px;
+    flex-shrink:0;
+  }
+
+  /* a solid ground for heroes with no photo to hang --hero-img on —
+     same treatment .is-njs already uses for its own logo, generalised
+     since this page has no logo either, just a title */
+  .hero.is-plain{
+    background-color: #121214;
+    background-image: none;
+  }
+  .hero.is-plain::after{ background: transparent; }
 
   .legend{
     font: 400 10px/1 'Helvetica Neue', Helvetica, Arial, sans-serif;

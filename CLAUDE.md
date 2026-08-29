@@ -15,6 +15,7 @@ index.html                       front page: video hero, intro, decade panels
 1990s.html                       decade page: 1990s releases
 new-jack-swing-productions.html  straight hip-hop cuts and other one-offs
 sampled.html                     tracks that sample a Teddy Riley record
+missing.html                     known mixes/edits not yet in the lossless collection
 timeline.html                    life-story chronology, 1967 to now
 contact.html                     Formspree contact form
 privacy-policy.html              boilerplate privacy policy
@@ -28,7 +29,7 @@ tools/extract.py                 one-off, already run: pages -> releases.json
 imgs/                            covers (one per release), heroes, decade panels, story/ and 404/ art
 fonts/                           Open Sans variable, self-hosted
 robots.txt                       allows all crawling except /analytics/, points to sitemap.xml
-sitemap.xml                      hand-maintained list of the 10 indexable pages
+sitemap.xml                      hand-maintained list of the 11 indexable pages
 ```
 
 ## Adding or changing a release

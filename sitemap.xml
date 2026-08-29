@@ -37,6 +37,10 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://teddyrileyproductions.com/missing.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://teddyrileyproductions.com/contact.html</loc>
     <priority>0.4</priority>
   </url>
