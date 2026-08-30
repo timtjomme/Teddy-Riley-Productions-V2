@@ -15,10 +15,10 @@ document.addEventListener('dragstart', function(e){
 });
 
 // ---- HERO VIDEO ROTATION ------------------------------------------------
-// Three title-reveal cuts. One is picked at random and looped for the
-// whole visit, rather than cycling through all three in one sitting — the
-// choice is kept in sessionStorage so it stays the same across reloads
-// within a visit, and only re-rolls for a fresh session.
+// Six title-reveal cuts. One is picked at random and looped for the
+// whole visit, rather than cycling through all of them in one sitting —
+// the choice is kept in sessionStorage so it stays the same across
+// reloads within a visit, and only re-rolls for a fresh session.
 (function(){
   var wrap = document.querySelector('.hero-video');
   var video = wrap && wrap.querySelector('video');
@@ -26,7 +26,10 @@ document.addEventListener('dragstart', function(e){
   var playlist = [
     {src: 'imgs/archives-title.mp4',   poster: 'imgs/archives-title-poster.jpg',   dark: false},
     {src: 'imgs/archives-title-2.mp4', poster: 'imgs/archives-title-2-poster.jpg', dark: false},
-    {src: 'imgs/archives-title-3.mp4', poster: 'imgs/archives-title-3-poster.jpg', dark: true}
+    {src: 'imgs/archives-title-3.mp4', poster: 'imgs/archives-title-3-poster.jpg', dark: true},
+    {src: 'imgs/archives-title-4.mp4', poster: 'imgs/archives-title-4-poster.jpg', dark: true},
+    {src: 'imgs/archives-title-5.mp4', poster: 'imgs/archives-title-5-poster.jpg', dark: false},
+    {src: 'imgs/archives-title-6.mp4', poster: 'imgs/archives-title-6-poster.jpg', dark: true}
   ];
   var idx = NaN;
   try {
@@ -64,7 +67,8 @@ document.addEventListener('dragstart', function(e){
     'Here we go',
     'FUNKY',
     'Drop the ballistics HOT',
-    'Play it a little louder'
+    'Play it a little louder',
+    'Check baby check baby 1-2-3-4'
   ];
   var base = 'Teddy Riley Productions';
   var i = 0;
@@ -74,6 +78,77 @@ document.addEventListener('dragstart', function(e){
     document.title = base + ' — ' + lines[i];
   }, 4000);
 })();
+
+// ---- DECADE HERO/PANEL PHOTO ROTATION ------------------------------------
+// Several photos of the same era, picked at random on each load —
+// independently on the homepage panel and on the decade page's own hero (a
+// visitor could see a different one in each place on the same visit). Each
+// photo gets its own crop position, same as every other --hero-pos/
+// --panel-pos tuned elsewhere on the site, and its own source image per
+// spot (hero vs. panel) since a couple of decades started with two
+// separately-cropped originals rather than one shared file.
+function initDecadePhotoRotation(panelSelector, heroPage, photos){
+  function pick(){ return photos[Math.floor(Math.random() * photos.length)]; }
+
+  var panel = document.querySelector(panelSelector);
+  if(panel){
+    var p = pick();
+    panel.style.backgroundImage = "url('" + p.panelSrc + "')";
+    panel.style.setProperty('--panel-pos', p.panelPos);
+  }
+
+  // script.js is shared by every page, so the hero half only applies on
+  // the one decade page it belongs to — matched by filename since these
+  // pages don't all carry a distinguishing class on .hero the way
+  // 1980s.html's .is-light-corner does.
+  if(location.pathname.replace(/^.*\//, '') === heroPage){
+    var hero = document.querySelector('.hero');
+    if(hero){
+      var h = pick();
+      hero.style.setProperty('--hero-img', "url('" + h.heroSrc + "')");
+      hero.style.setProperty('--hero-pos', h.heroPos);
+    }
+  }
+}
+
+initDecadePhotoRotation('.panel-1980s', '1980s.html', [
+  { heroSrc: 'imgs/hero-1980s.jpg', heroPos: '12%', panelSrc: 'imgs/hero-1980s.jpg', panelPos: '14%' },
+  { heroSrc: 'imgs/hero-1980s-2.jpg', heroPos: '10%', panelSrc: 'imgs/hero-1980s-2.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-1980s-3.jpg', heroPos: '10%', panelSrc: 'imgs/hero-1980s-3.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-1980s-4.jpg', heroPos: '10%', panelSrc: 'imgs/hero-1980s-4.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-1980s-5.jpg', heroPos: '15%', panelSrc: 'imgs/hero-1980s-5.jpg', panelPos: '15%' },
+  { heroSrc: 'imgs/hero-1980s-6.jpg', heroPos: '12%', panelSrc: 'imgs/hero-1980s-6.jpg', panelPos: '12%' },
+  { heroSrc: 'imgs/hero-1980s-7.jpg', heroPos: '18%', panelSrc: 'imgs/hero-1980s-7.jpg', panelPos: '18%' }
+]);
+
+initDecadePhotoRotation('.panel-1990s', '1990s.html', [
+  { heroSrc: 'imgs/hero-1990s.jpg', heroPos: '14%', panelSrc: 'imgs/panel-1990s.jpg', panelPos: '8%' },
+  { heroSrc: 'imgs/hero-1990s-2.jpg', heroPos: '15%', panelSrc: 'imgs/hero-1990s-2.jpg', panelPos: '15%' },
+  { heroSrc: 'imgs/hero-1990s-3.jpg', heroPos: '10%', panelSrc: 'imgs/hero-1990s-3.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-1990s-4.jpg', heroPos: '45%', panelSrc: 'imgs/hero-1990s-4.jpg', panelPos: '45%' },
+  { heroSrc: 'imgs/hero-1990s-5.jpg', heroPos: '20%', panelSrc: 'imgs/hero-1990s-5.jpg', panelPos: '20%' },
+  { heroSrc: 'imgs/hero-1990s-6.jpg', heroPos: '10%', panelSrc: 'imgs/hero-1990s-6.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-1990s-7.jpg', heroPos: '20%', panelSrc: 'imgs/hero-1990s-7.jpg', panelPos: '20%' },
+  { heroSrc: 'imgs/hero-1990s-8.jpg', heroPos: '15%', panelSrc: 'imgs/hero-1990s-8.jpg', panelPos: '15%' },
+  { heroSrc: 'imgs/hero-1990s-9.jpg', heroPos: '30%', panelSrc: 'imgs/hero-1990s-9.jpg', panelPos: '30%' },
+  { heroSrc: 'imgs/hero-1990s-10.jpg', heroPos: '10%', panelSrc: 'imgs/hero-1990s-10.jpg', panelPos: '10%' }
+]);
+
+initDecadePhotoRotation('.panel-2020s', '2020s.html', [
+  { heroSrc: 'imgs/hero-2020s.jpg', heroPos: '15%', panelSrc: 'imgs/panel-2020s.jpg', panelPos: '28%' },
+  { heroSrc: 'imgs/hero-2020s-2.jpg', heroPos: '20%', panelSrc: 'imgs/hero-2020s-2.jpg', panelPos: '20%' },
+  { heroSrc: 'imgs/hero-2020s-3.jpg', heroPos: '20%', panelSrc: 'imgs/hero-2020s-3.jpg', panelPos: '20%' },
+  { heroSrc: 'imgs/hero-2020s-4.jpg', heroPos: '20%', panelSrc: 'imgs/hero-2020s-4.jpg', panelPos: '20%' },
+  { heroSrc: 'imgs/hero-2020s-5.jpg', heroPos: '10%', panelSrc: 'imgs/hero-2020s-5.jpg', panelPos: '10%' }
+]);
+
+initDecadePhotoRotation('.panel-2000s', '2000s.html', [
+  { heroSrc: 'imgs/hero-2000s.jpg', heroPos: '18%', panelSrc: 'imgs/panel-2000s.jpg', panelPos: '35%' },
+  { heroSrc: 'imgs/hero-2000s-2.jpg', heroPos: '10%', panelSrc: 'imgs/hero-2000s-2.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-2000s-3.jpg', heroPos: '15%', panelSrc: 'imgs/hero-2000s-3.jpg', panelPos: '15%' },
+  { heroSrc: 'imgs/hero-2000s-4.jpg', heroPos: '20%', panelSrc: 'imgs/hero-2000s-4.jpg', panelPos: '20%' },
+  { heroSrc: 'imgs/hero-2000s-5.jpg', heroPos: '15%', panelSrc: 'imgs/hero-2000s-5.jpg', panelPos: '15%' }
+]);
 
 // Named so cards created later (the 404's random pick) can reuse it.
 function wireCard(card){
