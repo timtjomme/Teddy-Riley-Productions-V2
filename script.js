@@ -142,6 +142,17 @@ initDecadePhotoRotation('.panel-2020s', '2020s.html', [
   { heroSrc: 'imgs/hero-2020s-5.jpg', heroPos: '10%', panelSrc: 'imgs/hero-2020s-5.jpg', panelPos: '10%' }
 ]);
 
+initDecadePhotoRotation('.panel-2010s', '2010s.html', [
+  { heroSrc: 'imgs/hero-2010s.jpg', heroPos: '28%', panelSrc: 'imgs/panel-2010s.jpg', panelPos: '35%' },
+  { heroSrc: 'imgs/hero-2010s-2.jpg', heroPos: '15%', panelSrc: 'imgs/hero-2010s-2.jpg', panelPos: '15%' },
+  { heroSrc: 'imgs/hero-2010s-3.jpg', heroPos: '10%', panelSrc: 'imgs/hero-2010s-3.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-2010s-4.jpg', heroPos: '15%', panelSrc: 'imgs/hero-2010s-4.jpg', panelPos: '15%' },
+  { heroSrc: 'imgs/hero-2010s-5.jpg', heroPos: '10%', panelSrc: 'imgs/hero-2010s-5.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-2010s-6.jpg', heroPos: '5%', panelSrc: 'imgs/hero-2010s-6.jpg', panelPos: '5%' },
+  { heroSrc: 'imgs/hero-2010s-7.jpg', heroPos: '10%', panelSrc: 'imgs/hero-2010s-7.jpg', panelPos: '10%' },
+  { heroSrc: 'imgs/hero-2010s-8.jpg', heroPos: '15%', panelSrc: 'imgs/hero-2010s-8.jpg', panelPos: '15%' }
+]);
+
 initDecadePhotoRotation('.panel-2000s', '2000s.html', [
   { heroSrc: 'imgs/hero-2000s.jpg', heroPos: '18%', panelSrc: 'imgs/panel-2000s.jpg', panelPos: '35%' },
   { heroSrc: 'imgs/hero-2000s-2.jpg', heroPos: '10%', panelSrc: 'imgs/hero-2000s-2.jpg', panelPos: '10%' },
