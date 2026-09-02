@@ -125,10 +125,10 @@ KNOWN_IDS = {
     ("Quincy Jones feat. Siedah Garrett", "I Don't Go For That"): 412379,
     ("Keith Sweat", "Keep It Comin'"): 1194129,
     ("Keith Sweat", "Your Love"): 1187932,
-    ("Various", "New Jack City (Music From The Motion Picture)"): 1205237,
     ("Various", "Juice (Original Motion Picture Soundtrack)"): 7092412,
     ("Teddy Riley feat. Tammy Lucas", "Is It Good To You"): 1187490,
-    ("The Party", "Free"): 151384,  # resolved from master discogs.com/master/171923
+    ("The Party", "Free"): 3373823,  # CD album edition — has "All About Love" / "At All Times"
+    ("Various", "New Jack City (Music From The Motion Picture)"): 1409200,  # CD edition — has the Guy track
 }
 
 
