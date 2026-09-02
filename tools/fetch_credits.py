@@ -162,6 +162,26 @@ KNOWN_IDS = {
     ("Big Bub", "Need Your Love (Remix)"): 1566149,  # standalone promo has no data; reusing the Timeless album cut's credit
     ("Queen Pen", "Party Ain't A Party"): 3396932,  # bundles original + remix mixes; assigned by hand per mix below
     ("Hanson", "Mmm Bop (Remixes)"): 2793401,
+    ("Riff", "Judy Had A Boyfriend"): 3087063,
+    ("DG", "Hush (Don't Say A Word) (Remix)"): 2185630,
+    ("Guy", "Dancin'"): 71255,
+    ("Guy", "Why You Wanna Keep Me From My Baby"): 4628976,
+    ("Profyle", "Damn"): 2542612,
+    ("RPM 2000 feat. Teddy Riley", "Yo Love"): 4622309,
+    ("The Product G&B feat. Wyclef Jean", "Freak Freak"): 21289054,
+    ("Benzino feat. Mr. Gzus & Teddy Riley", "Boottee (Rumpshaker 2K1)"): 3807535,
+    ("Ray J feat. Brandy, Teddy Riley & Shorty Mack", "Formal Invite (The Knockout Remix)"): 3514966,
+    ("Benzino", "Figadoh (Remix)"): 10130897,
+    ("Chauncey Black", "Everyday Is Your Birthday"): 8177665,
+    ("New Kids On The Block", "The Block"): 5389424,
+    # single representative-track entries; per-track credit assigned by hand
+    # below (embedded artist name/feat. in our track string breaks matching)
+    ("Profyle", "Nothin' But Drama"): 2145686,
+    ("Various", "The Hurricane (Music From And Inspired By The Motion Picture)"): 6060412,
+    ("Full Of Harmony", "W"): 4622263,
+    ("John Legend", "Evolver"): 3190248,
+    ("Dubb Union", "Snoop Dogg Presents: Dubb Union"): 2150011,
+    ("Mihiro", "My Way"): 3432323,
 }
 
 
