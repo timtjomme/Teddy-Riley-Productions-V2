@@ -117,6 +117,11 @@ KNOWN_IDS = {
     ("The Classical Two", "The Classical Two Is Back"): 1573681,
     ("The Gyrlz", "Wishing You Were Here"): 1620793,
     ("Today", "Him Or Me"): 669059,
+    ("Wrecks-N-Effect", "Wrecks-N-Effect"): 319215,
+    ("Various", "Do The Right Thing Soundtrack"): 1132606,
+    ("Guy", "I Like"): 1056571,
+    ("Levert", "Just Coolin'"): 2137061,
+    ("Soul II Soul", "Keep On Movin'"): 978567,
 }
 
 
