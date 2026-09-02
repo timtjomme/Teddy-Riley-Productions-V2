@@ -129,6 +129,38 @@ KNOWN_IDS = {
     ("Teddy Riley feat. Tammy Lucas", "Is It Good To You"): 1187490,
     ("The Party", "Free"): 3373823,  # CD album edition — has "All About Love" / "At All Times"
     ("Various", "New Jack City (Music From The Motion Picture)"): 1409200,  # CD edition — has the Guy track
+    ("Father", "Sex Is Law"): 1775026,
+    ("9*1*1", "The Pressure"): 11859501,
+    ("Teddy Riley", "Nickel Bag Of Swing / Nickel Bag Of Tracks"): 948454,
+    ("Tony Thompson", "I Wanna Love Like That"): 1460658,
+    ("BLACKstreet", "Another Level (Expanded Edition)"): 564278,
+    ("Montell Jordan", "Falling"): 2745809,
+    ("Whitney Houston", "Step By Step"): 662636,
+    ("Shawn", "O.G"): 4849723,
+    ("Big Bub", "Timeless"): 1566149,
+    ("BLACKstreet feat. Jay-Z", "Call Me"): 1513343,
+    ("Omar Chandler", "Pieces Of My Heart"): 3017861,
+    ("Taral feat. LL Cool J", "How Can I Get Over You (Remix)"): 302335,
+    ("Men Of Vizion", "Do You Feel Me (...Freak You)"): 1233754,
+    ("Jay-Z feat. BLACKstreet", "The City Is Mine"): 1468734,
+    ("Guy", "Diamonds"): 7082238,  # promo-only reference CD; Discogs carries no extraartists data for it
+    # "Various" soundtrack entries below store one representative track per
+    # release; our track string embeds the performing artist ("X – Song" or
+    # "X feat. Y - Song"), which breaks title-matching against the plain
+    # Discogs track title, so these are resolved but the per-track credit
+    # is assigned by hand in the same pass rather than relying on the
+    # automatic matcher.
+    ("Various", "CB4"): 184850,
+    ("Various", "Blankman (Music From The Motion Picture)"): 3220931,
+    ("Various", "Panther (The Original Motion Picture Soundtrack)"): 1165685,
+    ("Various", "Nothing To Lose - Music From And Inspired By The Motion Picture"): 2311002,
+    ("Various", "Hav Plenty (Music From The Motion Picture)"): 1916042,
+    ("Various", "Music From The Motion Picture The Rugrats Movie"): 2681545,
+    ("Various", "Music From And Inspired By The Motion Picture The Wood"): 1303572,
+    ("Guy", "Don't You Miss Me"): 1673358,  # Guy III album — track is "Don't U Miss Me"
+    ("Guy", "Teddy's Jam III"): 1673358,  # Guy III album — local mix names ("Jam 3") won't text-match "Jam III"
+    ("Big Bub", "Need Your Love (Remix)"): 1566149,  # standalone promo has no data; reusing the Timeless album cut's credit
+    ("Queen Pen", "Party Ain't A Party"): 3396932,  # bundles original + remix mixes; assigned by hand per mix below
 }
 
 
