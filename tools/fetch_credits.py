@@ -161,6 +161,7 @@ KNOWN_IDS = {
     ("Guy", "Teddy's Jam III"): 1673358,  # Guy III album — local mix names ("Jam 3") won't text-match "Jam III"
     ("Big Bub", "Need Your Love (Remix)"): 1566149,  # standalone promo has no data; reusing the Timeless album cut's credit
     ("Queen Pen", "Party Ain't A Party"): 3396932,  # bundles original + remix mixes; assigned by hand per mix below
+    ("Hanson", "Mmm Bop (Remixes)"): 2793401,
 }
 
 
