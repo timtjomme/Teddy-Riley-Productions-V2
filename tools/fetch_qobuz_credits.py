@@ -62,8 +62,11 @@ def http_get(url, limiter):
                 raise
             time.sleep(4 * (attempt + 1))
         except (urllib.error.URLError, TimeoutError, ConnectionError, OSError):
+            # transient network blip (DNS hiccup, timeout, reset) — after
+            # exhausting retries, treat it as a fetch failure for this one
+            # URL rather than taking the whole multi-hour run down with it
             if attempt == 4:
-                raise
+                return None
             time.sleep(4 * (attempt + 1))
     return None
 
@@ -177,14 +180,26 @@ def group_credits(raw_text):
     return [f"{role}: {', '.join(names)}" for role, names in by_role.items()]
 
 
-def confirm_page(soup, artist, title):
+SOUNDTRACK_BOILERPLATE = re.compile(
+    r"\b(music from (and inspired by )?the )?"
+    r"(the )?(original )?motion picture( soundtrack| the movie)?\b|\bsoundtrack\b",
+    re.I,
+)
+
+
+def strip_boilerplate(s):
+    return re.sub(r"\s+", " ", SOUNDTRACK_BOILERPLATE.sub("", s)).strip()
+
+
+def confirm_page(soup, artist, title, year):
     """The search-result slug match is a coarse first pass — self-titled
     or name-repeating releases (e.g. "Shomari - Shomari") can score well
     against a completely unrelated album by coincidence, and so can a
     right-artist-wrong-release pairing (an artist's own back catalog is
     full of similarly-scoring titles). Re-check against the fetched
     page's own JSON-LD (Product.name = title, Product.brand.name =
-    artist), which is ground truth, before trusting anything on it.
+    artist, offers[].releaseDate = year), which is ground truth, before
+    trusting anything on it.
 
     Scored artist-vs-artist and title-vs-title *separately*, taking the
     min of the two — not one blended "artist title" string — because a
@@ -192,8 +207,28 @@ def confirm_page(soup, artist, title):
     artist (tuning against ~190 real search results from this catalog:
     the blended score tops out around 90% precision even at a strict 0.80
     cutoff, while min(artist,title) hits 98% precision at 0.6 with only a
-    small recall cost)."""
-    got_title = got_artist = None
+    small recall cost).
+
+    Two failure modes surfaced only once this ran at full scale (~285
+    releases): "Various Artists" soundtrack entries share so much title
+    boilerplate ("Music From The Motion Picture", "Original Motion
+    Picture Soundtrack") that two *completely unrelated* films' soundtrack
+    pages were scoring 0.75-0.85 on title alone — the shared boilerplate
+    was doing all the "matching", not the actual film title. And a short,
+    common-word artist name ("Guy", "Eternal") can substring-match a
+    same-named-coincidence act decades removed in catalog terms (a 2025
+    release matched against our 1999 entry). Two guards, both needed —
+    neither alone covered every case found by hand:
+      1. Title score is computed on boilerplate-*stripped* text, so two
+         different films' soundtracks can no longer inflate their score
+         off shared "motion picture soundtrack" wording.
+      2. A release-year sanity check: Qobuz's own releaseDate more than
+         5 years from ours is rejected, *unless* both scores are near-
+         perfect (>= 0.9) — a genuine reissue (a 2004 compilation
+         redistributed digitally in 2013, say) still has an exact title
+         and artist, just a later catalog date; only that combination is
+         allowed to override the year gate."""
+    got_title = got_artist = got_year = None
     for tag in soup.select('script[type="application/ld+json"]'):
         try:
             block = json.loads(tag.get_text())
@@ -204,12 +239,33 @@ def confirm_page(soup, artist, title):
             brand = block.get("brand")
             if isinstance(brand, dict):
                 got_artist = brand.get("name")
+            release_date = block.get("releaseDate") or ""
+            if len(release_date) >= 4 and release_date[:4].isdigit():
+                got_year = int(release_date[:4])
     if not got_title:
         return False, "no-ld-json(unverifiable)"
     artist_score = similarity(artist, got_artist or "")
-    title_score = similarity(title, got_title)
+    title_score = similarity(strip_boilerplate(title), strip_boilerplate(got_title))
     score = min(artist_score, title_score)
-    return score >= CONFIRM_THRESHOLD, f"confirm(a={artist_score:.2f},t={title_score:.2f}) [{got_artist} - {got_title}]"
+    how = f"confirm(a={artist_score:.2f},t={title_score:.2f}) [{got_artist} - {got_title} - {got_year}]"
+    if score < CONFIRM_THRESHOLD:
+        return False, how
+    if got_year:
+        gap = abs(got_year - year)
+        # "Various" vs "Various Artists" never scores near 1.0 on its own, so
+        # a soundtrack reissue can't clear the normal artist>=0.9 reissue
+        # bypass — let a nearly-perfect (boilerplate-stripped) title stand in
+        # for it here, since artist has no discriminating power on a
+        # various-artists comp anyway. Capped at 15 years: sequel titles
+        # ("House Party 2" vs "House Party 3") can still score >=0.9 on
+        # boilerplate-stripped text alone, and a reissue gap that large is
+        # implausible anyway — a physical-to-digital reissue lands within a
+        # decade or so in every real reissue seen in this catalog so far.
+        both_various = "various" in norm(artist).split() and "various" in norm(got_artist or "").split()
+        strong_reissue = gap <= 15 and title_score >= 0.9 and (artist_score >= 0.9 or both_various)
+        if gap > 5 and not strong_reissue:
+            return False, how + " year-gap"
+    return True, how
 
 
 def fetch_qobuz_credits_for_release(release, limiter, log):
@@ -226,7 +282,7 @@ def fetch_qobuz_credits_for_release(release, limiter, log):
             rejections.append(f"fetch-fail({cand_url})")
             continue
         cand_soup = BeautifulSoup(html, "html.parser")
-        ok, confirm_how = confirm_page(cand_soup, release["artist"], release["title"])
+        ok, confirm_how = confirm_page(cand_soup, release["artist"], release["title"], int(release["year"]))
         if ok:
             soup, url, how = cand_soup, cand_url, f"search({cand_score:.2f}), {confirm_how}"
             break
