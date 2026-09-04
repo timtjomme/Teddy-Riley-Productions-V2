@@ -182,6 +182,7 @@ KNOWN_IDS = {
     ("John Legend", "Evolver"): 3190248,
     ("Dubb Union", "Snoop Dogg Presents: Dubb Union"): 2150011,
     ("Mihiro", "My Way"): 3432323,
+    ("Bishop Lamont", "Pope Mobile"): 1325459,
     ("Red Velvet", "Summer Magic"): 12452121,
     ("Bobby Brown", "Like Bobby"): 12520201,
     ("Jazzy Amra", "Amra"): 12366568,  # Discogs only carries the digital single, and it has no credit data
