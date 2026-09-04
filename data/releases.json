@@ -284,12 +284,18 @@
       "label": "Sugar Hill Records",
       "image": "1985-la-va-ba-that-girl.jpg",
       "tracks": [
-        "La-Di-Da-Di"
+        "That Girl",
+        "Get Up (Instrumental)"
       ],
+      "qobuz_credits": [],
       "credits": [
-        []
-      ],
-      "qobuz_credits": []
+        [
+          "Written-By: LaVaba Mallison"
+        ],
+        [
+          "Written-By: Kevin Keaton, Lamar Hill, Moe Dewese"
+        ]
+      ]
     },
     {
       "year": "1985",
