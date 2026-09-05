@@ -138,10 +138,10 @@ KNOWN_IDS = {
     ("Whitney Houston", "Step By Step"): 662636,
     ("Shawn", "O.G"): 4849723,
     ("Big Bub", "Timeless"): 1566149,
-    ("BLACKstreet feat. Jay-Z", "Call Me"): 1513343,
+    ("BLACKstreet feat. Jay-Z", "Call Me"): 1575306,  # Soul Food soundtrack — has "Call Me (Hip Hop Mix)"; the standalone promo (1513343) had no data
     ("Omar Chandler", "Pieces Of My Heart"): 3017861,
     ("Taral feat. LL Cool J", "How Can I Get Over You (Remix)"): 302335,
-    ("Men Of Vizion", "Do You Feel Me (...Freak You)"): 1233754,
+    ("Men Of Vizion", "Do You Feel Me (...Freak You)"): 3414871,  # resolved from master 515314 — this pressing has data; the other (1233754) had none
     ("Jay-Z feat. BLACKstreet", "The City Is Mine"): 1468734,
     ("Guy", "Diamonds"): 7082238,  # promo-only reference CD; Discogs carries no extraartists data for it
     # "Various" soundtrack entries below store one representative track per
@@ -186,6 +186,9 @@ KNOWN_IDS = {
     ("Red Velvet", "Summer Magic"): 12452121,
     ("Bobby Brown", "Like Bobby"): 12520201,
     ("Jazzy Amra", "Amra"): 12366568,  # Discogs only carries the digital single, and it has no credit data
+    ("BLACKstreet feat. Mystikal", "Wizzy Wow"): 2069147,
+    ("Benzino feat. Fabolous & G-Dep", "Boottee (Remix)"): 1307062,
+    ("BLACKstreet feat. Beverly Crowder, Natural Blend", "Deep"): 13241706,
 }
 
 

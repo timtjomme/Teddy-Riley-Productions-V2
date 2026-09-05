@@ -12869,12 +12869,24 @@
         "Call Me (Album Instrumental)",
         "Call Me (Acapella Version)"
       ],
+      "qobuz_credits": [],
       "credits": [
-        [],
-        [],
-        []
-      ],
-      "qobuz_credits": []
+        [
+          "Co-producer: Chauncey Hannibal",
+          "Featuring: Jay-Z",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Co-producer: Chauncey Hannibal",
+          "Featuring: Jay-Z",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Co-producer: Chauncey Hannibal",
+          "Featuring: Jay-Z",
+          "Producer: Teddy Riley"
+        ]
+      ]
     },
     {
       "year": "1997",
@@ -13641,15 +13653,21 @@
         "04 - Do You Feel Me (...Freak You) (A Cappella)",
         "Do You Feel Me? (...Freak You) (Uptempo Remix with Rap)"
       ],
+      "qobuz_credits": [],
       "credits": [
+        [
+          "Performer: Mr. Cheeks"
+        ],
         [],
         [],
-        [],
-        [],
-        [],
+        [
+          "Performer: Mr. Cheeks"
+        ],
+        [
+          "Performer: Mr. Cheeks"
+        ],
         []
-      ],
-      "qobuz_credits": []
+      ]
     },
     {
       "year": "1998",
@@ -15101,9 +15119,24 @@
       ],
       "format": "Single",
       "credits": [
-        [],
-        [],
-        []
+        [
+          "Written-By: Teddy Riley, Tony Rich",
+          "Producer: Teddy Riley (for Lil Man Productions)",
+          "Executive-Producer: Teddy Riley",
+          "Co-Executive-Producer: Aaron Hall, Damion Hall"
+        ],
+        [
+          "Written-By: Teddy Riley, Tony Rich",
+          "Producer: Teddy Riley (for Lil Man Productions)",
+          "Executive-Producer: Teddy Riley",
+          "Co-Executive-Producer: Aaron Hall, Damion Hall"
+        ],
+        [
+          "Written-By: Teddy Riley, Tony Rich",
+          "Producer: Teddy Riley (for Lil Man Productions)",
+          "Executive-Producer: Teddy Riley",
+          "Co-Executive-Producer: Aaron Hall, Damion Hall"
+        ]
       ],
       "qobuz_credits": []
     },
@@ -15791,8 +15824,23 @@
         "Boottee (Remix) (Call Out Hook)",
         "Boottee (Remix - Acappella)"
       ],
-      "credits": [],
-      "qobuz_credits": []
+      "qobuz_credits": [],
+      "credits": [
+        [
+          "Featuring: Fabolous, G-Dep"
+        ],
+        [
+          "Featuring: Fabolous, G-Dep"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Recorded By, Mixed By: George Mayers"
+        ],
+        [],
+        [
+          "Featuring: Fabolous, G-Dep"
+        ]
+      ]
     },
     {
       "year": "2001",
@@ -16365,8 +16413,27 @@
         "Deep (Get Higher Remix)",
         "Deep (50 Cent Remix)"
       ],
-      "credits": [],
-      "qobuz_credits": []
+      "qobuz_credits": [],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "Producer, Written-By: Teddy Riley"
+        ],
+        [
+          "Producer, Written-By: Teddy Riley"
+        ],
+        [
+          "Producer, Written-By: Teddy Riley"
+        ],
+        [
+          "Producer, Written-By: Teddy Riley"
+        ],
+        [],
+        []
+      ]
     },
     {
       "year": "2002",
@@ -16382,15 +16449,27 @@
         "Wizzy Wow (Call-Out Hook)",
         "Fly (LP Version)"
       ],
+      "qobuz_credits": [],
       "credits": [
-        [],
-        [],
-        [],
-        [],
-        [],
+        [
+          "Featuring: Mystikal"
+        ],
+        [
+          "Featuring: Mystikal"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Written-By: Richard \"Nikki\" Stanard, Teddy Riley"
+        ],
+        [
+          "Featuring: Mystikal"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Written-By: Richard \"Nikki\" Stanard, Teddy Riley"
+        ],
         []
-      ],
-      "qobuz_credits": []
+      ]
     },
     {
       "year": "2002",
@@ -16424,7 +16503,12 @@
         []
       ],
       "qobuz_credits": [
-        []
+        [
+          "MainArtist: Busta Rhymes, Jim Carrey",
+          "Producer: Teddy Riley",
+          "MixingEngineer: Teddy Riley, George Mayers",
+          "ComposerLyricist: Trevor Smith, Albert Hague, Ted Geisel"
+        ]
       ]
     },
     {
@@ -17462,7 +17546,14 @@
       "missing": [
         "Between My Thighs (T.R Dub Mix)"
       ],
-      "credits": [],
+      "credits": [
+        [
+          "Written-By: Troy Crossfield, Shawn Tenant, Nirvanda Savoury Simm-Smith (per Apple Music)"
+        ],
+        [
+          "Written-By: Troy Crossfield, Shawn Tenant, Nirvanda Savoury Simm-Smith (per Apple Music)"
+        ]
+      ],
       "qobuz_credits": []
     },
     {
