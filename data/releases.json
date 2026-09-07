@@ -14914,7 +14914,122 @@
       "qobuz_credits": []
     }
   ],
-  "sampled": [],
+  "sampled": [
+    {
+      "year": "1996",
+      "artist": "Makaveli feat. K-Ci & JoJo, Danny Boy and Aaron Hall",
+      "title": "Toss It Up",
+      "label": "Death Row Records",
+      "image": "1996-makaveli-toss-it-up.jpg",
+      "tracks": [
+        "Toss It Up"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1996",
+      "artist": "The Graveyards",
+      "title": "Dreamm Nutt",
+      "label": "Shantell Records",
+      "image": "1996-the-graveyards-dreamm-nutt.jpg",
+      "tracks": [
+        "Dreamm Nutt"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2000",
+      "artist": "Mariah Carey feat. Joe and Nas",
+      "title": "Thank God I Found You (Make It Last Remix)",
+      "label": "Columbia",
+      "image": "2000-mariah-carey-thank-god-i-found-you-make-it-last-remix.jpg",
+      "tracks": [
+        "Thank God I Found You (Make It Last Remix)"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2004",
+      "artist": "En Vogue",
+      "title": "I Do Love You (Piece Of My Love)",
+      "label": "33rd Street Records",
+      "image": "2004-en-vogue-i-do-love-you-piece-of-my-love.jpg",
+      "tracks": [
+        "I Do Love You (Piece Of My Love)"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2004",
+      "artist": "Mannie Fresh feat. Lil' Mo, Tateeze and Reel",
+      "title": "Shake That Ass",
+      "label": "Cash Money Records",
+      "image": "2004-mannie-fresh-shake-that-ass.jpg",
+      "tracks": [
+        "Shake That Ass"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2008",
+      "artist": "T.I.",
+      "title": "Collect Call",
+      "label": "Grand Hustle",
+      "image": "2008-t-i-collect-call.jpg",
+      "tracks": [
+        "Collect Call"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2022",
+      "artist": "Pig & Dan",
+      "title": "Fragments Of Silence",
+      "label": "Bedrock Records",
+      "image": "2022-pig-dan-fragments-of-silence.jpg",
+      "tracks": [
+        "Fragments Of Silence"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2026",
+      "artist": "Snad",
+      "title": "Italosnadi",
+      "label": "Smallville Records",
+      "image": "2026-snad-italosnadi.jpg",
+      "tracks": [
+        "Italosnadi"
+      ],
+      "credits": [
+        [
+          "Written-By, Producer: Shyam Anand"
+        ]
+      ],
+      "qobuz_credits": []
+    }
+  ],
   "2000s": [
     {
       "year": "2000",

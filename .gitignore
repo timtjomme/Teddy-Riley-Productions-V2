@@ -5,3 +5,4 @@ dist/
 analytics/config.php
 analytics/visits.log
 analytics/geo-cache.json
+__pycache__/
