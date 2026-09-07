@@ -582,6 +582,149 @@ function photoModal(){
 }
 photoModal();
 
+// ---- SEARCH ----------------------------------------------------------
+// Unlike videoModal()/photoModal(), which wire up triggers already sitting
+// in page-specific markup, no page has a search box of its own — this
+// function injects both the floating trigger and the modal shell into
+// every page's <body>, so search works everywhere with zero per-page HTML.
+// data/releases.json is fetched once, lazily, on first open (not at page
+// load), and cached in RESULTS_CACHE for the rest of the session — a
+// visitor who never opens search never pays for it.
+function searchModal(){
+  var modal, input, status, results, lastFocus;
+  var RESULTS_CACHE = null;   // flat [{page, rel}], one entry per release
+  var MAX_RESULTS = 40;
+
+  function ensure(){
+    if(modal) return;
+
+    var trigger = document.createElement('button');
+    trigger.type = 'button';
+    trigger.className = 'search-trigger';
+    trigger.setAttribute('aria-label', 'Search the archive');
+    trigger.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>';
+    document.body.appendChild(trigger);
+    trigger.addEventListener('click', function(){ open(); });
+
+    modal = document.createElement('div');
+    modal.className = 'search-modal';
+    modal.hidden = true;
+    modal.innerHTML =
+      '<div class="search-modal-backdrop"></div>' +
+      '<div class="search-modal-box" role="dialog" aria-modal="true" aria-label="Search">' +
+        '<button type="button" class="search-modal-close" aria-label="Close">&times;</button>' +
+        '<div class="search-modal-head">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>' +
+          '<input class="search-modal-input" type="search" placeholder="Search artist, title, or track…" aria-label="Search">' +
+        '</div>' +
+        '<p class="search-modal-status"></p>' +
+        '<div class="search-modal-results"></div>' +
+      '</div>';
+    document.body.appendChild(modal);
+    input   = modal.querySelector('.search-modal-input');
+    status  = modal.querySelector('.search-modal-status');
+    results = modal.querySelector('.search-modal-results');
+
+    modal.querySelector('.search-modal-backdrop').addEventListener('click', close);
+    modal.querySelector('.search-modal-close').addEventListener('click', close);
+    input.addEventListener('input', function(){ render(input.value); });
+    input.addEventListener('keydown', function(e){
+      if(e.key !== 'Enter') return;
+      var first = results.querySelector('.search-result');
+      if(first) location.href = first.href;
+    });
+  }
+
+  function loadData(){
+    if(RESULTS_CACHE) return Promise.resolve(RESULTS_CACHE);
+    return fetch('data/releases.json').then(function(r){ return r.json(); }).then(function(data){
+      var all = [];
+      Object.keys(data).forEach(function(page){
+        data[page].forEach(function(rel){
+          if(!rel.hidden) all.push({ page: page, rel: rel });
+        });
+      });
+      RESULTS_CACHE = all;
+      return all;
+    });
+  }
+
+  function render(query){
+    var words = query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    results.innerHTML = '';
+
+    if(!words.length){
+      status.textContent = RESULTS_CACHE ? 'Type to search ' + RESULTS_CACHE.length + ' releases' : 'Loading…';
+      return;
+    }
+
+    var matches = (RESULTS_CACHE || []).filter(function(x){
+      var r = x.rel;
+      var haystack = [r.artist, r.title, r.label].concat(r.tracks).join(' ').toLowerCase();
+      return words.every(function(w){ return haystack.indexOf(w) !== -1; });
+    });
+
+    if(!matches.length){
+      status.textContent = 'No matches for "' + query + '"';
+      return;
+    }
+    status.textContent = matches.length > MAX_RESULTS ?
+      'Showing ' + MAX_RESULTS + ' of ' + matches.length + ' matches — try a more specific search' :
+      matches.length + (matches.length === 1 ? ' match' : ' matches');
+
+    matches.slice(0, MAX_RESULTS).forEach(function(x){
+      var r = x.rel;
+      var a = document.createElement('a');
+      a.className = 'search-result';
+      a.href = x.page + '.html#y' + r.year;
+      a.innerHTML =
+        '<img src="imgs/' + r.image + '" alt="" loading="lazy">' +
+        '<span class="search-result-text">' +
+          '<span class="search-result-title"></span>' +
+          '<span class="search-result-meta"></span>' +
+        '</span>';
+      a.querySelector('.search-result-title').textContent = r.artist + ' — ' + r.title;
+      a.querySelector('.search-result-meta').textContent =
+        r.year + ' · ' + r.label + ' · ' + r.tracks.length + (r.tracks.length === 1 ? ' track' : ' tracks');
+      results.appendChild(a);
+    });
+  }
+
+  function open(){
+    ensure();
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    requestAnimationFrame(function(){ modal.classList.add('is-open'); });
+    input.value = '';
+    status.textContent = 'Loading…';
+    results.innerHTML = '';
+    input.focus();
+    loadData().then(function(){ render(input.value); });
+  }
+
+  function close(){
+    if(!modal || modal.hidden) return;
+    modal.classList.remove('is-open');
+    modal.hidden = true;
+    if(lastFocus) lastFocus.focus();
+  }
+
+  ensure();
+
+  document.addEventListener('keydown', function(e){
+    if(!modal.hidden && e.key === 'Escape'){ close(); return; }
+    // "/" opens search from anywhere, unless the visitor is already typing
+    // into some other field — a bare "/" would otherwise just land in it.
+    var typing = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName) ||
+                 document.activeElement.isContentEditable;
+    if(modal.hidden && e.key === '/' && !typing){
+      e.preventDefault();
+      open();
+    }
+  });
+}
+searchModal();
+
 initToTop();
 
 // ---- SITE STATS COUNT-UP ----------------------------------------------
