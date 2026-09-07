@@ -29,7 +29,7 @@ tools/extract.py                 one-off, already run: pages -> releases.json
 imgs/                            covers (one per release), heroes, decade panels, story/ and 404/ art
 fonts/                           Open Sans variable, self-hosted
 robots.txt                       allows all crawling except /analytics/, points to sitemap.xml
-sitemap.xml                      hand-maintained list of the 11 indexable pages
+sitemap.xml                      hand-maintained list of the 10 indexable pages (sampled.html is noindex'd and nav-hidden while its list is still thin)
 ```
 
 ## Adding or changing a release
