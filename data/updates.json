@@ -55,5 +55,12 @@
     "pages": [
       { "label": "Corrected the tracklist for La Va'ba - That Girl", "href": "1980s.html" }
     ]
+  },
+  {
+    "date": "2026-09-07",
+    "count": 0,
+    "pages": [
+      { "label": "Added a missing mix to B-Fats - B-Fats (1987)", "href": "1980s.html" }
+    ]
   }
 ]
