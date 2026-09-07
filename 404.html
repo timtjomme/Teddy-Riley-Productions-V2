@@ -73,17 +73,13 @@
           <clipPath id="clipLabel"><circle cx="662" cy="596" r="104"/></clipPath>
         </defs>
 
-        <!-- outer sleeve: a real die-cut jacket photo carrying the Lil' Man mark -->
+        <!-- outer sleeve: a real die-cut jacket photo, already carrying the Lil' Man mark printed into it -->
         <g class="pc pc-1">
           <g transform="rotate(-13 180 220)">
-            <image href="imgs/404/sleeve.jpg" x="30" y="70" width="300" height="300"
+            <image href="imgs/404/sleeve.png" x="30" y="70" width="300" height="300"
                    preserveAspectRatio="xMidYMid slice" clip-path="url(#clipSleeve)"/>
             <rect x="30" y="70" width="300" height="300" rx="4" fill="none"
                   stroke="#3d3d45" stroke-width="1.5"/>
-            <image href="imgs/logo.png" x="126" y="118" width="108" height="200"
-                   opacity="0.92"/>
-            <text x="180" y="344" text-anchor="middle" class="lbl lbl-sleeve">
-              LIL&#8217; MAN RECORDS</text>
           </g>
         </g>
 
@@ -96,7 +92,7 @@
         <!-- inner paper sleeve: a real die-cut paper sleeve photo, hole and all -->
         <g class="pc pc-3">
           <g transform="rotate(9 381 381)">
-            <image href="imgs/404/paper-sleeve.jpg" x="250" y="250" width="262" height="262"
+            <image href="imgs/404/paper-sleeve.png" x="250" y="250" width="262" height="262"
                    preserveAspectRatio="xMidYMid slice" clip-path="url(#clipPaper)"/>
             <rect x="250" y="250" width="262" height="262" rx="3" fill="none"
                   stroke="#00000018" stroke-width="1"/>
@@ -105,25 +101,16 @@
 
         <!-- the disc: a real pressed-vinyl photo, grooves and all -->
         <g class="pc pc-4">
-          <image href="imgs/404/disc.jpg" x="384" y="254" width="352" height="352"
+          <image href="imgs/404/disc.png" x="384" y="254" width="352" height="352"
                  preserveAspectRatio="xMidYMid slice" clip-path="url(#clipDisc)"/>
           <circle cx="560" cy="430" r="176" stroke="#00000030" stroke-width="1"/>
         </g>
 
-        <!-- the label: a real blank pressing, printed here with this one's own text -->
+        <!-- the label: a real pressing, already printed with its own credit and tagline -->
         <g class="pc pc-5">
-          <image href="imgs/404/label.jpg" x="558" y="492" width="208" height="208"
+          <image href="imgs/404/label.png" x="558" y="492" width="208" height="208"
                  preserveAspectRatio="xMidYMid slice" clip-path="url(#clipLabel)"/>
           <circle cx="662" cy="596" r="104" stroke="#cfc7b6" stroke-width="1.4"/>
-          <path id="lblArc" d="M 662 596 m -74 0 a 74 74 0 1 1 148 0" fill="none"/>
-          <text class="lbl lbl-arc">
-            <textPath href="#lblArc" startOffset="50%" text-anchor="middle">
-              LIL&#8217; MAN RECORDS</textPath>
-          </text>
-          <image href="imgs/logo-dark.png" x="640" y="536" width="44" height="52" opacity="0.9"/>
-          <text x="662" y="628" text-anchor="middle" class="lbl lbl-big">404</text>
-          <text x="662" y="650" text-anchor="middle" class="lbl lbl-sm">NEVER PRESSED</text>
-          <text x="662" y="676" text-anchor="middle" class="lbl lbl-cat">LMR-000 &#183; PROMO</text>
           <circle cx="662" cy="596" r="8" fill="#f4f4f6" stroke="#b9b1a2" stroke-width="1.2"/>
         </g>
 
