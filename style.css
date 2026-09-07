@@ -877,6 +877,7 @@
   }
   .search-result-text{ min-width:0; }
   .search-result-title{
+    display:block;
     margin:0;
     font: 600 14px/1.3 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--label);
@@ -885,6 +886,7 @@
     text-overflow:ellipsis;
   }
   .search-result-meta{
+    display:block;
     margin: 2px 0 0;
     font: 400 12px/1.3 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: var(--muted);
