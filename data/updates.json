@@ -58,9 +58,10 @@
   },
   {
     "date": "2026-09-07",
-    "count": 0,
+    "count": 1,
     "pages": [
-      { "label": "Added a missing mix to B-Fats - B-Fats (1987)", "href": "1980s.html" }
+      { "label": "Added a missing mix to B-Fats - B-Fats (1987)", "href": "1980s.html" },
+      { "name": "1980's", "href": "1980s.html", "count": 1 }
     ]
   }
 ]
