@@ -842,10 +842,10 @@ function initLostPage(){
         void digName.offsetWidth;       // restart the flip animation
         digName.classList.add('is-flip');
         i++;
-        setTimeout(nextLabel, 400);
+        setTimeout(nextLabel, 700);
       } else {
         digName.textContent = 'Nothing.';
-        setTimeout(showReveal, 700);
+        setTimeout(showReveal, 1000);
       }
     })();
   }

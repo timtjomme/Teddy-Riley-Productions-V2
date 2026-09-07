@@ -763,7 +763,7 @@
   }
 
   /* ---- SEARCH ----
-     Trigger sits fixed bottom-right, mirroring the .yep widget's bottom-left
+     Trigger sits fixed top-right, clear of the .yep widget's bottom-left
      spot, so the two don't collide on any page — this one has no per-page
      HTML at all: script.js injects both the trigger and the modal shell into
      every page's <body> at load, the same way videoModal()/photoModal() are
@@ -771,7 +771,7 @@
   .search-trigger{
     all:unset;
     position: fixed;
-    bottom: 24px;
+    top: 24px;
     right: 24px;
     z-index: 50;
     width: 52px;
