@@ -2,20 +2,6 @@
   "1980s": [
     {
       "year": "1982",
-      "artist": "Total Climax / Atlantis",
-      "title": "Demo",
-      "label": "Unreleased",
-      "image": "1982-total-climax-atlantis-demo.jpg",
-      "tracks": [
-        "Candy Kisses (Your My Sugar Baby)",
-        "Just a Straight ahead Jam"
-      ],
-      "note": "A demo recording from the band's Total Climax days, before the Atlantis name — no formal pressing exists.",
-      "credits": [],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1982",
       "artist": "Atlantis / Total Climax",
       "title": "Keep On Movin' And Groovin'",
       "label": "Barclay",
@@ -56,39 +42,17 @@
       "qobuz_credits": []
     },
     {
-      "year": "1984",
-      "artist": "Kids At Work",
-      "title": "Sugar Baby",
-      "label": "Sound Of New York",
-      "image": "1984-kids-at-work-sugar-baby.jpg",
+      "year": "1982",
+      "artist": "Total Climax / Atlantis",
+      "title": "Demo",
+      "label": "Unreleased",
+      "image": "1982-total-climax-atlantis-demo.jpg",
       "tracks": [
-        "Sugar Baby (Disco Version)",
-        "Sugar Baby (Disco Version) (7″ Edit)",
-        "Sugar Baby (Vocal Version)",
-        "Sugar Baby (Vocal Version) (7″ Edit)"
+        "Candy Kisses (Your My Sugar Baby)",
+        "Just a Straight ahead Jam"
       ],
-      "credits": [
-        [
-          "Co-producer: Auvil Gilchrist",
-          "Producer: Gene Griffin",
-          "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Co-producer: Auvil Gilchrist",
-          "Producer: Gene Griffin",
-          "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Co-producer: Auvil Gilchrist",
-          "Producer: Gene Griffin",
-          "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Co-producer: Auvil Gilchrist",
-          "Producer: Gene Griffin",
-          "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
-        ]
-      ],
+      "note": "A demo recording from the band's Total Climax days, before the Atlantis name — no formal pressing exists.",
+      "credits": [],
       "qobuz_credits": []
     },
     {
@@ -220,6 +184,42 @@
           "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
         ],
         [
+          "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1984",
+      "artist": "Kids At Work",
+      "title": "Sugar Baby",
+      "label": "Sound Of New York",
+      "image": "1984-kids-at-work-sugar-baby.jpg",
+      "tracks": [
+        "Sugar Baby (Disco Version)",
+        "Sugar Baby (Disco Version) (7″ Edit)",
+        "Sugar Baby (Vocal Version)",
+        "Sugar Baby (Vocal Version) (7″ Edit)"
+      ],
+      "credits": [
+        [
+          "Co-producer: Auvil Gilchrist",
+          "Producer: Gene Griffin",
+          "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Co-producer: Auvil Gilchrist",
+          "Producer: Gene Griffin",
+          "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Co-producer: Auvil Gilchrist",
+          "Producer: Gene Griffin",
+          "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Co-producer: Auvil Gilchrist",
+          "Producer: Gene Griffin",
           "Written-By: Clurel Henderson, Teddy Riley, Timmy Gatling"
         ]
       ],
@@ -519,6 +519,30 @@
     },
     {
       "year": "1986",
+      "artist": "Kids At Work",
+      "title": "So Bad / Togetherness",
+      "label": "Rooftop Records",
+      "image": "1986-kids-at-work-so-bad-togetherness.jpg",
+      "tracks": [
+        "She's So Bad",
+        "So Bad Mix",
+        "Togetherness"
+      ],
+      "credits": [
+        [
+          "Mixed By: Teddy Riley"
+        ],
+        [
+          "Mixed By: Teddy Riley"
+        ],
+        [
+          "Mixed By: LaVaba Mallison"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1986",
       "artist": "Kool Moe Dee",
       "title": "Go See The Doctor / Monster Crack",
       "label": "Rooftop Records",
@@ -589,30 +613,6 @@
           "Producer: LaVaba Mallison, Moe Dewese, Teddy Riley"
         ]
       ]
-    },
-    {
-      "year": "1986",
-      "artist": "Kids At Work",
-      "title": "So Bad / Togetherness",
-      "label": "Rooftop Records",
-      "image": "1986-kids-at-work-so-bad-togetherness.jpg",
-      "tracks": [
-        "She's So Bad",
-        "So Bad Mix",
-        "Togetherness"
-      ],
-      "credits": [
-        [
-          "Mixed By: Teddy Riley"
-        ],
-        [
-          "Mixed By: Teddy Riley"
-        ],
-        [
-          "Mixed By: LaVaba Mallison"
-        ]
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "1986",
@@ -2691,6 +2691,74 @@
     {
       "year": "1988",
       "artist": "Guy",
+      "title": "'Round And 'Round (Merry Go 'Round Of Love)",
+      "label": "MCA Records",
+      "image": "1988-guy-round-and-round-merry-go-round-of-love.jpg",
+      "tracks": [
+        "'Round And 'Round (Merry Go 'Round Of Love) (12″ Extended Version)",
+        "'Round And 'Round (Merry Go 'Round Of Love) (Acapella)",
+        "'Round And 'Round (Merry Go 'Round Of Love) (Bonus Beats)",
+        "'Round And 'Round (Merry Go 'Round Of Love) (Dub Version)",
+        "'Round And 'Round (Merry Go 'Round Of Love) (House Mix)",
+        "'Round And 'Round (Merry Go 'Round Of Love) (Instrumental)",
+        "'Round And 'Round (Merry Go 'Round Of Love) (Radio Edit)"
+      ],
+      "credits": [
+        [
+          "Arranged By: Gene Griffin, Teddy Riley",
+          "Executive-Producer: Andre Harrell, Guy",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Teddy Riley",
+          "Executive-Producer: Andre Harrell, Guy",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Teddy Riley",
+          "Executive-Producer: Andre Harrell, Guy",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Teddy Riley",
+          "Executive-Producer: Andre Harrell, Guy",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Teddy Riley",
+          "Executive-Producer: Andre Harrell, Guy",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Teddy Riley",
+          "Executive-Producer: Andre Harrell, Guy",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
+        ],
+        [
+          "Arranged By: Gene Griffin, Teddy Riley",
+          "Executive-Producer: Andre Harrell, Guy",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1988",
+      "artist": "Guy",
       "title": "Groove Me",
       "label": "MCA Records",
       "image": "1988-guy-groove-me.jpg",
@@ -2865,74 +2933,6 @@
     {
       "year": "1988",
       "artist": "Guy",
-      "title": "'Round And 'Round (Merry Go 'Round Of Love)",
-      "label": "MCA Records",
-      "image": "1988-guy-round-and-round-merry-go-round-of-love.jpg",
-      "tracks": [
-        "'Round And 'Round (Merry Go 'Round Of Love) (12″ Extended Version)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (Acapella)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (Bonus Beats)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (Dub Version)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (House Mix)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (Instrumental)",
-        "'Round And 'Round (Merry Go 'Round Of Love) (Radio Edit)"
-      ],
-      "credits": [
-        [
-          "Arranged By: Gene Griffin, Teddy Riley",
-          "Executive-Producer: Andre Harrell, Guy",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Arranged By: Gene Griffin, Teddy Riley",
-          "Executive-Producer: Andre Harrell, Guy",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Arranged By: Gene Griffin, Teddy Riley",
-          "Executive-Producer: Andre Harrell, Guy",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Arranged By: Gene Griffin, Teddy Riley",
-          "Executive-Producer: Andre Harrell, Guy",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Arranged By: Gene Griffin, Teddy Riley",
-          "Executive-Producer: Andre Harrell, Guy",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Arranged By: Gene Griffin, Teddy Riley",
-          "Executive-Producer: Andre Harrell, Guy",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
-        ],
-        [
-          "Arranged By: Gene Griffin, Teddy Riley",
-          "Executive-Producer: Andre Harrell, Guy",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Aaron Hall, Gene Griffin, Teddy Riley, Timmy Gatling"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1988",
-      "artist": "Guy",
       "title": "Teddy's Jam",
       "label": "Uptown Records",
       "image": "1988-guy-teddy-s-jam.jpg",
@@ -3015,36 +3015,6 @@
     {
       "year": "1988",
       "artist": "Johnny Kemp",
-      "title": "Secrets Of Flying",
-      "label": "CBS",
-      "image": "1988-johnny-kemp-secrets-of-flying.jpg",
-      "tracks": [
-        "01 — Just Got Paid"
-      ],
-      "credits": [
-        [
-          "Backing Vocals [Additional Backing Vocals]: Aaron Hall, Teddy Riley",
-          "Lead Vocals, Backing Vocals: Johnny Kemp",
-          "Producer, Arranged By: Johnny Kemp, Teddy Riley",
-          "Recorded By, Mixed By: Johnny Kemp, Teddy Riley",
-          "Synthesizer [Synthesizers], Drum Programming, Programmed By [Synthesizer Programming], Synthesizer [Bass Synthesizer], Percussion: Teddy Riley",
-          "Written-By: Gene Griffin, Johnny Kemp"
-        ]
-      ],
-      "qobuz_credits": [
-        [
-          "Associated Performer: Johnny Kemp",
-          "Composer: Johnny Kemp, GENE GRIFFIN, Teddy Riley, Aaron Hall",
-          "Lyricist: Johnny Kemp, GENE GRIFFIN, Teddy Riley, Aaron Hall",
-          "Main Artist: Johnny Kemp",
-          "Mixing Engineer: Johnny Kemp, Teddy Riley",
-          "Producer: Johnny Kemp, Teddy Riley"
-        ]
-      ]
-    },
-    {
-      "year": "1988",
-      "artist": "Johnny Kemp",
       "title": "Just Got Paid",
       "label": "CBS",
       "image": "1988-johnny-kemp-just-got-paid.jpg",
@@ -3083,6 +3053,36 @@
         ]
       ],
       "qobuz_credits": []
+    },
+    {
+      "year": "1988",
+      "artist": "Johnny Kemp",
+      "title": "Secrets Of Flying",
+      "label": "CBS",
+      "image": "1988-johnny-kemp-secrets-of-flying.jpg",
+      "tracks": [
+        "01 — Just Got Paid"
+      ],
+      "credits": [
+        [
+          "Backing Vocals [Additional Backing Vocals]: Aaron Hall, Teddy Riley",
+          "Lead Vocals, Backing Vocals: Johnny Kemp",
+          "Producer, Arranged By: Johnny Kemp, Teddy Riley",
+          "Recorded By, Mixed By: Johnny Kemp, Teddy Riley",
+          "Synthesizer [Synthesizers], Drum Programming, Programmed By [Synthesizer Programming], Synthesizer [Bass Synthesizer], Percussion: Teddy Riley",
+          "Written-By: Gene Griffin, Johnny Kemp"
+        ]
+      ],
+      "qobuz_credits": [
+        [
+          "Associated Performer: Johnny Kemp",
+          "Composer: Johnny Kemp, GENE GRIFFIN, Teddy Riley, Aaron Hall",
+          "Lyricist: Johnny Kemp, GENE GRIFFIN, Teddy Riley, Aaron Hall",
+          "Main Artist: Johnny Kemp",
+          "Mixing Engineer: Johnny Kemp, Teddy Riley",
+          "Producer: Johnny Kemp, Teddy Riley"
+        ]
+      ]
     },
     {
       "year": "1988",
@@ -3624,6 +3624,48 @@
     {
       "year": "1988",
       "artist": "Today",
+      "title": "Him Or Me",
+      "label": "Motown",
+      "image": "1988-today-him-or-me.jpg",
+      "tracks": [
+        "Him Or Me (12\" Version)",
+        "Him Or Me (Bonus Beats)",
+        "Him Or Me (Dub)",
+        "Him Or Me (Instrumental)",
+        "Him Or Me (Radio Edit)"
+      ],
+      "credits": [
+        [
+          "Lacquer Cut By: Herb Powers Jr.",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [
+          "Lacquer Cut By: Herb Powers Jr.",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [
+          "Lacquer Cut By: Herb Powers Jr.",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ],
+        [],
+        [
+          "Lacquer Cut By: Herb Powers Jr.",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Remix: Timmy Regisford",
+          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1988",
+      "artist": "Today",
       "title": "Today",
       "label": "Motown",
       "image": "1988-today-today.jpg",
@@ -3679,48 +3721,6 @@
     },
     {
       "year": "1988",
-      "artist": "Today",
-      "title": "Him Or Me",
-      "label": "Motown",
-      "image": "1988-today-him-or-me.jpg",
-      "tracks": [
-        "Him Or Me (12\" Version)",
-        "Him Or Me (Bonus Beats)",
-        "Him Or Me (Dub)",
-        "Him Or Me (Instrumental)",
-        "Him Or Me (Radio Edit)"
-      ],
-      "credits": [
-        [
-          "Lacquer Cut By: Herb Powers Jr.",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
-        ],
-        [
-          "Lacquer Cut By: Herb Powers Jr.",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
-        ],
-        [
-          "Lacquer Cut By: Herb Powers Jr.",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
-        ],
-        [],
-        [
-          "Lacquer Cut By: Herb Powers Jr.",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Remix: Timmy Regisford",
-          "Written-By: Gene Griffin, Larry McCain, Larry Singletary, Lee Drakeford, Wesley Adams"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1988",
       "artist": "Tony! Toni! Toné!",
       "title": "Baby Doll",
       "label": "Wing",
@@ -3743,6 +3743,72 @@
         ],
         [
           "Remix: Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1988",
+      "artist": "Wrecks-N-Effect",
+      "title": "Go For What U Know",
+      "label": "Atlantic Records",
+      "image": "1988-wrecks-n-effect-go-for-what-u-know.jpg",
+      "tracks": [
+        "Go For What U Know (Instrumental)",
+        "Go For What U Know (Vocal + Extended 12\" Remix)",
+        "Go For What U Know (Vocal + Radio Mix)"
+      ],
+      "credits": [
+        [
+          "Engineer: Dennis Mitchell",
+          "Producer: Gene Griffin, Markell Riley",
+          "Written-By: Keith Hanns"
+        ],
+        [
+          "Engineer: Dennis Mitchell",
+          "Producer: Gene Griffin, Markell Riley",
+          "Written-By: Keith Hanns"
+        ],
+        [
+          "Engineer: Dennis Mitchell",
+          "Producer: Gene Griffin, Markell Riley",
+          "Written-By: Keith Hanns"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1988",
+      "artist": "Wrecks-N-Effect",
+      "title": "Let's Do It Again",
+      "label": "Atlantic Records",
+      "image": "1988-wrecks-n-effect-let-s-do-it-again.jpg",
+      "tracks": [
+        "Let's Do It Again (Edited Version)",
+        "Let's Do It Again (Instrumental)",
+        "Let's Do It Again (LP Version)"
+      ],
+      "credits": [
+        [
+          "Arranged By: Gene Griffin, Markell Riley",
+          "Mixed By: Dennis Mitchell",
+          "Producer: Gene Griffin, Markell Riley",
+          "Recorded By: Dennis Mitchell",
+          "Written-By: Curtis Mayfield, Keith Hanns"
+        ],
+        [
+          "Arranged By: Gene Griffin, Markell Riley",
+          "Mixed By: Dennis Mitchell",
+          "Producer: Gene Griffin, Markell Riley",
+          "Recorded By: Dennis Mitchell",
+          "Written-By: Curtis Mayfield, Keith Hanns"
+        ],
+        [
+          "Arranged By: Gene Griffin, Markell Riley",
+          "Mixed By: Dennis Mitchell",
+          "Producer: Gene Griffin, Markell Riley",
+          "Recorded By: Dennis Mitchell",
+          "Written-By: Curtis Mayfield, Keith Hanns"
         ]
       ],
       "qobuz_credits": []
@@ -3811,72 +3877,6 @@
           "Producer, Arranged By [Arrangements]: Gene Griffin",
           "Producer, Musician, Arranged By [Arrangements]: Markell Riley",
           "Written-By: Keith Hanns, Markell Riley"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1988",
-      "artist": "Wrecks-N-Effect",
-      "title": "Go For What U Know",
-      "label": "Atlantic Records",
-      "image": "1988-wrecks-n-effect-go-for-what-u-know.jpg",
-      "tracks": [
-        "Go For What U Know (Instrumental)",
-        "Go For What U Know (Vocal + Extended 12\" Remix)",
-        "Go For What U Know (Vocal + Radio Mix)"
-      ],
-      "credits": [
-        [
-          "Engineer: Dennis Mitchell",
-          "Producer: Gene Griffin, Markell Riley",
-          "Written-By: Keith Hanns"
-        ],
-        [
-          "Engineer: Dennis Mitchell",
-          "Producer: Gene Griffin, Markell Riley",
-          "Written-By: Keith Hanns"
-        ],
-        [
-          "Engineer: Dennis Mitchell",
-          "Producer: Gene Griffin, Markell Riley",
-          "Written-By: Keith Hanns"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1988",
-      "artist": "Wrecks-N-Effect",
-      "title": "Let's Do It Again",
-      "label": "Atlantic Records",
-      "image": "1988-wrecks-n-effect-let-s-do-it-again.jpg",
-      "tracks": [
-        "Let's Do It Again (Edited Version)",
-        "Let's Do It Again (Instrumental)",
-        "Let's Do It Again (LP Version)"
-      ],
-      "credits": [
-        [
-          "Arranged By: Gene Griffin, Markell Riley",
-          "Mixed By: Dennis Mitchell",
-          "Producer: Gene Griffin, Markell Riley",
-          "Recorded By: Dennis Mitchell",
-          "Written-By: Curtis Mayfield, Keith Hanns"
-        ],
-        [
-          "Arranged By: Gene Griffin, Markell Riley",
-          "Mixed By: Dennis Mitchell",
-          "Producer: Gene Griffin, Markell Riley",
-          "Recorded By: Dennis Mitchell",
-          "Written-By: Curtis Mayfield, Keith Hanns"
-        ],
-        [
-          "Arranged By: Gene Griffin, Markell Riley",
-          "Mixed By: Dennis Mitchell",
-          "Producer: Gene Griffin, Markell Riley",
-          "Recorded By: Dennis Mitchell",
-          "Written-By: Curtis Mayfield, Keith Hanns"
         ]
       ],
       "qobuz_credits": []
@@ -4612,60 +4612,6 @@
         ]
       ],
       "qobuz_credits": []
-    },
-    {
-      "year": "1989",
-      "artist": "Various",
-      "title": "Do The Right Thing Soundtrack",
-      "label": "Motown",
-      "image": "1989-various-artists-do-the-right-thing-soundtrack.jpg",
-      "format": "LP",
-      "tracks": [
-        "Teddy Riley feat. Guy – My Fantasy",
-        "2001 Re-Release Bonus Tracks",
-        "Teddy Riley feat. Guy – My Fantasy (Extended Version)",
-        "Teddy Riley feat. Guy – My Fantasy (Rap Version)"
-      ],
-      "credits": [
-        [
-          "Backing Vocals: Aaron Hall, Damion Hall",
-          "Engineer: Dave Way",
-          "Engineer [Second]: Tony Shimkin",
-          "Performer [All Instruments]: Teddy Riley",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Written-By: Gene Griffin, Teddy Riley"
-        ],
-        [
-          "Backing Vocals: Aaron Hall, Damion Hall",
-          "Engineer: Dave Way",
-          "Engineer [Second]: Tony Shimkin",
-          "Performer [All Instruments]: Teddy Riley",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Written-By: Gene Griffin, Teddy Riley"
-        ],
-        [
-          "Backing Vocals: Aaron Hall, Damion Hall",
-          "Engineer: Dave Way",
-          "Engineer [Second]: Tony Shimkin",
-          "Performer [All Instruments]: Teddy Riley",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Written-By: Gene Griffin, Teddy Riley"
-        ],
-        [
-          "Backing Vocals: Aaron Hall, Damion Hall",
-          "Engineer: Dave Way",
-          "Engineer [Second]: Tony Shimkin",
-          "Performer [All Instruments]: Teddy Riley",
-          "Producer: Gene Griffin, Teddy Riley",
-          "Written-By: Gene Griffin, Teddy Riley"
-        ]
-      ],
-      "qobuz_credits": [
-        [],
-        [],
-        [],
-        []
-      ]
     },
     {
       "year": "1989",
@@ -5443,6 +5389,26 @@
     },
     {
       "year": "1989",
+      "artist": "Spoonie Gee",
+      "title": "Did You Come To Party",
+      "label": "Tuff City",
+      "image": "1989-spoonie-gee-did-you-come-to-party.jpg",
+      "tracks": [
+        "Did You Come to Party (Vocal)",
+        "Did You Come to Party (Dub)"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Producer: Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1989",
       "artist": "Stephanie Mills",
       "title": "Home",
       "label": "MCA Records",
@@ -5750,6 +5716,60 @@
     },
     {
       "year": "1989",
+      "artist": "Various",
+      "title": "Do The Right Thing Soundtrack",
+      "label": "Motown",
+      "image": "1989-various-artists-do-the-right-thing-soundtrack.jpg",
+      "format": "LP",
+      "tracks": [
+        "Teddy Riley feat. Guy – My Fantasy",
+        "2001 Re-Release Bonus Tracks",
+        "Teddy Riley feat. Guy – My Fantasy (Extended Version)",
+        "Teddy Riley feat. Guy – My Fantasy (Rap Version)"
+      ],
+      "credits": [
+        [
+          "Backing Vocals: Aaron Hall, Damion Hall",
+          "Engineer: Dave Way",
+          "Engineer [Second]: Tony Shimkin",
+          "Performer [All Instruments]: Teddy Riley",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Written-By: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Aaron Hall, Damion Hall",
+          "Engineer: Dave Way",
+          "Engineer [Second]: Tony Shimkin",
+          "Performer [All Instruments]: Teddy Riley",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Written-By: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Aaron Hall, Damion Hall",
+          "Engineer: Dave Way",
+          "Engineer [Second]: Tony Shimkin",
+          "Performer [All Instruments]: Teddy Riley",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Written-By: Gene Griffin, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Aaron Hall, Damion Hall",
+          "Engineer: Dave Way",
+          "Engineer [Second]: Tony Shimkin",
+          "Performer [All Instruments]: Teddy Riley",
+          "Producer: Gene Griffin, Teddy Riley",
+          "Written-By: Gene Griffin, Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": [
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "year": "1989",
       "artist": "Wrecks-N-Effect",
       "title": "Juicy",
       "label": "Sound Of New York",
@@ -6015,26 +6035,6 @@
         ]
       ],
       "qobuz_credits": []
-    },
-    {
-      "year": "1989",
-      "artist": "Spoonie Gee",
-      "title": "Did You Come To Party",
-      "label": "Tuff City",
-      "image": "1989-spoonie-gee-did-you-come-to-party.jpg",
-      "tracks": [
-        "Did You Come to Party (Vocal)",
-        "Did You Come to Party (Dub)"
-      ],
-      "credits": [
-        [
-          "Producer: Teddy Riley"
-        ],
-        [
-          "Producer: Teddy Riley"
-        ]
-      ],
-      "qobuz_credits": []
     }
   ],
   "1990s": [
@@ -6185,6 +6185,58 @@
         [],
         []
       ]
+    },
+    {
+      "year": "1990",
+      "artist": "Guy",
+      "title": "I Wanna Get With You",
+      "label": "MCA Records",
+      "image": "1990-guy-i-wanna-get-with-you.jpg",
+      "tracks": [
+        "I Wanna Get With U (12 Mix)",
+        "I Wanna Get With U (12″ Version)",
+        "I Wanna Get With U (7″ Mix)",
+        "I Wanna Get With U (Acapella)",
+        "I Wanna Get With U (Club Version)",
+        "I Wanna Get With U (Hip-Hop Version)",
+        "I Wanna Get With U (TR's Dub)"
+      ],
+      "videos": [
+        {
+          "id": "N0ur8Sox81Y",
+          "label": "I Wanna Get With You"
+        }
+      ],
+      "credits": [
+        [
+          "Co-producer: Guy",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
+        ],
+        [
+          "Co-producer: Guy",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
+        ],
+        [
+          "Co-producer: Guy",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
+        ],
+        [],
+        [
+          "Co-producer: Guy",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
+        ],
+        [
+          "Co-producer: Guy",
+          "Producer: Teddy Riley",
+          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
+        ],
+        []
+      ],
+      "qobuz_credits": []
     },
     {
       "year": "1990",
@@ -6392,58 +6444,6 @@
           "ComposerLyricist: Teddy Riley, Aaron Hall, Aqil Davidson"
         ]
       ]
-    },
-    {
-      "year": "1990",
-      "artist": "Guy",
-      "title": "I Wanna Get With You",
-      "label": "MCA Records",
-      "image": "1990-guy-i-wanna-get-with-you.jpg",
-      "tracks": [
-        "I Wanna Get With U (12 Mix)",
-        "I Wanna Get With U (12″ Version)",
-        "I Wanna Get With U (7″ Mix)",
-        "I Wanna Get With U (Acapella)",
-        "I Wanna Get With U (Club Version)",
-        "I Wanna Get With U (Hip-Hop Version)",
-        "I Wanna Get With U (TR's Dub)"
-      ],
-      "videos": [
-        {
-          "id": "N0ur8Sox81Y",
-          "label": "I Wanna Get With You"
-        }
-      ],
-      "credits": [
-        [
-          "Co-producer: Guy",
-          "Producer: Teddy Riley",
-          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
-        ],
-        [
-          "Co-producer: Guy",
-          "Producer: Teddy Riley",
-          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
-        ],
-        [
-          "Co-producer: Guy",
-          "Producer: Teddy Riley",
-          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
-        ],
-        [],
-        [
-          "Co-producer: Guy",
-          "Producer: Teddy Riley",
-          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
-        ],
-        [
-          "Co-producer: Guy",
-          "Producer: Teddy Riley",
-          "Written-By: Aaron Hall, Damion Hall, Teddy Riley"
-        ],
-        []
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "1990",
@@ -8325,17 +8325,21 @@
     {
       "year": "1991",
       "artist": "Various",
-      "title": "New Jack City (Music From The Motion Picture)",
-      "label": "Giant Records",
-      "image": "1991-various-artists-new-jack-city.jpg",
+      "title": "House Party 2 (Original Motion Picture Soundtrack)",
+      "label": "MCA Records",
+      "image": "1991-various-artists-house-party-2.jpg",
       "tracks": [
-        "03. Guy – New Jack City (Explicit)"
+        "04. Wrecks-N-Effect – Ready Or Not (House Party II New Jack Theme)"
       ],
       "credits": [
         [
-          "Co-producer: Bernard Belle",
-          "Producer: Guy, Teddy Riley",
-          "Written-By: Aaron Hall, Bernard Belle, Teddy Riley"
+          "Backing Vocals: Bubba, Teddy Riley",
+          "Engineer: Jean-Marie Horvat, Teddy Riley",
+          "Instruments [All Instruments]: Teddy Riley",
+          "Lead Vocals: Bubba",
+          "Performer: Wrecks-N-Effect",
+          "Producer: Teddy Riley",
+          "Written-By: Aqil Davidson, Markell Riley, Teddy Riley"
         ]
       ],
       "qobuz_credits": []
@@ -8360,21 +8364,17 @@
     {
       "year": "1991",
       "artist": "Various",
-      "title": "House Party 2 (Original Motion Picture Soundtrack)",
-      "label": "MCA Records",
-      "image": "1991-various-artists-house-party-2.jpg",
+      "title": "New Jack City (Music From The Motion Picture)",
+      "label": "Giant Records",
+      "image": "1991-various-artists-new-jack-city.jpg",
       "tracks": [
-        "04. Wrecks-N-Effect – Ready Or Not (House Party II New Jack Theme)"
+        "03. Guy – New Jack City (Explicit)"
       ],
       "credits": [
         [
-          "Backing Vocals: Bubba, Teddy Riley",
-          "Engineer: Jean-Marie Horvat, Teddy Riley",
-          "Instruments [All Instruments]: Teddy Riley",
-          "Lead Vocals: Bubba",
-          "Performer: Wrecks-N-Effect",
-          "Producer: Teddy Riley",
-          "Written-By: Aqil Davidson, Markell Riley, Teddy Riley"
+          "Co-producer: Bernard Belle",
+          "Producer: Guy, Teddy Riley",
+          "Written-By: Aaron Hall, Bernard Belle, Teddy Riley"
         ]
       ],
       "qobuz_credits": []
@@ -8756,37 +8756,60 @@
       "qobuz_credits": []
     },
     {
-      "year": "1993",
-      "artist": "Mary J. Blige",
-      "title": "What's The 411 (Remix)",
-      "label": "MCA Records",
-      "image": "1993-mary-j-blige-what-s-the-411-remix.jpg",
+      "year": "1992",
+      "artist": "Michael Jackson",
+      "title": "Jam",
+      "label": "Epic",
+      "image": "1992-michael-jackson-jam.jpg",
       "tracks": [
-        "03. My Love (Remix)",
-        "11. Changes I've Been Going Through (Teddy Riley Remix)"
+        "Jam (7″ Edit)",
+        "Jam (Percapella)",
+        "Jam (Radio Edit Without Rap)",
+        "Jam (Teddy's 12″ Mix)",
+        "Jam (Teddy's Jam)"
       ],
       "credits": [
         [],
+        [],
+        [],
         [
-          "Featuring: Billy Lawrence",
-          "Producer: Mark C. Rooney, Mark Morales, Sean Combs",
-          "Remix: Teddy Riley"
-        ]
-      ],
-      "qobuz_credits": [
-        [
-          "MainArtist: Mary J. Blige",
-          "Producer: Dave Hall, Dave \"Jam\" Hall",
-          "ComposerLyricist: Dave Hall, Kenneth Greene",
-          "Remixer: Teddy Riley"
+          "Remix: Future Entertainment"
         ],
         [
-          "MainArtist: Mary J. Blige",
-          "Producer: Mark Morales, Mark Rooney, P. Diddy, Mark C. Rooney, Sean \"Puffy\" Combs",
-          "ComposerLyricist: Mark Morales, Mark Rooney, P. Diddy",
-          "Remixer: Teddy Riley"
+          "Remix: Future Entertainment"
         ]
-      ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1992",
+      "artist": "Michael Jackson",
+      "title": "Remember The Time",
+      "label": "Epic",
+      "image": "1992-michael-jackson-remember-the-time.jpg",
+      "tracks": [
+        "Remember The Time (12″ Main Mix)",
+        "Remember The Time (Acapella)",
+        "Remember The Time (Bonus Beat 3)",
+        "Remember The Time (New Jack Jazz Mix)",
+        "Remember the Time (New Jack main mix)",
+        "Remember The Time (New Jack Radio Mix)"
+      ],
+      "credits": [
+        [
+          "Instruments [All Additional]: Teddy Riley",
+          "Remix: Jean-Marie Horvat, Teddy Riley"
+        ],
+        [],
+        [],
+        [],
+        [
+          "Instruments [All Additional]: Teddy Riley",
+          "Remix: Jean-Marie Horvat, Teddy Riley"
+        ],
+        []
+      ],
+      "qobuz_credits": []
     },
     {
       "year": "1992",
@@ -8963,62 +8986,6 @@
         [],
         []
       ]
-    },
-    {
-      "year": "1992",
-      "artist": "Michael Jackson",
-      "title": "Remember The Time",
-      "label": "Epic",
-      "image": "1992-michael-jackson-remember-the-time.jpg",
-      "tracks": [
-        "Remember The Time (12″ Main Mix)",
-        "Remember The Time (Acapella)",
-        "Remember The Time (Bonus Beat 3)",
-        "Remember The Time (New Jack Jazz Mix)",
-        "Remember the Time (New Jack main mix)",
-        "Remember The Time (New Jack Radio Mix)"
-      ],
-      "credits": [
-        [
-          "Instruments [All Additional]: Teddy Riley",
-          "Remix: Jean-Marie Horvat, Teddy Riley"
-        ],
-        [],
-        [],
-        [],
-        [
-          "Instruments [All Additional]: Teddy Riley",
-          "Remix: Jean-Marie Horvat, Teddy Riley"
-        ],
-        []
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1992",
-      "artist": "Michael Jackson",
-      "title": "Jam",
-      "label": "Epic",
-      "image": "1992-michael-jackson-jam.jpg",
-      "tracks": [
-        "Jam (7″ Edit)",
-        "Jam (Percapella)",
-        "Jam (Radio Edit Without Rap)",
-        "Jam (Teddy's 12″ Mix)",
-        "Jam (Teddy's Jam)"
-      ],
-      "credits": [
-        [],
-        [],
-        [],
-        [
-          "Remix: Future Entertainment"
-        ],
-        [
-          "Remix: Future Entertainment"
-        ]
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "1992",
@@ -9915,24 +9882,6 @@
     {
       "year": "1993",
       "artist": "Father",
-      "title": "Sex Is Law",
-      "label": "Uptown Records",
-      "image": "1993-father-sex-is-law.jpg",
-      "tracks": [
-        "01. 69"
-      ],
-      "credits": [
-        [
-          "Producer: Teddy Riley"
-        ]
-      ],
-      "qobuz_credits": [
-        []
-      ]
-    },
-    {
-      "year": "1993",
-      "artist": "Father",
       "title": "69",
       "label": "Uptown Records",
       "image": "1993-father-69.jpg",
@@ -9990,6 +9939,24 @@
         ]
       ],
       "qobuz_credits": []
+    },
+    {
+      "year": "1993",
+      "artist": "Father",
+      "title": "Sex Is Law",
+      "label": "Uptown Records",
+      "image": "1993-father-sex-is-law.jpg",
+      "tracks": [
+        "01. 69"
+      ],
+      "credits": [
+        [
+          "Producer: Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": [
+        []
+      ]
     },
     {
       "year": "1993",
@@ -10155,6 +10122,39 @@
     },
     {
       "year": "1993",
+      "artist": "Mary J. Blige",
+      "title": "What's The 411 (Remix)",
+      "label": "MCA Records",
+      "image": "1993-mary-j-blige-what-s-the-411-remix.jpg",
+      "tracks": [
+        "03. My Love (Remix)",
+        "11. Changes I've Been Going Through (Teddy Riley Remix)"
+      ],
+      "credits": [
+        [],
+        [
+          "Featuring: Billy Lawrence",
+          "Producer: Mark C. Rooney, Mark Morales, Sean Combs",
+          "Remix: Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": [
+        [
+          "MainArtist: Mary J. Blige",
+          "Producer: Dave Hall, Dave \"Jam\" Hall",
+          "ComposerLyricist: Dave Hall, Kenneth Greene",
+          "Remixer: Teddy Riley"
+        ],
+        [
+          "MainArtist: Mary J. Blige",
+          "Producer: Mark Morales, Mark Rooney, P. Diddy, Mark C. Rooney, Sean \"Puffy\" Combs",
+          "ComposerLyricist: Mark Morales, Mark Rooney, P. Diddy",
+          "Remixer: Teddy Riley"
+        ]
+      ]
+    },
+    {
+      "year": "1993",
       "artist": "MC Lyte",
       "title": "I Go On",
       "label": "First Priority Music",
@@ -10196,36 +10196,6 @@
         [
           "Featuring: Teddy Riley"
         ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1993",
-      "artist": "Wreckx-N-Effect",
-      "title": "My Cutie",
-      "label": "MCA Records",
-      "image": "1993-wreckx-n-effect-my-cutie.jpg",
-      "tracks": [
-        "My Cutie (Acappella)",
-        "My Cutie (Album Version)",
-        "My Cutie (Bonus Beats)",
-        "My Cutie (Extended Version)",
-        "My Cutie (Hard Cutie)",
-        "My Cutie (Radio)",
-        "My Cutie (Smooth Cutie)"
-      ],
-      "credits": [
-        [
-          "Featuring: Tammy Lucas"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [
-          "Featuring: Tammy Lucas"
-        ],
-        []
       ],
       "qobuz_credits": []
     },
@@ -10313,113 +10283,260 @@
       ]
     },
     {
-      "year": "1994",
-      "artist": "BLACKstreet",
-      "title": "BLACKstreet (Promo Cassette)",
-      "label": "Interscope Records / Atlantic",
-      "image": "1994-blackstreet-blackstreet-promo-cassette.jpg",
-      "format": "LP",
+      "year": "1993",
+      "artist": "Wreckx-N-Effect",
+      "title": "My Cutie",
+      "label": "MCA Records",
+      "image": "1993-wreckx-n-effect-my-cutie.jpg",
       "tracks": [
-        "A1. Intro (Interlude)",
-        "A2. Baby Be Mine",
-        "A3. U Blow My Mind (alternative version)",
-        "A4. Hey Love (Interlude)",
-        "A5. I Like The Way You Work",
-        "A6. Good Life",
-        "A7. Bootknockalization (unreleased)",
-        "A8. Physical Thing",
-        "A9. Make U Wet (alternative version)",
-        "A10. Birthday Song",
-        "A11. Givin' You All My Lovin'",
-        "A12. It's The Beat (unreleased)",
-        "A13. Booti Call",
-        "A14. I Like It (unreleased)",
-        "B1. Love's In Need",
-        "B2. Joy",
-        "B3. Before I Let You Go",
-        "B4. Confession (Interlude)",
-        "B5. Falling In Love Again",
-        "B6. Candlelight Night (Interlude)",
-        "B7. Tonight's The Night",
-        "B8. Happy Home",
-        "B9. Don't Wanna Be Alone (unreleased)",
-        "B10. Once In A Lifetime"
+        "My Cutie (Acappella)",
+        "My Cutie (Album Version)",
+        "My Cutie (Bonus Beats)",
+        "My Cutie (Extended Version)",
+        "My Cutie (Hard Cutie)",
+        "My Cutie (Radio)",
+        "My Cutie (Smooth Cutie)"
       ],
       "credits": [
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Featuring: Tammy Lucas"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Featuring: Tammy Lucas"
+        ],
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1994",
+      "artist": "9*1*1",
+      "title": "Cutie",
+      "label": "Rip-It Records",
+      "image": "1994-9-1-1-cutie.jpg",
+      "tracks": [
+        "Cutie (Acapella)",
+        "Cutie (Accapella)",
+        "Cutie (\"Baby Fingers\" Mix)",
+        "Cutie (Funk Mix With Rap)",
+        "Cutie (Funk Mix Without Rap)",
+        "Cutie (Instrumental)",
+        "Cutie (Instrumental Funk Remix)",
+        "Cutie (Instrumental LP)",
+        "Cutie (LP Mix)",
+        "Cutie (Perca-Pella)",
+        "Cutie (Pianopella)",
+        "Cutie (Pops Remix)",
+        "Cutie (Silent Storm Mix W/ Bass)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [
+          "Rap: A-Plus"
         ],
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Rap: A-Plus"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1994",
+      "artist": "9*1*1",
+      "title": "The Pressure",
+      "label": "P-Vine Records",
+      "image": "1994-9-1-1-the-pressure.jpg",
+      "tracks": [
+        "01. Radio Interlude",
+        "02. Cutie",
+        "03. Higher",
+        "04. Spend Some Time",
+        "05. Recognize",
+        "06. My Heart Belongs to You",
+        "07. Catchin Feelins",
+        "08. The Ride",
+        "09. Do You Right",
+        "10. Misery",
+        "11. Space Interlude",
+        "12. Something About the Way",
+        "13. Make Me Say",
+        "14. The Pressure",
+        "15. Rescue Me",
+        "16. End of the Earth",
+        "17. Can't Get Enough (featuring Chance)"
+      ],
+      "credits": [
+        [
+          "Producer: Walter \"Mucho\" Scott",
+          "Voice [Radio Personality]: Madeline Nelson"
+        ],
+        [
+          "Producer: Walter \"Mucho\" Scott",
+          "Written-By: Chauncey Hannibal, Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Walter \"Mucho\" Scott",
+          "Written-By: Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Walter \"Mucho\" Scott",
+          "Written-By: Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Walter \"Mucho\" Scott",
+          "Written-By: Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Darryl \"Dezo\" Adams, Walter \"Mucho\" Scott",
+          "Written-By: Darryl \"Dezo\" Adams, Markus Vance, Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Walter \"Mucho\" Scott",
+          "Written-By: Darryl \"Dezo\" Adams, Markus Vance, Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Walter \"Mucho\" Scott",
+          "Written-By: Walter \"Mucho\" Scott"
+        ],
+        [
+          "Producer: Darryl \"Dezo\" Adams, Ronald Hayes",
+          "Written-By: Darryl \"Dezo\" Adams, Ronald Hayes"
+        ],
+        [
+          "Producer: Darryl \"Dezo\" Adams, Ronald Hayes, Teddy Riley, Walter \"Mucho\" Scott",
+          "Written-By: Darryl \"Dezo\" Adams, Larry Troutman, Roger Troutman, Walter \"Mucho\" Scott"
         ],
         [],
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Producer: Walter \"Mucho\" Scott",
+          "Written-By: Markus Vance, Walter \"Mucho\" Scott"
         ],
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Producer: Teddy Riley",
+          "Written-By: Chris Jasper, Ernie Isley, Marvin Isley, O'Kelly Isley, Ronald Isley, Rudolph Isley"
         ],
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
-        ],
-        [],
-        [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
-        ],
-        [],
-        [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Producer: Shannon Sanders",
+          "Written-By: Shannon Sanders"
         ],
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
-        ],
-        [],
-        [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
-        ],
-        [],
-        [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
-        ],
-        [],
-        [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Producer: Darryl \"Dezo\" Adams, Walter \"Mucho\" Scott",
+          "Written-By: Darryl \"Dezo\" Adams, Markus Vance, Walter \"Mucho\" Scott, Zack Scott"
         ],
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Producer: Darryl \"Dezo\" Adams, Ronald Hayes",
+          "Written-By: Darryl \"Dezo\" Adams, Ronald Hayes"
         ],
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
-        ],
+          "Featuring: Chance",
+          "Producer: Walter \"Mucho\" Scott",
+          "Written-By: Walter \"Mucho\" Scott"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1994",
+      "artist": "Blackgirl",
+      "title": "90's Girl",
+      "label": "Kaper Records / RCA",
+      "image": "1994-blackgirl-90s-girl.jpg",
+      "tracks": [
+        "90's Girl (Encore A Cappella)",
+        "90's Girl (Encore Alt. Remix feat. Menton \"Peanut\" Smith) (Radio Edit)",
+        "90's Girl (Encore Extended Alt. Remix)",
+        "90's Girl (Encore Extended Alt. Remix feat. Menton \"Peanut\" Smith)",
+        "90's Girl (Encore Extended Club Mix)",
+        "90's Girl (Encore Instrumental)",
+        "90's Girl (Encore Remix W/Out Rap)",
+        "90's Girl (In The 90's Extended Mix)",
+        "90's Girl (In The 90's Radio Edit)",
+        "90's Girl (In The 90's Radio Edit W/Out Rap)",
+        "90's Girl (Video Edit feat. Antwone Dickey)"
+      ],
+      "credits": [
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
-        ],
-        [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
-        ],
-        [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Remix: Teddy Riley"
         ],
         [],
         [
-          "Executive-Producer: Teddy Riley",
-          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+          "Edited By: Greg Royal",
+          "Featuring: Menton Smith",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Edited By: Greg Royal",
+          "Featuring: Menton Smith",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Edited By: Greg Royal",
+          "Featuring: Menton Smith",
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1994",
+      "artist": "BLACKstreet",
+      "title": "Before I Let You Go",
+      "label": "Interscope Records",
+      "image": "1994-blackstreet-before-i-let-you-go.jpg",
+      "tracks": [
+        "Before I Let You Go (Acapella Mix)",
+        "Before I Let You Go (BLACKstreet Live Version)",
+        "Before I Let You Go (Instrumental)",
+        "Before I Let You Go (LP Version)",
+        "Before I Let You Go (Main Mix One)",
+        "Before I Let You Go (Main Mix Two)",
+        "Before I Let You Go (Radio Edit)",
+        "Before I Let You Go (Reggae Dub Mix)",
+        "Before I Let You Go (Short Outro)",
+        "Before I Let You Go (T.R. Mix)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [],
+        [],
+        [],
+        [],
+        [
+          "Remix: Teddy Riley"
+        ],
+        [
+          "Remix: Teddy Riley"
         ]
       ],
       "qobuz_credits": []
@@ -10596,229 +10713,112 @@
     },
     {
       "year": "1994",
-      "artist": "9*1*1",
-      "title": "The Pressure",
-      "label": "P-Vine Records",
-      "image": "1994-9-1-1-the-pressure.jpg",
-      "tracks": [
-        "01. Radio Interlude",
-        "02. Cutie",
-        "03. Higher",
-        "04. Spend Some Time",
-        "05. Recognize",
-        "06. My Heart Belongs to You",
-        "07. Catchin Feelins",
-        "08. The Ride",
-        "09. Do You Right",
-        "10. Misery",
-        "11. Space Interlude",
-        "12. Something About the Way",
-        "13. Make Me Say",
-        "14. The Pressure",
-        "15. Rescue Me",
-        "16. End of the Earth",
-        "17. Can't Get Enough (featuring Chance)"
-      ],
-      "credits": [
-        [
-          "Producer: Walter \"Mucho\" Scott",
-          "Voice [Radio Personality]: Madeline Nelson"
-        ],
-        [
-          "Producer: Walter \"Mucho\" Scott",
-          "Written-By: Chauncey Hannibal, Walter \"Mucho\" Scott"
-        ],
-        [
-          "Producer: Walter \"Mucho\" Scott",
-          "Written-By: Walter \"Mucho\" Scott"
-        ],
-        [
-          "Producer: Walter \"Mucho\" Scott",
-          "Written-By: Walter \"Mucho\" Scott"
-        ],
-        [
-          "Producer: Walter \"Mucho\" Scott",
-          "Written-By: Walter \"Mucho\" Scott"
-        ],
-        [
-          "Producer: Darryl \"Dezo\" Adams, Walter \"Mucho\" Scott",
-          "Written-By: Darryl \"Dezo\" Adams, Markus Vance, Walter \"Mucho\" Scott"
-        ],
-        [
-          "Producer: Walter \"Mucho\" Scott",
-          "Written-By: Darryl \"Dezo\" Adams, Markus Vance, Walter \"Mucho\" Scott"
-        ],
-        [
-          "Producer: Walter \"Mucho\" Scott",
-          "Written-By: Walter \"Mucho\" Scott"
-        ],
-        [
-          "Producer: Darryl \"Dezo\" Adams, Ronald Hayes",
-          "Written-By: Darryl \"Dezo\" Adams, Ronald Hayes"
-        ],
-        [
-          "Producer: Darryl \"Dezo\" Adams, Ronald Hayes, Teddy Riley, Walter \"Mucho\" Scott",
-          "Written-By: Darryl \"Dezo\" Adams, Larry Troutman, Roger Troutman, Walter \"Mucho\" Scott"
-        ],
-        [],
-        [
-          "Producer: Walter \"Mucho\" Scott",
-          "Written-By: Markus Vance, Walter \"Mucho\" Scott"
-        ],
-        [
-          "Producer: Teddy Riley",
-          "Written-By: Chris Jasper, Ernie Isley, Marvin Isley, O'Kelly Isley, Ronald Isley, Rudolph Isley"
-        ],
-        [
-          "Producer: Shannon Sanders",
-          "Written-By: Shannon Sanders"
-        ],
-        [
-          "Producer: Darryl \"Dezo\" Adams, Walter \"Mucho\" Scott",
-          "Written-By: Darryl \"Dezo\" Adams, Markus Vance, Walter \"Mucho\" Scott, Zack Scott"
-        ],
-        [
-          "Producer: Darryl \"Dezo\" Adams, Ronald Hayes",
-          "Written-By: Darryl \"Dezo\" Adams, Ronald Hayes"
-        ],
-        [
-          "Featuring: Chance",
-          "Producer: Walter \"Mucho\" Scott",
-          "Written-By: Walter \"Mucho\" Scott"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1994",
-      "artist": "9*1*1",
-      "title": "Cutie",
-      "label": "Rip-It Records",
-      "image": "1994-9-1-1-cutie.jpg",
-      "tracks": [
-        "Cutie (Acapella)",
-        "Cutie (Accapella)",
-        "Cutie (\"Baby Fingers\" Mix)",
-        "Cutie (Funk Mix With Rap)",
-        "Cutie (Funk Mix Without Rap)",
-        "Cutie (Instrumental)",
-        "Cutie (Instrumental Funk Remix)",
-        "Cutie (Instrumental LP)",
-        "Cutie (LP Mix)",
-        "Cutie (Perca-Pella)",
-        "Cutie (Pianopella)",
-        "Cutie (Pops Remix)",
-        "Cutie (Silent Storm Mix W/ Bass)"
-      ],
-      "credits": [
-        [],
-        [],
-        [],
-        [
-          "Rap: A-Plus"
-        ],
-        [
-          "Rap: A-Plus"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1994",
-      "artist": "Blackgirl",
-      "title": "90's Girl",
-      "label": "Kaper Records / RCA",
-      "image": "1994-blackgirl-90s-girl.jpg",
-      "tracks": [
-        "90's Girl (Encore A Cappella)",
-        "90's Girl (Encore Alt. Remix feat. Menton \"Peanut\" Smith) (Radio Edit)",
-        "90's Girl (Encore Extended Alt. Remix)",
-        "90's Girl (Encore Extended Alt. Remix feat. Menton \"Peanut\" Smith)",
-        "90's Girl (Encore Extended Club Mix)",
-        "90's Girl (Encore Instrumental)",
-        "90's Girl (Encore Remix W/Out Rap)",
-        "90's Girl (In The 90's Extended Mix)",
-        "90's Girl (In The 90's Radio Edit)",
-        "90's Girl (In The 90's Radio Edit W/Out Rap)",
-        "90's Girl (Video Edit feat. Antwone Dickey)"
-      ],
-      "credits": [
-        [
-          "Remix: Teddy Riley"
-        ],
-        [],
-        [
-          "Edited By: Greg Royal",
-          "Featuring: Menton Smith",
-          "Remix: Teddy Riley"
-        ],
-        [
-          "Edited By: Greg Royal",
-          "Featuring: Menton Smith",
-          "Remix: Teddy Riley"
-        ],
-        [
-          "Edited By: Greg Royal",
-          "Featuring: Menton Smith",
-          "Remix: Teddy Riley"
-        ],
-        [
-          "Remix: Teddy Riley"
-        ],
-        [],
-        [
-          "Remix: Teddy Riley"
-        ],
-        [
-          "Remix: Teddy Riley"
-        ],
-        [],
-        []
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1994",
       "artist": "BLACKstreet",
-      "title": "Before I Let You Go",
-      "label": "Interscope Records",
-      "image": "1994-blackstreet-before-i-let-you-go.jpg",
+      "title": "BLACKstreet (Promo Cassette)",
+      "label": "Interscope Records / Atlantic",
+      "image": "1994-blackstreet-blackstreet-promo-cassette.jpg",
+      "format": "LP",
       "tracks": [
-        "Before I Let You Go (Acapella Mix)",
-        "Before I Let You Go (BLACKstreet Live Version)",
-        "Before I Let You Go (Instrumental)",
-        "Before I Let You Go (LP Version)",
-        "Before I Let You Go (Main Mix One)",
-        "Before I Let You Go (Main Mix Two)",
-        "Before I Let You Go (Radio Edit)",
-        "Before I Let You Go (Reggae Dub Mix)",
-        "Before I Let You Go (Short Outro)",
-        "Before I Let You Go (T.R. Mix)"
+        "A1. Intro (Interlude)",
+        "A2. Baby Be Mine",
+        "A3. U Blow My Mind (alternative version)",
+        "A4. Hey Love (Interlude)",
+        "A5. I Like The Way You Work",
+        "A6. Good Life",
+        "A7. Bootknockalization (unreleased)",
+        "A8. Physical Thing",
+        "A9. Make U Wet (alternative version)",
+        "A10. Birthday Song",
+        "A11. Givin' You All My Lovin'",
+        "A12. It's The Beat (unreleased)",
+        "A13. Booti Call",
+        "A14. I Like It (unreleased)",
+        "B1. Love's In Need",
+        "B2. Joy",
+        "B3. Before I Let You Go",
+        "B4. Confession (Interlude)",
+        "B5. Falling In Love Again",
+        "B6. Candlelight Night (Interlude)",
+        "B7. Tonight's The Night",
+        "B8. Happy Home",
+        "B9. Don't Wanna Be Alone (unreleased)",
+        "B10. Once In A Lifetime"
       ],
       "credits": [
-        [],
-        [],
-        [],
         [
-          "Remix: Teddy Riley"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [
-          "Remix: Teddy Riley"
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
         ],
         [
-          "Remix: Teddy Riley"
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
+        ],
+        [],
+        [
+          "Executive-Producer: Teddy Riley",
+          "Executive-Producer [Assistant]: John McClain, Michael Concepcion"
         ]
       ],
       "qobuz_credits": []
@@ -11018,6 +11018,28 @@
     },
     {
       "year": "1994",
+      "artist": "Hammer",
+      "title": "The Funky Headhunter",
+      "label": "Giant Records",
+      "image": "1994-hammer-the-funky-headhunter.jpg",
+      "tracks": [
+        "04. Somethin' For The O.G.'s",
+        "05. Don't Stop",
+        "06. Pumps And A Bump",
+        "15. Pumps And A Bump Reprise (Bump Teddy Bump)"
+      ],
+      "credits": [
+        [],
+        [
+          "Producer: Teddy Riley"
+        ],
+        [],
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1994",
       "artist": "Heavy D. & The Boyz",
       "title": "Nuttin' But Love",
       "label": "MCA Records",
@@ -11036,23 +11058,35 @@
     },
     {
       "year": "1994",
-      "artist": "Hammer",
-      "title": "The Funky Headhunter",
-      "label": "Giant Records",
-      "image": "1994-hammer-the-funky-headhunter.jpg",
+      "artist": "NKOTB",
+      "title": "Face The Music",
+      "label": "Columbia",
+      "image": "1994-nkotb-face-the-music.jpg",
+      "format": "LP",
       "tracks": [
-        "04. Somethin' For The O.G.'s",
-        "05. Don't Stop",
-        "06. Pumps And A Bump",
-        "15. Pumps And A Bump Reprise (Bump Teddy Bump)"
+        "2 You Got The Flavor",
+        "4 Girls",
+        "7 Never Let You Go"
       ],
       "credits": [
-        [],
         [
-          "Producer: Teddy Riley"
+          "Arranged By: Leon Sylvers, Teddy Riley",
+          "Lead Vocals: Jordan Knight",
+          "Producer, Mixed By: Teddy Riley",
+          "Written By: T. Riley , C. Hannibal , A. Dickey , M. Riley"
         ],
-        [],
-        []
+        [
+          "Lead Vocals: Jordan Knight",
+          "Mixed By: Teddy Riley",
+          "Producer, Arranged By: Leon Sylvers, Teddy Riley",
+          "Written By: T. Riley , L. Sylvers III, A. Dickey , M. Riley , H. Ray , A. Goodman , V. Dodson , W. Morris"
+        ],
+        [
+          "Arranged By, Mixed By: Teddy Riley",
+          "Lead Vocals: Jordan Knight",
+          "Producer: Leon Sylvers, Teddy Riley",
+          "Written By: T. Riley , L. Sylvers III , A. Dickey , M. Riley"
+        ]
       ],
       "qobuz_credits": []
     },
@@ -11404,6 +11438,87 @@
         ]
       ],
       "qobuz_credits": []
+    },
+    {
+      "year": "1995",
+      "artist": "Cheryl Lynn",
+      "title": "Good Time",
+      "label": "Avex Trax",
+      "image": "1995-cheryl-lynn-good-time.jpg",
+      "tracks": [
+        "01 Don't Wanna Be Mistreated",
+        "02 Good Time",
+        "04 If You Feel",
+        "06 Guarantee For My Heart",
+        "07 All My Loving"
+      ],
+      "credits": [
+        [
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: John Hanes, Serban Ghenea, Sprague \"Doogie\" Williams, Teddy Riley",
+          "Producer: Sprague \"Doogie\" Williams, Teddy Riley",
+          "Written-By, Backing Vocals: Sherri Blair, Sprague \"Doogie\" Williams"
+        ],
+        [
+          "Backing Vocals: Cheryl Lynn",
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: John Hanes, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Cheryl Lynn, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Cheryl Lynn",
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: George Mayers, John Hanes, Serban Ghenea, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Cheryl Lynn, Sherri Blair, Teddy Riley"
+        ],
+        [
+          "Backing Vocals: Cheryl Lynn, Sharon Lynn Wallace",
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: Serban Ghenea, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Cheryl Lynn, Teddy Riley, Thurlene Johnson"
+        ],
+        [
+          "Co-producer [Associate Producer]: Cheryl Lynn",
+          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
+          "Mixed By: Serban Ghenea, Teddy Riley",
+          "Producer: Teddy Riley",
+          "Written-By: Cheryl Lynn, Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": [
+        [
+          "MainArtist: Cheryl Lynn",
+          "Composer: Cheryl Lynn",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "MainArtist: Cheryl Lynn",
+          "Composer: Cheryl Lynn",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "MainArtist: Cheryl Lynn",
+          "Composer: Cheryl Lynn",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "MainArtist: Cheryl Lynn",
+          "Composer: Cheryl Lynn",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "MainArtist: Cheryl Lynn",
+          "Composer: Cheryl Lynn",
+          "Producer: Teddy Riley"
+        ]
+      ]
     },
     {
       "year": "1995",
@@ -11846,87 +11961,6 @@
       "qobuz_credits": []
     },
     {
-      "year": "1995",
-      "artist": "Cheryl Lynn",
-      "title": "Good Time",
-      "label": "Avex Trax",
-      "image": "1995-cheryl-lynn-good-time.jpg",
-      "tracks": [
-        "01 Don't Wanna Be Mistreated",
-        "02 Good Time",
-        "04 If You Feel",
-        "06 Guarantee For My Heart",
-        "07 All My Loving"
-      ],
-      "credits": [
-        [
-          "Co-producer [Associate Producer]: Cheryl Lynn",
-          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
-          "Mixed By: John Hanes, Serban Ghenea, Sprague \"Doogie\" Williams, Teddy Riley",
-          "Producer: Sprague \"Doogie\" Williams, Teddy Riley",
-          "Written-By, Backing Vocals: Sherri Blair, Sprague \"Doogie\" Williams"
-        ],
-        [
-          "Backing Vocals: Cheryl Lynn",
-          "Co-producer [Associate Producer]: Cheryl Lynn",
-          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
-          "Mixed By: John Hanes, Teddy Riley",
-          "Producer: Teddy Riley",
-          "Written-By: Cheryl Lynn, Teddy Riley"
-        ],
-        [
-          "Backing Vocals: Cheryl Lynn",
-          "Co-producer [Associate Producer]: Cheryl Lynn",
-          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
-          "Mixed By: George Mayers, John Hanes, Serban Ghenea, Teddy Riley",
-          "Producer: Teddy Riley",
-          "Written-By: Cheryl Lynn, Sherri Blair, Teddy Riley"
-        ],
-        [
-          "Backing Vocals: Cheryl Lynn, Sharon Lynn Wallace",
-          "Co-producer [Associate Producer]: Cheryl Lynn",
-          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
-          "Mixed By: Serban Ghenea, Teddy Riley",
-          "Producer: Teddy Riley",
-          "Written-By: Cheryl Lynn, Teddy Riley, Thurlene Johnson"
-        ],
-        [
-          "Co-producer [Associate Producer]: Cheryl Lynn",
-          "Engineer [Recording]: George Mayers, John Hanes, Kimberly L. Smith, Serban Ghenea",
-          "Mixed By: Serban Ghenea, Teddy Riley",
-          "Producer: Teddy Riley",
-          "Written-By: Cheryl Lynn, Teddy Riley"
-        ]
-      ],
-      "qobuz_credits": [
-        [
-          "MainArtist: Cheryl Lynn",
-          "Composer: Cheryl Lynn",
-          "Producer: Teddy Riley"
-        ],
-        [
-          "MainArtist: Cheryl Lynn",
-          "Composer: Cheryl Lynn",
-          "Producer: Teddy Riley"
-        ],
-        [
-          "MainArtist: Cheryl Lynn",
-          "Composer: Cheryl Lynn",
-          "Producer: Teddy Riley"
-        ],
-        [
-          "MainArtist: Cheryl Lynn",
-          "Composer: Cheryl Lynn",
-          "Producer: Teddy Riley"
-        ],
-        [
-          "MainArtist: Cheryl Lynn",
-          "Composer: Cheryl Lynn",
-          "Producer: Teddy Riley"
-        ]
-      ]
-    },
-    {
       "year": "1996",
       "artist": "Case",
       "title": "More To Love",
@@ -12309,6 +12343,122 @@
     },
     {
       "year": "1996",
+      "artist": "Shawn",
+      "title": "O.G",
+      "label": "RCA",
+      "image": "1996-shawn-o-g.jpg",
+      "tracks": [
+        "O.G. (Radio Version)",
+        "O.G. (Instrumental)",
+        "O.G. (A Cappella)"
+      ],
+      "credits": [
+        [
+          "Executive Producer: Kevin Evans, Michael Concepcion",
+          "Mastered By: Chris Gehringer",
+          "Producer: Gerald Baillergeau, Victor Merritt"
+        ],
+        [
+          "Executive Producer: Kevin Evans, Michael Concepcion",
+          "Mastered By: Chris Gehringer",
+          "Producer: Gerald Baillergeau, Victor Merritt"
+        ],
+        [
+          "Executive Producer: Kevin Evans, Michael Concepcion",
+          "Mastered By: Chris Gehringer",
+          "Producer: Gerald Baillergeau, Victor Merritt"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1996",
+      "artist": "Teddy Riley",
+      "title": "The Harlem Sessions",
+      "label": "Ol' Skool Flava",
+      "image": "1996-teddy-riley-the-harlem-sessions.jpg",
+      "tracks": [
+        "01 - Al B. Just Two Mc's - Wong (Vocal)",
+        "02 - B-Fats - The B.Fats (Vocal)",
+        "03 - Al B. Just Two Mc's - Just Rap (Vocal)",
+        "04 - Al Jones - Cheating Girl (Vocal)",
+        "05 - Al B. Just Two Mc's - Wong (Instrumental)",
+        "06 - B-Fats - The B.Fats (Instrumental)",
+        "07 - Al B. Just Two Mc's - Just Rap ((Instrumental)",
+        "08 - Al Jones - Cheating Girl (Instrumental)"
+      ],
+      "qobuz_credits": [
+        [
+          "MainArtist: Teddy Riley, Al B.",
+          "MusicPublisher: Street Tuff Tunes (ASCAP)",
+          "Composer: Will Raymond Bowden"
+        ],
+        [
+          "MainArtist: Teddy Riley, B. Fats",
+          "Composer: T Riley, Will Raymond Bowden",
+          "MusicPublisher: Street Tuff Tunes (ASCAP)"
+        ],
+        [
+          "MainArtist: Teddy Riley, Al B.",
+          "MusicPublisher: Street Tuff Tunes (ASCAP)",
+          "Composer: Will Raymond Bowden"
+        ],
+        [
+          "MainArtist: Teddy Riley, Al Jones",
+          "MusicPublisher: Street Tuff Tunes (ASCAP)",
+          "Composer: Will Raymond Bowden"
+        ],
+        [
+          "MainArtist: Teddy Riley, Al B.",
+          "MusicPublisher: Street Tuff Tunes (ASCAP)",
+          "Composer: Will Raymond Bowden"
+        ],
+        [
+          "MainArtist: Teddy Riley, B. Fats",
+          "Composer: T Riley, Will Raymond Bowden",
+          "MusicPublisher: Street Tuff Tunes (ASCAP)"
+        ],
+        [
+          "MainArtist: Teddy Riley, Al B.",
+          "MusicPublisher: Street Tuff Tunes (ASCAP)",
+          "Composer: Will Raymond Bowden"
+        ],
+        [
+          "MainArtist: Teddy Riley, Al Jones",
+          "MusicPublisher: Street Tuff Tunes (ASCAP)",
+          "Composer: Will Raymond Bowden"
+        ]
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "year": "1996",
+      "artist": "Various",
+      "title": "Get On The Bus (Music From And Inspired By The Motion Picture)",
+      "label": "Interscope Records",
+      "image": "1996-various-artists-get-on-the-bus.jpg",
+      "tracks": [
+        "13 BLACKstreet - Coming Home to You"
+      ],
+      "credits": [
+        [
+          "Written-By: Chauncey Hannibal, Karen Anderson, Markell Riley",
+          "Written-By, Producer: Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1996",
       "artist": "Whitney Houston",
       "title": "Step By Step",
       "label": "Arista",
@@ -12477,122 +12627,6 @@
           "Lyricist: Unknown"
         ]
       ]
-    },
-    {
-      "year": "1996",
-      "artist": "Shawn",
-      "title": "O.G",
-      "label": "RCA",
-      "image": "1996-shawn-o-g.jpg",
-      "tracks": [
-        "O.G. (Radio Version)",
-        "O.G. (Instrumental)",
-        "O.G. (A Cappella)"
-      ],
-      "credits": [
-        [
-          "Executive Producer: Kevin Evans, Michael Concepcion",
-          "Mastered By: Chris Gehringer",
-          "Producer: Gerald Baillergeau, Victor Merritt"
-        ],
-        [
-          "Executive Producer: Kevin Evans, Michael Concepcion",
-          "Mastered By: Chris Gehringer",
-          "Producer: Gerald Baillergeau, Victor Merritt"
-        ],
-        [
-          "Executive Producer: Kevin Evans, Michael Concepcion",
-          "Mastered By: Chris Gehringer",
-          "Producer: Gerald Baillergeau, Victor Merritt"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1996",
-      "artist": "Teddy Riley",
-      "title": "The Harlem Sessions",
-      "label": "Ol' Skool Flava",
-      "image": "1996-teddy-riley-the-harlem-sessions.jpg",
-      "tracks": [
-        "01 - Al B. Just Two Mc's - Wong (Vocal)",
-        "02 - B-Fats - The B.Fats (Vocal)",
-        "03 - Al B. Just Two Mc's - Just Rap (Vocal)",
-        "04 - Al Jones - Cheating Girl (Vocal)",
-        "05 - Al B. Just Two Mc's - Wong (Instrumental)",
-        "06 - B-Fats - The B.Fats (Instrumental)",
-        "07 - Al B. Just Two Mc's - Just Rap ((Instrumental)",
-        "08 - Al Jones - Cheating Girl (Instrumental)"
-      ],
-      "qobuz_credits": [
-        [
-          "MainArtist: Teddy Riley, Al B.",
-          "MusicPublisher: Street Tuff Tunes (ASCAP)",
-          "Composer: Will Raymond Bowden"
-        ],
-        [
-          "MainArtist: Teddy Riley, B. Fats",
-          "Composer: T Riley, Will Raymond Bowden",
-          "MusicPublisher: Street Tuff Tunes (ASCAP)"
-        ],
-        [
-          "MainArtist: Teddy Riley, Al B.",
-          "MusicPublisher: Street Tuff Tunes (ASCAP)",
-          "Composer: Will Raymond Bowden"
-        ],
-        [
-          "MainArtist: Teddy Riley, Al Jones",
-          "MusicPublisher: Street Tuff Tunes (ASCAP)",
-          "Composer: Will Raymond Bowden"
-        ],
-        [
-          "MainArtist: Teddy Riley, Al B.",
-          "MusicPublisher: Street Tuff Tunes (ASCAP)",
-          "Composer: Will Raymond Bowden"
-        ],
-        [
-          "MainArtist: Teddy Riley, B. Fats",
-          "Composer: T Riley, Will Raymond Bowden",
-          "MusicPublisher: Street Tuff Tunes (ASCAP)"
-        ],
-        [
-          "MainArtist: Teddy Riley, Al B.",
-          "MusicPublisher: Street Tuff Tunes (ASCAP)",
-          "Composer: Will Raymond Bowden"
-        ],
-        [
-          "MainArtist: Teddy Riley, Al Jones",
-          "MusicPublisher: Street Tuff Tunes (ASCAP)",
-          "Composer: Will Raymond Bowden"
-        ]
-      ],
-      "credits": [
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
-      ]
-    },
-    {
-      "year": "1996",
-      "artist": "Various",
-      "title": "Get On The Bus (Music From And Inspired By The Motion Picture)",
-      "label": "Interscope Records",
-      "image": "1996-various-artists-get-on-the-bus.jpg",
-      "tracks": [
-        "13 BLACKstreet - Coming Home to You"
-      ],
-      "credits": [
-        [
-          "Written-By: Chauncey Hannibal, Karen Anderson, Markell Riley",
-          "Written-By, Producer: Teddy Riley"
-        ]
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "1996",
@@ -13647,28 +13681,6 @@
     },
     {
       "year": "1998",
-      "artist": "Lord Tariq, Peter Gunz",
-      "title": "Make It Reign",
-      "label": "Columbia",
-      "image": "1998-lord-tariq-peter-gunz-make-it-reign.jpg",
-      "tracks": [
-        "07 Then & Now Interlude",
-        "08 Startin' Somethin' (Feat. Chauncey Black)"
-      ],
-      "credits": [
-        [],
-        [
-          "Producer: Peter Gunz",
-          "Vocals: Chauncey Hannibal"
-        ]
-      ],
-      "qobuz_credits": [
-        [],
-        []
-      ]
-    },
-    {
-      "year": "1998",
       "artist": "Lord Tariq & Peter Gunz",
       "title": "Startin' Somethin'",
       "label": "Columbia",
@@ -13692,6 +13704,28 @@
         []
       ],
       "qobuz_credits": []
+    },
+    {
+      "year": "1998",
+      "artist": "Lord Tariq, Peter Gunz",
+      "title": "Make It Reign",
+      "label": "Columbia",
+      "image": "1998-lord-tariq-peter-gunz-make-it-reign.jpg",
+      "tracks": [
+        "07 Then & Now Interlude",
+        "08 Startin' Somethin' (Feat. Chauncey Black)"
+      ],
+      "credits": [
+        [],
+        [
+          "Producer: Peter Gunz",
+          "Vocals: Chauncey Hannibal"
+        ]
+      ],
+      "qobuz_credits": [
+        [],
+        []
+      ]
     },
     {
       "year": "1998",
@@ -13872,6 +13906,29 @@
     },
     {
       "year": "1999",
+      "artist": "1 Life 2 Live",
+      "title": "1 Life 2 Live",
+      "label": "ByStorm Entertainment / LaFace Records",
+      "image": "1999-1-life-2-live.jpg",
+      "format": "LP",
+      "tracks": [
+        "Flaunt It",
+        "Flaunt It (Instrumental)"
+      ],
+      "missing": [
+        "Flaunt It"
+      ],
+      "credits": [
+        [
+          "Executive-Producer: Mark Pitts",
+          "Executive-Producer [Associate]: Wayne Barrow"
+        ],
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1999",
       "artist": "BLACKstreet",
       "title": "Finally",
       "label": "Interscope Records / Lil' Man Records",
@@ -13952,29 +14009,6 @@
         [],
         []
       ]
-    },
-    {
-      "year": "1999",
-      "artist": "1 Life 2 Live",
-      "title": "1 Life 2 Live",
-      "label": "ByStorm Entertainment / LaFace Records",
-      "image": "1999-1-life-2-live.jpg",
-      "format": "LP",
-      "tracks": [
-        "Flaunt It",
-        "Flaunt It (Instrumental)"
-      ],
-      "missing": [
-        "Flaunt It"
-      ],
-      "credits": [
-        [
-          "Executive-Producer: Mark Pitts",
-          "Executive-Producer [Associate]: Wayne Barrow"
-        ],
-        []
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "1999",
@@ -14665,40 +14699,6 @@
         [
           "Producer: Teddy Riley",
           "Rap: 1 Life 2 Live"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "1994",
-      "artist": "NKOTB",
-      "title": "Face The Music",
-      "label": "Columbia",
-      "image": "1994-nkotb-face-the-music.jpg",
-      "format": "LP",
-      "tracks": [
-        "2 You Got The Flavor",
-        "4 Girls",
-        "7 Never Let You Go"
-      ],
-      "credits": [
-        [
-          "Arranged By: Leon Sylvers, Teddy Riley",
-          "Lead Vocals: Jordan Knight",
-          "Producer, Mixed By: Teddy Riley",
-          "Written By: T. Riley , C. Hannibal , A. Dickey , M. Riley"
-        ],
-        [
-          "Lead Vocals: Jordan Knight",
-          "Mixed By: Teddy Riley",
-          "Producer, Arranged By: Leon Sylvers, Teddy Riley",
-          "Written By: T. Riley , L. Sylvers III, A. Dickey , M. Riley , H. Ray , A. Goodman , V. Dodson , W. Morris"
-        ],
-        [
-          "Arranged By, Mixed By: Teddy Riley",
-          "Lead Vocals: Jordan Knight",
-          "Producer: Leon Sylvers, Teddy Riley",
-          "Written By: T. Riley , L. Sylvers III , A. Dickey , M. Riley"
         ]
       ],
       "qobuz_credits": []
@@ -15812,6 +15812,27 @@
     {
       "year": "2000",
       "artist": "Various",
+      "title": "Dr. Seuss' How The Grinch Stole Christmas (Original Motion Picture Soundtrack)",
+      "label": "Interscope",
+      "image": "2000-various-grinch-stole-christmas-soundtrack.jpg",
+      "tracks": [
+        "02. Grinch 2000 (Busta Rhymes feat. Jim Carrey)"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": [
+        [
+          "MainArtist: Busta Rhymes, Jim Carrey",
+          "Producer: Teddy Riley",
+          "MixingEngineer: Teddy Riley, George Mayers",
+          "ComposerLyricist: Trevor Smith, Albert Hague, Ted Geisel"
+        ]
+      ]
+    },
+    {
+      "year": "2000",
+      "artist": "Various",
       "title": "The Hurricane (Music From And Inspired By The Motion Picture)",
       "label": "MCA Records",
       "image": "2000-various-the-hurricane.jpg",
@@ -15826,6 +15847,73 @@
         ]
       ],
       "qobuz_credits": []
+    },
+    {
+      "year": "2001",
+      "artist": "Benzino",
+      "title": "The Benzino Project",
+      "label": "Motown",
+      "image": "2001-benzino-the-benzino-project.jpg",
+      "tracks": [
+        "07. Figadoh",
+        "19. Boottee"
+      ],
+      "credits": [
+        [
+          "Featuring: Scarface, Snoop Dogg",
+          "Producer: Teddy Riley"
+        ],
+        [
+          "Featuring: Cool Gsus",
+          "Producer: Teddy Riley",
+          "Vocals: Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": [
+        [
+          "FeaturedArtist: Snoop Dogg, Scarface",
+          "Composer: Raymond Scott, Brad Terrence Jordan, Edward Theodore Riley, Calvin Cordozar Broadus Jr.",
+          "Author: Raymond Scott, Brad Terrence Jordan, Edward Theodore Riley, Calvin Cordozar Broadus Jr.",
+          "MainArtist: Benzino"
+        ],
+        [
+          "FeaturedArtist: Teddy Riley, Mr. Gzus",
+          "Composer: Raymond Scott, Edward Theodore Riley, James Walter Castor, Johnny L. Pruitt",
+          "Author: Raymond Scott, Edward Theodore Riley, James Walter Castor, Johnny L. Pruitt",
+          "MainArtist: Benzino"
+        ]
+      ]
+    },
+    {
+      "year": "2001",
+      "artist": "Benzino feat. Fabolous & G-Dep",
+      "title": "Boottee (Remix)",
+      "label": "Motown",
+      "image": "2001-benzino-boottee-remix.jpg",
+      "tracks": [
+        "Boottee (Remix) (Clean)",
+        "Boottee (Remix - Main)",
+        "Boottee (Remix) (Instrumental)",
+        "Boottee (Remix) (Call Out Hook)",
+        "Boottee (Remix - Acappella)"
+      ],
+      "qobuz_credits": [],
+      "credits": [
+        [
+          "Featuring: Fabolous, G-Dep"
+        ],
+        [
+          "Featuring: Fabolous, G-Dep"
+        ],
+        [
+          "Producer: Teddy Riley",
+          "Recorded By, Mixed By: George Mayers"
+        ],
+        [],
+        [
+          "Featuring: Fabolous, G-Dep"
+        ]
+      ]
     },
     {
       "year": "2001",
@@ -15864,73 +15952,6 @@
         ]
       ],
       "qobuz_credits": []
-    },
-    {
-      "year": "2001",
-      "artist": "Benzino feat. Fabolous & G-Dep",
-      "title": "Boottee (Remix)",
-      "label": "Motown",
-      "image": "2001-benzino-boottee-remix.jpg",
-      "tracks": [
-        "Boottee (Remix) (Clean)",
-        "Boottee (Remix - Main)",
-        "Boottee (Remix) (Instrumental)",
-        "Boottee (Remix) (Call Out Hook)",
-        "Boottee (Remix - Acappella)"
-      ],
-      "qobuz_credits": [],
-      "credits": [
-        [
-          "Featuring: Fabolous, G-Dep"
-        ],
-        [
-          "Featuring: Fabolous, G-Dep"
-        ],
-        [
-          "Producer: Teddy Riley",
-          "Recorded By, Mixed By: George Mayers"
-        ],
-        [],
-        [
-          "Featuring: Fabolous, G-Dep"
-        ]
-      ]
-    },
-    {
-      "year": "2001",
-      "artist": "Benzino",
-      "title": "The Benzino Project",
-      "label": "Motown",
-      "image": "2001-benzino-the-benzino-project.jpg",
-      "tracks": [
-        "07. Figadoh",
-        "19. Boottee"
-      ],
-      "credits": [
-        [
-          "Featuring: Scarface, Snoop Dogg",
-          "Producer: Teddy Riley"
-        ],
-        [
-          "Featuring: Cool Gsus",
-          "Producer: Teddy Riley",
-          "Vocals: Teddy Riley"
-        ]
-      ],
-      "qobuz_credits": [
-        [
-          "FeaturedArtist: Snoop Dogg, Scarface",
-          "Composer: Raymond Scott, Brad Terrence Jordan, Edward Theodore Riley, Calvin Cordozar Broadus Jr.",
-          "Author: Raymond Scott, Brad Terrence Jordan, Edward Theodore Riley, Calvin Cordozar Broadus Jr.",
-          "MainArtist: Benzino"
-        ],
-        [
-          "FeaturedArtist: Teddy Riley, Mr. Gzus",
-          "Composer: Raymond Scott, Edward Theodore Riley, James Walter Castor, Johnny L. Pruitt",
-          "Author: Raymond Scott, Edward Theodore Riley, James Walter Castor, Johnny L. Pruitt",
-          "MainArtist: Benzino"
-        ]
-      ]
     },
     {
       "year": "2001",
@@ -16077,6 +16098,62 @@
         [],
         []
       ]
+    },
+    {
+      "year": "2001",
+      "artist": "Monifah",
+      "title": "Fairytales / Brown Eyes",
+      "label": "Universal Records",
+      "image": "2001-monifah-fairytales-brown-eyes.jpg",
+      "tracks": [
+        "Fairytales (Album Version)",
+        "Fairytales (Instrumental)",
+        "Fairytales (Acappella)",
+        "Brown Eyes (Album Version)",
+        "Brown Eyes (Instrumental)",
+        "Brown Eyes (Acappella)"
+      ],
+      "missing": [
+        "Fairytales (Album Version)",
+        "Fairytales (Instrumental)",
+        "Fairytales (Acappella)",
+        "Brown Eyes (Album Version)",
+        "Brown Eyes (Instrumental)",
+        "Brown Eyes (Acappella)"
+      ],
+      "credits": [
+        [
+          "Co-producer: Teddy Riley",
+          "Producer: David Anthony, Full Force, Teddy Riley",
+          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+        ],
+        [
+          "Co-producer: Teddy Riley",
+          "Producer: David Anthony, Full Force, Teddy Riley",
+          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+        ],
+        [
+          "Co-producer: Teddy Riley",
+          "Producer: David Anthony, Full Force, Teddy Riley",
+          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+        ],
+        [
+          "Co-producer: Teddy Riley",
+          "Producer: David Anthony, Full Force, Teddy Riley",
+          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+        ],
+        [
+          "Co-producer: Teddy Riley",
+          "Producer: David Anthony, Full Force, Teddy Riley",
+          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+        ],
+        [
+          "Co-producer: Teddy Riley",
+          "Producer: David Anthony, Full Force, Teddy Riley",
+          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": []
     },
     {
       "year": "2001",
@@ -16314,58 +16391,39 @@
       "qobuz_credits": []
     },
     {
-      "year": "2001",
-      "artist": "Monifah",
-      "title": "Fairytales / Brown Eyes",
-      "label": "Universal Records",
-      "image": "2001-monifah-fairytales-brown-eyes.jpg",
+      "year": "2002",
+      "artist": "Benzino",
+      "title": "Figadoh (Remix)",
+      "label": "Surrender Records",
+      "image": "2002-benzino-figadoh-remix.jpg",
       "tracks": [
-        "Fairytales (Album Version)",
-        "Fairytales (Instrumental)",
-        "Fairytales (Acappella)",
-        "Brown Eyes (Album Version)",
-        "Brown Eyes (Instrumental)",
-        "Brown Eyes (Acappella)"
+        "Figadoh East Coast (Clean) (feat. Busta Rhymes & M.O.P.)",
+        "Figadoh East Coast (Dirty) (feat. Busta Rhymes & M.O.P.)",
+        "Figadoh East Coast (Instrumental) (feat. Busta Rhymes & M.O.P.)",
+        "Figadoh East West (Clean) (feat. Scarface & Snoop Dogg)",
+        "Figadoh East West (Dirty) (feat. Scarface & Snoop Dogg)",
+        "Figadoh East West (Instrumental) (feat. Scarface & Snoop Dogg)"
       ],
-      "missing": [
-        "Fairytales (Album Version)",
-        "Fairytales (Instrumental)",
-        "Fairytales (Acappella)",
-        "Brown Eyes (Album Version)",
-        "Brown Eyes (Instrumental)",
-        "Brown Eyes (Acappella)"
-      ],
+      "format": "Single",
       "credits": [
         [
-          "Co-producer: Teddy Riley",
-          "Producer: David Anthony, Full Force, Teddy Riley",
-          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+          "Featuring: Busta Rhymes, M.O.P.",
+          "Producer: Teddy Riley"
         ],
         [
-          "Co-producer: Teddy Riley",
-          "Producer: David Anthony, Full Force, Teddy Riley",
-          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+          "Featuring: Busta Rhymes, M.O.P.",
+          "Producer: Teddy Riley"
+        ],
+        [],
+        [
+          "Featuring: Scarface, Snoop Dogg",
+          "Producer: Teddy Riley"
         ],
         [
-          "Co-producer: Teddy Riley",
-          "Producer: David Anthony, Full Force, Teddy Riley",
-          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
+          "Featuring: Scarface, Snoop Dogg",
+          "Producer: Teddy Riley"
         ],
-        [
-          "Co-producer: Teddy Riley",
-          "Producer: David Anthony, Full Force, Teddy Riley",
-          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
-        ],
-        [
-          "Co-producer: Teddy Riley",
-          "Producer: David Anthony, Full Force, Teddy Riley",
-          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
-        ],
-        [
-          "Co-producer: Teddy Riley",
-          "Producer: David Anthony, Full Force, Teddy Riley",
-          "Written-By: Chandra Simmons, Charlene Cockett, David Anthony, Full Force, Teddy Riley"
-        ]
+        []
       ],
       "qobuz_credits": []
     },
@@ -16403,43 +16461,6 @@
           "MainArtist: Benzino"
         ]
       ]
-    },
-    {
-      "year": "2002",
-      "artist": "Benzino",
-      "title": "Figadoh (Remix)",
-      "label": "Surrender Records",
-      "image": "2002-benzino-figadoh-remix.jpg",
-      "tracks": [
-        "Figadoh East Coast (Clean) (feat. Busta Rhymes & M.O.P.)",
-        "Figadoh East Coast (Dirty) (feat. Busta Rhymes & M.O.P.)",
-        "Figadoh East Coast (Instrumental) (feat. Busta Rhymes & M.O.P.)",
-        "Figadoh East West (Clean) (feat. Scarface & Snoop Dogg)",
-        "Figadoh East West (Dirty) (feat. Scarface & Snoop Dogg)",
-        "Figadoh East West (Instrumental) (feat. Scarface & Snoop Dogg)"
-      ],
-      "format": "Single",
-      "credits": [
-        [
-          "Featuring: Busta Rhymes, M.O.P.",
-          "Producer: Teddy Riley"
-        ],
-        [
-          "Featuring: Busta Rhymes, M.O.P.",
-          "Producer: Teddy Riley"
-        ],
-        [],
-        [
-          "Featuring: Scarface, Snoop Dogg",
-          "Producer: Teddy Riley"
-        ],
-        [
-          "Featuring: Scarface, Snoop Dogg",
-          "Producer: Teddy Riley"
-        ],
-        []
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "2002",
@@ -16543,51 +16564,6 @@
       "qobuz_credits": [
         []
       ]
-    },
-    {
-      "year": "2000",
-      "artist": "Various",
-      "title": "Dr. Seuss' How The Grinch Stole Christmas (Original Motion Picture Soundtrack)",
-      "label": "Interscope",
-      "image": "2000-various-grinch-stole-christmas-soundtrack.jpg",
-      "tracks": [
-        "02. Grinch 2000 (Busta Rhymes feat. Jim Carrey)"
-      ],
-      "credits": [
-        []
-      ],
-      "qobuz_credits": [
-        [
-          "MainArtist: Busta Rhymes, Jim Carrey",
-          "Producer: Teddy Riley",
-          "MixingEngineer: Teddy Riley, George Mayers",
-          "ComposerLyricist: Trevor Smith, Albert Hague, Ted Geisel"
-        ]
-      ]
-    },
-    {
-      "year": "2003",
-      "artist": "Namie Amuro",
-      "title": "Style",
-      "label": "S.M. Entertainment",
-      "image": "2003-namie-amuro-style.jpg",
-      "tracks": [
-        "02. Indy Lady (feat. Zeebra)"
-      ],
-      "credits": [
-        [
-          "Featuring: Zeebra",
-          "Instruments [All Instruments Performed By], Programmed By: Teddy Riley",
-          "Lyrics By [Japanese]: Yuji Toriumi, Zeebra",
-          "Lyrics By [Rap]: Zeebra",
-          "Mixed By: Teddy Riley",
-          "Music By, Lyrics By, Arranged By: Teddy Riley",
-          "Producer: Teddy Riley",
-          "Recorded By [Rap Recording Assisted By]: Mine-Chang",
-          "Recorded By [Rap Recording]: Take-C"
-        ]
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "2003",
@@ -16739,6 +16715,30 @@
         [],
         []
       ]
+    },
+    {
+      "year": "2003",
+      "artist": "Namie Amuro",
+      "title": "Style",
+      "label": "S.M. Entertainment",
+      "image": "2003-namie-amuro-style.jpg",
+      "tracks": [
+        "02. Indy Lady (feat. Zeebra)"
+      ],
+      "credits": [
+        [
+          "Featuring: Zeebra",
+          "Instruments [All Instruments Performed By], Programmed By: Teddy Riley",
+          "Lyrics By [Japanese]: Yuji Toriumi, Zeebra",
+          "Lyrics By [Rap]: Zeebra",
+          "Mixed By: Teddy Riley",
+          "Music By, Lyrics By, Arranged By: Teddy Riley",
+          "Producer: Teddy Riley",
+          "Recorded By [Rap Recording Assisted By]: Mine-Chang",
+          "Recorded By [Rap Recording]: Take-C"
+        ]
+      ],
+      "qobuz_credits": []
     },
     {
       "year": "2004",
@@ -16965,6 +16965,23 @@
     },
     {
       "year": "2008",
+      "artist": "Dubb Union",
+      "title": "Snoop Dogg Presents: Dubb Union",
+      "label": "Koch Records",
+      "image": "2008-dubb-union-snoop-dogg-presents-dubb-union.jpg",
+      "tracks": [
+        "08. Snoop Dog Presents Dubb Union - Turn It Up"
+      ],
+      "credits": [
+        [
+          "Producer: Jukebox, Teddy Riley",
+          "Written-By: Ronald Jackson, Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2008",
       "artist": "EPMD",
       "title": "We Mean Business",
       "label": "EP Records",
@@ -17096,23 +17113,6 @@
       "credits": [
         [
           "Featuring [Vocals]: Teddy Riley, The Pussycat Dolls"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "2008",
-      "artist": "Dubb Union",
-      "title": "Snoop Dogg Presents: Dubb Union",
-      "label": "Koch Records",
-      "image": "2008-dubb-union-snoop-dogg-presents-dubb-union.jpg",
-      "tracks": [
-        "08. Snoop Dog Presents Dubb Union - Turn It Up"
-      ],
-      "credits": [
-        [
-          "Producer: Jukebox, Teddy Riley",
-          "Written-By: Ronald Jackson, Teddy Riley"
         ]
       ],
       "qobuz_credits": []
@@ -17368,35 +17368,6 @@
   "2010s": [
     {
       "year": "2010",
-      "artist": "Mike Posner",
-      "title": "31 Minutes To Takeoff",
-      "label": "J Records",
-      "image": "2010-mike-posner-31-minutes-to-takeoff.jpg",
-      "tracks": [
-        "05 Déjà V"
-      ],
-      "qobuz_credits": [
-        [
-          "Vocal: Fingazz",
-          "Lyricist: Mike Posner, Shawn Stockman, Teddy Riley, Wanya Morris, Nathan Morris",
-          "Composer: Mike Posner, Shawn Stockman, Teddy Riley, Wanya Morris, Nathan Morris",
-          "Recording Engineer: Mike Posner",
-          "Producer: Mike Posner, Boyz II Men",
-          "Arranger: Mike Posner, Boyz II Men",
-          "Misc. Prod.: Mike Posner",
-          "Performer: Mike Posner",
-          "Keyboards: Daniel Crawford",
-          "2nd Engineer: Christian Plata",
-          "Background Vocal: Boyz II Men",
-          "Mixing Engineer: Manny Marroquin"
-        ]
-      ],
-      "credits": [
-        []
-      ]
-    },
-    {
-      "year": "2010",
       "artist": "B. Howard",
       "title": "Genesis",
       "label": "Six Point Entertainment",
@@ -17501,21 +17472,28 @@
       "qobuz_credits": []
     },
     {
-      "year": "2011",
-      "artist": "Kirk Franklin",
-      "title": "Hello Fear",
-      "label": "Fo Yo Soul Entertainment",
-      "image": "2011-kirk-franklin-hello-fear.jpg",
+      "year": "2010",
+      "artist": "Mike Posner",
+      "title": "31 Minutes To Takeoff",
+      "label": "J Records",
+      "image": "2010-mike-posner-31-minutes-to-takeoff.jpg",
       "tracks": [
-        "15 A God Like You"
+        "05 Déjà V"
       ],
       "qobuz_credits": [
         [
-          "Co-Producer: Bobby Sparks",
-          "Composer: Kirk Franklin",
-          "Lyricist: Kirk Franklin",
-          "Performer: Kirk Franklin",
-          "Producer: Kirk Franklin"
+          "Vocal: Fingazz",
+          "Lyricist: Mike Posner, Shawn Stockman, Teddy Riley, Wanya Morris, Nathan Morris",
+          "Composer: Mike Posner, Shawn Stockman, Teddy Riley, Wanya Morris, Nathan Morris",
+          "Recording Engineer: Mike Posner",
+          "Producer: Mike Posner, Boyz II Men",
+          "Arranger: Mike Posner, Boyz II Men",
+          "Misc. Prod.: Mike Posner",
+          "Performer: Mike Posner",
+          "Keyboards: Daniel Crawford",
+          "2nd Engineer: Christian Plata",
+          "Background Vocal: Boyz II Men",
+          "Mixing Engineer: Manny Marroquin"
         ]
       ],
       "credits": [
@@ -17524,22 +17502,26 @@
     },
     {
       "year": "2011",
-      "artist": "Jay Park",
-      "title": "Demon",
-      "label": "Not On Label",
-      "image": "2011-jay-park-demon.jpg",
-      "format": "Single",
+      "artist": "Boyz II Men",
+      "title": "Twenty",
+      "label": "Universal Music",
+      "image": "2011-boyz-ii-men-twenty.jpg",
+      "format": "LP",
       "tracks": [
-        "01. Jay Park - Demon"
+        "1 Believe"
       ],
       "qobuz_credits": [
         [
+          "MainArtist: Boyz II Men",
           "Producer: Teddy Riley",
-          "ComposerLyricist: Teddy Riley",
-          "MainArtist: Jay Park"
+          "MixingEngineer: Alvin Speights",
+          "MasteringEngineer: Eric Rennaker",
+          "ComposerLyricist: N. Morris, W Morris, Shawn Stockman, Alex Teamer"
         ]
       ],
-      "credits": []
+      "credits": [
+        []
+      ]
     },
     {
       "year": "2011",
@@ -17566,26 +17548,63 @@
     },
     {
       "year": "2011",
-      "artist": "Boyz II Men",
-      "title": "Twenty",
-      "label": "Universal Music",
-      "image": "2011-boyz-ii-men-twenty.jpg",
-      "format": "LP",
+      "artist": "Jay Park",
+      "title": "Demon",
+      "label": "Not On Label",
+      "image": "2011-jay-park-demon.jpg",
+      "format": "Single",
       "tracks": [
-        "1 Believe"
+        "01. Jay Park - Demon"
       ],
       "qobuz_credits": [
         [
-          "MainArtist: Boyz II Men",
           "Producer: Teddy Riley",
-          "MixingEngineer: Alvin Speights",
-          "MasteringEngineer: Eric Rennaker",
-          "ComposerLyricist: N. Morris, W Morris, Shawn Stockman, Alex Teamer"
+          "ComposerLyricist: Teddy Riley",
+          "MainArtist: Jay Park"
+        ]
+      ],
+      "credits": []
+    },
+    {
+      "year": "2011",
+      "artist": "Kirk Franklin",
+      "title": "Hello Fear",
+      "label": "Fo Yo Soul Entertainment",
+      "image": "2011-kirk-franklin-hello-fear.jpg",
+      "tracks": [
+        "15 A God Like You"
+      ],
+      "qobuz_credits": [
+        [
+          "Co-Producer: Bobby Sparks",
+          "Composer: Kirk Franklin",
+          "Lyricist: Kirk Franklin",
+          "Performer: Kirk Franklin",
+          "Producer: Kirk Franklin"
         ]
       ],
       "credits": [
         []
       ]
+    },
+    {
+      "year": "2012",
+      "artist": "EXO-K",
+      "title": "MAMA",
+      "label": "SM Entertainment",
+      "image": "2012-exo-k-mama.jpg",
+      "format": "LP",
+      "tracks": [
+        "1-02 What Is Love"
+      ],
+      "credits": [
+        [
+          "Arranged By, Composed By: Teddy Riley",
+          "Composed By: Dom, Richard Garcia",
+          "Lyrics By, Composed By: Yoo Young Jin"
+        ]
+      ],
+      "qobuz_credits": []
     },
     {
       "year": "2012",
@@ -17606,25 +17625,6 @@
         ],
         [
           "Written-By: Troy Crossfield, Shawn Tenant, Nirvanda Savoury Simm-Smith (per Apple Music)"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "2012",
-      "artist": "EXO-K",
-      "title": "MAMA",
-      "label": "SM Entertainment",
-      "image": "2012-exo-k-mama.jpg",
-      "format": "LP",
-      "tracks": [
-        "1-02 What Is Love"
-      ],
-      "credits": [
-        [
-          "Arranged By, Composed By: Teddy Riley",
-          "Composed By: Dom, Richard Garcia",
-          "Lyrics By, Composed By: Yoo Young Jin"
         ]
       ],
       "qobuz_credits": []
@@ -17671,11 +17671,11 @@
     {
       "year": "2013",
       "artist": "SHINee",
-      "title": "SHINee The 3rd Album Chapter 2. 'Why So Serious? - The Misconceptions Of Me'",
+      "title": "SHINee The 3rd Album Chapter 1. 'Dream Girl - The Misconceptions Of You'",
       "label": "SM Entertainment",
-      "image": "2013-shinee-shinee-the-3rd-album-chapter-2-why-so-serious-the-misconceptions-of-me.jpg",
+      "image": "2013-shinee-shinee-the-3rd-album-chapter-1-dream-girl-the-misconceptions-of-you.jpg",
       "tracks": [
-        "03 SHINee - SHINe (Medusa Ⅰ)"
+        "07. SHINee - 아름다워 Beautiful"
       ],
       "qobuz_credits": [
         [
@@ -17687,11 +17687,11 @@
     {
       "year": "2013",
       "artist": "SHINee",
-      "title": "SHINee The 3rd Album Chapter 1. 'Dream Girl - The Misconceptions Of You'",
+      "title": "SHINee The 3rd Album Chapter 2. 'Why So Serious? - The Misconceptions Of Me'",
       "label": "SM Entertainment",
-      "image": "2013-shinee-shinee-the-3rd-album-chapter-1-dream-girl-the-misconceptions-of-you.jpg",
+      "image": "2013-shinee-shinee-the-3rd-album-chapter-2-why-so-serious-the-misconceptions-of-me.jpg",
       "tracks": [
-        "07. SHINee - 아름다워 Beautiful"
+        "03 SHINee - SHINe (Medusa Ⅰ)"
       ],
       "qobuz_credits": [
         [
@@ -17730,6 +17730,59 @@
     },
     {
       "year": "2014",
+      "artist": "Dave Hollister",
+      "title": "Chicago Winds...The Saga Continues",
+      "label": "Entertainment One",
+      "image": "2014-dave-hollister-chicago-winds-the-saga-continues.jpg",
+      "tracks": [
+        "11. Spend The Night (Teddy Riley Remix)"
+      ],
+      "credits": [
+        [
+          "Remix: Teddy Riley",
+          "Written-By: Eric Dawkins, Warryn Campbell"
+        ]
+      ],
+      "qobuz_credits": [
+        [
+          "MainArtist: Dave Hollister"
+        ]
+      ]
+    },
+    {
+      "year": "2014",
+      "artist": "f(x)",
+      "title": "Red Light",
+      "label": "SM Entertainment",
+      "image": "2014-f-x-red-light.jpg",
+      "format": "LP",
+      "tracks": [
+        "1-02 MILK",
+        "1-05 All Night"
+      ],
+      "credits": [
+        [],
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2014",
+      "artist": "Super Junior",
+      "title": "Star",
+      "label": "SM Entertainment",
+      "image": "2014-super-junior-star.jpg",
+      "format": "LP",
+      "tracks": [
+        "1-01 MAMACITA(아야야) (Japanese Ver.)"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2014",
       "artist": "Super Junior",
       "title": "The 7th Album 'Mamacita'",
       "label": "SM Entertainment",
@@ -17755,38 +17808,6 @@
         ]
       ],
       "credits": []
-    },
-    {
-      "year": "2014",
-      "artist": "Super Junior",
-      "title": "Star",
-      "label": "SM Entertainment",
-      "image": "2014-super-junior-star.jpg",
-      "format": "LP",
-      "tracks": [
-        "1-01 MAMACITA(아야야) (Japanese Ver.)"
-      ],
-      "credits": [
-        []
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "2014",
-      "artist": "f(x)",
-      "title": "Red Light",
-      "label": "SM Entertainment",
-      "image": "2014-f-x-red-light.jpg",
-      "format": "LP",
-      "tracks": [
-        "1-02 MILK",
-        "1-05 All Night"
-      ],
-      "credits": [
-        [],
-        []
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "2014",
@@ -17817,40 +17838,43 @@
       "qobuz_credits": []
     },
     {
-      "year": "2014",
-      "artist": "Dave Hollister",
-      "title": "Chicago Winds...The Saga Continues",
-      "label": "Entertainment One",
-      "image": "2014-dave-hollister-chicago-winds-the-saga-continues.jpg",
+      "year": "2015",
+      "artist": "EXO",
+      "title": "EXODUS (Chinese version)",
+      "label": "SM Entertainment",
+      "image": "2015-exo-exodus-chinese-version.jpg",
+      "format": "LP",
       "tracks": [
-        "11. Spend The Night (Teddy Riley Remix)"
+        "2-01 CALL ME BABY (叫我)",
+        "2-10 BEAUTIFUL (美)"
       ],
       "credits": [
         [
-          "Remix: Teddy Riley",
-          "Written-By: Eric Dawkins, Warryn Campbell"
+          "Executive Producer: Lee Soo Man"
+        ],
+        [
+          "Executive Producer: Lee Soo Man"
         ]
       ],
-      "qobuz_credits": [
-        [
-          "MainArtist: Dave Hollister"
-        ]
-      ]
+      "qobuz_credits": []
     },
     {
       "year": "2015",
-      "artist": "Red Velvet",
-      "title": "Ice Cream Cake",
+      "artist": "EXO",
+      "title": "EXODUS (Korean version)",
       "label": "SM Entertainment",
-      "image": "2015-red-velvet-ice-cream-cake.jpg",
-      "format": "EP",
+      "image": "2015-exo-exodus-korean-version.jpg",
+      "format": "LP",
       "tracks": [
-        "Somethin Kinda Crazy"
+        "1-01 CALL ME BABY",
+        "1-10 BEAUTIFUL"
       ],
       "credits": [
         [
-          "Composed By, Arranged By: 이현승",
-          "Composed By, Arranged By, Lyrics By: Kenzie"
+          "Executive-Producer: Lee Soo Man"
+        ],
+        [
+          "Executive-Producer: Lee Soo Man"
         ]
       ],
       "qobuz_credits": []
@@ -17908,6 +17932,24 @@
     },
     {
       "year": "2015",
+      "artist": "Red Velvet",
+      "title": "Ice Cream Cake",
+      "label": "SM Entertainment",
+      "image": "2015-red-velvet-ice-cream-cake.jpg",
+      "format": "EP",
+      "tracks": [
+        "Somethin Kinda Crazy"
+      ],
+      "credits": [
+        [
+          "Composed By, Arranged By: 이현승",
+          "Composed By, Arranged By, Lyrics By: Kenzie"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2015",
       "artist": "TVXQ!",
       "title": "Rise As God - TVXQ! Special Album",
       "label": "SM Entertainment",
@@ -17922,48 +17964,6 @@
         ]
       ],
       "credits": []
-    },
-    {
-      "year": "2015",
-      "artist": "EXO",
-      "title": "EXODUS (Korean version)",
-      "label": "SM Entertainment",
-      "image": "2015-exo-exodus-korean-version.jpg",
-      "format": "LP",
-      "tracks": [
-        "1-01 CALL ME BABY",
-        "1-10 BEAUTIFUL"
-      ],
-      "credits": [
-        [
-          "Executive-Producer: Lee Soo Man"
-        ],
-        [
-          "Executive-Producer: Lee Soo Man"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "2015",
-      "artist": "EXO",
-      "title": "EXODUS (Chinese version)",
-      "label": "SM Entertainment",
-      "image": "2015-exo-exodus-chinese-version.jpg",
-      "format": "LP",
-      "tracks": [
-        "2-01 CALL ME BABY (叫我)",
-        "2-10 BEAUTIFUL (美)"
-      ],
-      "credits": [
-        [
-          "Executive Producer: Lee Soo Man"
-        ],
-        [
-          "Executive Producer: Lee Soo Man"
-        ]
-      ],
-      "qobuz_credits": []
     },
     {
       "year": "2016",
@@ -18157,31 +18157,6 @@
     },
     {
       "year": "2018",
-      "artist": "Red Velvet",
-      "title": "Summer Magic",
-      "label": "SM Entertainment",
-      "image": "2018-red-velvet-summer-magic.jpg",
-      "format": "EP",
-      "tracks": [
-        "4 Mosquito"
-      ],
-      "credits": [
-        [
-          "Arranged By: Teddy Riley",
-          "Backing Vocals: Red Velvet, Ylva Dimberg",
-          "Composed By, Written-By [Original Writer]: Dicky Daniel Klein, Dom, Teddy Riley, Ylva Dimberg, 이현승",
-          "Directed By [Vocal]: 김진환",
-          "Edited By [Digital Editing - Doobdoob Studio]: 장우영",
-          "Engineer [Engineered For Mix By - S.M. Lvyin Studio]: 이지홍",
-          "Lyrics By [Korean]: 서지음",
-          "Mixed By [S.M. Blue Ocean Studio]: 김철순",
-          "Recorded By [Doobdoob Studio]: 장우영"
-        ]
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "2018",
       "artist": "Bobby Brown",
       "title": "Like Bobby",
       "label": "Interscope Records",
@@ -18284,6 +18259,31 @@
     },
     {
       "year": "2018",
+      "artist": "Red Velvet",
+      "title": "Summer Magic",
+      "label": "SM Entertainment",
+      "image": "2018-red-velvet-summer-magic.jpg",
+      "format": "EP",
+      "tracks": [
+        "4 Mosquito"
+      ],
+      "credits": [
+        [
+          "Arranged By: Teddy Riley",
+          "Backing Vocals: Red Velvet, Ylva Dimberg",
+          "Composed By, Written-By [Original Writer]: Dicky Daniel Klein, Dom, Teddy Riley, Ylva Dimberg, 이현승",
+          "Directed By [Vocal]: 김진환",
+          "Edited By [Digital Editing - Doobdoob Studio]: 장우영",
+          "Engineer [Engineered For Mix By - S.M. Lvyin Studio]: 이지홍",
+          "Lyrics By [Korean]: 서지음",
+          "Mixed By [S.M. Blue Ocean Studio]: 김철순",
+          "Recorded By [Doobdoob Studio]: 장우영"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2018",
       "artist": "Trey Songz",
       "title": "11",
       "label": "Atlantic Records",
@@ -18304,6 +18304,20 @@
           "MainArtist: Trey Songz"
         ]
       ]
+    },
+    {
+      "year": "2019",
+      "artist": "Jazzy Amra",
+      "title": "Amra",
+      "label": "Heads Music",
+      "image": "2019-jazzy-amra-amra.jpg",
+      "tracks": [
+        "02 feat. Wyclef Jean & Teddy Riley - You Got Me"
+      ],
+      "credits": [
+        []
+      ],
+      "qobuz_credits": []
     },
     {
       "year": "2019",
@@ -18345,35 +18359,9 @@
           "Composer: Erika Dawn Rhodes, Daniel \"Dee Rhodes\" Dureng"
         ]
       ]
-    },
-    {
-      "year": "2019",
-      "artist": "Jazzy Amra",
-      "title": "Amra",
-      "label": "Heads Music",
-      "image": "2019-jazzy-amra-amra.jpg",
-      "tracks": [
-        "02 feat. Wyclef Jean & Teddy Riley - You Got Me"
-      ],
-      "credits": [
-        []
-      ],
-      "qobuz_credits": []
     }
   ],
   "2020s": [
-    {
-      "year": "2020",
-      "artist": "Ray Lavender",
-      "title": "100/Q & C",
-      "label": "Ray's World Music Grp.",
-      "image": "2020-ray-lavender-100-q-c.jpg",
-      "tracks": [
-        "02 100 (feat. Teddy Riley)"
-      ],
-      "credits": [],
-      "qobuz_credits": []
-    },
     {
       "year": "2020",
       "artist": "Kidi, Teddy Riley",
@@ -18412,6 +18400,53 @@
     },
     {
       "year": "2020",
+      "artist": "Phaedra",
+      "title": "Love at Christmas",
+      "label": "Artist Live Records",
+      "image": "2020-phaedra-love-at-christmas.jpg",
+      "tracks": [
+        "6. Very Merry Christmas"
+      ],
+      "qobuz_credits": [
+        [
+          "MainArtist: Phaedra",
+          "ComposerLyricist: Phaedra Butler, Timothy BOS Bullock",
+          "Producer: Timothy BOS Bullock",
+          "FeaturedArtist: Teddy Riley, J Sol"
+        ]
+      ],
+      "credits": []
+    },
+    {
+      "year": "2020",
+      "artist": "Ray Lavender",
+      "title": "100/Q & C",
+      "label": "Ray's World Music Grp.",
+      "image": "2020-ray-lavender-100-q-c.jpg",
+      "tracks": [
+        "02 100 (feat. Teddy Riley)"
+      ],
+      "credits": [],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2020",
+      "artist": "Shomari",
+      "title": "Shomari",
+      "label": "Not On Label",
+      "image": "2020-shomari-shomari.jpg",
+      "tracks": [
+        "01. feat. Teddy Riley - Timeless",
+        "02. feat. Teddy Riley - Lady for Life"
+      ],
+      "credits": [
+        [],
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2020",
       "artist": "Singing Melody",
       "title": "The Next Chapter",
       "label": "Your Friend In Music / Shem",
@@ -18432,42 +18467,6 @@
           "Writer: Edward Theodore Riley, Everton Hardweare, Jason Lopez"
         ]
       ]
-    },
-    {
-      "year": "2020",
-      "artist": "Shomari",
-      "title": "Shomari",
-      "label": "Not On Label",
-      "image": "2020-shomari-shomari.jpg",
-      "tracks": [
-        "01. feat. Teddy Riley - Timeless",
-        "02. feat. Teddy Riley - Lady for Life"
-      ],
-      "credits": [
-        [],
-        []
-      ],
-      "qobuz_credits": []
-    },
-    {
-      "year": "2020",
-      "artist": "Teddy Riley feat V. Bozeman, Donel, J. Sol & Nezi Momodu",
-      "title": "Dance 4 Glory",
-      "label": "Trmusicgroup Inc/Artistry Records",
-      "image": "2020-teddy-riley-feat-v-bozeman-donel-j-sol-nezi-momodu-dance-4-glory.jpg",
-      "format": "Single",
-      "tracks": [
-        "1. Teddy Riley - Dance 4 Glory"
-      ],
-      "qobuz_credits": [
-        [
-          "Producer: Teddy Riley",
-          "MainArtist: Teddy Riley",
-          "FeaturedArtist: V. Bozeman, Donel, J. Sol, Nezi Momodu",
-          "ComposerLyricist: James Riley, Veronika Bozeman, Donel Mangena, Nezi Momodu, Jason \"J.SOL\" Lopez"
-        ]
-      ],
-      "credits": []
     },
     {
       "year": "2020",
@@ -18492,19 +18491,20 @@
     },
     {
       "year": "2020",
-      "artist": "Phaedra",
-      "title": "Love at Christmas",
-      "label": "Artist Live Records",
-      "image": "2020-phaedra-love-at-christmas.jpg",
+      "artist": "Teddy Riley feat V. Bozeman, Donel, J. Sol & Nezi Momodu",
+      "title": "Dance 4 Glory",
+      "label": "Trmusicgroup Inc/Artistry Records",
+      "image": "2020-teddy-riley-feat-v-bozeman-donel-j-sol-nezi-momodu-dance-4-glory.jpg",
+      "format": "Single",
       "tracks": [
-        "6. Very Merry Christmas"
+        "1. Teddy Riley - Dance 4 Glory"
       ],
       "qobuz_credits": [
         [
-          "MainArtist: Phaedra",
-          "ComposerLyricist: Phaedra Butler, Timothy BOS Bullock",
-          "Producer: Timothy BOS Bullock",
-          "FeaturedArtist: Teddy Riley, J Sol"
+          "Producer: Teddy Riley",
+          "MainArtist: Teddy Riley",
+          "FeaturedArtist: V. Bozeman, Donel, J. Sol, Nezi Momodu",
+          "ComposerLyricist: James Riley, Veronika Bozeman, Donel Mangena, Nezi Momodu, Jason \"J.SOL\" Lopez"
         ]
       ],
       "credits": []
@@ -18532,6 +18532,18 @@
     },
     {
       "year": "2021",
+      "artist": "Jay Walker",
+      "title": "She Was Sleep",
+      "label": "Jay Walker Music Group",
+      "image": "2021-jay-walker-she-was-sleep.jpg",
+      "tracks": [
+        "05. Feat. Johnny Burnett - She Was Sleep"
+      ],
+      "credits": [],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2021",
       "artist": "Machel Montano",
       "title": "The Wedding Album",
       "label": "Monks Music",
@@ -18547,18 +18559,6 @@
         ]
       ],
       "credits": []
-    },
-    {
-      "year": "2021",
-      "artist": "Jay Walker",
-      "title": "She Was Sleep",
-      "label": "Jay Walker Music Group",
-      "image": "2021-jay-walker-she-was-sleep.jpg",
-      "tracks": [
-        "05. Feat. Johnny Burnett - She Was Sleep"
-      ],
-      "credits": [],
-      "qobuz_credits": []
     },
     {
       "year": "2021",
@@ -18593,25 +18593,6 @@
     },
     {
       "year": "2021",
-      "artist": "Super Junior",
-      "title": "The Renaissance - The 10th Album",
-      "label": "SM Entertainment",
-      "image": "2021-super-junior-the-renaissance-the-10th-album.jpg",
-      "tracks": [
-        "07 사랑이 멎지 않게 Raining Spell for Love (Remake Version)"
-      ],
-      "qobuz_credits": [
-        [
-          "Composer: Teddy Riley, Dom, Lee Hyun Seung, J.SOL (Jason J Lopez)",
-          "Arranger: Hwang Seong Je",
-          "MainArtist: Super Junior",
-          "Lyricist: Chung Joo Hee"
-        ]
-      ],
-      "credits": []
-    },
-    {
-      "year": "2021",
       "artist": "Pleasure P",
       "title": "Yet",
       "label": "Mr. Cooper Touring Inc.",
@@ -18631,6 +18612,25 @@
       "credits": [
         []
       ]
+    },
+    {
+      "year": "2021",
+      "artist": "Super Junior",
+      "title": "The Renaissance - The 10th Album",
+      "label": "SM Entertainment",
+      "image": "2021-super-junior-the-renaissance-the-10th-album.jpg",
+      "tracks": [
+        "07 사랑이 멎지 않게 Raining Spell for Love (Remake Version)"
+      ],
+      "qobuz_credits": [
+        [
+          "Composer: Teddy Riley, Dom, Lee Hyun Seung, J.SOL (Jason J Lopez)",
+          "Arranger: Hwang Seong Je",
+          "MainArtist: Super Junior",
+          "Lyricist: Chung Joo Hee"
+        ]
+      ],
+      "credits": []
     },
     {
       "year": "2022",
@@ -18720,6 +18720,25 @@
     },
     {
       "year": "2024",
+      "artist": "Fre$h",
+      "title": "Refreshments",
+      "label": "Fresh Music",
+      "image": "2024-fre-h-refreshments.jpg",
+      "tracks": [
+        "08 feat. Wiz Khalida & Teddy Riley - Send Nudes"
+      ],
+      "qobuz_credits": [
+        [
+          "Producer: Teddy Riley, Hunga, Snakechild",
+          "FeaturedArtist: Teddy Riley, Wiz Khalifa",
+          "ComposerLyricist: Edward Theodore Riley, Adam Kobylarz, Supreme P. Williams",
+          "MainArtist: Fre$h"
+        ]
+      ],
+      "credits": []
+    },
+    {
+      "year": "2024",
       "artist": "Michael Stemley feat. Teddy Riley",
       "title": "We Should Talk (Remix)",
       "label": "ML Productions",
@@ -18729,6 +18748,43 @@
       ],
       "credits": [],
       "qobuz_credits": []
+    },
+    {
+      "year": "2024",
+      "artist": "Pretty Rico Bandz",
+      "title": "Deep",
+      "label": "Not On Label",
+      "image": "2024-pretty-rico-bandz-deep.jpg",
+      "format": "Single",
+      "tracks": [
+        "1. Pretty Rico Bandz - Deep"
+      ],
+      "qobuz_credits": [
+        [
+          "Producer: Avalon Brown, Jeremiah Bradley",
+          "Composer: Stephon Washington",
+          "MainArtist: Pretty Rico Bandz"
+        ]
+      ],
+      "credits": []
+    },
+    {
+      "year": "2024",
+      "artist": "Rocco Lupo",
+      "title": "Leavin' With Me",
+      "label": "50/50 Global Muzik Publishing",
+      "image": "2024-rocco-lupo-leavin-with-me.jpg",
+      "tracks": [
+        "Leavin' With Me (Radio Edit)"
+      ],
+      "credits": [
+        [
+          "Featuring: Teddy Riley"
+        ]
+      ],
+      "qobuz_credits": [
+        []
+      ]
     },
     {
       "year": "2024",
@@ -18788,62 +18844,6 @@
       ]
     },
     {
-      "year": "2024",
-      "artist": "Pretty Rico Bandz",
-      "title": "Deep",
-      "label": "Not On Label",
-      "image": "2024-pretty-rico-bandz-deep.jpg",
-      "format": "Single",
-      "tracks": [
-        "1. Pretty Rico Bandz - Deep"
-      ],
-      "qobuz_credits": [
-        [
-          "Producer: Avalon Brown, Jeremiah Bradley",
-          "Composer: Stephon Washington",
-          "MainArtist: Pretty Rico Bandz"
-        ]
-      ],
-      "credits": []
-    },
-    {
-      "year": "2024",
-      "artist": "Rocco Lupo",
-      "title": "Leavin' With Me",
-      "label": "50/50 Global Muzik Publishing",
-      "image": "2024-rocco-lupo-leavin-with-me.jpg",
-      "tracks": [
-        "Leavin' With Me (Radio Edit)"
-      ],
-      "credits": [
-        [
-          "Featuring: Teddy Riley"
-        ]
-      ],
-      "qobuz_credits": [
-        []
-      ]
-    },
-    {
-      "year": "2024",
-      "artist": "Fre$h",
-      "title": "Refreshments",
-      "label": "Fresh Music",
-      "image": "2024-fre-h-refreshments.jpg",
-      "tracks": [
-        "08 feat. Wiz Khalida & Teddy Riley - Send Nudes"
-      ],
-      "qobuz_credits": [
-        [
-          "Producer: Teddy Riley, Hunga, Snakechild",
-          "FeaturedArtist: Teddy Riley, Wiz Khalifa",
-          "ComposerLyricist: Edward Theodore Riley, Adam Kobylarz, Supreme P. Williams",
-          "MainArtist: Fre$h"
-        ]
-      ],
-      "credits": []
-    },
-    {
       "year": "2025",
       "artist": "Annabel Anderson",
       "title": "BUM BUM",
@@ -18877,25 +18877,6 @@
     },
     {
       "year": "2025",
-      "artist": "Princeton Perez",
-      "title": "Often with Teddy Riley (Interlude)",
-      "label": "Princeton Perez",
-      "image": "2025-princeton-perez-often-with-teddy-riley-interlude.jpg",
-      "tracks": [
-        "Often with Teddy Riley (Interlude)"
-      ],
-      "qobuz_credits": [
-        [
-          "MainArtist: Teddy Riley, Princeton Perez",
-          "Producer: Michael Martin, Jacob Anthony Perez, Jay Dx",
-          "ComposerLyricist: Michael Martin, Jacob Anthony Perez",
-          "Performer: Princeton Perez"
-        ]
-      ],
-      "credits": []
-    },
-    {
-      "year": "2025",
       "artist": "Mr. Tyeskie",
       "title": "Sex You More (Remix)",
       "label": "TYTAINMENT",
@@ -18916,17 +18897,23 @@
       "credits": []
     },
     {
-      "year": "2026",
-      "artist": "Rosé Riley",
-      "title": "Rosey Season 1.5 - EP",
-      "label": "Rosé Family Entertainment",
-      "image": "2025-ros-riley-rosey-season-1-5-ep.jpg",
-      "format": "EP",
+      "year": "2025",
+      "artist": "Princeton Perez",
+      "title": "Often with Teddy Riley (Interlude)",
+      "label": "Princeton Perez",
+      "image": "2025-princeton-perez-often-with-teddy-riley-interlude.jpg",
       "tracks": [
-        "4. feat. Jazzy Amra & Teddy Riley - Bright Lights"
+        "Often with Teddy Riley (Interlude)"
       ],
-      "credits": [],
-      "qobuz_credits": []
+      "qobuz_credits": [
+        [
+          "MainArtist: Teddy Riley, Princeton Perez",
+          "Producer: Michael Martin, Jacob Anthony Perez, Jay Dx",
+          "ComposerLyricist: Michael Martin, Jacob Anthony Perez",
+          "Performer: Princeton Perez"
+        ]
+      ],
+      "credits": []
     },
     {
       "year": "2026",
@@ -18946,6 +18933,19 @@
         ]
       ],
       "credits": []
+    },
+    {
+      "year": "2026",
+      "artist": "Rosé Riley",
+      "title": "Rosey Season 1.5 - EP",
+      "label": "Rosé Family Entertainment",
+      "image": "2025-ros-riley-rosey-season-1-5-ep.jpg",
+      "format": "EP",
+      "tracks": [
+        "4. feat. Jazzy Amra & Teddy Riley - Bright Lights"
+      ],
+      "credits": [],
+      "qobuz_credits": []
     },
     {
       "year": "2026",
@@ -18989,18 +18989,6 @@
     },
     {
       "year": "2026",
-      "artist": "Travis Malloy & Urban Worship Collective",
-      "title": "Favor",
-      "label": "Malloy Entertainment",
-      "image": "2026-travis-malloy-urban-worship-collective-favor.jpg",
-      "tracks": [
-        "11 feat. Teddy Riley - Sunday Service"
-      ],
-      "credits": [],
-      "qobuz_credits": []
-    },
-    {
-      "year": "2026",
       "artist": "Starstruck Anthem",
       "title": "Tailored Stars",
       "label": "12963298 Records DK",
@@ -19020,6 +19008,18 @@
       "format": "Book",
       "tracks": [
         "256 Pages"
+      ],
+      "credits": [],
+      "qobuz_credits": []
+    },
+    {
+      "year": "2026",
+      "artist": "Travis Malloy & Urban Worship Collective",
+      "title": "Favor",
+      "label": "Malloy Entertainment",
+      "image": "2026-travis-malloy-urban-worship-collective-favor.jpg",
+      "tracks": [
+        "11 feat. Teddy Riley - Sunday Service"
       ],
       "credits": [],
       "qobuz_credits": []
