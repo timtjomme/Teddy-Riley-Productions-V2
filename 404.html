@@ -69,8 +69,7 @@
         <defs>
           <clipPath id="clipSleeve"><rect x="30" y="70" width="300" height="300" rx="4"/></clipPath>
           <clipPath id="clipPaper"><rect x="250" y="250" width="262" height="262" rx="3"/></clipPath>
-          <clipPath id="clipDisc"><circle cx="560" cy="430" r="176"/></clipPath>
-          <clipPath id="clipLabel"><circle cx="662" cy="596" r="104"/></clipPath>
+          <clipPath id="clipDisc"><circle cx="560" cy="430" r="125"/></clipPath>
         </defs>
 
         <!-- outer sleeve: a real die-cut jacket photo, already carrying the Lil' Man mark printed into it -->
@@ -83,12 +82,6 @@
           </g>
         </g>
 
-        <!-- shrink wrap, peeling off -->
-        <g class="pc pc-2">
-          <rect x="120" y="30" width="290" height="290" rx="4" transform="rotate(6 265 175)"
-                stroke="#9a9aa4" stroke-width="1.4" stroke-dasharray="10 8" opacity="0.75"/>
-        </g>
-
         <!-- inner paper sleeve: a real die-cut paper sleeve photo, hole and all -->
         <g class="pc pc-3">
           <g transform="rotate(9 381 381)">
@@ -99,19 +92,12 @@
           </g>
         </g>
 
-        <!-- the disc: a real pressed-vinyl photo, grooves and all -->
+        <!-- the disc: a real pressed-vinyl photo, label (credit + tagline) baked in — a bit
+             smaller than the paper sleeve above it, same as a real record sitting inside one -->
         <g class="pc pc-4">
-          <image href="imgs/404/disc.png" x="384" y="254" width="352" height="352"
+          <image href="imgs/404/disc.png" x="435" y="305" width="250" height="250"
                  preserveAspectRatio="xMidYMid slice" clip-path="url(#clipDisc)"/>
-          <circle cx="560" cy="430" r="176" stroke="#00000030" stroke-width="1"/>
-        </g>
-
-        <!-- the label: a real pressing, already printed with its own credit and tagline -->
-        <g class="pc pc-5">
-          <image href="imgs/404/label.png" x="558" y="492" width="208" height="208"
-                 preserveAspectRatio="xMidYMid slice" clip-path="url(#clipLabel)"/>
-          <circle cx="662" cy="596" r="104" stroke="#cfc7b6" stroke-width="1.4"/>
-          <circle cx="662" cy="596" r="8" fill="#f4f4f6" stroke="#b9b1a2" stroke-width="1.2"/>
+          <circle cx="560" cy="430" r="125" stroke="#00000030" stroke-width="1"/>
         </g>
 
         <!-- 45 adapter -->
