@@ -660,7 +660,15 @@ function searchModal(){
 
     var matches = (RESULTS_CACHE || []).filter(function(x){
       var r = x.rel;
-      var haystack = [r.artist, r.title, r.label].concat(r.tracks).join(' ').toLowerCase();
+      // credits/qobuz_credits are one array of "Role: Name, Name" lines per
+      // track — flatten both down to plain lines so a producer, engineer, or
+      // writer's name is searchable even when it never appears in the
+      // artist/title/track text at all.
+      var creditLines = [];
+      (r.credits || []).concat(r.qobuz_credits || []).forEach(function(trackCredits){
+        (trackCredits || []).forEach(function(line){ creditLines.push(line); });
+      });
+      var haystack = [r.artist, r.title, r.label].concat(r.tracks, creditLines).join(' ').toLowerCase();
       return words.every(function(w){ return haystack.indexOf(w) !== -1; });
     });
 
