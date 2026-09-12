@@ -93,18 +93,26 @@ def card_html(r):
     artist, title = esc(r["artist"]), esc(r["title"])
     missing = set(r.get("missing", []))
     lis = "\n".join(
-        f'            <li class="missing">{esc(display)}</li>' if orig in missing
-        else f'            <li>{esc(display)}</li>'
+        f'            <li class="missing" itemprop="track" itemscope itemtype="https://schema.org/MusicRecording"><span itemprop="name">{esc(display)}</span></li>' if orig in missing
+        else f'            <li itemprop="track" itemscope itemtype="https://schema.org/MusicRecording"><span itemprop="name">{esc(display)}</span></li>'
         for display, orig in display_tracks(r)
     )
     legend = ('\n            <span class="legend"><span></span>missing from collection</span>'
               if missing else "")
     note = (f'\n          <p class="note">{esc(r["note"])}</p>' if r.get("note") else "")
     video_btn = video_btn_html(r)
+    # schema.org/MusicAlbum on the whole card: this is what lets a search
+    # engine understand "artist X released album Y on label Z in year W with
+    # these tracks" directly from markup already on the page, rather than a
+    # separate JSON-LD blob to keep in sync — byArtist/recordLabel nest their
+    # own itemscope (a MusicGroup / Organization each need their own "name"),
+    # and datePublished is a hidden <meta> since the year isn't printed on the
+    # card itself (it's the enclosing year-group heading's job).
     return f'''    <div class="card">
-      <div class="card-inner" role="button" tabindex="0" aria-pressed="false" style="--cover-img:url('imgs/{r["image"]}')">
+      <div class="card-inner" role="button" tabindex="0" aria-pressed="false" style="--cover-img:url('imgs/{r["image"]}')" itemscope itemtype="https://schema.org/MusicAlbum">
+        <meta itemprop="datePublished" content="{esc(r["year"])}">
         <div class="face front">
-          <img src="imgs/{r["image"]}" alt="{artist} – {title} sleeve" loading="lazy">
+          <img src="imgs/{r["image"]}" alt="{artist} – {title} sleeve" loading="lazy" itemprop="image">
           <span class="format">{fmt(r)}</span>
           <span class="flip-hint" aria-hidden="true">
             {FLIP_SVG}
@@ -113,8 +121,8 @@ def card_html(r):
         <div class="face back">
           <div class="back-head">
             <div class="back-head-text">
-              <p class="artist">{artist} — {title}</p>
-              <p class="label-name">{esc(r["label"])}</p>
+              <p class="artist"><span itemprop="byArtist" itemscope itemtype="https://schema.org/MusicGroup"><span itemprop="name">{artist}</span></span> — <span itemprop="name">{title}</span></p>
+              <p class="label-name"><span itemprop="recordLabel" itemscope itemtype="https://schema.org/Organization"><span itemprop="name">{esc(r["label"])}</span></span></p>
             </div>{video_btn}
           </div>
           <ul class="tracks">
