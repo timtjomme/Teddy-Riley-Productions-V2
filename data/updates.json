@@ -65,5 +65,12 @@
       { "label": "New: site-wide search — press \"/\" anywhere to use it", "href": "index.html" },
       { "name": "2000's", "href": "2000s.html", "count": 1 }
     ]
+  },
+  {
+    "date": "2026-09-12",
+    "count": 5,
+    "pages": [
+      { "name": "New Jack Swing", "href": "new-jack-swing-productions.html", "count": 5 }
+    ]
   }
 ]

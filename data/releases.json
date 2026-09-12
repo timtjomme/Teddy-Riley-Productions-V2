@@ -14702,6 +14702,30 @@
   ],
   "new-jack-swing-productions": [
     {
+      "year": "1992",
+      "artist": "M & M",
+      "title": "Talk To Me",
+      "label": "Atlantic",
+      "image": "1992-mm-talk-to-me.jpg",
+      "tracks": [
+        "Talk To Me (Hip Hop Radio)",
+        "Talk To Me (Hip Hopapella Mix)",
+        "Talk To Me (M&M Vibe Mix)",
+        "Talk To Me (Extended Remix)",
+        "Talk To Me (Extended Dub)",
+        "Talk To Me (Bonus Telephone)"
+      ],
+      "credits": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "qobuz_credits": []
+    },
+    {
       "year": "1993",
       "artist": "MC Lyte",
       "title": "Ain't No Other",
@@ -14886,6 +14910,38 @@
       "qobuz_credits": []
     },
     {
+      "year": "1994",
+      "artist": "Brik Citi",
+      "title": "Say U Like",
+      "label": "Motown",
+      "image": "1994-brik-citi-say-u-like.jpg",
+      "tracks": [
+        "Say U Like (Radio Edit)",
+        "Say U Like (Remix Edit)",
+        "Say U Like (Lp Version)",
+        "Say U Like (A Capella)",
+        "Say U Like (Pop Edit)"
+      ],
+      "credits": [
+        [
+          "Remix: New Jack Swing Productions"
+        ],
+        [
+          "Remix: New Jack Swing Productions"
+        ],
+        [
+          "Remix: New Jack Swing Productions"
+        ],
+        [
+          "Remix: New Jack Swing Productions"
+        ],
+        [
+          "Remix: New Jack Swing Productions"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
       "year": "1996",
       "artist": "DG",
       "title": "Hush (Don't Say A Word) (Remix)",
@@ -14909,6 +14965,61 @@
           "Mastered By: Tony Dawsey",
           "Producer, Written By, Remix: Sprague \"Doogie\" Williams",
           "Written By: A. Muhammad, C. Williams, D. Webb, K. Fareed, M. Taylor, S. Sanders"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1996",
+      "artist": "Eric Benét",
+      "title": "True To Myself",
+      "label": "Warner Bros. Records",
+      "image": "1996-eric-benet-true-to-myself.jpg",
+      "tracks": [
+        "True To Myself (Doogie Funk Remix)",
+        "True To Myself (Doogie Funk Remix Instrumental)"
+      ],
+      "credits": [
+        [
+          "Remix: Sprague \"Doogie\" Williams"
+        ],
+        [
+          "Remix: Sprague \"Doogie\" Williams"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1997",
+      "artist": "Shades",
+      "title": "I Believe (Remix)",
+      "label": "Motown",
+      "image": "1997-shades-i-believe-remix.jpg",
+      "tracks": [
+        "I Believe (Remix)"
+      ],
+      "credits": [
+        [
+          "Producer [Remix]: Sprague \"Doogie\" Williams",
+          "Rap: Aqil Davidson, Nutta Butta",
+          "Written-By: Charles Farrar, Danielle Andrews, Isaac Hayes, Monique Peoples, Shannon Walker Williams, Tiffanie Cardwell, Troy Taylor"
+        ]
+      ],
+      "qobuz_credits": []
+    },
+    {
+      "year": "1999",
+      "artist": "Case",
+      "title": "Another Minute",
+      "label": "Def Soul",
+      "image": "1999-case-another-minute.jpg",
+      "tracks": [
+        "Another Minute"
+      ],
+      "credits": [
+        [
+          "Producer: Kevin \"Big Kev\" McDaniels, Sprague \"Doogie\" Williams",
+          "Written-By: Case Woodard, Kevin \"Big Kev\" McDaniels, Sprague \"Doogie\" Williams"
         ]
       ],
       "qobuz_credits": []
