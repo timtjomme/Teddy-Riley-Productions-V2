@@ -72,5 +72,13 @@
     "pages": [
       { "name": "New Jack Swing", "href": "new-jack-swing-productions.html", "count": 5 }
     ]
+  },
+  {
+    "date": "2026-09-15",
+    "count": 0,
+    "pages": [
+      { "label": "New: a complete Teddy Riley discography and production-credits guide", "href": "discography.html" },
+      { "label": "Five original 1999 Guy promotional sleeves added", "href": "1990s.html" }
+    ]
   }
 ]

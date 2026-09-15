@@ -1325,6 +1325,42 @@
     font-weight: 600;
   }
 
+  /* Editorial archive pages: readable research context around the collections. */
+  .editorial{ padding-top: 76px; padding-bottom: 80px; }
+  .editorial .page-head{ max-width: 720px; }
+  .editorial .page-head .eyebrow{ margin-bottom: 14px; }
+  .editorial-copy{ max-width: 720px; }
+  .editorial-copy p{
+    font: 400 16px/1.75 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--muted);
+    margin: 0 0 20px;
+    text-wrap: pretty;
+  }
+  .editorial-copy a{ color: var(--accent); text-decoration-color: var(--accent-soft); text-underline-offset: 3px; }
+  .editorial-section{ margin-top: 62px; max-width: 900px; }
+  .editorial-section h2{
+    font: 300 clamp(28px, 4vw, 40px)/1.15 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: -0.01em;
+    margin: 0 0 24px;
+    color: var(--label);
+  }
+  .editorial-panels{
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+  .editorial-disclaimer{ max-width:720px; margin:62px 0 0; font: 400 12px/1.55 'Helvetica Neue', Helvetica, Arial, sans-serif; color: var(--muted); }
+  .discography-intro{ padding-bottom: 10px; }
+  .discography-intro h2:last-child{ margin-top: 52px; }
+  .discography-outro{ padding-top: 72px; }
+  .discography-outro + .discography-outro{ padding-top: 20px; }
+  .discography-outro p:last-child{ margin-bottom: 0; }
+  .discography-disclaimer{ padding: 62px 20px 80px; margin: 0 auto; }
+  @media (max-width: 639px){
+    .editorial{ padding-top: 52px; padding-bottom: 58px; }
+    .editorial-section{ margin-top: 48px; }
+  }
+
   .panels{
     margin-top: 40px;
     max-width: 1140px;
